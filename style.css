@@ -81,6 +81,10 @@ h6 {
    font-family: var(--font-family-base);
 }
 
+.conteiner {
+   max-width: 1180px;
+}
+
 /* Estilos do carrinho */
 .icon-shopping-cart:before {
    content: "";
