@@ -352,6 +352,22 @@ h6 {
    position: relative;
 }
 
+.listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho {
+   font-size: 0;
+   display: flex;
+   width: fit-content;
+   border: 0;
+   border-radius: var(--border-radius-sm);
+   height: 20px;
+   align-items: center;
+}
+
+.listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho:after {
+   content: "Adicionado";
+   display: block;
+   font-size: 10px;
+}
+
 .listagem .listagem-item {
    margin: 12px !important;
    padding: 0;
