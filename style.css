@@ -392,7 +392,12 @@ h6 {
 }
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-   height: 285px;
+   /* height: 285px; */
+   height: fit-content;
+}
+
+.listagem .imagem-produto img {
+   position: relative;
 }
 
 .listagem .info-produto {
