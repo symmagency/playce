@@ -1,6 +1,7 @@
 :root {
     /* Cores
        ----------------------------------------------------------------------- */
+    --bg-store-color: #14171A;
     --color-primary: #007bff;
     --color-secondary: #33373C;
     --color-success: #28a745;
@@ -8,7 +9,7 @@
     --color-warning: #ffc107;
     --color-info: #17a2b8;
     --color-light: #f8f9fa;
-    --color-dark: #343a40;
+    --color-dark: #2E3036;
     --color-black: #000000;
     --color-white: #ffffff;
   
@@ -17,9 +18,10 @@
     --icon-user: url('https://cdn.awsli.com.br/2830/2830294/arquivos/user.svg');
     --icon-search: url('https://cdn.awsli.com.br/2830/2830294/arquivos/search.svg');
     --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
+    
     /* Tipografia
        ----------------------------------------------------------------------- */
-    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-family-base: "Manrope", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-size-base: 16px;
     --font-size-sm: 0.875rem;
     --font-size-lg: 1.25rem;
@@ -54,14 +56,33 @@
     --transition-base: all 0.3s ease;
     --transition-fast: all 0.15s ease;
     --transition-slow: all 0.5s ease;
-  }
+}
+
+/* Fonte Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
 
 body {
-    background-color: #14171A;
+    background-color: var(--bg-store-color);
+    font-family: var(--font-family-base);
+}
+
+p,
+span,
+a,
+strong,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--font-family-base);
 }
 
 /* Estilos do carrinho */
-
 .icon-shopping-cart:before {
    content: "";
    background: var(--icon-cart);
@@ -88,9 +109,13 @@ body {
    text-align: center;
    line-height: 20px;
    background: var(--color-white);
+   margin: 0;
+   border-radius: var(--border-radius-lg);
+   font-weight: 700;
 }
 
-.carrinho.vazio>a span {
+.carrinho.vazio>a span,
+.carrinho>a span {
    display: none !important;
 }
 
