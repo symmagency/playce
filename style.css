@@ -187,6 +187,10 @@ h6 {
    background: var(--color-black);
 }
 
+#barraTopo {
+   display: none!important;
+}
+
 /* Entrar */
 
 .sign-up-header {
@@ -348,7 +352,7 @@ h6 {
 .listagem-item .bandeiras-produto {
    top: 0;
    left: 0;
-   padding: 0 20px 12px;
+   padding: 0;
    position: relative;
 }
 
@@ -374,6 +378,9 @@ h6 {
    background: var(--color-black);
    border-radius: var(--border-radius-md);
    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
 }
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {

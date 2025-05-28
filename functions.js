@@ -63,6 +63,35 @@ $(window).on('resize', function() {
             }
         });
 
+        // Código para adicionar múltiplos badges de categoria em produtos específicos
+
+        // Array de objetos com código da categoria e URL da imagem do badge
+        var badgesCategorias = [
+            {
+                codigoCategoria: '23387220',
+                urlImagemBadge: 'https://cdn.awsli.com.br/2830/2830294/arquivos/badge-playstation.png'
+            },
+            {
+                codigoCategoria: '12345678',
+                urlImagemBadge: 'https://seusite.com.br/caminho/da/imagem2.png'
+            }
+            // Adicione mais objetos conforme necessário
+        ];
+
+        // Percorre cada badge configurado
+        badgesCategorias.forEach(function(badge) {
+            $('.listagem-item.prod-cat-' + badge.codigoCategoria).each(function() {
+                var $item = $(this);
+                // Cria a div do badge com a imagem
+                var $badge = $('<div class="badge-category-list"><img src="' + badge.urlImagemBadge + '" alt="Badge Categoria" /></div>');
+                // Insere o badge antes do .bandeiras-produto
+                var $bandeiras = $item.find('.bandeiras-produto');
+                if ($bandeiras.length) {
+                    $badge.insertBefore($bandeiras);
+                }
+            });
+        });
+
     } else {
         //mobile 
 
