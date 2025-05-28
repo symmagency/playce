@@ -71,8 +71,8 @@ $(window).on('resize', function() {
                 urlImagemBadge: 'https://cdn.awsli.com.br/2830/2830294/arquivos/badge-playstation.png'
             },
             {
-                codigoCategoria: '12345678',
-                urlImagemBadge: 'https://seusite.com.br/caminho/da/imagem2.png'
+                codigoCategoria: '23387224',
+                urlImagemBadge: 'https://cdn.awsli.com.br/2830/2830294/arquivos/badge-xbox.png'
             }
             // Adicione mais objetos conforme necessário
         ];
