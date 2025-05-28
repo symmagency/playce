@@ -320,6 +320,11 @@ h6 {
    color: var(--color-white);
 }
 
+.konfidency.summary.kfy-align-center {
+   justify-content: !important;
+   margin: 0;
+}
+
 /* Ajustes no banner cheio */
 
 .game-promo {
