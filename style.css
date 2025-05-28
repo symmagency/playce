@@ -301,10 +301,11 @@ h6 {
    padding: 0;
    background: var(--color-black);
    border-radius: var(--border-radius-md);
+   overflow: hidden;
 }
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-   height: 255px;
+   height: 285px;
 }
 
 .listagem .info-produto {
@@ -335,6 +336,10 @@ h6 {
 
 .konfidency.summary.kfy-align-center {
    margin: 0;
+}
+
+.listagem .listagem-item .preco-produto s.preco-venda {
+   display: none;
 }
 
 /* Ajustes no banner cheio */

@@ -38,6 +38,22 @@ $(window).on('resize', function() {
 
         $('#cabecalho .conteudo-topo').prepend($('#cabecalho .menu.superior'));
 
+        $('.listagem-item .bandeira-promocao').each(function() {
+            var texto = $(this).text();
+            // Substitui "Desconto" (case-insensitive) por "OFF"
+            var novoTexto = texto.replace(/Desconto/i, 'OFF');
+            $(this).text(novoTexto);
+        });
+
+        $('.listagem-item').each(function() {
+            var $item = $(this);
+            var $bandeira = $item.find('.bandeira-promocao');
+            var $precoPromocional = $item.find('strong.preco-promocional.cor-principal.titulo[data-sell-price]');
+            if ($bandeira.length && $precoPromocional.length) {
+                $bandeira.insertBefore($precoPromocional.first());
+            }
+        });
+
     } else {
         //mobile 
 
