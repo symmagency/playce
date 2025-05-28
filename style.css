@@ -19,6 +19,7 @@
     --icon-user: url('https://cdn.awsli.com.br/2830/2830294/arquivos/user.svg');
     --icon-search: url('https://cdn.awsli.com.br/2830/2830294/arquivos/search.svg');
     --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
+    --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
     
     /* Tipografia
        ----------------------------------------------------------------------- */
@@ -313,4 +314,66 @@ h6 {
 
 .listagem .listagem-item .nome-produto, .listagem .listagem-item .preco-produto strong {
    color: var(--color-white);
+}
+
+/* Ajustes no banner cheio */
+
+.game-promo {
+   max-width: 350px;
+   position: absolute;
+   left: 64px;
+   top: 50%;
+   transform: translateY(-50%);
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.banner.cheio .discount-tag {
+   background: linear-gradient(99.09deg, #91FFB2 -0.27%, #54FF95 99.73%);
+   color: var(--color-black);
+   padding: 6px 10px;
+   border-radius: var(--border-radius-md);
+   line-height: 13px;
+   font-size: 10px;
+   font-weight: 600;
+   display: block;
+   width: fit-content;
+}
+
+.banner.cheio .game-price {
+   font-size: 20px;
+   color: var(--color-white);
+}
+
+.banner.cheio .game-price-section {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+}
+
+.banner.cheio .game-logo img {
+   max-width: 170px;
+}
+
+.banner.cheio .buy-now-btn {
+   box-shadow: var(--shadow-button);
+   background: var(--color-primary);
+   font-size: 14px;
+   color: var(--color-white);
+   line-height: 20px;
+   padding: 8px 16px;
+   width: fit-content;
+   border-radius: var(--border-radius-md);
+   display: flex;
+   gap: 10px;
+}
+
+.banner.cheio .buy-now-btn:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   position: relative;
+   display: block;
+   background: var(--icon-purchase);
 }
