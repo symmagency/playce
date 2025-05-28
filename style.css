@@ -177,7 +177,6 @@ h6 {
 /* Entrar */
 
 .sign-up-header {
-   padding: 8px 16px;
    float: left;
    display: flex;
 }
@@ -191,6 +190,7 @@ h6 {
    border-radius: var(--border-radius-md);
    font-size: var(--font-size-sm);
    line-height: 20px;
+   padding: 8px 16px;
 }
 
 .sign-up-header i.user:before {
@@ -199,4 +199,74 @@ h6 {
    height: 20px;
    display: block;
    background: var(--icon-user);
+}
+
+/* Ajustes na barra de busca */
+
+.conteudo-topo .inferior:before, .conteudo-topo .inferior:after {
+   display: none;
+}
+
+.conteudo-topo .inferior {
+   max-width: 460px;
+   display: flex;
+   gap: 20px;
+}
+
+/* Estrutura do header */
+
+.conteudo-topo .superior.hidden-phone,
+#cabecalho > .conteiner > .row-fluid:before, 
+#cabecalho > .conteiner > .row-fluid:after {
+   display: none;
+}
+
+#cabecalho .conteiner > .row-fluid > .span3 {
+   width: 90px;
+}
+
+.logo a {
+   height: 40px;
+}
+
+#cabecalho > .conteiner > .row-fluid,
+#cabecalho .conteudo-topo  {
+   display: flex;
+   align-items: center;
+}
+
+#cabecalho > .conteiner, 
+#cabecalho > .conteiner > .row-fluid {
+   max-width: 100%;
+   width: 100%;
+}
+
+/* Menu Superior */
+
+.menu.superior {
+   background: none;
+   margin: 0;
+   padding: 0;
+}
+
+.menu.superior .nivel-um>li:hover, .menu.superior .nivel-um>li {
+   border: 0;
+   margin: 0;
+}
+
+.menu.superior .titulo {
+   margin: 0;
+   line-height: 40px;
+   font-size: var(--font-size-sm);
+   color: var(--color-white);
+}
+
+.menu.superior .nivel-um>li {
+   padding: 0 8px;
+}
+
+
+.menu.superior .nivel-um>li>a i {
+   background: none;
+   margin: 0 0 0 4px;
 }
