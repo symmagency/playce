@@ -48,9 +48,9 @@ $(window).on('resize', function() {
         $('.listagem-item').each(function() {
             var $item = $(this);
             var $bandeira = $item.find('.bandeira-promocao');
-            var $precoPromocional = $item.find('strong.preco-promocional.cor-principal.titulo[data-sell-price]');
+            var $precoPromocional = $item.find('strong.preco-promocional');
             if ($bandeira.length && $precoPromocional.length) {
-                $bandeira.insertBefore($precoPromocional.first());
+                $bandeira.insertAfter($precoPromocional.first());
             }
         });
 
