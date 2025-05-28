@@ -329,7 +329,7 @@ h6 {
 /* Listagem item */
 
 .listagem .listagem-item {
-   margin: 0 !important;
+   margin: 12px !important;
    padding: 0;
    background: var(--color-black);
    border-radius: var(--border-radius-md);
