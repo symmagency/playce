@@ -9,6 +9,8 @@
     --color-info: #17a2b8;
     --color-light: #f8f9fa;
     --color-dark: #343a40;
+    --color-black: #000000;
+    --color-white: #ffffff;
   
     /* Icones
        ----------------------------------------------------------------------- */
@@ -37,16 +39,15 @@
     /* Bordas
        ----------------------------------------------------------------------- */
     --border-radius-sm: 4px;
-    --border-radius-md: 8px;
+    --border-radius-md: 6px;
     --border-radius-lg: 16px;
     --border-width: 1px;
     --border-color: #dee2e6;
   
-    /* Sombras
+    /* Sombras do botão
        ----------------------------------------------------------------------- */
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --shadow-button: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);;
+
   
     /* Transições
        ----------------------------------------------------------------------- */
@@ -59,9 +60,50 @@ body {
     background-color: #14171A;
 }
 
+/* Estilos do carrinho */
+
 .icon-shopping-cart:before {
    content: "";
    background: var(--icon-cart);
    width: 20px;
    height: 20px;
+}
+
+.carrinho>a i {
+   width: 20px;
+   height: 20px;
+   background: none;
+   margin: 0;
+   padding: 0;
+   line-height: 0;
+   font-size: 0;
+}
+
+.carrinho>a strong {
+   display: block !important;
+   font-size: 14px;
+   color: var(--color-black);
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   line-height: 20px;
+   background: var(--color-white);
+}
+
+.carrinho.vazio>a span {
+   display: none !important;
+}
+
+.conteudo-topo .inferior > .span4.hidden-phone {
+   width: auto;
+   margin: 0;
+}
+
+.carrinho > a {
+   display: flex;
+   gap: 4px;
+   background: var(--color-primary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
 }
