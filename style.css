@@ -299,7 +299,7 @@ h6 {
 /* Listagem */
 
 /* Titulo listagem */
-.listagem .titulo-categoria:after {
+.listagem a.titulo-categoria:after {
    content: "Ver todos";
    font-size: 16px;
    box-shadow: var(--shadow-button);
@@ -311,6 +311,10 @@ h6 {
    background-image: var(--icon-chev-right);
    background-repeat: no-repeat;
    background-position: 94px 50%;
+}
+
+.listagem .titulo-categoria strong {
+   font-weight: 400;
 }
 
 .listagem .titulo-categoria {
