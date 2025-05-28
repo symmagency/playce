@@ -54,6 +54,15 @@ $(window).on('resize', function() {
             }
         });
 
+        $('.listagem-item').each(function() {
+            var $item = $(this);
+            var $bandeiras = $item.find('.bandeiras-produto');
+            var $infoProduto = $item.find('.info-produto');
+            if ($bandeiras.length && $infoProduto.length) {
+                $bandeiras.insertBefore($infoProduto.first());
+            }
+        });
+
     } else {
         //mobile 
 

@@ -320,6 +320,7 @@ h6 {
    background-position: 94px 50%;
 }
 
+
 .listagem .titulo-categoria strong {
    font-weight: 400;
 }
@@ -343,6 +344,13 @@ h6 {
 }
 
 /* Listagem item */
+
+.listagem-item .bandeiras-produto {
+   top: 0;
+   left: 0;
+   padding: 0 20px 12px;
+   position: relative;
+}
 
 .listagem .listagem-item {
    margin: 12px !important;
