@@ -18,11 +18,11 @@
 
   /* Imagens
      ----------------------------------------------------------------------- */
-  --image-logo: url('../assets/images/logo.svg');
+  --image-logo: url('../../assets/images/logo.svg');
   --image-hero: url('../assets/images/hero-bg.jpg');
-  --image-avatar-placeholder: url('../assets/images/avatar-placeholder.png');
-  --image-pattern: url('../assets/images/pattern.png');
-  --image-icon-check: url('../assets/icons/check.svg');
+  --image-avatar-placeholder: url('./assets/images/avatar.png');
+  --image-pattern: url('/assets/images/pattern.png');
+  --image-icon-check: url('../../assets/icons/check.svg');
   --image-icon-close: url('../assets/icons/close.svg');
 
   /* Tipografia
