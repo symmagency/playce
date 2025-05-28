@@ -2,7 +2,7 @@
     /* Cores
        ----------------------------------------------------------------------- */
     --color-primary: #007bff;
-    --color-secondary: #6c757d;
+    --color-secondary: #33373C;
     --color-success: #28a745;
     --color-danger: #dc3545;
     --color-warning: #ffc107;
@@ -12,13 +12,9 @@
   
     /* Icones
        ----------------------------------------------------------------------- */
-    --image-logo: url('../assets/images/logo.svg');
-    --image-hero: url('../assets/images/hero-bg.jpg');
-    --image-avatar-placeholder: url('../assets/images/avatar-placeholder.png');
-    --image-pattern: url('../assets/images/pattern.png');
-    --image-icon-check: url('../assets/icons/check.svg');
-    --image-icon-close: url('../assets/icons/close.svg');
-  
+    --icon-user: url('https://cdn.awsli.com.br/2830/2830294/arquivos/user.svg');
+    --icon-search: url('https://cdn.awsli.com.br/2830/2830294/arquivos/search.svg');
+    --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
     /* Tipografia
        ----------------------------------------------------------------------- */
     --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -63,10 +59,9 @@ body {
     background-color: #14171A;
 }
 
-.class {
-    background-color: red;
-}
-
-.carrinho {
-
+.icon-shopping-cart:before {
+   content: "";
+   background: url();
+   width: 20px;
+   height: 20px;
 }
