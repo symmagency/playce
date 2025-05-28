@@ -367,6 +367,7 @@ h6 {
    border-radius: var(--border-radius-md);
    display: flex;
    gap: 10px;
+   text-decoration: none;
 }
 
 .banner.cheio .buy-now-btn:after {
@@ -376,4 +377,10 @@ h6 {
    position: relative;
    display: block;
    background: var(--icon-purchase);
+   background-size: 100%;
+}
+
+.banner.cheio .game-description {
+   font-size: 14px;
+   color: var(--color-white);
 }
