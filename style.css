@@ -247,6 +247,7 @@ h6 {
    background: none;
    margin: 0;
    padding: 0;
+   flex: 1;
 }
 
 .menu.superior .nivel-um>li:hover, .menu.superior .nivel-um>li {
