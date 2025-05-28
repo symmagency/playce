@@ -132,3 +132,36 @@ h6 {
    border-radius: var(--border-radius-md);
    box-shadow: var(--shadow-button);
 }
+
+/* Estilos da busca */
+
+.busca {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+.busca #form-buscar {
+   display: flex;
+   align-items: center;
+}
+
+.busca #form-buscar .botao-busca {
+   position: absolute;
+   top: 0;
+   border: 0;
+   background: none;
+   right: 0;
+   height: 36px;
+   display: flex;
+   align-items: center;
+}
+
+.busca #form-buscar #auto-complete {
+   width: 100%;
+   box-sizing: border-box;
+   height: 36px;
+   background-color: var(--color-dark);
+   border-radius: var(--border-radius-md);
+   padding: 8px 16px;
+}
