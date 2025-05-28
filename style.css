@@ -389,7 +389,6 @@ h6 {
    overflow: hidden;
    display: flex;
    flex-direction: column;
-   gap: 12px;
 }
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
@@ -397,7 +396,7 @@ h6 {
 }
 
 .listagem .info-produto {
-   padding: 0 20px 20px;
+   padding: 12px 20px 20px;
    display: flex;
    flex-direction: column;
    gap: 4px;

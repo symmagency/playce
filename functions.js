@@ -63,9 +63,8 @@ $(window).on('resize', function() {
             }
         });
 
-        // Código para adicionar múltiplos badges de categoria em produtos específicos
+        // badges de categoria
 
-        // Array de objetos com código da categoria e URL da imagem do badge
         var badgesCategorias = [
             {
                 codigoCategoria: '23387220',
@@ -78,16 +77,15 @@ $(window).on('resize', function() {
             // Adicione mais objetos conforme necessário
         ];
 
-        // Percorre cada badge configurado
         badgesCategorias.forEach(function(badge) {
             $('.listagem-item.prod-cat-' + badge.codigoCategoria).each(function() {
                 var $item = $(this);
-                // Cria a div do badge com a imagem
-                var $badge = $('<div class="badge-category-list"><img src="' + badge.urlImagemBadge + '" alt="Badge Categoria" /></div>');
-                // Insere o badge antes do .bandeiras-produto
-                var $bandeiras = $item.find('.bandeiras-produto');
-                if ($bandeiras.length) {
-                    $badge.insertBefore($bandeiras);
+                if ($item.find('.badge-category-list[data-categoria="' + badge.codigoCategoria + '"]').length === 0) {
+                    var $badge = $('<div class="badge-category-list" data-categoria="' + badge.codigoCategoria + '"><img src="' + badge.urlImagemBadge + '" alt="Badge Categoria" /></div>');
+                    var $bandeiras = $item.find('.bandeiras-produto');
+                    if ($bandeiras.length) {
+                        $badge.insertBefore($bandeiras);
+                    }
                 }
             });
         });
