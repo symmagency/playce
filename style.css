@@ -174,10 +174,17 @@ h6 {
    border-color: var(--color-half-white);
 }
 
+.icon-search:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: var(--icon-search) no-repeat;
+}
+
 /* Ajustes cabeçalho */
 
 #cabecalho {
-   background: var(--color-dark);
+   background: var(--color-black);
 }
 
 /* Entrar */
@@ -191,7 +198,7 @@ h6 {
    color: var(--color-white);
    display: flex;
    gap: 10px;
-   background: var(--color-black);
+   background: var(--color-secondary);
    box-shadow: var(--shadow-button);
    border-radius: var(--border-radius-md);
    font-size: var(--font-size-sm);
