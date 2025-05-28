@@ -20,6 +20,7 @@
     --icon-search: url('https://cdn.awsli.com.br/2830/2830294/arquivos/search.svg');
     --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
     --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
+    --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
     
     /* Tipografia
        ----------------------------------------------------------------------- */
@@ -79,6 +80,9 @@ h4,
 h5,
 h6 {
    font-family: var(--font-family-base);
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   font-feature-settings: "kern" 1, "liga" 1;
 }
 
 .conteiner {
@@ -294,6 +298,34 @@ h6 {
 
 /* Listagem */
 
+/* Titulo listagem */
+.listagem .titulo-categoria:after {
+   content: "Ver todos";
+   font-size: 16px;
+   box-shadow: var(--shadow-button);
+   background-color: var(--color-secondary);
+   display: flex;
+   align-items: center;
+   padding: 8px 46px 8px 16px;
+   border-radius: var(--border-radius-md);
+   background-image: var(--icon-chev-right);
+   background-repeat: no-repeat;
+   background-position: 94px 50%;
+}
+
+.listagem .titulo-categoria {
+   font-size: 24px;
+   color: var(--color-white);
+   display: flex;
+   justify-content: space-between;
+   border: 0;
+   padding: 0 !important;
+}
+
+.listagem .titulo-categoria:hover {
+   background: none;
+}
+
 /* Listagem item */
 
 .listagem .listagem-item {
@@ -325,6 +357,29 @@ h6 {
    white-space: normal;
 }
 
+.listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
+   min-height: 36px;
+}
+
+.listagem .preco-produto .bandeira-promocao {
+   height: 20px;
+   display: block;
+   width: fit-content;
+   padding: 0px 8px;
+   box-sizing: border-box;
+   border-radius: var(--border-radius-sm);
+}
+
+.listagem .preco-produto.com-promocao > div {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.listagem .listagem-item .preco-produto strong {
+   margin: 0;
+}
+
 .listagem .listagem-item .preco-produto strong {
    font-size: 18px;
    font-weight: 600;
@@ -336,6 +391,12 @@ h6 {
 
 .konfidency.summary.kfy-align-center {
    margin: 0;
+}
+
+.listagem-item .konfidency-reviews-multi {
+   height: 34px;
+   display: flex;
+   align-items: center;
 }
 
 .listagem .listagem-item .preco-produto s.preco-venda {
