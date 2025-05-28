@@ -13,6 +13,7 @@
     --color-black: #1F2227;
     --color-white: #ffffff;
     --color-half-white: #ffffff10;
+    --badge-color: #2A2D30;
   
     /* Icones
        ----------------------------------------------------------------------- */
@@ -354,6 +355,14 @@ h6 {
    left: 0;
    padding: 0;
    position: relative;
+}
+
+.badge-category-list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 32px;
+   background: var(--badge-color);
 }
 
 .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho {
