@@ -309,6 +309,19 @@ h6 {
 
 .listagem .info-produto {
    padding: 0 20px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.listagem .listagem-item .nome-produto {
+   font-size: 14px;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: normal;
 }
 
 .listagem .listagem-item .preco-produto strong {
@@ -321,7 +334,6 @@ h6 {
 }
 
 .konfidency.summary.kfy-align-center {
-   justify-content: !important;
    margin: 0;
 }
 
