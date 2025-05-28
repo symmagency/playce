@@ -61,7 +61,7 @@ body {
 
 .icon-shopping-cart:before {
    content: "";
-   background: url();
+   background: var(--icon-cart);
    width: 20px;
    height: 20px;
 }
