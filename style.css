@@ -3,7 +3,7 @@
        ----------------------------------------------------------------------- */
     --bg-store-color: #14171A;
     --color-primary: #0056B3;
-    --color-secondary: #33373C;
+    --color-secondary: #33373C; 
     --color-success: #28a745;
     --color-danger: #dc3545;
     --color-warning: #ffc107;
@@ -96,6 +96,13 @@ h6 {
    opacity: .7;
 }
 
+.cabecalho-interno .titulo {
+   color: var(--color-white);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
 .conteiner {
    max-width: 1180px;
 }
@@ -120,6 +127,34 @@ input {
     width: fit-content;
     align-items: center;
     justify-content: center;
+}
+
+.botao.secundario {
+   height: 36px !important;
+   box-sizing: border-box !important;
+   background: var(--color-secondary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   font-size: 14px !important;
+   text-shadow: none !important;
+   display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.caixa-destaque * {
+   color: #fff;
+}
+
+.caixa-destaque {
+   padding: 80px 40px;
+   background: var(--color-black);
+   border-radius: var(--border-radius-md);
+   margin: 0;
 }
 
 /* Estilos do carrinho */
