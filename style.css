@@ -112,6 +112,7 @@ input {
    box-sizing: border-box !important;
    background: var(--input-bg) !important;
    border: 1px solid #ffffff10 !important;
+   padding: 0 16px !important;
 }
 
 .botao.principal {
@@ -695,4 +696,8 @@ input {
    display: flex;
    gap: 4px;
    align-items: center;
+}
+
+.pagina-login .caixa-sombreada fieldset label {
+   display: none;
 }

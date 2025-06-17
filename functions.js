@@ -3,6 +3,9 @@ $(document).ready(function() {
 // alterações gerais
 
 $('.conteudo-topo .inferior .busca-mobile input').attr('placeholder','Buscar...');
+$('.pagina-login .cadastro-logar .form-horizontal .controls #id_email').attr('placeholder','E-mail');
+$('.pagina-login .cadastro-logar .form-horizontal .controls #id_senha').attr('placeholder','Senha');
+$('.pagina-login .caixa-sombreada fieldset > div:not(.control-group) #id_email').attr('placeholder','Digite o email que deseja cadastrar');
 $('.banner.cheio li').each(function () {
     const $li = $(this);
     const $img = $li.find('img[usemap]');
