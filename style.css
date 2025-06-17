@@ -116,6 +116,10 @@ input {
    box-shadow: var(--shadow-button);
    font-size: 14px !important;
    text-shadow: none !important;
+   display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Estilos do carrinho */
