@@ -798,3 +798,27 @@ input {
 .componente .interno {
    padding: 0;
 }
+
+/* Página produto */
+
+.pagina-produto .produto div.principal {
+   padding: 32px;
+   background: var(--color-black);
+}
+
+.produto div.principal .acoes-produto {
+   display: flex;
+   flex-direction: column;
+}
+
+.produto .acoes-produto .comprar .botao.principal {
+   width: 100%;
+   padding: 13px 16px;
+   height: 54px !important;
+   font-size: 16px !important;
+   font-weight: 600;
+}
+
+.pagina-produto .produto div.principal * {
+   color: #fff;
+}
