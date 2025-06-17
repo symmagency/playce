@@ -103,7 +103,7 @@ h6 {
 input {
    height: 40px !important;
    box-sizing: border-box !important;
-   background: var(--input-bgk) !important;
+   background: var(--input-bg) !important;
    border: 1px solid #ffffff10 !important;
 }
 
@@ -633,4 +633,31 @@ input {
    border-radius: var(--border-radius-md);
    box-shadow: none;
    background: var(--color-black);
+}
+
+.pagina-login .cadastro-logar .botao.principal {
+   width: 100%;
+}
+
+.pagina-login .caixa-sombreada fieldset > div:not(.control-group) {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.pagina-login .cadastro-logar input {
+    width: 100% !important;
+}
+
+.pagina-login .caixa-sombreada fieldset .recuperar-senha i {
+   color: #fff;
+}
+
+.pagina-login .caixa-sombreada fieldset .recuperar-senha {
+   color: #fff;
+   opacity: .5;
+   font-size: 12px;
+   display: flex;
+   gap: 4px;
+   align-items: center;
 }
