@@ -738,3 +738,12 @@ input {
    border-radius: var(--border-radius-md);
    border-top: 1px solid #ffffff20;
 }
+
+
+.menu.lateral .com-filho.borda-principal * {
+   border: 0;
+}
+.menu.lateral .com-filho.borda-principal {
+   border: 0;
+   background: none;
+}

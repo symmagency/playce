@@ -94,14 +94,14 @@ $(window).on('resize', function() {
         });
 
         // Altera o atributo data-produtos-linha para 3
-        $('#listagemProdutos').attr('data-produtos-linha', '3');
+        $('.pagina-categoria #listagemProdutos').attr('data-produtos-linha', '3');
         
         // Reorganiza os produtos em grupos de 3 por linha
         var produtos = $('.listagem-item').parent('li');
         var totalProdutos = produtos.length;
         
         // Remove todas as linhas existentes
-        $('.listagem-linha').remove();
+        $('.pagina-categoria .listagem-linha').remove();
         
         // Cria novas linhas com 3 produtos cada
         for (var i = 0; i < totalProdutos; i += 3) {
@@ -116,7 +116,7 @@ $(window).on('resize', function() {
             }
             
             novaLinha.append(novoUl);
-            $('#listagemProdutos > ul').append(novaLinha);
+            $('.pagina-categoria #listagemProdutos > ul').append(novaLinha);
         }
 
     } else {
