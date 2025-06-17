@@ -750,9 +750,9 @@ input {
 
 .menu.lateral .nivel-dois>li {
    padding-left: 12px !important;
-   border-left: 1px solid #ffffff20;
+   border-left: 1px solid #ffffff20!important;
 }
 
 .menu.lateral .nivel-dois>li>a {
-   line-height: 40px;
+   line-height: 40px!important;
 }
