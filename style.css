@@ -231,6 +231,8 @@ input {
    height: 36px;
    display: flex;
    align-items: center;
+   box-shadow: none;
+   top: 2px;
 }
 
 .busca #form-buscar #auto-complete {
