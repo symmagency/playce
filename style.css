@@ -756,3 +756,28 @@ input {
 .menu.lateral .nivel-dois>li>a {
    line-height: 40px!important;
 }
+
+.menu.lateral .nivel-dois>li.ativo {
+   background: none;
+   position: relative;
+}
+
+.menu.lateral .nivel-dois>li.ativo:before {
+   content: "";
+   width: 5px;
+   height: 5px;
+   background: var(--color-primary);
+   display: block;
+   position: absolute;
+   left: -3px;
+   top: 17px;
+   border-radius: var(--border-radius-md);
+}
+
+.menu.lateral .nivel-dois>li a {
+   opacity: .7;
+}
+
+.menu.lateral .nivel-dois>li.ativo a {
+   opacity: 1;
+}
