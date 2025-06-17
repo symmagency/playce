@@ -578,3 +578,54 @@ input {
    font-size: 14px;
    color: var(--color-white);
 }
+
+
+/* Página de login */
+
+.pagina-login .form-horizontal .controls {
+   display: flex;
+   flex-direction: column;
+   margin-left: 0;
+   gap: 12px;
+}
+
+.pagina-login .cadastro-logar .form-horizontal .controls * {
+   margin: 0;
+}
+
+.pagina-login .form-horizontal .controls input {
+   width: 100%;
+}
+
+.pagina-login .cadastro-logar .control-group label {
+   display: none;
+}
+
+.pagina-login .caixa-sombreada fieldset {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.pagina-login .caixa-sombreada fieldset * {
+   margin: 0;
+}
+
+.pagina-login .caixa-sombreada fieldset legend i {
+   display: none;
+}
+
+.pagina-login .caixa-sombreada fieldset legend {
+   color: var(--color-white);
+   padding-bottom: 32px;
+   font-size: 15px;
+   font-weight: normal;
+}
+
+.pagina-login .caixa-sombreada {
+   padding: 40px;
+   border: 0;
+   border-radius: var(--border-radius-md);
+   box-shadow: none;
+   background: var(--color-black);
+}
