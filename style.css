@@ -86,8 +86,35 @@ h6 {
    font-feature-settings: "kern" 1, "liga" 1;
 }
 
+
+/* Ajustes gerais */
+
+.cabecalho-interno .titulo small {
+   font-size: 14px;
+   color: var(--color-white);
+   opacity: .7;
+}
+
 .conteiner {
    max-width: 1180px;
+}
+
+input {
+   height: 40px !important;
+   box-sizing: border-box !important;
+   background: var(--color-black) !important;
+   border: 1px solid #ffffff10 !important;
+}
+
+.botao.principal {
+   height: 36px !important;
+   box-sizing: border-box !important;
+   background: var(--color-primary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   font-size: 14px !important;
+   text-shadow: none !important;
 }
 
 /* Estilos do carrinho */
