@@ -292,6 +292,7 @@ h6 {
    line-height: 40px;
    font-size: var(--font-size-sm);
    color: var(--color-white);
+   font-weight: 600;
 }
 
 .menu.superior .nivel-um>li {
@@ -306,6 +307,25 @@ h6 {
 /* Menu superior nivel dois */
 .menu.superior .nivel-dois {
    top: 40px;
+   background: var(--color-black);
+   border-top: 2px solid var(--color-primary);
+}
+
+.menu.superior .nivel-dois * {
+   color: #ffffff90;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.menu.superior .nivel-um>li:hover .nivel-dois:before {
+   content: "";
+   height: 0;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-bottom: 8px solid var(--color-primary);
+   position: absolute;
+   left: 30px;
+   top: -8px;
 }
 
 /* Listagem */
