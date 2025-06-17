@@ -129,7 +129,7 @@ input {
     justify-content: center;
 }
 
-.botao.secundario {
+.botao.secundario, .botao {
    height: 36px !important;
    box-sizing: border-box !important;
    background: var(--color-secondary);
