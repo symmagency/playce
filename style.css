@@ -899,4 +899,47 @@ input {
    width: 20px;
    height: 20px;
    background: var(--icon-check);
+   background-size: 100%;
+}
+
+#rodape .institucional {
+   background: var(--color-black);
+}
+
+#rodape .titulo {
+   font-size: 18px;
+   font-weight: 600;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+#rodape .institucional {
+    background: var(--color-black);
+    padding: 20px 0;
+}
+
+#rodape .titulo {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.links-rodape ul li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 30px;
+    opacity: .7;
+}
+
+.links-rodape {
+    display: flex!important;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#rodape .conteiner {
+    padding: 0;
 }
