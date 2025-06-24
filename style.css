@@ -842,3 +842,43 @@ input {
    margin: 0;
    padding: 0;
 }
+
+#barraNewsletter .componente .titulo {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   flex: 1;
+   font-size: 22px;
+   font-weight: 700;
+}
+
+#barraNewsletter .componente .titulo i {
+   display: none;
+}
+
+#barraNewsletter.posicao-rodape .componente .interno {
+   display: flex;
+   gap: 24px;
+   align-items: center;
+}
+
+#barraNewsletter .componente .interno-conteudo {
+   flex: 1;
+}
+
+#barraNewsletter .componente input[type="text"] {
+   width: 100%;
+   margin: 0;
+   max-width: 250px;
+}
+
+#barraNewsletter .componente div.newsletter-cadastro {
+   display: flex;
+   gap: 10px;
+   justify-content: end;
+}
+
+#barraNewsletter .componente .texto-newsletter {
+   font-weight: 400;
+   opacity: .7;
+}
