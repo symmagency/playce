@@ -23,6 +23,7 @@
     --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
     --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
     --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
+    --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
     
     /* Tipografia
        ----------------------------------------------------------------------- */
@@ -104,6 +105,7 @@ input {
    border: 1px solid #ffffff10 !important;
    padding: 0 16px !important;
    color: var(--color-white);
+   border-radius: var(--border-radius-md);
 }
 
 .botao.principal {
@@ -851,6 +853,7 @@ input {
    display: flex;
    gap: 24px;
    align-items: center;
+   padding: 0;
 }
 
 #barraNewsletter .componente .interno-conteudo {
@@ -872,4 +875,28 @@ input {
 #barraNewsletter .componente .texto-newsletter {
    font-weight: 400;
    opacity: .7;
+}
+
+#barraNewsletter .componente {
+   padding: 0;
+}
+
+#barraNewsletter.posicao-rodape .componente .interno:before {
+   content: "";
+   width: 117px;
+   height: 100px;
+   background: var(--news-char);
+}
+
+#barraNewsletter .componente .newsletter-assinar:before {
+   content: "Enviar";
+   display: block;
+   font-family: var(--font-family-base);
+}
+
+#barraNewsletter .componente .newsletter-assinar:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: var(--icon-check);
 }

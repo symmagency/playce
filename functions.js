@@ -22,6 +22,7 @@ $('.banner.cheio li').each(function () {
     }
 });
 $('#barraNewsletter .componente .titulo').append($('#barraNewsletter .componente .texto-newsletter'));
+$('#barraNewsletter .componente .botao').addClass('principal');
   
 
 $(window).on('resize', function() {
