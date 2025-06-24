@@ -105,7 +105,7 @@ input {
    border: 1px solid #ffffff10 !important;
    padding: 0 16px !important;
    color: var(--color-white);
-   border-radius: var(--border-radius-md);
+   border-radius: var(--border-radius-md)!important;
 }
 
 .botao.principal {
