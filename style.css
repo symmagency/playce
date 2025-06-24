@@ -822,3 +822,23 @@ input {
 .pagina-produto .produto div.principal * {
    color: #fff;
 }
+
+/* Rodapé */
+
+.lista-redes ul li.visible-phone {
+   display: block !important;
+}
+
+#rodape .redes-sociais .caixa-facebook {
+   display: none !important;
+}
+
+#rodape .redes-sociais {
+   width: 100%;
+   background: none;
+   position: relative;
+   box-shadow: none;
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
