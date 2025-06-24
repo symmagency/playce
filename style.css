@@ -34,15 +34,6 @@
     --font-weight-bold: 700;
     --line-height-base: 24px;
   
-    /* Espaçamento
-       ----------------------------------------------------------------------- */
-    --spacing-unit: 8px;
-    --spacing-xs: calc(var(--spacing-unit) * 0.5);  /* 4px */
-    --spacing-sm: var(--spacing-unit);              /* 8px */
-    --spacing-md: calc(var(--spacing-unit) * 2);    /* 16px */
-    --spacing-lg: calc(var(--spacing-unit) * 3);    /* 24px */
-    --spacing-xl: calc(var(--spacing-unit) * 4);    /* 32px */
-  
     /* Bordas
        ----------------------------------------------------------------------- */
     --border-radius-sm: 4px;
@@ -55,11 +46,10 @@
        ----------------------------------------------------------------------- */
     --shadow-button: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
 
-    /* Transições
-       ----------------------------------------------------------------------- */
-    --transition-base: all 0.3s ease;
-    --transition-fast: all 0.15s ease;
-    --transition-slow: all 0.5s ease;
+    /* Imagens que podem ser alteradas */
+    --news-char: url('https://cdn.awsli.com.br/2830/2830294/arquivos/news-char.png');
+
+
 }
 
 /* Fonte Manrope */
@@ -850,6 +840,7 @@ input {
    flex: 1;
    font-size: 22px;
    font-weight: 700;
+   margin: 0;
 }
 
 #barraNewsletter .componente .titulo i {
