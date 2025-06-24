@@ -902,6 +902,11 @@ input {
    background-size: 100%;
 }
 
+#barraNewsletter .componente .botao {
+   display: flex;
+   gap: 10px;
+}
+
 #rodape .institucional {
    background: var(--color-black);
 }
