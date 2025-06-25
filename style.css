@@ -1242,17 +1242,18 @@ input {
    color: var(--color-white);
    top: 50%;
    transform: translateY(-50%);
+   text-indent: -99999px;
 }
 
 .quantidade-wrapper .btn-quantidade.btn-menos {
-   left: 0;
+   left: 8px;
    width: 18px;
    background: var(--icon-minus) !important;
    background-size: 100% !important;
 }
 
 .quantidade-wrapper .btn-quantidade.btn-mais {
-   right: 0;
+   right: 8px;
    width: 18px;
    background: var(--icon-plus) !important;
    background-size: 100% !important;
@@ -1263,7 +1264,15 @@ input {
 }
 
 .listagem-item .acoes-produto .botao-comprar {
-    flex: 1;
+   flex: 1;
+   width: 100%;
+   padding: 0;
+   flex-direction: row-reverse;
+   gap: 10px;
+}
+
+.listagem-item .acoes-produto .botao-comprar i {
+   margin: 0;
 }
 
 .listagem-item .acoes-produto {
@@ -1271,10 +1280,12 @@ input {
 }
 
 .quantidade-wrapper .input-quantidade {
-   height: 36px;
-   padding: 0;
+   height: 36px !important;
+   padding: 0 !important;
    max-width: 80px;
    text-align: center;
+   margin: 0;
+   color: var(--color-white);
 }
 
 .quantidade-wrapper .input-quantidade::-webkit-outer-spin-button,
