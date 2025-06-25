@@ -298,7 +298,7 @@ $(window).on('resize', function() {
 document.addEventListener('visibilitychange', function() {
   if (!document.hidden) {
     // Força todos os carrosseis slick já inicializados a recalcularem o layout
-    $('.slick-initialized').each(function() {
+    $('.categorias-section ul').each(function() {
       try {
         $(this).slick('setPosition');
       } catch (e) {
