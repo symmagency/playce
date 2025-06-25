@@ -243,6 +243,26 @@ $(window).on('resize', function() {
             }
         }
 
+        // Input de quantidade antes do botão de comprar
+        $('.botao-comprar').each(function() {
+        // Evita duplicar o input se já existir
+        if($(this).prev('.quantidade-wrapper').length === 0) {
+            $('<div class="quantidade-wrapper" style="display:inline-block;margin-right:10px;">\
+            <input type="number" min="1" value="1" class="input-quantidade" style="width:60px;">\
+            </div>').insertBefore($(this));
+        }
+        });
+
+        // Atualiza o link ao alterar a quantidade
+        $(document).on('input change', '.input-quantidade', function() {
+        var quantidade = $(this).val();
+        if (quantidade < 1) quantidade = 1;
+        var $botao = $(this).closest('.quantidade-wrapper').next('.botao-comprar');
+        var hrefOriginal = $botao.attr('href').replace(/\/adicionar\/(\d+)?$/, '/adicionar');
+        $botao.attr('href', hrefOriginal + '/' + quantidade);
+        });
+        
+
     } else {
         //mobile 
 
