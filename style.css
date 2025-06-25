@@ -1045,6 +1045,28 @@ input {
    border: 0;
 }
 
+#rodape .append-support {
+   flex: 1;
+}
+
+#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid {
+   display: flex;
+}
+
+#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid .span4 {
+   flex: 1;
+}
+
+#rodape .info-section p {
+   font-size: 14px;
+   line-height: 20px;
+   opacity: .7;
+}
+
+#rodape .info-section:not(:last-child) {
+   margin-bottom: 32px;
+}
+
 /* Banner cheio  */
 
 .banner.cheio .flex-direction-nav > li >a {
