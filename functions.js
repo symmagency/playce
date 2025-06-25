@@ -24,6 +24,25 @@ $('.banner.cheio li').each(function () {
 $('#barraNewsletter .componente .titulo').append($('#barraNewsletter .componente .texto-newsletter'));
 $('#barraNewsletter .componente .botao').addClass('principal');
 $('.banner.cheio .flex-direction-nav li.flex-nav-prev').after($('.banner.cheio .flex-control-nav'));
+
+//Carrossel com slick
+$('#listagemProdutos ul .flex-viewport > ul').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      }
+});
   
 
 $(window).on('resize', function() {
