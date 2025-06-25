@@ -55,34 +55,40 @@
 
 }
 
-            /* Alterar imagem e informações da vitrine em destaque */
+               /* Alterar imagem e informações da vitrine em destaque */
 
-            #listagemProdutos > .vitrine-23499980+ul {
-               background: var(--featured-home) center no-repeat;
-               background-color: #6554a2;
-               display: flex;
-            }
+               #listagemProdutos > .vitrine-23499980+ul {
+                  background: var(--featured-home) center no-repeat;
+                  background-color: #6554a2;
+                  display: flex;
+                  min-height: 630px;
+               }
 
-            #listagemProdutos > .vitrine-23499980 {
-               display: none;
-            }
+               #listagemProdutos > .vitrine-23499980 {
+                  display: none;
+               }
 
-            #listagemProdutos > .vitrine-23499980+ul .flex-viewport > ul {
-               width: 100% !important;
-               display: flex;
-               justify-content: end;
-           }
+               #listagemProdutos > .vitrine-23499980+ul .flex-viewport > ul {
+                  width: 100% !important;
+                  display: flex;
+                  justify-content: end;
+               }
 
-           #listagemProdutos > .vitrine-23499980+ul .slick-list.draggable,
-           #listagemProdutos > .vitrine-23499980+ul .slick-track {
-               width: 100%!important;
-           }
+               #listagemProdutos > .vitrine-23499980+ul .slick-list.draggable,
+               #listagemProdutos > .vitrine-23499980+ul .slick-track {
+                  width: 100%!important;
+               }
 
-           #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
-            width: 277px;
-           }
+               #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
+                  width: 277px;
+               }
 
-            /* Fim alterar vitrine em destaque */
+               #listagemProdutos > .vitrine-23499980+ul .slick-track {
+                  display: flex;
+                  justify-content: end;
+               }
+
+               /* Fim alterar vitrine em destaque */
 
 /* Fonte Manrope */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
