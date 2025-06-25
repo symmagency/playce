@@ -27,6 +27,8 @@
    --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
    --icon-instagram: url('https://cdn.awsli.com.br/2830/2830294/arquivos/instagram.svg');
    --icon-facebook: url('https://cdn.awsli.com.br/2830/2830294/arquivos/facebook.svg');
+   --icon-minus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/minus.svg');
+   --icon-plus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/plus.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -1223,6 +1225,24 @@ input {
    margin-left: -12px;
    margin-right: -12px;
 }
+
+.quantidade-wrapper {
+   display: flex;
+   position: relative;
+   margin: 0;
+}
+
+.quantidade-wrapper .btn-quantidade {
+   position: absolute;
+   background: none!important;
+   border: 0!important;
+   color: var(--color-white);
+}
+
+.quantidade-wrapper .btn-quantidade.btn-menos {
+   left: 0;
+}
+
 
 /* Slider de categorias */
 

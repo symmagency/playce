@@ -243,14 +243,14 @@ $(window).on('resize', function() {
             }
         }
 
-        // Input de quantidade antes do botão de comprar, agora com botões de - e +
+        // Input de quantidade antes do botão de comprar
         $('.botao-comprar').each(function() {
             // Evita duplicar o input se já existir
             if($(this).prev('.quantidade-wrapper').length === 0) {
-                var quantidadeHtml = '<div class="quantidade-wrapper" style="display:inline-flex;align-items:center;margin-right:10px;">' +
-                    '<button type="button" class="btn-quantidade btn-menos" style="width:28px;height:28px;font-size:18px;line-height:1;border:1px solid #ccc;background:#f5f5f5;border-radius:4px;cursor:pointer;">-</button>' +
+                var quantidadeHtml = '<div class="quantidade-wrapper">' +
+                    '<button type="button" class="btn-quantidade btn-menos" >-</button>' +
                     '<input type="number" min="1" value="1" class="input-quantidade" style="width:60px;text-align:center;margin:0 4px;">' +
-                    '<button type="button" class="btn-quantidade btn-mais" style="width:28px;height:28px;font-size:18px;line-height:1;border:1px solid #ccc;background:#f5f5f5;border-radius:4px;cursor:pointer;">+</button>' +
+                    '<button type="button" class="btn-quantidade btn-mais">+</button>' +
                     '</div>';
                 $(quantidadeHtml).insertBefore($(this));
             }
