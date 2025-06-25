@@ -61,7 +61,7 @@
                   background: var(--featured-home) center no-repeat;
                   background-color: #6554a2;
                   display: flex;
-                  min-height: 630px;
+                  min-height: 629px;
                }
 
                #listagemProdutos > .vitrine-23499980 {
@@ -1090,4 +1090,8 @@ input {
 
 .pagina-inicial ul.slick-initialized.slick-slider {
    width: 100% !important;
+}
+
+.listagem ul.flex-direction-nav {
+   display: none;
 }
