@@ -1067,6 +1067,16 @@ input {
    margin-bottom: 32px;
 }
 
+#rodape .pagamento-selos {
+   background: var(--color-black);
+   padding: 0;
+}
+
+#rodape .pagamento-selos .conteiner {
+   border-top: 1px solid rgba(255,255,255,.1);
+   padding: 20px 0;
+}
+
 /* Banner cheio  */
 
 .banner.cheio .flex-direction-nav > li >a {
