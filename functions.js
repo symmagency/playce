@@ -84,7 +84,7 @@ var categorias = [
 
 // Insere a seção de categorias antes de .pagina-inicial #corpo
 if ($('.pagina-inicial #corpo').length > 0) {
-    var categoriasHtml = '<div class="categorias-section"><ul>';
+    var categoriasHtml = '<div class="categorias-section"><ul><span class="titulo-categoria"><strong>Compre por marca ou jogo</strong></span>';
     
     categorias.forEach(function(categoria) {
         categoriasHtml += '<li><img src="' + categoria.img + '" alt="' + categoria.alt + '" /></li>';
