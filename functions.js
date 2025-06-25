@@ -24,6 +24,26 @@ $('.banner.cheio li').each(function () {
 $('#barraNewsletter .componente .titulo').append($('#barraNewsletter .componente .texto-newsletter'));
 $('#barraNewsletter .componente .botao').addClass('principal');
 $('.banner.cheio .flex-direction-nav li.flex-nav-prev').after($('.banner.cheio .flex-control-nav'));
+$('#rodape .institucional > .conteiner > .row-fluid > .span9').append(`
+    <div class="info-section">
+    <span class="titulo">Atendimento</span>
+    <p>
+        Nosso atendimento ocorre todos os dias das 9h às 22h.<br>
+        Para iniciar um atendimento clique no botão abaixo.
+    </p>
+    <a href="#" target="_blank" class="botao secundario">
+        Iniciar atendimento
+        <i></i>
+    </a>
+    </div>
+    
+    <div class="info-section">
+    <span class="titulo">Envio</span>
+    <p>
+        Todos os nossos gift cards e produtos digitais são enviados de forma 100% online, garantindo agilidade e segurança.
+    </p>
+    </div>
+`);
 
 //Carrossel com slick
 $('#listagemProdutos ul .flex-viewport > ul').slick({
@@ -49,35 +69,43 @@ $('#listagemProdutos ul .flex-viewport > ul').slick({
 var categorias = [
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-cat.svg",
-        alt: "Categoria Apple"
+        alt: "Categoria Apple",
+        link: "/apple"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/google-cat.svg",
-        alt: "Categoria Google"
+        alt: "Categoria Google",
+        link: "/google"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/play-cat.svg",
-        alt: "Categoria PlayStation"
+        alt: "Categoria PlayStation",
+        link: "/playstation"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-cat.svg",
-        alt: "Categoria Nintendo"
+        alt: "Categoria Nintendo",
+        link: "/nintendo"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/v-bucks-cat.svg",
-        alt: "Categoria V-bucks"
+        alt: "Categoria V-bucks",
+        link: "/v-bucks"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-cat.svg",
-        alt: "Categoria Xbox"
+        alt: "Categoria Xbox",
+        link: "/xbox"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-cat.svg",
-        alt: "Categoria Apple"
+        alt: "Categoria Apple",
+        link: "/apple"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/google-cat.svg",
-        alt: "Categoria Google"
+        alt: "Categoria Google",
+        link: "/google"
     }
 ];
 
@@ -87,7 +115,7 @@ if ($('.pagina-inicial #corpo').length > 0) {
     var categoriasHtml = '<div class="categorias-section"><span class="titulo-categoria"><strong>Compre por marca ou jogo</strong></span><ul>';
     
     categorias.forEach(function(categoria) {
-        categoriasHtml += '<li><img src="' + categoria.img + '" alt="' + categoria.alt + '" /></li>';
+        categoriasHtml += '<li><a href="' + categoria.link + '"><img src="' + categoria.img + '" alt="' + categoria.alt + '" /></a></li>';
     });
     
     categoriasHtml += '</ul></div>';

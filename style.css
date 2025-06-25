@@ -25,6 +25,8 @@
    --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
    --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
    --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
+   --icon-instagram: url('https://cdn.awsli.com.br/2830/2830294/arquivos/instagram.svg');
+   --icon-facebook: url('https://cdn.awsli.com.br/2830/2830294/arquivos/facebook.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -957,19 +959,37 @@ input {
    margin: 0;
    padding: 0;
    border: 0;
+   color: var(--color-white);
+   margin-bottom: 10px;
 }
+
+
+#rodape .links-rodape.links-rodape-categorias {
+   display: none !important;
+}
+
+#rodape .institucional > .conteiner > .row-fluid {
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 120px;
+}
+
+#rodape .institucional > .conteiner > .row-fluid > .span9 {
+   flex: 1;
+}
+
+#rodape .institucional > .conteiner > .row-fluid:before, #rodape .institucional > .conteiner > .row-fluid:after {
+   display: none;
+}
+
+#rodape .institucional > .conteiner > .row-fluid > .span3 {
+   margin: 0;
+}
+
 
 #rodape .institucional {
     background: var(--color-black);
     padding: 20px 0;
-}
-
-#rodape .titulo {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-    border: 0;
 }
 
 .links-rodape ul li {
@@ -987,6 +1007,42 @@ input {
 
 #rodape .conteiner {
     padding: 0;
+}
+
+.lista-redes i {
+   display: flex;
+   width: fit-content;
+   padding: 8px 16px;
+   line-height: 20px!important;
+   height: 20px;
+   gap: 10px;
+   border: 0;
+   box-shadow: var(--shadow-button);
+   border-radius: var(--border-radius-md);
+   background: var(--color-secondary)!important;
+}
+
+.lista-redes .icon-facebook:after {
+   content: "Facebook";
+   font-family: var(--font-family-base);
+}
+
+.lista-redes .icon-instagram:after {
+   content: "Instagram";
+   font-family: var(--font-family-base);
+}
+
+#rodape .institucional .lista-redes {
+   display: flex;
+}
+
+#rodape .institucional .lista-redes > ul {
+   display: flex;
+   gap: 24px;
+}
+
+#rodape .institucional .lista-redes > ul li {
+   border: 0;
 }
 
 /* Banner cheio  */
