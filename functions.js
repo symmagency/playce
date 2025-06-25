@@ -257,6 +257,9 @@ $(window).on('resize', function() {
             }
         });
 
+        // Após inserir os inputs, force o slick a recalcular
+        $('.slick-initialized').slick('setPosition');
+
         // Atualiza o link ao alterar a quantidade
         function atualizarHref($input) {
             var quantidade = parseInt($input.val(), 10);
@@ -293,19 +296,6 @@ $(window).on('resize', function() {
         //mobile 
 
     }
-});
-
-document.addEventListener('visibilitychange', function() {
-  if (!document.hidden) {
-    // Força todos os carrosseis slick já inicializados a recalcularem o layout
-    $('.categorias-section ul').each(function() {
-      try {
-        $(this).slick('setPosition');
-      } catch (e) {
-        // Em caso de erro, apenas ignora
-      }
-    });
-  }
 });
 
 });
