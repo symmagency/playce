@@ -959,15 +959,15 @@ input {
    top: 0;
 }
 
-.flex-direction-nav .flex-prev {
+.banner.cheio .flex-direction-nav .flex-prev {
    left: 0;
 }
 
-.flex-direction-nav .flex-next {
+.banner.cheio .flex-direction-nav .flex-next {
    right: 0;
 }
 
-.flex-direction-nav {
+.banner.cheio .flex-direction-nav {
    display: flex;
    width: fit-content;
    gap: 4px;
@@ -977,7 +977,7 @@ input {
    z-index: 2;
 }
 
-.banner .flex-control-nav {
+.banner.cheio .flex-control-nav {
    width: fit-content;
    position: relative;
    opacity: 1;
@@ -1000,15 +1000,15 @@ input {
    background: var(--icon-chev-right) center no-repeat;
 }
 
-.flexslider:hover .flex-direction-nav .flex-next {
+.banner.cheio .flexslider:hover .flex-direction-nav .flex-next {
    right: 0;
 }
 
-.flexslider:hover .flex-direction-nav .flex-prev {
+.banner.cheio .flexslider:hover .flex-direction-nav .flex-prev {
    left: 0;
 }
 
-.flex-direction-nav > li {
+.banner.cheio .flex-direction-nav > li {
    height: 28px;
    display: flex;
    align-items: center;
@@ -1018,7 +1018,7 @@ input {
    border-radius: 4px;
 }
 
-.banner .flex-control-paging li a {
+.banner.cheio .flex-control-paging li a {
     width: 8px;
     height: 8px;
     border: 0;
@@ -1027,7 +1027,7 @@ input {
     opacity: 1;
 }
 
-.banner .flex-control-paging li a.flex-active {
+.banner.cheio .flex-control-paging li a.flex-active {
     width: 24px;
     height: 8px;
     background: var(--color-primary);
