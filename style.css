@@ -1072,11 +1072,7 @@ input {
    max-width: 1180px;
    margin: 0 auto;
 }
-/* 
-.listagem .listagem-linha li:last-child {
-   margin-right: -12px;
-}
 
-.listagem .listagem-linha li:first-child {
-   margin-left: -12px;
-} */
+.pagina-inicial ul.slick-initialized.slick-slider {
+   width: 100% !important;
+}
