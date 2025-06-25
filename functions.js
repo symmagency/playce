@@ -44,7 +44,67 @@ $('#listagemProdutos ul .flex-viewport > ul').slick({
       }
     ]
 });
-  
+
+// Categorias home
+var categorias = [
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-cat.svg",
+        alt: "Categoria Apple"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/google-cat.svg",
+        alt: "Categoria Google"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/play-cat.svg",
+        alt: "Categoria PlayStation"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-cat.svg",
+        alt: "Categoria Nintendo"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/v-bucks-cat.svg",
+        alt: "Categoria V-bucks"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-cat.svg",
+        alt: "Categoria Xbox"
+    }
+];
+
+
+// Insere a seção de categorias antes de .pagina-inicial #corpo
+if ($('.pagina-inicial #corpo').length > 0) {
+    var categoriasHtml = '<div class="categorias-section"><ul>';
+    
+    categorias.forEach(function(categoria) {
+        categoriasHtml += '<li><img src="' + categoria.img + '" alt="' + categoria.alt + '" /></li>';
+    });
+    
+    categoriasHtml += '</ul></div>';
+    
+    $('.pagina-inicial #corpo').before(categoriasHtml);
+}
+
+$('.categorias-section ul').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false
+        }
+      }
+    ]
+});
 
 $(window).on('resize', function() {
 
