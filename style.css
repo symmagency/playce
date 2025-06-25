@@ -456,7 +456,6 @@ input {
 
 .listagem .produtos-carrossel {
    padding: 0;
-   margin: 0 -12px;
 }
 
 .listagem .titulo-categoria,
@@ -1138,7 +1137,7 @@ input {
 }
 
 .categorias-section ul {
-   margin: 0 -12px !important;
+   margin: 0 !important;
 }
 
 .categorias-section .titulo-categoria {
