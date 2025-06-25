@@ -243,23 +243,48 @@ $(window).on('resize', function() {
             }
         }
 
-        // Input de quantidade antes do botão de comprar
+        // Input de quantidade antes do botão de comprar, agora com botões de - e +
         $('.botao-comprar').each(function() {
-        // Evita duplicar o input se já existir
-        if($(this).prev('.quantidade-wrapper').length === 0) {
-            $('<div class="quantidade-wrapper" style="display:inline-block;margin-right:10px;">\
-            <input type="number" min="1" value="1" class="input-quantidade" style="width:60px;">\
-            </div>').insertBefore($(this));
-        }
+            // Evita duplicar o input se já existir
+            if($(this).prev('.quantidade-wrapper').length === 0) {
+                var quantidadeHtml = '<div class="quantidade-wrapper" style="display:inline-flex;align-items:center;margin-right:10px;">' +
+                    '<button type="button" class="btn-quantidade btn-menos" style="width:28px;height:28px;font-size:18px;line-height:1;border:1px solid #ccc;background:#f5f5f5;border-radius:4px;cursor:pointer;">-</button>' +
+                    '<input type="number" min="1" value="1" class="input-quantidade" style="width:60px;text-align:center;margin:0 4px;">' +
+                    '<button type="button" class="btn-quantidade btn-mais" style="width:28px;height:28px;font-size:18px;line-height:1;border:1px solid #ccc;background:#f5f5f5;border-radius:4px;cursor:pointer;">+</button>' +
+                    '</div>';
+                $(quantidadeHtml).insertBefore($(this));
+            }
         });
 
         // Atualiza o link ao alterar a quantidade
+        function atualizarHref($input) {
+            var quantidade = parseInt($input.val(), 10);
+            if (isNaN(quantidade) || quantidade < 1) quantidade = 1;
+            $input.val(quantidade);
+            var $botao = $input.closest('.quantidade-wrapper').next('.botao-comprar');
+            var hrefOriginal = $botao.attr('href').replace(/\/adicionar\/(\d+)?$/, '/adicionar');
+            $botao.attr('href', hrefOriginal + '/' + quantidade);
+        }
+
+        // Eventos para input manual
         $(document).on('input change', '.input-quantidade', function() {
-        var quantidade = $(this).val();
-        if (quantidade < 1) quantidade = 1;
-        var $botao = $(this).closest('.quantidade-wrapper').next('.botao-comprar');
-        var hrefOriginal = $botao.attr('href').replace(/\/adicionar\/(\d+)?$/, '/adicionar');
-        $botao.attr('href', hrefOriginal + '/' + quantidade);
+            atualizarHref($(this));
+        });
+
+        // Evento para botão de menos
+        $(document).on('click', '.btn-menos', function() {
+            var $input = $(this).siblings('.input-quantidade');
+            var valorAtual = parseInt($input.val(), 10) || 1;
+            if (valorAtual > 1) {
+                $input.val(valorAtual - 1).trigger('change');
+            }
+        });
+
+        // Evento para botão de mais
+        $(document).on('click', '.btn-mais', function() {
+            var $input = $(this).siblings('.input-quantidade');
+            var valorAtual = parseInt($input.val(), 10) || 1;
+            $input.val(valorAtual + 1).trigger('change');
         });
         
 
