@@ -249,7 +249,7 @@ $(window).on('resize', function() {
             if($(this).prev('.quantidade-wrapper').length === 0) {
                 var quantidadeHtml = '<div class="quantidade-wrapper">' +
                     '<button type="button" class="btn-quantidade btn-menos" >-</button>' +
-                    '<input type="number" min="1" value="1" class="input-quantidade" style="width:60px;text-align:center;margin:0 4px;">' +
+                    '<input type="number" min="1" value="1" class="input-quantidade" />' +
                     '<button type="button" class="btn-quantidade btn-mais">+</button>' +
                     '</div>';
                 $(quantidadeHtml).insertBefore($(this));

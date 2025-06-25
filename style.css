@@ -1241,6 +1241,35 @@ input {
 
 .quantidade-wrapper .btn-quantidade.btn-menos {
    left: 0;
+   width: 18px;
+}
+
+.listagem-item .acoes-produto {
+    display: flex;
+}
+
+.listagem-item .acoes-produto .botao-comprar {
+    flex: 1;
+}
+
+.quantidade-wrapper .btn-quantidade.btn-mais {
+    right: 0;
+    width: 18px;
+}
+
+.listagem-item .acoes-produto {
+   display: flex;
+}
+
+.quantidade-wrapper .input-quantidade {
+   height: 36px !important;
+   padding: 0 !important;
+}
+
+.quantidade-wrapper .input-quantidade::-webkit-outer-spin-button,
+.quantidade-wrapper .input-quantidade::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
 }
 
 
