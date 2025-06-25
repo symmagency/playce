@@ -297,8 +297,14 @@ $(window).on('resize', function() {
 
 document.addEventListener('visibilitychange', function() {
   if (!document.hidden) {
-    // Força o slick a recalcular o layout dos carrosseis ativos
-    $('.slick-initialized').slick('setPosition');
+    // Força todos os carrosseis slick já inicializados a recalcularem o layout
+    $('.slick-initialized').each(function() {
+      try {
+        $(this).slick('setPosition');
+      } catch (e) {
+        // Em caso de erro, apenas ignora
+      }
+    });
   }
 });
 
