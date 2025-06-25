@@ -1138,5 +1138,14 @@ input {
 }
 
 .categorias-section ul {
-   margin: 0!important;
+   margin: 0 -12px !important;
+}
+
+.categorias-section .titulo-categoria {
+   margin-bottom: 24px !important;
+}
+
+.categorias-section .slick-slide {
+   max-width: 177px;
+   margin: 0 12px;
 }
