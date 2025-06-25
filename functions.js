@@ -48,6 +48,7 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
 `);
 
 //Carrossel com slick
+console.log('Iniciando slick em #listagemProdutos ul .flex-viewport > ul');
 $('#listagemProdutos ul .flex-viewport > ul').slick({
     dots: false,
     infinite: true,
@@ -142,6 +143,13 @@ $('.categorias-section ul').slick({
         }
       }
     ]
+});
+
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) {
+    // Força o slick a recalcular o layout dos carrosseis ativos
+    $('.slick-initialized').slick('setPosition');
+  }
 });
 
 $(window).on('resize', function() {
@@ -293,5 +301,7 @@ $(window).on('resize', function() {
 
     }
 });
+
+
 
 });
