@@ -1095,3 +1095,33 @@ input {
 .listagem ul.flex-direction-nav {
    display: none;
 }
+
+.slick-slider .slick-prev {
+   top: 50%;
+   transform: translateY(-50%);
+   position: absolute;
+   left: -40px;
+   z-index: 10;
+   width: 40px;
+   height: 40px;
+   background: var(--icon-chev-left) center no-repeat;
+   background-size: 100%;
+   text-indent: -99999px;
+}
+
+.slick-slider .slick-next {
+   top: 50%;
+   transform: translateY(-50%);
+   position: absolute;
+   right: -40px;
+   z-index: 10;
+     width: 40px;
+   height: 40px;
+   background: var(--icon-chev-right) center no-repeat;
+   background-size: 100%;
+   text-indent: -99999px;
+}
+
+.listagem-linha > .flex-viewport {
+   overflow: initial !important;
+}
