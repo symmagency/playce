@@ -23,6 +23,7 @@
     --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
     --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
     --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
+    --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
     --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
     
     /* Tipografia
@@ -947,4 +948,39 @@ input {
 
 #rodape .conteiner {
     padding: 0;
+}
+
+/* Banner cheio  */
+
+.banner.cheio .flex-direction-nav > li >a {
+   position: relative;
+   opacity: 1;
+}
+
+.flex-direction-nav .flex-prev {
+   left: 0;
+}
+
+.flex-direction-nav .flex-next {
+   right: 0;
+}
+
+li.flex-nav-prev {}
+
+.flex-direction-nav {
+   display: flex;
+   width: fit-content;
+}
+
+.banner .flex-control-nav {
+   width: fit-content;
+   position: relative;
+   opacity: 1;
+   right: 0;
+   bottom: 0;
+}
+
+.banner .flex-control-paging li a {
+   position: relative;
+   opacity: 1;
 }
