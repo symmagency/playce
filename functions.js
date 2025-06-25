@@ -70,6 +70,14 @@ var categorias = [
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-cat.svg",
         alt: "Categoria Xbox"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-cat.svg",
+        alt: "Categoria Apple"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/google-cat.svg",
+        alt: "Categoria Google"
     }
 ];
 

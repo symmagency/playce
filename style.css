@@ -1123,7 +1123,14 @@ input {
    overflow: initial !important;
 }
 
-.slick-list.draggable {
+#listagemProdutos .slick-list.draggable {
    margin-left: -12px;
    margin-right: -12px;
+}
+
+/* Slider de categorias */
+
+.categorias-section {
+   max-width: 1180px;
+   margin: 0 auto;
 }
