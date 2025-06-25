@@ -58,7 +58,9 @@
             /* Alterar imagem e informações da vitrine em destaque */
 
             #listagemProdutos > .vitrine-23499980+ul {
-               background: var(--featured-home);
+               background: var(--featured-home) center no-repeat;
+               background-color: #6554a2;
+               display: flex;
             }
 
             #listagemProdutos > .vitrine-23499980 {
@@ -1063,17 +1065,18 @@ input {
 .listagem .produtos-carrossel .listagem-linha.flexslider {
    max-width: 1180px;
    margin: 0 auto!important;
+   width: 100%;
 }
 
 .listagem .titulo-categoria {
    max-width: 1180px;
    margin: 0 auto;
 }
-
+/* 
 .listagem .listagem-linha li:last-child {
    margin-right: -12px;
 }
 
 .listagem .listagem-linha li:first-child {
    margin-left: -12px;
-}
+} */
