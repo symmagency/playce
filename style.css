@@ -1,58 +1,77 @@
 :root {
-    /* Cores
-       ----------------------------------------------------------------------- */
-    --bg-store-color: #14171A;
-    --color-primary: #0056B3;
-    --color-secondary: #33373C; 
-    --color-success: #28a745;
-    --color-danger: #dc3545;
-    --color-warning: #ffc107;
-    --color-info: #17a2b8;
-    --color-light: #f8f9fa;
-    --color-dark: #2E3036;
-    --color-black: #1F2227;
-    --color-white: #ffffff;
-    --color-half-white: #ffffff10;
-    --badge-color: #2A2D30;
-    --input-bg: #2E3036;
-  
-    /* Icones
-       ----------------------------------------------------------------------- */
-    --icon-user: url('https://cdn.awsli.com.br/2830/2830294/arquivos/user.svg');
-    --icon-search: url('https://cdn.awsli.com.br/2830/2830294/arquivos/search.svg');
-    --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
-    --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
-    --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
-    --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
-    --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
-    
-    /* Tipografia
-       ----------------------------------------------------------------------- */
-    --font-family-base: "Manrope", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-size-base: 16px;
-    --font-size-sm: 14px;
-    --font-size-lg: 20px;
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-    --line-height-base: 24px;
-  
-    /* Bordas
-       ----------------------------------------------------------------------- */
-    --border-radius-sm: 4px;
-    --border-radius-md: 6px;
-    --border-radius-lg: 16px;
-    --border-width: 1px;
-    --border-color: #dee2e6;
-  
-    /* Sombras do botão
-       ----------------------------------------------------------------------- */
-    --shadow-button: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+   /* Cores
+      ----------------------------------------------------------------------- */
+   --bg-store-color: #14171A;
+   --color-primary: #0056B3;
+   --color-secondary: #33373C; 
+   --color-success: #28a745;
+   --color-danger: #dc3545;
+   --color-warning: #ffc107;
+   --color-info: #17a2b8;
+   --color-light: #f8f9fa;
+   --color-dark: #2E3036;
+   --color-black: #1F2227;
+   --color-white: #ffffff;
+   --color-half-white: #ffffff10;
+   --badge-color: #2A2D30;
+   --input-bg: #2E3036;
 
-    /* Imagens que podem ser alteradas */
-    --news-char: url('https://cdn.awsli.com.br/2830/2830294/arquivos/news-char.png');
+   /* Icones
+      ----------------------------------------------------------------------- */
+   --icon-user: url('https://cdn.awsli.com.br/2830/2830294/arquivos/user.svg');
+   --icon-search: url('https://cdn.awsli.com.br/2830/2830294/arquivos/search.svg');
+   --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
+   --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
+   --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
+   --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
+   --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
+   
+   /* Tipografia
+      ----------------------------------------------------------------------- */
+   --font-family-base: "Manrope", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+   --font-size-base: 16px;
+   --font-size-sm: 14px;
+   --font-size-lg: 20px;
+   --font-weight-normal: 400;
+   --font-weight-bold: 700;
+   --line-height-base: 24px;
+
+   /* Bordas
+      ----------------------------------------------------------------------- */
+   --border-radius-sm: 4px;
+   --border-radius-md: 6px;
+   --border-radius-lg: 16px;
+   --border-width: 1px;
+   --border-color: #dee2e6;
+
+   /* Sombras do botão
+      ----------------------------------------------------------------------- */
+   --shadow-button: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+
+   /* Imagens que podem ser alteradas */
+   --news-char: url('https://cdn.awsli.com.br/2830/2830294/arquivos/news-char.png');
+   --featured-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/featured-showcase.png');
 
 
 }
+
+            /* Alterar imagem e informações da vitrine em destaque */
+
+            #listagemProdutos > .vitrine-23499980+ul {
+               background: var(--featured-home);
+            }
+
+            #listagemProdutos > .vitrine-23499980 {
+               display: none;
+            }
+
+            #listagemProdutos > .vitrine-23499980+ul .flex-viewport > ul {
+               width: 100% !important;
+               display: flex;
+               justify-content: end;
+           }
+
+            /* Fim alterar vitrine em destaque */
 
 /* Fonte Manrope */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
@@ -1032,4 +1051,29 @@ input {
     height: 8px;
     background: var(--color-primary);
     outline: 4px solid #1d68d759;
+}
+
+/* Ajustes gerais da vitrine da página inicial */
+
+.pagina-inicial #corpo > .conteiner {
+   max-width: 100%;
+   padding: 0;
+}
+
+.listagem .produtos-carrossel .listagem-linha.flexslider {
+   max-width: 1180px;
+   margin: 0 auto!important;
+}
+
+.listagem .titulo-categoria {
+   max-width: 1180px;
+   margin: 0 auto;
+}
+
+.listagem .listagem-linha li:last-child {
+   margin-right: -12px;
+}
+
+.listagem .listagem-linha li:first-child {
+   margin-left: -12px;
 }
