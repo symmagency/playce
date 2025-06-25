@@ -465,6 +465,8 @@ input {
    justify-content: space-between;
    border: 0;
    padding: 0 !important;
+   max-width: 1180px;
+   margin: 60px auto 0;
 }
 
 .listagem .titulo-categoria:hover {
@@ -1083,11 +1085,6 @@ input {
    width: 100%;
 }
 
-.listagem .titulo-categoria {
-   max-width: 1180px;
-   margin: 0 auto;
-}
-
 .pagina-inicial ul.slick-initialized.slick-slider {
    width: 100% !important;
 }
@@ -1124,4 +1121,9 @@ input {
 
 .listagem-linha > .flex-viewport {
    overflow: initial !important;
+}
+
+.slick-list.draggable {
+   margin-left: -12px;
+   margin-right: -12px;
 }
