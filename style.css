@@ -1163,6 +1163,13 @@ input {
 
 /* Ajustes gerais da vitrine da página inicial */
 
+.listagem-item:hover .acoes-produto {
+   bottom: 0;
+   border: 0;
+   background: var(--color-black);
+   padding: 24px 16px;
+}
+
 .pagina-inicial #corpo > .conteiner {
    max-width: 100%;
    padding: 0;
