@@ -42,6 +42,7 @@ $('#listagemProdutos ul .flex-viewport > ul').slick({
           dots: true
         }
       }
+    ]
 });
   
 
