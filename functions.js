@@ -24,7 +24,8 @@ $('.banner.cheio li').each(function () {
 $('#barraNewsletter .componente .titulo').append($('#barraNewsletter .componente .texto-newsletter'));
 $('#barraNewsletter .componente .botao').addClass('principal');
 $('.banner.cheio .flex-direction-nav li.flex-nav-prev').after($('.banner.cheio .flex-control-nav'));
-$('#rodape .institucional > .conteiner > .row-fluid > .span9').append(`
+$('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').append(`
+    <div class="append-support">
     <div class="info-section">
     <span class="titulo">Atendimento</span>
     <p>
@@ -42,6 +43,7 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9').append(`
     <p>
         Todos os nossos gift cards e produtos digitais são enviados de forma 100% online, garantindo agilidade e segurança.
     </p>
+    </div>
     </div>
 `);
 
