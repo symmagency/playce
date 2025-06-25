@@ -1314,3 +1314,7 @@ input {
    max-width: 177px;
    margin: 0 12px;
 }
+
+.slick-slide {
+   box-sizing: border-box;
+ }

@@ -47,8 +47,20 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
     </div>
 `);
 
-//Carrossel com slick
-console.log('Iniciando slick em #listagemProdutos ul .flex-viewport > ul');
+// 1. Insere os inputs de quantidade
+$('.botao-comprar').each(function() {
+    // Evita duplicar o input se já existir
+    if($(this).prev('.quantidade-wrapper').length === 0) {
+        var quantidadeHtml = '<div class="quantidade-wrapper">' +
+            '<button type="button" class="btn-quantidade btn-menos" >-</button>' +
+            '<input type="number" min="1" value="1" class="input-quantidade" />' +
+            '<button type="button" class="btn-quantidade btn-mais">+</button>' +
+            '</div>';
+        $(quantidadeHtml).insertBefore($(this));
+    }
+});
+
+// 2. Só depois inicializa o slick
 $('#listagemProdutos ul .flex-viewport > ul').slick({
     dots: false,
     infinite: true,
