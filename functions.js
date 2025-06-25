@@ -145,13 +145,6 @@ $('.categorias-section ul').slick({
     ]
 });
 
-document.addEventListener('visibilitychange', function() {
-  if (!document.hidden) {
-    // Força o slick a recalcular o layout dos carrosseis ativos
-    $('.slick-initialized').slick('setPosition');
-  }
-});
-
 $(window).on('resize', function() {
 
     if ($(window).width() > 768) {
@@ -302,6 +295,11 @@ $(window).on('resize', function() {
     }
 });
 
-
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) {
+    // Força o slick a recalcular o layout dos carrosseis ativos
+    $('.slick-initialized').slick('setPosition');
+  }
+});
 
 });
