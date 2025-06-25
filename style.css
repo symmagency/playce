@@ -449,7 +449,8 @@ input {
 }
 
 
-.listagem .titulo-categoria strong {
+.listagem .titulo-categoria strong,
+.categorias-section .titulo-categoria strong {
    font-weight: 400;
 }
 
@@ -458,7 +459,8 @@ input {
    margin: 0 -12px;
 }
 
-.listagem .titulo-categoria {
+.listagem .titulo-categoria,
+.categorias-section .titulo-categoria {
    font-size: 24px;
    color: var(--color-white);
    display: flex;
