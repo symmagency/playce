@@ -247,8 +247,6 @@ $(window).on('resize', function() {
                 var $bandeiras = $item.find('.bandeiras-produto');
                 if ($bandeiras.length) {
                     produto.tags.forEach(function(tag) {
-                        // Remove qualquer tag duplicada antes de adicionar
-                        $bandeiras.find('.bandeira-' + tag.tipo).remove();
                         // Define o HTML correto para cada tipo de tag
                         var tagHtml = '';
                         if (tag.tipo === 'pre-venda') {
