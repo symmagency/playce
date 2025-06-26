@@ -1246,6 +1246,8 @@ input {
    border: 0;
    background: var(--color-black);
    padding: 24px 16px;
+   display: flex;
+   gap: 8px;
 }
 
 .listagem-item:hover .acoes-produto {
@@ -1336,10 +1338,6 @@ input {
    background-size: 100% !important;
 }
 
-.listagem-item .acoes-produto {
-    display: flex;
-}
-
 .listagem-item .acoes-produto .botao-comprar {
    flex: 1;
    width: 100%;
@@ -1350,10 +1348,6 @@ input {
 
 .listagem-item .acoes-produto .botao-comprar i {
    margin: 0;
-}
-
-.listagem-item .acoes-produto {
-   display: flex;
 }
 
 .quantidade-wrapper .input-quantidade {
