@@ -300,6 +300,25 @@ input {
    background: var(--color-primary);
 }
 
+.canais-contato > ul > li:not(.hidden-phone) {
+   display: none;
+}
+
+.canais-contato > ul {
+   display: flex;
+   gap: 24px;
+}
+
+.canais-contato .lista-redes ul li i {
+   background: none;
+   margin: 0;
+}
+
+.canais-contato .lista-redes ul li {
+   border: 0;
+   padding: 0;
+}
+
 .barra-inicial .conteiner {
    max-width: 100%;
    padding: 10px 60px;
