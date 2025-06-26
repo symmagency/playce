@@ -159,6 +159,37 @@ $('.categorias-section ul').slick({
     ]
 });
 
+// TAGS DE PRÉ-VENDA E CUPOM POR PRODUTO
+var tagsProdutos = [
+    {
+        id: '359139343', // ID do produto
+        tags: [
+            { tipo: 'pre-venda', texto: 'Pré-venda' },
+            { tipo: 'cupom', texto: 'CUPOM: 10OFF' }
+        ]
+    },
+    // Adicione mais objetos conforme necessário
+];
+
+tagsProdutos.forEach(function(produto) {
+    var $item = $('.listagem-linha .prod-id-' + produto.id);
+    if ($item.length) {
+        var $bandeiras = $item.find('.bandeiras-produto');
+        if ($bandeiras.length) {
+            produto.tags.forEach(function(tag) {
+                // Define o HTML correto para cada tipo de tag
+                var tagHtml = '';
+                if (tag.tipo === 'pre-venda') {
+                    tagHtml = '<span class="bandeira-prevenda">' + tag.texto + '</span>';
+                } else if (tag.tipo === 'cupom') {
+                    tagHtml = '<span class="bandeira-cupom">' + tag.texto + '</span>';
+                }
+                $bandeiras.append(tagHtml);
+            });
+        }
+    }
+});
+
 $(window).on('resize', function() {
 
     if ($(window).width() > 768) {
@@ -227,37 +258,6 @@ $(window).on('resize', function() {
                     }
                 }
             });
-        });
-
-        // TAGS DE PRÉ-VENDA E CUPOM POR PRODUTO
-        var tagsProdutos = [
-            {
-                id: '359139343', // ID do produto
-                tags: [
-                    { tipo: 'pre-venda', texto: 'Pré-venda' },
-                    { tipo: 'cupom', texto: 'CUPOM: 10OFF' }
-                ]
-            },
-            // Adicione mais objetos conforme necessário
-        ];
-
-        tagsProdutos.forEach(function(produto) {
-            var $item = $('.listagem-linha .prod-id-' + produto.id);
-            if ($item.length) {
-                var $bandeiras = $item.find('.bandeiras-produto');
-                if ($bandeiras.length) {
-                    produto.tags.forEach(function(tag) {
-                        // Define o HTML correto para cada tipo de tag
-                        var tagHtml = '';
-                        if (tag.tipo === 'pre-venda') {
-                            tagHtml = '<span class="bandeira-prevenda">' + tag.texto + '</span>';
-                        } else if (tag.tipo === 'cupom') {
-                            tagHtml = '<span class="bandeira-cupom">' + tag.texto + '</span>';
-                        }
-                        $bandeiras.append(tagHtml);
-                    });
-                }
-            }
         });
 
         // Verifica se está na página de categoria antes de executar
