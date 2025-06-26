@@ -65,7 +65,7 @@ $slider.find('li').removeAttr('style');
 
 $slider.slick({
     dots: false,
-        infinite: true,
+        infinite: false,
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -75,8 +75,8 @@ $slider.slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                infinite: true,
-                dots: true
+                infinite: false,
+                dots: false
             }
             }
         ]
