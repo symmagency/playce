@@ -47,52 +47,40 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
     </div>
 `);
 
-//Carrossel com slick
-// $('#listagemProdutos ul .flex-viewport > ul').slick({
-//     dots: false,
-//     infinite: true,
-//     speed: 300,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//           dots: true
-//         }
-//       }
-//     ]
-// });
+$('.barra-inicial .conteiner > .row-fluid').prepend(`
+    <div class="append-benefits">
+       <div>
+           <i></i><span>Keys originais</span>
+       </div>
+       <div>
+           <i></i><span>Segurança garantida</span>
+       </div>
+     </div>
+`);
 
-    // 1. Selecione o UL do slider
-    var $slider = $('#listagemProdutos ul .flex-viewport > ul');
-  
-    // 2. Remova estilos inline do UL e dos LIs
-    $slider.removeAttr('style');
-    $slider.find('li').removeAttr('style');
-  
-    // 4. Inicialize o Slick
-    $slider.slick({
-        dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            responsive: [
-              {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: true,
-                  dots: true
-                }
-              }
-            ]
-    });
+var $slider = $('#listagemProdutos ul .flex-viewport > ul');
+
+$slider.removeAttr('style');
+$slider.find('li').removeAttr('style');
+
+$slider.slick({
+    dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+            }
+            }
+        ]
+});
 
 // Categorias home
 var categorias = [

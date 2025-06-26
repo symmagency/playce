@@ -32,6 +32,8 @@
    --icon-facebook: url('https://cdn.awsli.com.br/2830/2830294/arquivos/facebook.svg');
    --icon-minus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/minus.svg');
    --icon-plus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/plus.svg');
+   --icon-key: url('https://cdn.awsli.com.br/2830/2830294/arquivos/key.svg');
+   --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -292,6 +294,19 @@ input {
 }
 
 /* Ajustes cabeçalho */
+
+.barra-inicial {
+   background: var(--color-primary);
+}
+
+.barra-inicial .conteiner {
+   max-width: 100%;
+   padding: 10px 60px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+}
 
 #cabecalho {
    background: var(--color-black);
@@ -1013,7 +1028,7 @@ input {
     padding: 0;
 }
 
-.lista-redes i {
+#rodape .lista-redes i {
    display: flex;
    width: fit-content;
    padding: 8px 16px;
@@ -1026,12 +1041,12 @@ input {
    background: var(--color-secondary)!important;
 }
 
-.lista-redes .icon-facebook:after {
+#rodape .lista-redes .icon-facebook:after {
    content: "Facebook";
    font-family: var(--font-family-base);
 }
 
-.lista-redes .icon-instagram:after {
+#rodape .lista-redes .icon-instagram:after {
    content: "Instagram";
    font-family: var(--font-family-base);
 }
