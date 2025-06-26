@@ -84,10 +84,10 @@
                   justify-content: end;
                }
 
-               /* #listagemProdutos > .vitrine-23499980+ul .slick-list.draggable,
+               #listagemProdutos > .vitrine-23499980+ul .slick-list.draggable,
                #listagemProdutos > .vitrine-23499980+ul .slick-track {
                   width: 100%!important;
-               } */
+               }
 
                #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
                   width: 277px;
@@ -533,6 +533,11 @@ input {
 .listagem .titulo-categoria strong,
 .categorias-section .titulo-categoria strong {
    font-weight: 400;
+}
+
+.listagem-item.produto-adicionado .bandeiras-produto {
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .listagem .produtos-carrossel {
