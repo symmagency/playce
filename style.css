@@ -1267,6 +1267,10 @@ input {
    bottom: 0;
 }
 
+.slick-track {
+   display: flex;
+}
+
 .pagina-inicial #corpo > .conteiner {
    max-width: 100%;
    padding: 0;
