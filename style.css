@@ -603,6 +603,11 @@ input {
    border-radius: var(--border-radius-sm);
    height: 20px;
    align-items: center;
+   display: none;
+}
+
+.bandeiras-produto span {
+   line-height: 20px;
 }
 
 .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho:after {
@@ -1314,7 +1319,7 @@ input {
    display: none;
 }
 
-.listagem-item.produto-adicionado .bandeiras-produto {
+.listagem-item .bandeiras-produto {
    padding: 20px 20px 0;
 }
 
