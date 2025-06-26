@@ -569,6 +569,24 @@ input {
    position: relative;
 }
 
+.listagem-item .bandeira-prevenda {
+   background: #FFD30D;
+   color: --color-black;
+   border: 0;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+}
+
+.listagem-item .bandeira-prevenda {
+   background: --color-primary;
+   color: --color-white;
+   border: 0;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+}
+
 .badge-category-list {
    display: flex;
    align-items: center;
