@@ -739,6 +739,15 @@ input {
    color: var(--color-white);
 }
 
+.banner.tarja .game-description {
+   opacity: .7;
+}
+
+.banner .game-title {
+   font-size: 18px;
+   font-weight: 600;
+}
+
 
 /* Página de login */
 
