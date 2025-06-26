@@ -683,7 +683,7 @@ input {
    gap: 12px;
 }
 
-.banner.cheio .discount-tag {
+.banner .discount-tag {
    background: linear-gradient(99.09deg, #91FFB2 -0.27%, #54FF95 99.73%);
    color: var(--color-black);
    padding: 6px 10px;
@@ -695,22 +695,22 @@ input {
    width: fit-content;
 }
 
-.banner.cheio .game-price {
+.banner .game-price {
    font-size: 20px;
    color: var(--color-white);
 }
 
-.banner.cheio .game-price-section {
+.banner .game-price-section {
    display: flex;
    gap: 8px;
    align-items: center;
 }
 
-.banner.cheio .game-logo img {
+.banner .game-logo img {
    max-width: 170px;
 }
 
-.banner.cheio .buy-now-btn {
+.banner .buy-now-btn {
    box-shadow: var(--shadow-button);
    background: var(--color-primary);
    font-size: 14px;
@@ -724,7 +724,7 @@ input {
    text-decoration: none;
 }
 
-.banner.cheio .buy-now-btn:after {
+.banner .buy-now-btn:after {
    content: "";
    width: 20px;
    height: 20px;
@@ -734,7 +734,7 @@ input {
    background-size: 100%;
 }
 
-.banner.cheio .game-description {
+.banner .game-description {
    font-size: 14px;
    color: var(--color-white);
 }
@@ -1248,6 +1248,10 @@ input {
    padding: 24px 16px;
    display: flex;
    gap: 8px;
+}
+
+.listagem-item .acoes-produto:after {
+   display: none;
 }
 
 .listagem-item:hover .acoes-produto {
