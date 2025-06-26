@@ -46,7 +46,7 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
     </div>
     </div>
 `);
-
+$('.barra-inicial .lista-redes').removeClass('span3').appendTo($('.barra-inicial .canais-contato ul'));
 $('.barra-inicial .conteiner > .row-fluid').prepend(`
     <div class="append-benefits">
        <div>
