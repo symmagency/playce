@@ -34,6 +34,7 @@
    --icon-plus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/plus.svg');
    --icon-key: url('https://cdn.awsli.com.br/2830/2830294/arquivos/key.svg');
    --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
+   --icon-lock: url('https://cdn.awsli.com.br/2830/2830294/arquivos/lock.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -306,6 +307,46 @@ input {
    display: flex;
    align-items: center;
    box-sizing: border-box;
+}
+
+.barra-inicial .conteiner > .row-fluid {
+   display: flex;
+   justify-content: space-between;
+}
+
+.barra-inicial .canais-contato {
+   flex: 1;
+}
+
+.barra-inicial .append-benefits {
+   flex: 1;
+   display: flex;
+   gap: 24px;
+}
+
+.append-benefits > div i:before {
+   content: "";
+   width: 18px;
+   height: 18px;
+   display: block;
+}
+
+.barra-inicial .append-benefits > div {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+}
+
+.append-benefits > div:first-child i:before {
+   background: var(--icon-key);
+   background-size: 100%;
+   opacity: .7;
+}
+
+.append-benefits > div:last-child i:before {
+   background: var(--icon-lock);
+   background-size: 100%;
+   opacity: .7;
 }
 
 #cabecalho {
