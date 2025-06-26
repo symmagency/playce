@@ -578,7 +578,7 @@ input {
    align-items: center;
 }
 
-.listagem-item .bandeira-prevenda {
+.listagem-item .bandeira-cupom {
    background: --color-primary;
    color: --color-white;
    border: 0;
