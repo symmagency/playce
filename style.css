@@ -1,3 +1,6 @@
+/* Fonte Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 :root {
    /* Cores
       ----------------------------------------------------------------------- */
@@ -94,8 +97,7 @@
 
                /* Fim alterar vitrine em destaque */
 
-/* Fonte Manrope */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 
 body {
     background-color: var(--bg-store-color);
