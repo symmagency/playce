@@ -84,10 +84,10 @@
                   justify-content: end;
                }
 
-               #listagemProdutos > .vitrine-23499980+ul .slick-list.draggable,
+               /* #listagemProdutos > .vitrine-23499980+ul .slick-list.draggable,
                #listagemProdutos > .vitrine-23499980+ul .slick-track {
                   width: 100%!important;
-               }
+               } */
 
                #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
                   width: 277px;
