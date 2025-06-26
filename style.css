@@ -1291,6 +1291,10 @@ input {
    display: none;
 }
 
+.listagem-item.produto-adicionado .bandeiras-produto {
+   padding: 20px 20px 0;
+}
+
 .slick-slider .slick-prev {
    top: 50%;
    transform: translateY(-50%);
