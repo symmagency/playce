@@ -776,12 +776,13 @@ input {
 .game-title {
    font-size: 18px;
    font-weight: 600;
+   color: var(--color-white);
 }
 
 .banner-map-group {
    position: relative;
    max-width: 1180px;
-   margin: 0 auto;
+   margin: 60px auto 0;
 }
 
 .banner-map-group .game-promo {
