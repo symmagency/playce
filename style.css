@@ -713,7 +713,7 @@ input {
    gap: 12px;
 }
 
-.banner .discount-tag {
+.discount-tag {
    background: linear-gradient(99.09deg, #91FFB2 -0.27%, #54FF95 99.73%);
    color: var(--color-black);
    padding: 6px 10px;
@@ -725,22 +725,22 @@ input {
    width: fit-content;
 }
 
-.banner .game-price {
+.game-price {
    font-size: 20px;
    color: var(--color-white);
 }
 
-.banner .game-price-section {
+.game-price-section {
    display: flex;
    gap: 8px;
    align-items: center;
 }
 
-.banner .game-logo img {
+.game-logo img {
    max-width: 170px;
 }
 
-.banner .buy-now-btn {
+.buy-now-btn {
    box-shadow: var(--shadow-button);
    background: var(--color-primary);
    font-size: 14px;
@@ -754,7 +754,7 @@ input {
    text-decoration: none;
 }
 
-.banner .buy-now-btn:after {
+.buy-now-btn:after {
    content: "";
    width: 20px;
    height: 20px;
@@ -764,7 +764,7 @@ input {
    background-size: 100%;
 }
 
-.banner .game-description {
+.game-description {
    font-size: 14px;
    color: var(--color-white);
 }
@@ -773,7 +773,7 @@ input {
    opacity: .7;
 }
 
-.banner .game-title {
+.game-title {
    font-size: 18px;
    font-weight: 600;
 }

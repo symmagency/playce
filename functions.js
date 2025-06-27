@@ -214,6 +214,30 @@ $('img[usemap]').each(function() {
     }
 });
 
+// Defina os arrays conforme necessário
+var numerosBanner = [1,]; // Exemplo: [1, 2] para o primeiro e segundo banner, etc.
+var idsVitrine = ['23507360', '23387230']; // Exemplo: ['23507360', '23507361']
+
+// Função para mover vários banners para várias vitrines
+function moverBannersParaVitrines(numerosBanner, idsVitrine) {
+  // Seleciona todos os banners
+  var banners = $('.banner-map-group');
+  // Garante que os arrays tenham o mesmo tamanho
+  for (var i = 0; i < numerosBanner.length; i++) {
+    var numeroBanner = numerosBanner[i];
+    var idVitrine = idsVitrine[i];
+    // Seleciona o banner pelo índice (começando do 1 para o usuário)
+    var bannerSelecionado = banners.eq(numeroBanner - 1);
+    // Monta o seletor da vitrine pelo ID
+    var seletorVitrine = '.vitrine-' + idVitrine;
+    // Move o banner antes da vitrine desejada
+    $(seletorVitrine).before(bannerSelecionado);
+  }
+}
+
+// Chame a função passando as variáveis
+moverBannerParaVitrine(numeroBanner, idVitrine);
+
 $(window).on('resize', function() {
 
     if ($(window).width() > 768) {
