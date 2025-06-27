@@ -1498,7 +1498,8 @@ input {
 }
 
 .requisitos-produto,
-.append-descricao{
+.append-descricao,
+.konfidency-reviews-details {
     padding: 32px;
     background: var(--color-black);
     border-radius: var(--border-radius-md);
@@ -1506,6 +1507,10 @@ input {
     display: flex;
     gap: 24px;
     flex-direction: column;
+}
+
+.konfidency-reviews-details {
+   margin-top: 0;
 }
 
 .descricao-produto h2 {
@@ -1518,6 +1523,7 @@ input {
     display: flex;
     align-items: center;
     gap: 24px;
+    margin: 0;
 }
 .produto .acoes-flutuante {
     left: 0;
@@ -1527,4 +1533,23 @@ input {
     background: var(--color-black);
     border: 0;
     box-shadow: 0 -8px 24px rgba(0, 0, 0, .25);
+    align-items: center;
+}
+
+.produto .acoes-flutuante .acoes-produto .preco-produto {
+   margin: 0;
+}
+
+.produto .acoes-flutuante .acoes-produto .comprar .disponibilidade-produto {
+   display: none;
+}
+.produto .acoes-flutuante .acoes-produto .comprar {
+   align-items: center;
+   display: flex;
+   gap: 24px;
+   margin: 0;
+}
+
+.produto .acoes-flutuante .quantidade-wrapper .input-quantidade {
+   height: 54px !important;
 }
