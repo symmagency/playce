@@ -215,7 +215,7 @@ $('img[usemap]').each(function() {
 });
 
 // Defina os arrays conforme necessário
-var numerosBanner = [1,]; // Exemplo: [1, 2] para o primeiro e segundo banner, etc.
+var numerosBanner = [1, 2]; // Exemplo: [1, 2] para o primeiro e segundo banner, etc.
 var idsVitrine = ['23507360', '23387230']; // Exemplo: ['23507360', '23507361']
 
 // Função para mover vários banners para várias vitrines
@@ -234,9 +234,6 @@ function moverBannersParaVitrines(numerosBanner, idsVitrine) {
     $(seletorVitrine).before(bannerSelecionado);
   }
 }
-
-// Chame a função passando as variáveis
-moverBannerParaVitrine(numeroBanner, idVitrine);
 
 $(window).on('resize', function() {
 
