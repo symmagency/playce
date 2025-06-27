@@ -267,7 +267,7 @@ var htmlBanner = `
         </a>
     </div>
     <div class="video-fundo">
-      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?autoplay=1&mute=1&loop=1&controls=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 `;
