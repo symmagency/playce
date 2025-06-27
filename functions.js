@@ -247,6 +247,7 @@ var bannerDesconto = "-10% OFF";
 var bannerTextoBotao = "Comprar agora";
 var bannerLinkBotao = "#";
 var bannerVideoUrl = "https://www.youtube.com/embed/ENf1yjCMpZo";
+var videoId = "ENf1yjCMpZo";
 var bannerVideoWidth = 360;
 var bannerVideoHeight = 202;
 
@@ -267,7 +268,7 @@ var htmlBanner = `
         </a>
     </div>
     <div class="video-fundo">
-      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?autoplay=1&mute=1&loop=1&controls=0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?autoplay=1&mute=1&loop=1&controls=0&playlist=${videoId}" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 `;

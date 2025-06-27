@@ -1609,3 +1609,8 @@ input {
 .produto .acoes-flutuante .image {
    width: 80px;
 }
+
+.video-fundo {
+   border-radius: 6px;
+   overflow: hidden;
+}
