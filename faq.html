@@ -1,0 +1,120 @@
+<div class="faq-container" id="faqContainer">
+    <!-- O conteúdo do FAQ será inserido aqui via jQuery -->
+</div>
+
+<script>
+    // Array com as perguntas e respostas do FAQ
+    const faqItems = [
+        {
+            pergunta: "Como posso fazer meu pedido?",
+            resposta: "Você pode fazer seu pedido através do nosso site, escolhendo os produtos desejados e adicionando ao carrinho."
+        },
+        {
+            pergunta: "Quais são as formas de pagamento?",
+            resposta: "Aceitamos cartões de crédito, débito, boleto bancário e PIX."
+        },
+        {
+            pergunta: "Qual o prazo de entrega?",
+            resposta: "O prazo de entrega varia de acordo com sua localização, geralmente entre 3 a 7 dias úteis."
+        },
+        {
+            pergunta: "Quais são as formas de pagamento?",
+            resposta: "Aceitamos cartões de crédito, débito, boleto bancário e PIX."
+        },
+        {
+            pergunta: "Qual o prazo de entrega?",
+            resposta: "O prazo de entrega varia de acordo com sua localização, geralmente entre 3 a 7 dias úteis."
+        }
+    ];
+
+    // Função para criar o FAQ
+    function criarFAQ() {
+        const $container = $('#faqContainer');
+        
+        faqItems.forEach((item, index) => {
+            const faqHTML = `
+                <div class="faq-item" data-index="${index}">
+                    <div class="faq-question">${item.pergunta}</div>
+                    <div class="faq-answer">${item.resposta}</div>
+                </div>
+            `;
+            $container.append(faqHTML);
+        });
+
+        // Adicionar evento de clique
+        $('.faq-question').on('click', function() {
+            const $item = $(this).parent();
+            $item.toggleClass('active');
+            $('.faq-item').not($item).removeClass('active');
+        });
+    }
+
+    // Inicializar o FAQ quando o documento estiver pronto
+    $(document).ready(function() {
+        criarFAQ();
+    });
+
+    // Função para adicionar nova pergunta
+    function adicionarPergunta(pergunta, resposta) {
+        faqItems.push({
+            pergunta: pergunta,
+            resposta: resposta
+        });
+        
+        // Recriar o FAQ com a nova pergunta
+        $('#faqContainer').empty();
+        criarFAQ();
+    }
+
+    $('.pagina-produto .secao-principal').append($('#faqContainer'));
+
+</script>
+
+<style>
+    .faq-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .faq-item {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .faq-question {
+        padding: 15px;
+        background-color: #f5f5f5;
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #222;
+    }
+    .faq-question:after {
+        content: '+';
+        position: absolute;
+        right: 15px;
+        transition: transform 0.3s ease;
+        font-size: 16px;
+    }
+    .faq-item.active .faq-question:after {
+        transform: rotate(45deg);
+    }
+    .faq-answer {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .faq-item.active .faq-answer {
+        padding: 15px;
+        max-height: 1000px;
+        font-size: 14px;
+    }
+</style>
