@@ -89,7 +89,7 @@
   </div>
 
 
-
+<!-- Descrição do produto -->
   <div class="descricao-produto">
     <div class="append-descricao">
       <h2>Descrição</h2>
@@ -178,3 +178,30 @@
       </table>
     </div>
   </div>
+
+
+<!-- HTML do banner de fundo da home -->
+
+var htmlBanner = `
+  <div class="banner-fundo">
+    <div class="game-promo" >
+        <div class="game-title">Tom Clancy's Rainbow Six Siege</div>
+        <div class="game-description">
+            Black Myth: Wukong é um RPG de ação inspirado na mitologia chinesa. A história é baseada em "Jornada para o Oeste", um dos Quatro Grandes Romances Clássicos da literatura do país.
+        </div>
+        <div class="game-price-section" >
+            <span class="game-price">R$ 329,01</span>
+            <span class="discount-tag">-10% OFF</span>
+        </div>
+        <a href="#" class="buy-now-btn">
+            Comprar agora
+        </a>
+    </div>
+    <div class="video-fundo" style="margin-left: 40px;">
+      <iframe width="360" height="202" src="https://www.youtube.com/embed/ENf1yjCMpZo" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+`;
+
+// Insere o HTML antes do seletor .secao-banners
+$('.secao-banners').before(htmlBanner);

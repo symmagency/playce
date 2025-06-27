@@ -238,6 +238,43 @@ function moverBannersParaVitrines(numerosBanner, idsVitrine) {
 // Chame a função
 moverBannersParaVitrines(numerosBanner, idsVitrine);
 
+
+// Defina as variáveis para personalizar o banner
+var bannerTitulo = "Tom Clancy's Rainbow Six Siege";
+var bannerDescricao = "Black Myth: Wukong é um RPG de ação inspirado na mitologia chinesa. A história é baseada em \"Jornada para o Oeste\", um dos Quatro Grandes Romances Clássicos da literatura do país.";
+var bannerPreco = "R$ 329,01";
+var bannerDesconto = "-10% OFF";
+var bannerTextoBotao = "Comprar agora";
+var bannerLinkBotao = "#";
+var bannerVideoUrl = "https://www.youtube.com/embed/ENf1yjCMpZo";
+var bannerVideoWidth = 360;
+var bannerVideoHeight = 202;
+
+// Monta o HTML usando as variáveis acima
+var htmlBanner = `
+  <div class="banner-fundo">
+    <div class="game-promo" >
+        <div class="game-title">${bannerTitulo}</div>
+        <div class="game-description">
+            ${bannerDescricao}
+        </div>
+        <div class="game-price-section" >
+            <span class="game-price">${bannerPreco}</span>
+            <span class="discount-tag">${bannerDesconto}</span>
+        </div>
+        <a href="${bannerLinkBotao}" class="buy-now-btn">
+            ${bannerTextoBotao}
+        </a>
+    </div>
+    <div class="video-fundo">
+      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+`;
+
+// Insere o HTML antes do seletor .secao-banners
+$('.secao-banners').before(htmlBanner);
+
 $(window).on('resize', function() {
 
     if ($(window).width() > 768) {
