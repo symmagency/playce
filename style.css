@@ -778,6 +778,16 @@ input {
    font-weight: 600;
 }
 
+.banner-map-group {
+   position: relative;
+   max-width: 1180px;
+   margin: 0 auto;
+}
+
+.banner-map-group .game-promo {
+   left: 50px;
+}
+
 
 /* Página de login */
 
