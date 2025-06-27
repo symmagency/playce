@@ -1534,6 +1534,8 @@ input {
     border: 0;
     box-shadow: 0 -8px 24px rgba(0, 0, 0, .25);
     align-items: center;
+    gap: 24px;
+    right: 0 !important;
 }
 
 .produto .acoes-flutuante .acoes-produto .preco-produto {
@@ -1552,4 +1554,14 @@ input {
 
 .produto .acoes-flutuante .quantidade-wrapper .input-quantidade {
    height: 54px !important;
+}
+
+.produto .acoes-flutuante .nome-produto {
+   color: var(--color-white);
+   font-size: 24px;
+   max-width: none;
+}
+
+.produto .acoes-flutuante .image {
+   width: 80px;
 }
