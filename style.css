@@ -6,6 +6,7 @@
       ----------------------------------------------------------------------- */
    --bg-store-color: #14171A;
    --color-primary: #0056B3;
+   --button-hover: #00356E;
    --color-secondary: #33373C; 
    --color-success: #28a745;
    --color-danger: #dc3545;
@@ -164,9 +165,14 @@ input {
    font-size: 14px !important;
    text-shadow: none !important;
    display: flex;
-    width: fit-content;
-    align-items: center;
-    justify-content: center;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-white)!important;
+}
+
+.botao.principal:hover {
+   background: var(--button-hover);
 }
 
 .botao.secundario, .botao {
@@ -744,14 +750,19 @@ input {
    box-shadow: var(--shadow-button);
    background: var(--color-primary);
    font-size: 14px;
-   color: var(--color-white);
+   color: var(--color-white)!important;
    line-height: 20px;
    padding: 8px 16px;
    width: fit-content;
    border-radius: var(--border-radius-md);
    display: flex;
    gap: 10px;
-   text-decoration: none;
+   text-decoration: none!important;
+   transition: all .3s;
+}
+
+.buy-now-btn:hover {
+   background: var(--button-hover);
 }
 
 .buy-now-btn:after {
