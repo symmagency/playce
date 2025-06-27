@@ -240,9 +240,9 @@ moverBannersParaVitrines(numerosBanner, idsVitrine);
 
 
 // Defina as variáveis para personalizar o banner
-var bannerTitulo = "Tom Clancy's Rainbow Six Siege";
-var bannerDescricao = "Black Myth: Wukong é um RPG de ação inspirado na mitologia chinesa. A história é baseada em \"Jornada para o Oeste\", um dos Quatro Grandes Romances Clássicos da literatura do país.";
-var bannerPreco = "R$ 329,01";
+var bannerTitulo = "Marvel's Spider-Man 2";
+var bannerDescricao = "Mascare-se para mais heroísmos emocionantes de arremessos de teias enquanto Marvel’s Spider-Man 2 chega ao PC.";
+var bannerPreco = "R$ 299,99";
 var bannerDesconto = "-10% OFF";
 var bannerTextoBotao = "Comprar agora";
 var bannerLinkBotao = "#";
@@ -267,7 +267,7 @@ var htmlBanner = `
         </a>
     </div>
     <div class="video-fundo">
-      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}" frameborder="0" allowfullscreen></iframe>
+      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 `;

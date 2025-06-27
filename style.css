@@ -789,6 +789,22 @@ input {
    left: 50px;
 }
 
+.banner-fundo {
+   display: flex;
+   max-width: 1180px;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 0;
+}
+
+.banner-fundo .game-promo {
+   position: relative;
+   top: initial;
+   left: initial;
+   max-width: 600px;
+   transform: none;
+}
 
 /* Página de login */
 
