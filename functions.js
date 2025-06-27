@@ -190,6 +190,30 @@ tagsProdutos.forEach(function(produto) {
     }
 });
 
+// Para cada imagem que usa um map
+$('img[usemap]').each(function() {
+    var $img = $(this);
+    var usemap = $img.attr('usemap'); // Ex: "#map-banner-4081482"
+    if (!usemap) return;
+
+    // Remove o "#" para buscar pelo atributo name
+    var mapName = usemap.replace('#', '');
+    var $map = $('map[name="' + mapName + '"]');
+
+    // Se encontrou o map correspondente
+    if ($map.length) {
+        // Cria uma nova div
+        var $newDiv = $('<div class="banner-map-group"></div>');
+
+        // Move o <img> e o <map> para dentro da nova div
+        // Também move o <a> pai do <img> se existir
+        var $imgParent = $img.parent('a').length ? $img.parent('a') : $img;
+        $imgParent.before($newDiv); // Insere a nova div antes do <img> ou <a>
+        $newDiv.append($imgParent);
+        $newDiv.append($map);
+    }
+});
+
 $(window).on('resize', function() {
 
     if ($(window).width() > 768) {
