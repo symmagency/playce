@@ -567,6 +567,8 @@ input {
    left: 0;
    padding: 0;
    position: relative;
+   display: flex;
+   padding: 20px 20px 0;
 }
 
 .listagem-item .bandeira-prevenda {
@@ -1317,10 +1319,6 @@ input {
 
 .listagem ul.flex-direction-nav {
    display: none;
-}
-
-.listagem-item .bandeiras-produto {
-   padding: 20px 20px 0;
 }
 
 .slick-slider .slick-prev {
