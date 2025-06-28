@@ -825,6 +825,42 @@ input {
    transform: none;
 }
 
+.benefits-row {
+   display: flex;
+   background: rgba(255,255,255,.05);
+   padding: 16px 0;
+   max-width: 1180px;
+   border-radius: var(--border-radius-md);
+   justify-content: center;
+   margin: 0 auto;
+}
+
+.benefit-item {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-white);
+   flex: 1;
+   padding: 10px 32px;
+}
+
+.benefit-item p {
+   margin: 0;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.benefit-item span {
+   font-size: 14px;
+   margin-bottom: 4px;
+   display: block;
+}
+
+.benefit-item:not(:last-child) {
+   border-right: 1px solid rgba(255,255,255,.15);
+}
+
 /* Página de login */
 
 .pagina-login .form-horizontal .controls {

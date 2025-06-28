@@ -276,6 +276,52 @@ var htmlBanner = `
 // Insere o HTML antes do seletor .secao-banners
 $('.secao-banners').before(htmlBanner);
 
+// Variáveis para personalizar as informações da tarja de benefícios
+var benefit1Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-mailcheck.svg";
+var benefit1IconAlt = "Ícone de e-mail";
+var benefit1Title = "Receba por e-mail";
+var benefit1Description = "Seu código digital vai direto para o seu e-mail";
+
+var benefit2Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-send.svg";
+var benefit2IconAlt = "Ícone de envio rápido";
+var benefit2Title = "Entrega rápida e segura";
+var benefit2Description = "Enviado logo após a confirmação do pagamento";
+
+var benefit3Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-star.svg";
+var benefit3IconAlt = "Ícone de avaliação";
+var benefit3Title = "Avaliação 4.9 dos clientes";
+var benefit3Description = "Quem compra, recomenda.";
+
+// Monta o HTML usando as variáveis acima
+var htmlBenefits = `
+  <div class="benefits-row">
+    <div class="benefit-item">
+      <img src="${benefit1Icon}" alt="${benefit1IconAlt}">
+      <div>
+        <span>${benefit1Title}</span>
+        <p><strong>${benefit1Description}</strong></p>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <img src="${benefit2Icon}" alt="${benefit2IconAlt}">
+      <div>
+        <span>${benefit2Title}</span>
+        <p><strong>${benefit2Description}</strong></p>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <img src="${benefit3Icon}" alt="${benefit3IconAlt}">
+      <div>
+        <span>${benefit3Title}</span>
+        <p><strong>${benefit3Description}</strong></p>
+      </div>
+    </div>
+  </div>
+`;
+
+// Insere o HTML no local desejado (substitua o seletor conforme necessário)
+$('.secao-banners .conteiner').after(htmlBenefits);
+
 $(window).on('resize', function() {
 
     if ($(window).width() > 768) {
