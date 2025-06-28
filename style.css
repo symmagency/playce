@@ -1302,9 +1302,13 @@ input {
 
 #rodape .assinatura-rodape {
     display: flex;
-    width: 30%;
-    gap: 24px;
+    width: max-content;
     justify-content: end;
+}
+
+.assinatura-rodape a.symm {
+   width: 197px;
+   display: flex;
 }
 
 #rodape>div:last-child .conteiner .row-fluid {
