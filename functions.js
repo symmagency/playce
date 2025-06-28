@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 // alterações gerais
-
+$('.selos li:first-child img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/site-protegido.svg');
 $('.conteudo-topo .inferior .busca-mobile input').attr('placeholder','Buscar...');
 $('.pagina-login .cadastro-logar .form-horizontal .controls #id_email').attr('placeholder','E-mail');
 $('.pagina-login .cadastro-logar .form-horizontal .controls #id_senha').attr('placeholder','Senha');

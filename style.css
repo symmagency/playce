@@ -1186,7 +1186,6 @@ input {
    margin: 0;
 }
 
-
 #rodape .institucional {
     background: var(--color-black);
     padding: 20px 0;
@@ -1275,6 +1274,20 @@ input {
 #rodape .pagamento-selos .conteiner {
    border-top: 1px solid rgba(255,255,255,.1);
    padding: 20px 0;
+}
+
+#rodape .selos>ul {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+}
+
+#rodape .span4.pagamento {
+   display: none;
+}
+
+#rodape .span4.selos {
+   margin: 0;
 }
 
 /* Banner cheio  */
