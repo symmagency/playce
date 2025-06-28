@@ -1290,6 +1290,46 @@ input {
    margin: 0;
 }
 
+.selos>ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#rodape .span4.pagamento {
+    display: none;
+}
+
+#rodape .assinatura-rodape {
+    display: flex;
+    width: 30%;
+    gap: 24px;
+    justify-content: end;
+}
+
+#rodape>div:last-child .conteiner .row-fluid {
+    display: flex;
+    align-items: center;
+}
+
+#rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
+    text-align: left!important;
+}
+
+#rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    color: #fff;
+}
+
+#rodape>div:last-child {
+    background: var(--color-black)!important;
+    border: 0!important;
+    border-top: 1px solid rgba(255,255,255,.15)!important;
+    padding: 20px 20px 40px;
+}
+
 /* Banner cheio  */
 
 .banner.cheio .flex-direction-nav > li >a {
