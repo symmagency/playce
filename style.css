@@ -1334,6 +1334,35 @@ input {
     padding: 20px 20px 40px;
 }
 
+.konfidency-badge.vertical-small {
+   background: none!important;
+}
+
+.konfidency-badge a {
+   background: none!important;
+}
+
+.konfidency-badge.vertical-small .konfidency-badge-content {
+   background: none!important;
+}
+
+.konfidency-badge.vertical-small .konfidency-badge-text {
+   color:  #fff!important;
+}
+
+.konfidency-badge .konfidency-badge-image {
+   background-color: unset!important;
+}
+
+.konfidency-badge.vertical-small[data-v-3d7cee7b] {
+   border: 0;
+   background: rgba(255,255,255,.1)!important;
+   border-radius: 4px;
+   padding: 10px;
+   width: 139px;
+   height: 85px;
+}
+
 /* Banner cheio  */
 
 .banner.cheio .flex-direction-nav > li >a {
