@@ -1155,6 +1155,12 @@ input {
    width: 91px;
 }
 
+.pagina-produto .produto div.principal .cep,
+.pagina-produto .produto div.principal .parcelas-produto,
+.produto .produto-compartilhar {
+   display: none;
+}
+
 
 
 /* Rodapé */
