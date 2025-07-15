@@ -426,7 +426,7 @@ $(window).on('resize', function() {
         }
 
         // Input de quantidade antes do botão de comprar
-        $('.botao-comprar').each(function() {
+        $('.listagem-item .botao-comprar').each(function() {
             // Evita duplicar o input se já existir
             if($(this).prev('.quantidade-wrapper').length === 0) {
                 var quantidadeHtml = '<div class="quantidade-wrapper">' +
