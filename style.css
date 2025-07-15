@@ -1866,6 +1866,15 @@ input {
     align-items: center;
     gap: 24px;
     right: 0 !important;
+    justify-content: center;
+}
+
+.produto .acoes-flutuante .acoes-produto .preco-produto .titulo {
+   color: #fff;
+}
+
+.produto .acoes-flutuante .acoes-produto .preco-produto s.preco-venda {
+   opacity: .7;
 }
 
 .produto .acoes-flutuante .acoes-produto .preco-produto {
@@ -1890,7 +1899,7 @@ input {
 .produto .acoes-flutuante .nome-produto {
    color: var(--color-white);
    font-size: 24px;
-   max-width: 715px;
+   max-width: 752px;
    width: 100%;
 }
 
