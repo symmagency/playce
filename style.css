@@ -28,6 +28,8 @@
    --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
    --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
    --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
+   --icon-chev-down: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-down.svg');
+   --icon-chev-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-up.svg');
    --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
    --icon-instagram: url('https://cdn.awsli.com.br/2830/2830294/arquivos/instagram.svg');
    --icon-facebook: url('https://cdn.awsli.com.br/2830/2830294/arquivos/facebook.svg');
@@ -1057,6 +1059,28 @@ input {
    color: #fff;
 }
 
+#carouselImagem .elastislide-carousel ul li a span img {
+   height: 100%;
+   /* width: 100%; */
+}
+
+.produto-thumbs .flex-nav-next,
+.produto-thumbs .flex-nav-prev {
+   display: flex;
+   width: 52px;
+   height: 36px;
+   background: var(--color-secondary);
+   border-radius: var(--border-radius-md);
+   align-items: center;
+   justify-content: center;
+}
+
+.produto-thumbs .flex-nav-next a.flex-next,
+.produto-thumbs .flex-nav-next a.flex-prev {
+   position: relative;
+   right: 0!important;
+}
+
 /* Rodapé */
 
 .lista-redes ul li.visible-phone {
@@ -1736,3 +1760,4 @@ input {
    border-radius: 6px;
    overflow: hidden;
 }
+
