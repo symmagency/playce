@@ -1131,6 +1131,32 @@ input {
    height: 50px;
 }
 
+.produto .principal .nome-produto {
+   font-size: 24px;
+   font-weight: 500;
+}
+
+.produto .codigo-produto {
+   display: none;
+}
+
+.produto .principal .konfidency.summary.kfy-align-left {
+   padding: 20px 0;
+}
+
+.starsV2 .star {
+   width: 15px!important;
+   height: 15px!important;
+}
+
+.produto .principal .starsV2 {
+   display: flex;
+   gap: 4px;
+   width: 91px;
+}
+
+
+
 /* Rodapé */
 
 .lista-redes ul li.visible-phone {
