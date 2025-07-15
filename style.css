@@ -1912,3 +1912,35 @@ input {
    overflow: hidden;
 }
 
+.abas-custom .tab-content {
+   padding: 0;
+}
+
+.produto .acoes-flutuante .acoes-produto .preco-produto .titulo {
+   color: #fff;
+}
+
+.produto .acoes-flutuante .acoes-produto .preco-produto s.preco-venda {
+   opacity: .7;
+}
+
+.produto>.row-fluid:first-child {
+   display: flex;
+   align-items: center;
+}
+
+.produto>.row-fluid:first-child > div.span5 {
+   width: fit-content;
+}
+
+.produto>.row-fluid:first-child > div.span7 {
+   flex: 1;
+   display: flex;
+   align-items: center;
+}
+
+.produto .conteiner-imagem {
+   height: 100%;
+   margin: 0;
+   width: 100%;
+}
