@@ -121,7 +121,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.titulo {
    font-family: var(--font-family-base);
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
@@ -1161,7 +1162,56 @@ input {
    display: none;
 }
 
+.produto .principal .acoes-produto .preco-produto .preco-venda {
+   font-size: 14px;
+   opacity: .7;
+}
 
+.produto .principal .acoes-produto .preco-produto .preco-promocional.titulo {
+   font-size: 22px;
+}
+
+.pagina-produto .produto div.principal .preco-produto > div {
+   display: flex;
+   flex-direction: column;
+}
+
+.produto .principal .acoes-produto .preco-produto .preco-venda {
+   font-size: 14px;
+   opacity: .7;
+}
+
+.produto .principal .acoes-produto .preco-produto .preco-promocional.titulo {
+   font-size: 22px;
+}
+
+.pagina-produto .produto div.principal .preco-produto > div {
+   display: flex;
+   flex-direction: column;
+}
+
+.produto .acoes-produto .comprar {
+   display: flex;
+   gap: 10px;
+}
+
+.produto .acoes-produto .comprar .disponibilidade-produto {
+   display: none;
+}
+
+.produto .acoes-produto .comprar .qtde-adicionar-carrinho {
+   max-width: 107px;
+   margin: 0;
+}
+
+.produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho {
+   height: 54px!important;
+   margin: 0;
+}
+
+.produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho-title {
+   display: none;
+}
 
 /* Rodapé */
 
