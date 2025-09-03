@@ -2000,4 +2000,22 @@ input {
       background-size: 20px;
    }
 
+   .categorias-section .slick-slide {
+      margin: 0 4px;
+  }
+  
+  .categorias-section {
+      padding: 0 16px;
+  }
+
+  /* Listagem Mobile */
+  .listagem .listagem-item .acoes-produto-responsiva {
+      display: none !important;
+   }
+
+   .listagem .produtos-carrossel .listagem-linha.flexslider {
+      padding: 0 16px;
+      box-sizing: border-box;
+  }
+
 }
