@@ -1944,3 +1944,60 @@ input {
    margin: 0;
    width: 100%;
 }
+
+/* Código Mobile */
+
+@media screen and (max-width: 768px) {
+
+   .atalhos-mobile.visible-phone.fundo-secundario.borda-principal {
+      display: none !important;
+  }
+
+  .benefits-row {
+      background: none;
+      flex-direction: column;
+      padding: 16px;
+      gap: 16px;
+   }
+
+   .benefit-item {
+      width: 100%;
+      box-sizing: border-box;
+      border: 0!important;
+      background: rgba(255,255,255,.05);
+      padding: 10px 16px;
+      border-radius: 6px;
+   }
+
+   .benefit-item div {
+      width: 100%;
+   }
+
+   .video-fundo {
+      display: none;
+  }
+
+  .banner-fundo {
+      padding: 40px;
+      text-align: center;
+   }
+
+   .banner-fundo .game-promo {
+      align-items: center;
+   }
+
+   .slick-slider .slick-prev {
+      left: -12px;
+      background-color: var(--color-primary);
+      border-radius: 999px;
+      background-size: 20px;
+   }
+
+   .slick-slider .slick-next {
+      right: -12px;
+      background-color: var(--color-primary);
+      border-radius: 999px;
+      background-size: 20px;
+   }
+
+}
