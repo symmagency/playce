@@ -507,6 +507,16 @@ $(window).on('resize', function() {
             }
             $('.banner.cheio .slides ' + seletorLi + ' > a > img').attr('src', banner.imagem);
         });
+
+        // Agora é possível alterar vários banners usando um array de objetos
+        var bannersMapeados = [
+            { map: '4080625', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/tempest-m1.png' },
+            { map: '4081482', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/siege-m.png' }
+        ];
+
+        bannersMapeados.forEach(function(banner) {
+            $('img[usemap="#map-banner-' + banner.map + '"]').attr('src', banner.imagem);
+        });
     }
 });
 
