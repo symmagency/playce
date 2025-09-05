@@ -2142,7 +2142,7 @@ input {
    justify-content: center;
 }
 
-.banner .flexslider .slides>li > a {
+.banner .flexslider .slides>li >    a {
    position: relative!important;
 }
 
@@ -2162,6 +2162,10 @@ input {
 #rodape .institucional > .conteiner > .row-fluid {
    width: 100%;
    box-sizing: border-box;
+}
+
+.listagem .listagem-linha li {
+   margin: 0;
 }
 
 }

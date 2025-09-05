@@ -475,11 +475,11 @@ $(window).on('resize', function() {
 
     } else {
         //mobile 
-        $('#cabecalho h1.logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
-        $('#cabecalho h1.logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
+        $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
+        $('#cabecalho .span3 > .logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
 
         if ($('#cabecalho .sign-up-header').length === 0) {
-            $('#cabecalho h1.logo').after(`
+            $('#cabecalho .span3 > .logo').after(`
                 <div class="sign-up-header">
                     <a href="../conta/login?next=/conta/index">
                         <i class="user"></i>
