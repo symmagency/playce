@@ -2321,4 +2321,14 @@ ul.slick-dots li {
    color: var(--color-white);
 }
 
+/* Página produto celular */
+
+.produto>.row-fluid:first-child > div.span7 {
+   flex-direction: column;
+}
+
+.produto>.row-fluid:first-child {
+   flex-direction: column;
+}
+
 }
