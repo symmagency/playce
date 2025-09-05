@@ -2049,6 +2049,13 @@ input {
    opacity: .7;
 }
 
+.pagina-produto .listagem > .titulo {
+   font-size: 24px;
+   font-weight: 500;
+   margin: 24px 0;
+   color: var(--color-white);
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -2490,13 +2497,6 @@ ul.slick-dots li {
 
 .pagina-produto .listagem-linha ul.row-fluid:before, .pagina-produto .listagem-linha ul.row-fluid:after {
    display: none;
-}
-
-.pagina-produto .listagem > .titulo {
-   font-size: 24px;
-   font-weight: 500;
-   margin: 24px 0;
-   color: var(--color-white);
 }
 
 #konfidency-reviews-container .details .details-header {
