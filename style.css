@@ -38,6 +38,7 @@
    --icon-key: url('https://cdn.awsli.com.br/2830/2830294/arquivos/key.svg');
    --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
    --icon-lock: url('https://cdn.awsli.com.br/2830/2830294/arquivos/lock.svg');
+   --icon-menu: url('https://cdn.awsli.com.br/2830/2830294/arquivos/menu.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -2166,6 +2167,34 @@ input {
 
 .listagem .listagem-linha li {
    margin: 0;
+}
+
+.barra-inicial {
+   display: block;
+}
+
+.barra-inicial .canais-contato {
+   display: none;
+}
+
+.barra-inicial .conteiner {
+   padding: 0 20px;
+}
+
+.barra-inicial .append-benefits {
+   justify-content: center;
+}
+
+#cabecalho {
+   padding: 0;
+}
+
+.atalho-menu.icon-th:before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: var(--icon-menu) center no-repeat;
+   background-size: 100%;
 }
 
 }
