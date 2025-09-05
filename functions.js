@@ -478,11 +478,10 @@ $(window).on('resize', function() {
         $('#cabecalho h1.logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
         $('#cabecalho h1.logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
 
-        if ($('.#cabecalho .sign-up-header').length === 0) {
+        if ($('#cabecalho .sign-up-header').length === 0) {
             $('#cabecalho h1.logo').after(`
                 <div class="sign-up-header">
                     <a href="../conta/login?next=/conta/index">
-                        <span>Entrar</span>
                         <i class="user"></i>
                     </a>
                 </div>    
