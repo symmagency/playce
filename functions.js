@@ -517,6 +517,18 @@ $(window).on('resize', function() {
         bannersMapeados.forEach(function(banner) {
             $('img[usemap="#map-banner-' + banner.map + '"]').attr('src', banner.imagem);
         });
+
+        $('#listagemProdutos > .vitrine-23499980+ul .listagem-linha').prepend(`
+            <div class="append-featured">
+              <div class="featured-image">
+                <img src="https://cdn.awsli.com.br/2830/2830294/arquivos/gta-v-featured.png" alt="">
+              </div>
+              <div class="featured-title">
+                <h2>GTA 6</h2>
+                <span>Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.</span>
+              </div>
+            </div>
+        `);
     }
 });
 

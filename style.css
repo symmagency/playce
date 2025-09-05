@@ -65,6 +65,7 @@
    /* Imagens que podem ser alteradas */
    --news-char: url('https://cdn.awsli.com.br/2830/2830294/arquivos/news-char.png');
    --featured-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/featured-showcase.png');
+   --featured-home-mobile: url('https://cdn.awsli.com.br/2830/2830294/arquivos/gtav-featured-bg.png');
    --bg-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/bg-spider.png');
 
 
@@ -106,6 +107,30 @@
                #listagemProdutos > .vitrine-23499980+ul .slick-dots {
                   display: none !important;
                }
+              
+              #listagemProdutos > .vitrine-23499980+ul .flex-viewport > ul {
+                  justify-content: center;
+              }
+              
+              #listagemProdutos > .vitrine-23499980+ul .imagem-produto img {
+                  width: 100%;
+              }
+              
+              #listagemProdutos > .vitrine-23499980+ul .listagem-item {
+                  width: 100%;
+                  max-width: 330px;
+              }
+              
+              #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
+                  justify-content: center;
+              }
+
+              @media screen and (max-width: 768px) {
+                  #listagemProdutos > .vitrine-23499980+ul {
+                     background: var(--featured-home) center no-repeat;
+                     background-size: auto 100%;
+                  }
+              }
 
                /* Fim alterar vitrine em destaque */
 
@@ -2248,8 +2273,15 @@ ul.slick-dots li {
    align-items: baseline;
 }
 
-.slick-slider .slick-next, .slick-slider .slick-prev {
+.slick-slider .slick-next, 
+.slick-slider .slick-prev {
    display: none!important;
+}
+
+.categorias-section .slick-slider .slick-next, 
+.categorias-section .slick-slider .slick-prev
+ {
+    display: block !important;
 }
 
 .listagem .titulo-categoria, .categorias-section .titulo-categoria {
