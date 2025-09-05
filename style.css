@@ -2331,4 +2331,67 @@ ul.slick-dots li {
    flex-direction: column;
 }
 
+.produto-thumbs.thumbs-horizontal {
+   width: 100%;
+}
+
+#carouselImagem .flex-viewport {
+   margin: 0 50px;
+}
+
+#carouselImagem .flex-direction-nav a.flex-next {
+   background: var(--icon-chev-right);
+   opacity: 1;
+   width: 24px;
+   height: 24px;
+   background-size: 100%;
+   margin: 0;
+   top: auto;
+}
+
+#carouselImagem .flex-direction-nav a.flex-prev {
+   background: var(--icon-chev-left);
+   opacity: 1;
+   width: 24px;
+   height: 24px;
+   background-size: 100%;
+   margin: 0;
+   top: auto;
+}
+
+.produto-thumbs .flex-nav-next {
+   align-items: center;
+   justify-content: center;
+   width: 36px;
+   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+
+.produto-thumbs .flex-nav-prev {
+   align-items: center;
+   justify-content: center;
+   width: 36px;
+   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+   left: 0;    
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.elastislide-carousel ul li a {
+   border: 1px solid transparent;
+   border-radius: 6px;
+   background: none;
+}
+
+#carouselImagem .flex-viewport {
+   margin: 0 50px;
+}
+
+.elastislide-carousel ul li.active a {
+   border-width: 1px;
+}
+
 }
