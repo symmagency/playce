@@ -2103,11 +2103,13 @@ input {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
   }
   
   .conteiner .logo {
       width: 90px;
       margin: 0;
+      flex: 1;
   }
 
    .conteudo-topo .inferior .hidden-phone {
@@ -2125,5 +2127,36 @@ input {
    .conteudo-topo .busca-mobile {
       padding: 0;
   }
+
+  .banner.cheio .game-promo {
+   width: 100%;
+   padding: 60px 10px;
+   left: 0;
+   right: 0;
+   top: auto;
+   bottom: 0;
+   transform: none;
+   flex-direction: row;
+   box-sizing: border-box;
+   max-width: 100%;
+   justify-content: center;
+}
+
+.banner .flexslider .slides>li a {
+   position: relative!important;
+}
+
+.banner.cheio  .game-description, .game-logo {
+   display: none;
+}
+
+.banner.cheio .flex-direction-nav {
+   right: auto;
+   left: auto;
+   margin: 0 auto;
+   width: 100%;
+   justify-content: center;
+   bottom: 10px;
+}
 
 }

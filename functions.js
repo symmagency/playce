@@ -487,6 +487,23 @@ $(window).on('resize', function() {
                 </div>    
             `);
         }
+
+        // Array de banners: cada objeto define o seletor do li (ex: 'first-child', '2', 'nth-child(3)') e o link da imagem
+        var banners = [
+            { posicao: 'first-child', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/gow-r.png' },
+            { posicao: '2', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/banner_m2.png' },
+        ];
+
+        banners.forEach(function(banner) {
+            var seletorLi;
+            // Se for um número, assume nth-child
+            if (/^\d+$/.test(banner.posicao)) {
+                seletorLi = 'li:nth-child(' + banner.posicao + ')';
+            } else {
+                seletorLi = 'li:' + banner.posicao;
+            }
+            $('.banner.cheio .slides ' + seletorLi + ' > a > img').attr('src', banner.imagem);
+        });
     }
 });
 
