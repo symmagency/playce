@@ -2142,7 +2142,7 @@ input {
    justify-content: center;
 }
 
-.banner .flexslider .slides>li a {
+.banner .flexslider .slides>li > a {
    position: relative!important;
 }
 
