@@ -2309,6 +2309,16 @@ ul.slick-dots li {
    max-width: 100%;
 }
 
+.append-featured {
+   max-width: 330px;
+   margin: 0 auto;
+   text-align: center;
+   padding-top: 40px;
+}
 
+.append-featured .featured-title {
+   text-align: left;
+   color: var(--color-white);
+}
 
 }
