@@ -523,17 +523,20 @@ $(window).on('resize', function() {
         var featuredTitle = "GTA 6";
         var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
 
-        $('#listagemProdutos > .vitrine-23499980+ul .listagem-linha').prepend(`
-            <div class="append-featured">
-              <div class="featured-image">
-                <img src="${featuredImg}" alt="">
-              </div>
-              <div class="featured-title">
-                <h2>${featuredTitle}</h2>
-                <span>${featuredText}</span>
-              </div>
-            </div>
-        `);
+        // Só insere se ainda não existe o .append-featured
+        if ($('#listagemProdutos > .vitrine-23499980+ul .listagem-linha .append-featured').length === 0) {
+            $('#listagemProdutos > .vitrine-23499980+ul .listagem-linha').prepend(`
+                <div class="append-featured">
+                  <div class="featured-image">
+                    <img src="${featuredImg}" alt="">
+                  </div>
+                  <div class="featured-title">
+                    <h2>${featuredTitle}</h2>
+                    <span>${featuredText}</span>
+                  </div>
+                </div>
+            `);
+        }
     }
 });
 
