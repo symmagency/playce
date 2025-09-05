@@ -2080,4 +2080,50 @@ input {
       padding: 0 16px;
   }
 
+  #cabecalho > .conteiner {
+      padding: 12px 16px;
+      flex-direction: column;
+   }
+
+   #cabecalho > .conteiner > .row-fluid {
+      flex-direction: column;
+      gap: 12px;
+   }
+
+   .busca #form-buscar {
+      position: relative;
+   }
+
+   #cabecalho .conteudo-topo {
+      margin: 0;
+   }
+
+   #cabecalho .conteiner > .row-fluid > .span3 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .conteiner .logo {
+      width: 90px;
+      margin: 0;
+  }
+
+   .conteudo-topo .inferior .hidden-phone {
+      display: block!important;
+   }
+
+   .carrinho {
+      max-width: 76px;
+   }
+
+   .conteudo-topo .inferior {
+      gap: 0;
+   }
+
+   .conteudo-topo .busca-mobile {
+      padding: 0;
+  }
+
 }
