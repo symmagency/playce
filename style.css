@@ -1198,6 +1198,7 @@ input {
 .produto .conteiner-imagem img {
    max-width: 400px;
    border-radius: 10px;
+   width: 100%;
 }
 
 .produto .principal .acoes-produto .preco-produto .preco-venda {
@@ -2388,6 +2389,10 @@ ul.slick-dots li {
 
 #carouselImagem .flex-viewport {
    margin: 0 50px;
+}
+
+.pagina-produto .produto div.principal {
+   padding: 24px;
 }
 
 .elastislide-carousel ul li.active a {
