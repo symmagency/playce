@@ -2399,4 +2399,12 @@ ul.slick-dots li {
    border-width: 1px;
 }
 
+.produto>.row-fluid:first-child > div.span5 {
+   width: 100%;
+}
+
+.produto .conteiner-imagem img {
+   max-width: 100%;
+}
+
 }
