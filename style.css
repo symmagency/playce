@@ -2159,4 +2159,9 @@ input {
    bottom: 10px;
 }
 
+#rodape .institucional > .conteiner > .row-fluid {
+   width: 100%;
+   box-sizing: border-box;
+}
+
 }
