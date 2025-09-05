@@ -80,7 +80,7 @@ $slider.slick({
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 infinite: false,
-                dots: false
+                dots: true
             }
             }
         ]
