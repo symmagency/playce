@@ -39,6 +39,8 @@
    --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
    --icon-lock: url('https://cdn.awsli.com.br/2830/2830294/arquivos/lock.svg');
    --icon-menu: url('https://cdn.awsli.com.br/2830/2830294/arquivos/menu.svg');
+   --icon-thumbs-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_up.svg');
+   --icon-thumbs-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_down.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -1976,6 +1978,77 @@ input {
    width: 100%;
 }
 
+.pagina-produto .konfidency-reviews-details.conteiner {
+   border-radius: 8px;
+   background: var(--color-black);
+   padding: 32px;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner * {
+   color: #fff;
+}
+
+#konfidency-reviews-container.full {
+   padding: 0;
+}
+
+.pagina-produto .konfidency-reviews-details .konfidency-badge {
+   display: none;
+}
+
+#konfidency-reviews-container .details .reviews .review-feedbacks .votes > div {
+   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+   border: 0;
+   background-color: var(--color-secondary)
+}
+
+
+#konfidency-reviews-container .details .reviews .review-feedbacks .votes .helpful {
+   background-image: var(--icon-thumbs-up);
+}
+
+#konfidency-reviews-container .details .reviews .review-feedbacks .votes .unhelpful {
+   background-image: var(--icon-thumbs-down);
+}
+
+#konfidency-reviews-container .details .details-header {
+   display: none;
+}
+
+#konfidency-reviews-container .summary .review-button {
+   order: 2;
+   align-items: center;
+   display: flex;
+}
+
+#konfidency-reviews-container .summary .review-button button {
+   background: var(--color-secondary);
+   color: var(--color-white);
+   border: 0;
+   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+   font-size: 0;
+   text-transform: none;
+   padding: 8px 16px;
+   display: flex;
+   align-items: center;
+}
+
+#konfidency-reviews-container .summary .review-button button:after {
+   content: "Avaliar produto";
+   font-size: 16px;
+   line-height: 8px;
+}
+
+#konfidency-reviews-container .summary {
+   justify-content: start;
+}
+
+#konfidency-reviews-container .details .reviews .review-feedbacks .question {
+   text-transform: capitalize;
+   font-weight: normal;
+   opacity: .7;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -2407,6 +2480,27 @@ ul.slick-dots li {
 .produto .conteiner-imagem img,
 .conteudo-topo .inferior {
    max-width: 100%;
+}
+
+.pagina-produto .listagem-linha ul.row-fluid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 12px;
+}
+
+.pagina-produto .listagem-linha ul.row-fluid:before, .pagina-produto .listagem-linha ul.row-fluid:after {
+   display: none;
+}
+
+.pagina-produto .listagem > .titulo {
+   font-size: 24px;
+   font-weight: 500;
+   margin: 24px 0;
+   color: var(--color-white);
+}
+
+#konfidency-reviews-container .details .details-header {
+   display: none;
 }
 
 }
