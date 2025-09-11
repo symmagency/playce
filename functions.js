@@ -194,7 +194,7 @@ tagsProdutos.forEach(function(produto) {
     }
 
     // Adiciona as badges na página de produto
-    var $nomeProduto = $('.produto-' + produto.id + ' .pagina-produto .produto div.principal .nome-produto');
+    var $nomeProduto = $('.produto-' + produto.id + ' .produto div.principal .nome-produto');
     if ($nomeProduto.length) {
         // Gera o HTML das tags
         var tagsHtml = '';
