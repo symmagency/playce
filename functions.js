@@ -197,7 +197,7 @@ tagsProdutos.forEach(function(produto) {
     var $nomeProduto = $('.produto-' + produto.id + '¡ .produto div.principal .nome-produto');
     if ($nomeProduto.length) {
         // Gera o HTML das tags dentro de uma div com a classe "append-bandeiras"
-        var tagsHtml = '<div class="append-bandeiras">';
+        var tagsHtml = '';
         produto.tags.forEach(function(tag) {
             if (tag.tipo === 'pre-venda') {
                 tagsHtml += '<span class="bandeira-prevenda">' + tag.texto + '</span>';
@@ -205,7 +205,6 @@ tagsProdutos.forEach(function(produto) {
                 tagsHtml += '<span class="bandeira-cupom">' + tag.texto + '</span>';
             }
         });
-        tagsHtml += '</div>';
         // Adiciona antes do .nome-produto
         $nomeProduto.before(tagsHtml);
     }
