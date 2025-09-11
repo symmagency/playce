@@ -384,6 +384,7 @@ $(window).on('resize', function() {
             `);
         }
 
+        $('.pagina-produto .span12.produto').prepend($('.info-principal-produto .breadcrumbs'));
         $('#cabecalho .conteudo-topo').prepend($('#cabecalho .menu.superior'));
 
         
