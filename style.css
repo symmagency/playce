@@ -2068,6 +2068,7 @@ input {
    border: 1px solid rgba(255,255,255,.1);
    border-radius: 10px;
    width: 450px;
+   top: 30px;
 }
 
 .carrinho-interno ul:before {
@@ -2146,9 +2147,11 @@ input {
 }
 
 .carrinho .carrinho-interno-ajax {
-   padding-top: 40px;
+   padding-top: 30px;
    position: absolute;
    right: 0;
+   height: fit-content;
+   width: 100px;
 }
 
 /* Código Mobile */
