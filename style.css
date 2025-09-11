@@ -1118,6 +1118,25 @@ input[type="text"]:focus {
    background: none;
 }
 
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review {
+   background: var(--color-secondary);
+   border: 0;
+   padding: 40px;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review * {
+   border-radius: 4px !important;
+}
+
+modal-review .actions button {
+   background: var(--color-primary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   margin-top: 30px !important;
+   display: block;
+}
+
 .produto-thumbs .flex-nav-next,
 .produto-thumbs .flex-nav-prev {
    display: flex;
