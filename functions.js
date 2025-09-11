@@ -194,9 +194,9 @@ tagsProdutos.forEach(function(produto) {
     }
 
     // Adiciona as badges na página de produto
-    var $nomeProduto = $('.produto-' + produto.id + '¡ .produto div.principal .nome-produto');
+    var $nomeProduto = $('.produto-' + produto.id + ' .produto div.principal .nome-produto');
     if ($nomeProduto.length) {
-        // Gera o HTML das tags dentro de uma div com a classe "append-bandeiras"
+        // Gera o HTML das tags dentro de uma div com a classe "append-flags"
         var tagsHtml = '';
         produto.tags.forEach(function(tag) {
             if (tag.tipo === 'pre-venda') {
@@ -205,8 +205,10 @@ tagsProdutos.forEach(function(produto) {
                 tagsHtml += '<span class="bandeira-cupom">' + tag.texto + '</span>';
             }
         });
+        // Envolve as tags na div "append-flags"
+        var flagsDiv = '<div class="append-flags">' + tagsHtml + '</div>';
         // Adiciona antes do .nome-produto
-        $nomeProduto.before(tagsHtml);
+        $nomeProduto.before(flagsDiv);
     }
 });
 
