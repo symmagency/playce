@@ -1210,7 +1210,11 @@ modal-review .actions button {
 .thumbs-vertical #carouselImagem {
    padding: 68px 0;
    margin: 0;
-   height: 360px;
+   height: 100%;
+}
+
+.thumbs-vertical #carouselImagem .flex-viewport {
+   max-height: 240px;
 }
 
 .thumbs-vertical .elastislide-carousel ul li {
@@ -1999,6 +2003,11 @@ modal-review .actions button {
 
 .abas-custom .tab-content {
    padding: 0;
+   box-shadow: none;
+}
+
+.pagina-produto .conteiner-principal .conteiner {
+   padding: 20px;
 }
 
 .produto .acoes-flutuante .acoes-produto .preco-produto .titulo {
@@ -2012,6 +2021,7 @@ modal-review .actions button {
 .produto>.row-fluid:nth-child(2) {
    display: flex;
    align-items: center;
+   margin-bottom: 60px;
 }
 
 .produto>.row-fluid:nth-child(2) > div.span5 {
@@ -2213,6 +2223,7 @@ modal-review .actions button {
    height: 16px;
    display: block;
    background-size: 100%;
+   opacity: .6;
 }
 
 .breadcrumbs ul {
