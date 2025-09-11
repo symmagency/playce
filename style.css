@@ -1943,6 +1943,7 @@ input {
 .video-fundo {
    border-radius: 6px;
    overflow: hidden;
+   max-height: 200px;
 }
 
 .abas-custom .tab-content {
@@ -2054,6 +2055,100 @@ input {
    font-weight: 500;
    margin: 24px 0;
    color: var(--color-white);
+}
+
+
+.flexslider .slides img {
+   border-radius: 10px;
+}
+
+.carrinho .carrinho-interno {
+   background: var(--color-secondary);
+   padding: 0;
+   border: 1px solid rgba(255,255,255,.1);
+   border-radius: 10px;
+   width: 450px;
+}
+
+.carrinho-interno ul:before {
+   content: "Carrinho";
+   display: flex;
+   width: 100%;
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--color-white);
+   padding: 20px;
+   box-sizing: border-box;
+   border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.carrinho-interno li {
+   padding: 20px;
+   border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.carrinho-interno .nome-produto {color: var(--color-white);}
+
+.carrinho-interno .preco-produto .preco-promocional {
+   color: var(--color-white);
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.carrinho-interno .carrinho-rodape {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   margin: 0;
+   gap: 10px;
+}
+
+.carrinho-interno>div .botao {
+   width: 100%;
+   height: 54px!Important;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   font-size: 16px!important;
+   font-weight: 600;
+   padding: 20px;
+   align-items: center;
+   margin-top: 0;
+}
+
+.carrinho-interno .botao i.icon-shopping-cart:before {
+   background: var(--icon-chev-right);
+   background-size: 100%;
+}
+
+.carrinho-interno .botao i {
+   margin: 0;
+}
+
+.carrinho-interno>div>span>span {
+   display: flex;
+   color: #fff;
+   justify-content: space-between;
+   text-transform: uppercase;
+   font-size: 16px;
+}
+
+.carrinho-interno>div>span>span strong {
+   color: #fff;
+   font-weight: 600;
+}
+
+.carrinho-interno .carrinho-info i {
+   display: none;
+}
+
+.carrinho-interno>div:after {
+   display: none;
+}
+
+.carrinho .carrinho-interno-ajax {
+   padding-top: 40px;
+   position: absolute;
+   right: 0;
 }
 
 /* Código Mobile */
@@ -2501,6 +2596,10 @@ ul.slick-dots li {
 
 #konfidency-reviews-container .details .details-header {
    display: none;
+}
+
+#cabecalho .botao.principal {
+   background: var(--color-secondary);
 }
 
 }
