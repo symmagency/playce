@@ -626,7 +626,8 @@ input[type="text"]:focus {
    padding: 20px 20px 0;
 }
 
-.listagem-item .bandeira-prevenda {
+.listagem-item .bandeira-prevenda,
+.info-principal-produto .bandeira-prevenda {
    background: #FFD30D;
    color: var(--color-black);
    border: 0;
@@ -635,7 +636,8 @@ input[type="text"]:focus {
    align-items: center;
 }
 
-.listagem-item .bandeira-cupom {
+.listagem-item .bandeira-cupom,
+.info-principal-produto .bandeira-cupom {
    background: var(--color-primary);
    color: var(--color-white);
    border: 0;
@@ -1964,16 +1966,16 @@ input[type="text"]:focus {
    opacity: .7;
 }
 
-.produto>.row-fluid:first-child {
+.produto>.row-fluid:nth-child(2) {
    display: flex;
    align-items: center;
 }
 
-.produto>.row-fluid:first-child > div.span5 {
+.produto>.row-fluid:nth-child(2) > div.span5 {
    width: fit-content;
 }
 
-.produto>.row-fluid:first-child > div.span7 {
+.produto>.row-fluid:nth-child(2) > div.span7 {
    flex: 1;
    display: flex;
    align-items: center;
@@ -2508,11 +2510,11 @@ ul.slick-dots li {
 
 /* Página produto celular */
 
-.produto>.row-fluid:first-child > div.span7 {
+.produto>.row-fluid:nth-child(2) > div.span7 {
    flex-direction: column;
 }
 
-.produto>.row-fluid:first-child {
+.produto>.row-fluid:nth-child(2) {
    flex-direction: column;
 }
 
@@ -2584,7 +2586,7 @@ ul.slick-dots li {
    border-width: 1px;
 }
 
-.produto>.row-fluid:first-child > div.span5 {
+.produto>.row-fluid:nth-child(2) > div.span5 {
    width: 100%;
 }
 

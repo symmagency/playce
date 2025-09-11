@@ -194,10 +194,10 @@ tagsProdutos.forEach(function(produto) {
     }
 
     // Adiciona as badges na página de produto
-    var $nomeProduto = $('.produto-' + produto.id + ' .produto div.principal .nome-produto');
+    var $nomeProduto = $('.produto-' + produto.id + '¡ .produto div.principal .nome-produto');
     if ($nomeProduto.length) {
-        // Gera o HTML das tags
-        var tagsHtml = '';
+        // Gera o HTML das tags dentro de uma div com a classe "append-bandeiras"
+        var tagsHtml = '<div class="append-bandeiras">';
         produto.tags.forEach(function(tag) {
             if (tag.tipo === 'pre-venda') {
                 tagsHtml += '<span class="bandeira-prevenda">' + tag.texto + '</span>';
@@ -205,6 +205,7 @@ tagsProdutos.forEach(function(produto) {
                 tagsHtml += '<span class="bandeira-cupom">' + tag.texto + '</span>';
             }
         });
+        tagsHtml += '</div>';
         // Adiciona antes do .nome-produto
         $nomeProduto.before(tagsHtml);
     }
@@ -386,7 +387,7 @@ $(window).on('resize', function() {
 
         $('.pagina-produto .span12.produto').prepend($('.info-principal-produto .breadcrumbs'));
         $('#cabecalho .conteudo-topo').prepend($('#cabecalho .menu.superior'));
-
+        $('.pagina-produto').prepend($('.append-bg-product'));
         
 
         // badges de categoria
