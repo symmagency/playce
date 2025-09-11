@@ -197,6 +197,12 @@ input {
    border-radius: var(--border-radius-md)!important;
 }
 
+input[type="text"]:focus {
+   background: var(--color-white)!important;
+   color: var(
+   --color-black)!important;
+}
+
 .botao.principal {
    height: 36px !important;
    box-sizing: border-box !important;

@@ -192,6 +192,22 @@ tagsProdutos.forEach(function(produto) {
             });
         }
     }
+
+    // Adiciona as badges na página de produto
+    var $nomeProduto = $('.produto-' + produto.id + ' .pagina-produto .produto div.principal .nome-produto');
+    if ($nomeProduto.length) {
+        // Gera o HTML das tags
+        var tagsHtml = '';
+        produto.tags.forEach(function(tag) {
+            if (tag.tipo === 'pre-venda') {
+                tagsHtml += '<span class="bandeira-prevenda">' + tag.texto + '</span>';
+            } else if (tag.tipo === 'cupom') {
+                tagsHtml += '<span class="bandeira-cupom">' + tag.texto + '</span>';
+            }
+        });
+        // Adiciona antes do .nome-produto
+        $nomeProduto.before(tagsHtml);
+    }
 });
 
 // Para cada imagem que usa um map
