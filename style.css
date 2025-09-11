@@ -693,6 +693,12 @@ input[type="text"]:focus {
 
 .listagem .imagem-produto img {
    position: relative;
+   width: 100%;
+   max-height: fit-content;
+}
+
+.listagem .span4 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="3"] .imagem-produto {
+   height: fit-content;
 }
 
 .listagem .info-produto {
