@@ -2164,7 +2164,8 @@ input[type="text"]:focus {
    width: 100px;
 }
 
-.breadcrumbs .fa-folder::before {
+.breadcrumbs .fa-folder::before,
+.breadcrumbs .icon-home::before {
    content: "";
    background: var(--icon-home);
    width: 16px;
@@ -2182,7 +2183,7 @@ input[type="text"]:focus {
 .breadcrumbs {
    width: fit-content;
    background: var(--color-black);
-   padding: 10px;
+   padding: 10px 20px;
    max-height: 40px;
    border-radius: 4px;
 }
@@ -2192,6 +2193,7 @@ input[type="text"]:focus {
    display: flex;
    color: rgba(255,255,255,.6);
    font-weight: 500;
+   padding: 0;
 }
 
 .breadcrumbs ul li * {
