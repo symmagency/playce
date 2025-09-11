@@ -2224,6 +2224,23 @@ input[type="text"]:focus {
    align-items: center;
 }
 
+.append-flags {
+   display: flex;
+   gap: 4px;
+   margin-bottom: 12px;
+}
+
+.append-flags > span {
+   padding: 4px 8px;
+   line-height: 12px;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+.append-flags > span.bandeira-prevenda {
+   color: var(--color-black)!important;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
