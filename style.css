@@ -1146,6 +1146,19 @@ modal-review .actions button {
    border-radius: var(--border-radius-md);
    align-items: center;
    justify-content: center;
+   box-shadow: var(--shadow-button);
+}
+
+.thumbs-vertical #carouselImagem .flex-direction-nav a.flex-prev {
+   background: var(--icon-chev-up) 100% center no-repeat;
+   width: 24px;
+   height: 20px;
+}
+
+.thumbs-vertical #carouselImagem .flex-direction-nav a.flex-next {
+   background: var(--icon-chev-down) 100% center no-repeat;
+   width: 24px;
+   height: 20px;
 }
 
 .produto-thumbs .flex-nav-next a.flex-next,
