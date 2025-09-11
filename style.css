@@ -1111,8 +1111,11 @@ input[type="text"]:focus {
 }
 
 #carouselImagem .elastislide-carousel ul li a span img {
-   height: 100%;
-   /* width: 100%; */
+   border-radius: 4px;
+}
+
+.thumbs-vertical .elastislide-carousel ul li a {
+   background: none;
 }
 
 .produto-thumbs .flex-nav-next,
