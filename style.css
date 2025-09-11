@@ -41,6 +41,7 @@
    --icon-menu: url('https://cdn.awsli.com.br/2830/2830294/arquivos/menu.svg');
    --icon-thumbs-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_up.svg');
    --icon-thumbs-down: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_down.svg');
+   --icon-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/house.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -1083,6 +1084,7 @@ input[type="text"]:focus {
    background: var(--color-black);
    max-width: 400px;
    box-sizing: border-box;
+   border-radius: 8px;
 }
 
 .produto div.principal .acoes-produto {
@@ -2160,6 +2162,58 @@ input[type="text"]:focus {
    right: 0;
    height: fit-content;
    width: 100px;
+}
+
+.breadcrumbs .fa-folder::before {
+   content: "";
+   background: var(--icon-home);
+   width: 16px;
+   height: 16px;
+   display: block;
+   background-size: 100%;
+}
+
+.breadcrumbs ul {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.breadcrumbs {
+   width: fit-content;
+   background: var(--color-black);
+   padding: 10px;
+   max-height: 40px;
+   border-radius: 4px;
+}
+
+.breadcrumbs ul li a {
+   align-items: center;
+   display: flex;
+   color: rgba(255,255,255,.6);
+   font-weight: 500;
+}
+
+.breadcrumbs ul li * {
+   font-size: 12px;
+}
+
+.breadcrumbs ul li:last-child a {
+   color: rgba(255,255,255,1);
+}
+
+.breadcrumbs ul li:not(:last-child):after {
+   content: "";
+   display: block;
+   background: var(--icon-chev-right);
+   width: 12px;
+   height: 12px;
+   background-size: 100%;
+}
+
+.breadcrumbs ul li {
+   display: flex;
+   align-items: center;
 }
 
 /* Código Mobile */
