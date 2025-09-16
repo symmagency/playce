@@ -2315,7 +2315,7 @@ modal-review .actions button {
    font-weight: 500;
 }
 
-.input-append {
+.pagina-categoria .conteudo .input-append {
    box-shadow: var(--shadow-button);
    background: var(--color-secondary);
    font-size: 14px;
@@ -2344,6 +2344,11 @@ modal-review .actions button {
    border: oldlace;
    box-shadow: none;
    padding-left: 0;
+}
+
+.pagina-categoria .breadcrumbs ul li strong {
+   color: var(--color-white);
+   font-weight: 400;
 }
 
 /* Código Mobile */
