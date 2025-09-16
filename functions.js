@@ -296,7 +296,7 @@ var htmlBanner = `
 `;
 
 // Insere o HTML antes do seletor .secao-banners
-$('.secao-banners').before(htmlBanner);
+$('.pagina-inicial .secao-banners').before(htmlBanner);
 
 // Variáveis para personalizar as informações da tarja de benefícios
 var benefit1Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-mailcheck.svg";
@@ -342,7 +342,7 @@ var htmlBenefits = `
 `;
 
 // Insere o HTML no local desejado (substitua o seletor conforme necessário)
-$('.secao-banners .conteiner').after(htmlBenefits);
+$('.pagina-inicial .secao-banners .conteiner').after(htmlBenefits);
 
 // Ajusta as tags na vitrine
 $('.listagem-item .bandeira-promocao').each(function() {
