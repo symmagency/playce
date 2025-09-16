@@ -2287,6 +2287,65 @@ modal-review .actions button {
    color: var(--color-black)!important;
 }
 
+.menu li.com-filho>a i {
+   background: none;
+   font-size: 13px;
+}
+
+.conteudo .ordenar-listagem.topo .span6:not(.clearfix) {
+   display: none;
+}
+
+.conteudo .ordenar-listagem.topo .row-fluid {
+   display: flex;
+   justify-content: space-between;
+}
+
+.conteudo .ordenar-listagem.topo .row-fluid .span6 {
+   width: fit-content;
+}
+
+.conteudo .ordenar-listagem.topo .row-fluid:before, .conteudo .ordenar-listagem.topo .row-fluid:after {
+   display: none;
+}
+
+.conteudo h1 {
+   font-size: 22px;
+   color: #fff;
+   font-weight: 500;
+}
+
+.input-append {
+   box-shadow: var(--shadow-button);
+   background: var(--color-secondary);
+   font-size: 14px;
+   color: var(--color-white) !important;
+   line-height: 20px;
+   padding: 8px 16px;
+   width: fit-content;
+   border-radius: var(--border-radius-md);
+   display: flex;
+   gap: 10px;
+   text-decoration: none !important;
+   transition: all .3s;
+   height: 36px;
+   display: flex;
+   align-items: center;
+}
+
+.ordenar-listagem label {
+   background: none;
+   box-shadow: none;
+   border: 0;
+}
+
+.ordenar-listagem .btn-group>.btn:first-child {
+   background: none;
+   border: oldlace;
+   box-shadow: none;
+   padding-left: 0;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {

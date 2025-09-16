@@ -389,6 +389,8 @@ $(window).on('resize', function() {
         $('.pagina-produto .span12.produto').prepend($('.info-principal-produto .breadcrumbs'));
         $('#cabecalho .conteudo-topo').prepend($('#cabecalho .menu.superior'));
         $('.pagina-produto').prepend($('.append-bg-product'));
+        $('.pagina-categoria .conteudo').prepend($('.pagina-categoria .breadcrumbs'));
+        $('.pagina-categoria .conteudo .ordenar-listagem > .row-fluid').prepend($('.pagina-categoria .conteudo h1'));
         
         
 
