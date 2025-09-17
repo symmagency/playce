@@ -569,6 +569,31 @@ btnShare.on('click', function() {
             </div>
         `);
 
+        $('body').append(`
+            <div class="floating-bar">
+              <a class="floating-bar-item" href="/contato">
+                <span class="icon-contato"></span>
+                <span class="floating-bar-label">Contato</span>
+              </a>
+              <a class="floating-bar-item" href="/conta/login">
+                <span class="icon-conta"></span>
+                <span class="floating-bar-label">Conta</span>
+              </a>
+              <a class="floating-bar-item" href="/conta/pedidos">
+                <span class="icon-pedidos"></span>
+                <span class="floating-bar-label">Pedidos</span>
+              </a>
+              <a class="floating-bar-item" href="/favoritos">
+                <span class="icon-favoritos"></span>
+                <span class="floating-bar-label">Favoritos</span>
+              </a>
+              <a class="floating-bar-item" href="/busca">
+                <span class="icon-buscar"></span>
+                <span class="floating-bar-label">Buscar</span>
+              </a>
+            </div>
+        `);
+
 
         if ($('#cabecalho .sign-up-header').length === 0) {
             $('#cabecalho .span3 > .logo').after(`

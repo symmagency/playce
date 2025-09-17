@@ -3188,6 +3188,31 @@ ul.slick-dots li {
    background-size: 100%;
 }
 
+.floating-bar {
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   bottom: 0;
+   background: var(--color-black);
+   z-index: 10000000000000;
+   align-items: center;
+   width: 100%;
+   border-top: 1px solid rgba(255,255,255,.2);
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+.floating-bar .floating-bar-item {
+   width: 100%;
+   display: flex;
+   padding: 12px 0;
+   flex: 1;
+   justify-content: center;
+   align-items: center;
+   border-right: 1px solid rgba(255,255,255,.2);
+   color: var(--color-white);
+}
+
 }
 
 /* Ajustes somente no desktop */
