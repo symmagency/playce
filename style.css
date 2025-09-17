@@ -1529,6 +1529,23 @@ modal-review .actions button {
    background-size: 100%;
 }
 
+.compre-junto .slick-slider .slick-next {
+   right: 0;
+}
+
+.compre-junto .slick-slider .slick-prev {
+   left: 0;
+}
+
+.compre-junto .slick-slider .slick-next.slick-disabled,
+.compre-junto .slick-slider .slick-prev.slick-disabled {
+   display: none!important;
+}
+
+.compre-junto .slick-slide:not(.slick-active)::after {
+   background: linear-gradient(270deg, var(--color-black) 0,rgba(255,255,255,0) 100%)
+}
+
 /* Rodapé */
 
 .lista-redes ul li.visible-phone {
