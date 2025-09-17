@@ -551,8 +551,7 @@ btnShare.on('click', function() {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
         $('#cabecalho .span3 > .logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
-        $('.menu.superior').addClass('active');
-        $('.menu.superior').prepend('<button class="close-menu">X</button>');
+        $('.menu.superior').append('<button class="close-menu">X</button>');
         $('.close-menu').click(function(){
            $('.menu.superior .nivel-um').removeClass('active');
         });
