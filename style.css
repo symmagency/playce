@@ -42,6 +42,8 @@
    --icon-thumbs-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_up.svg');
    --icon-thumbs-down: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_down.svg');
    --icon-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/house.svg');
+   --icon-heart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/heart.svg');
+   --icon-share: url('https://cdn.awsli.com.br/2830/2830294/arquivos/share.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -1456,6 +1458,75 @@ modal-review .actions button {
    justify-content: center;
    left: -16px;
    box-shadow: 1px 1px 11px rgba(0, 0, 0, .2);
+}
+
+.compre-junto__etiqueta {
+   background: var(--color-secondary);
+   color: #fff;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+}
+
+.compre-junto__preco--promocional, .compre-junto__preco--promocional:empty+.compre-junto__preco--regular {
+   font-size: 18px;
+   color: var(--color-white);
+}
+
+.lista-favoritos {
+   background: none;
+   font-size: 16px;
+   display: flex;
+   flex-direction: row-reverse;
+   width: fit-content;
+   gap: 10px;
+   align-items: center;
+   font-size: 0;
+   text-decoration: none;
+}
+
+.append-share-fav {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+}
+
+.lista-favoritos .icon-plus::before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/heart.svg);
+   width: 20px;
+   height: 20px;
+   background-size: 100%;
+}
+
+.lista-favoritos .icon-plus {
+   font-size: 0;
+   height: 20px;
+}
+
+.lista-favoritos:after {
+   content: "Favoritar";
+   font-size: 16px;
+}
+
+.append-share-fav .btn-share {
+   background: none;
+   font-size: 16px;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+.append-share-fav .btn-share:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/share.svg);
+   display: block;
+   background-size: 100%;
 }
 
 /* Rodapé */
