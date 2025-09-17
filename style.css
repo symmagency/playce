@@ -3052,8 +3052,12 @@ ul.slick-dots li {
    background: var(--color-secondary);
 }
 
-#buy-together-position1, .append-bg-product {
+.append-bg-product {
    display: none;
+}
+
+#buy-together-position1 {
+   display: block!important;
 }
 
 }
