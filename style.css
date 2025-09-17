@@ -3099,18 +3099,17 @@ ul.slick-dots li {
    display: none;
 }
 
-ul.nivel-um.active {
+.menu.superior .nivel-um.active {
    position: fixed;
    left: 0;
    top: 0;
    background: #000;
    border: 0;
    height: 100%;
-   overflow-y: scroll
-   ;
+   overflow-y: scroll   ;
 }
 
-ul.nivel-um {
+.menu.superior .nivel-um {
    display: block!important;
    position: fixed;
    left: -100%;
