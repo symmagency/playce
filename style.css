@@ -3043,6 +3043,10 @@ ul.slick-dots li {
    background: var(--color-secondary);
 }
 
+buy-together-position1, .append-bg-product {
+   display: none;
+}
+
 }
 
 /* Ajustes somente no desktop */
