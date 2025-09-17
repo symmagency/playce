@@ -44,6 +44,7 @@
    --icon-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/house.svg');
    --icon-heart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/heart.svg');
    --icon-share: url('https://cdn.awsli.com.br/2830/2830294/arquivos/share.svg');
+   --icon-x: url('https://cdn.awsli.com.br/2830/2830294/arquivos/x.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -3164,6 +3165,36 @@ ul.slick-dots li {
    display: flex;
    gap: 10px;
    align-items: center;
+}
+
+.menu.superior .nivel-um+.close-menu {
+   display: none;
+}
+
+.menu.superior .nivel-um.active+.close-menu {
+   display: block;
+}
+
+.close-menu {
+   background: var(--color-secondary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button), 0px 0px 0px 1000px rgba(0,0,0,.4);
+   color: var(--color-white);
+   font-size: 0;
+   line-height: 0;
+   position: absolute;
+   right: 20px;
+   top: 30px;
+   z-index: 10;
+}
+
+.close-menu:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: var(--icon-x);
+   display: block;
 }
 
 }
