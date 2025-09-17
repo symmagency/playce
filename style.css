@@ -1098,7 +1098,6 @@ input[type="text"]:focus {
    border-radius: 8px;
 }
 
-
 .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho {
    height: 54px !important;
    margin: 0;
@@ -1320,6 +1319,143 @@ modal-review .actions button {
 
 .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho-title {
    display: none;
+}
+
+.compre-junto__produto {
+   background: var(--color-black);
+   border: 0;
+   padding: 0 0 20px;
+   border-radius: 10px;
+   max-width: 205px;
+   z-index: 1;
+}
+
+.compre-junto__imagem img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px 10px 0 0;
+}
+
+.compre-junto__selecionar input {
+   /* padding: 0!Important; */
+   /* appearance: auto; */
+}
+
+
+.compre-junto__selecionar input {
+   height: 36px !important;
+   box-sizing: border-box !important;
+   background: var(--color-primary)!important;
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   font-size: 14px !important;
+   text-shadow: none !important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-white) !important;
+   transition: all .3s;
+   width: 36px;
+   left: 10px;
+   top: 10px;
+}
+
+.compre-junto__selecionar input:checked::after {
+   top: 10px;
+   left: 13px;
+}
+
+.compre-junto__produto--grade .compre-junto__selecionar {
+}
+
+.compre-junto__selecionar input:checked::before {
+   display: none;
+}
+
+.compre-junto__produto--grade::before {
+   width: 32px;
+   height: 32px;
+   font-size: 31px;
+   color: #fff;
+   background: var(--color-primary);
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   left: -16px;
+   box-shadow: 1px 1px 11px rgba(0,0,0,.2);
+}
+
+.compre-junto__produtos.slick-initialized.slick-slider {
+   z-index: 2;
+   position: relative;
+}
+
+.compre-junto__selecionar input::before {
+   display: none;
+}
+
+.compre-junto__nome {
+   padding: 10px 20px 0;
+}
+
+.compre-junto__preco {
+   padding: 0 20px;
+}
+
+.compre-junto__nome a {
+   color: #fff;
+}
+
+.compre-junto__resumo {
+   border: 0;
+   background: var(--color-secondary);
+   border-radius: 6px;
+   position: relative;
+}
+
+.compre-junto__resumo * {
+   color: #fff;
+}
+
+.compre-junto__comprar button {
+   height: 52px !important;
+   box-sizing: border-box !important;
+   background: var(--color-primary);
+   padding: 18px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   font-size: 14px !important;
+   text-shadow: none !important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-white) !important;
+   transition: all .3s;
+}
+
+.compre-junto__titulo {
+   color: #fff;
+   font-weight: normal;
+}
+
+.compre-junto__resumo:before {
+   content: '=';
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%);
+   width: 32px;
+   height: 32px;
+   font-size: 31px;
+   color: #fff;
+   background: var(--color-primary);
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   left: -16px;
+   box-shadow: 1px 1px 11px rgba(0, 0, 0, .2);
 }
 
 /* Rodapé */
