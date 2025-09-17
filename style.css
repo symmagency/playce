@@ -1098,6 +1098,14 @@ input[type="text"]:focus {
    border-radius: 8px;
 }
 
+
+.produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho {
+   height: 54px !important;
+   margin: 0;
+   background: var(--color-black) !important;
+   border: 1px solid rgba(255, 255, 255, .2) !important;
+}
+
 .produto div.principal .acoes-produto {
    display: flex;
    flex-direction: column;

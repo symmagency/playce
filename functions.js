@@ -370,6 +370,57 @@ $('.listagem-item').each(function() {
     }
 });
 
+
+$('.pagina-produto .span5 > .principal').append(`<div class="append-share-fav"></div>`);
+$('.append-share-fav').append($('.produto-compartilhar .lista-favoritos'));
+
+// Botão de compartilhar nas redes sociais
+var btnShare = $('<button type="button" class="btn-share">Compartilhar</button>');
+$('.append-share-fav').append(btnShare);
+
+btnShare.on('click', function() {
+    var url = window.location.href;
+    var title = document.title;
+
+    // Opções de redes sociais
+    var shareLinks = [
+        {
+            nome: 'Facebook',
+            url: 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url)
+        },
+        {
+            nome: 'Twitter',
+            url: 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title)
+        },
+        {
+            nome: 'WhatsApp',
+            url: 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ' ' + url)
+        }
+    ];
+
+    // Cria um menu simples de compartilhamento
+    var $menu = $('<div class="share-menu"></div>');
+    shareLinks.forEach(function(rede) {
+        var $link = $('<a href="' + rede.url + '" target="_blank" rel="noopener noreferrer">' + rede.nome + '</a><br>');
+        $menu.append($link);
+    });
+
+    // Remove menu anterior, se existir
+    $('.share-menu').remove();
+
+    // Adiciona o menu após o botão
+    btnShare.after($menu);
+
+    // Fecha o menu ao clicar fora
+    $(document).on('click.shareMenu', function(e) {
+        if (!$(e.target).closest('.btn-share, .share-menu').length) {
+            $('.share-menu').remove();
+            $(document).off('click.shareMenu');
+        }
+    });
+});
+
+
     if ($(window).width() > 768) {
         // desktop
         // Antes de adicionar, verifica se já existe para evitar duplicação
@@ -560,3 +611,4 @@ $('.listagem-item').each(function() {
     }
 
 });
+
