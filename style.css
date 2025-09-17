@@ -81,6 +81,7 @@
                   background-color: #6554a2;
                   display: flex;
                   min-height: 629px;
+                  margin-top: 50px;
                }
 
                #listagemProdutos > .vitrine-23499980 {
@@ -610,6 +611,10 @@ input[type="text"]:focus {
    padding: 0 !important;
    max-width: 1180px;
    margin: 60px auto 0!important;
+}
+
+.categorias-section .titulo-categoria {
+   margin: 100px auto 0!important;
 }
 
 .listagem .titulo-categoria:hover {
@@ -1630,6 +1635,10 @@ modal-review .actions button {
 
 .banner.cheio .flex-direction-nav .flex-next {
    right: 0;
+}
+
+.row-fluid.banner.cheio+.banner {
+   display: none;
 }
 
 .banner.cheio .flex-direction-nav {
