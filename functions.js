@@ -370,8 +370,6 @@ $('.listagem-item').each(function() {
     }
 });
 
-$(window).on('resize', function() {
-
     if ($(window).width() > 768) {
         // desktop
         // Antes de adicionar, verifica se já existe para evitar duplicação
@@ -560,6 +558,5 @@ $(window).on('resize', function() {
             `);
         }
     }
-});
 
 });
