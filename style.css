@@ -1479,13 +1479,22 @@ modal-review .actions button {
 .lista-favoritos {
    background: none;
    font-size: 16px;
-   display: flex;
+   display: flex!important;
    flex-direction: row-reverse;
    width: fit-content;
    gap: 10px;
    align-items: center;
    font-size: 0;
    text-decoration: none;
+}
+
+.produto .principal > div {
+   border: 0;
+   margin: 0;
+}
+
+.acoes-produto .preco-produto, .produto-compartilhar {
+   border: 0;
 }
 
 .append-share-fav {
