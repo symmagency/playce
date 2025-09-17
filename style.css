@@ -3099,6 +3099,28 @@ ul.slick-dots li {
    display: none;
 }
 
+ul.nivel-um.active {
+   position: fixed;
+   left: 0;
+   top: 0;
+   background: #000;
+   border: 0;
+   height: 100%;
+   overflow-y: scroll
+   ;
+}
+
+ul.nivel-um {
+   display: block!important;
+   position: fixed;
+   left: -100%;
+   top: 0;
+   z-index: 1000;
+   transition: all .5s;
+   margin: 0!important;
+   padding: 10px;
+}
+
 }
 
 /* Ajustes somente no desktop */
