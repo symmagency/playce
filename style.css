@@ -1505,9 +1505,37 @@ modal-review .actions button {
    position: relative;
 }
 
+.share-menu {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 40px;
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   background: var(--color-secondary);
+   width: fit-content;
+   margin: 0 auto;
+   font-size: 14px;
+   padding: 16px 30px;
+   border-radius: 6px;
+   box-shadow: 1px 6px 30px rgba(0, 0, 0, .4);
+}
+
 .modal-footer {
    display: flex;
    justify-content: flex-end;
+   background: var(--color-secondary);
+   border-top: 1px solid rgba(255,255,255,.1);
+   box-shadow: none;
+}
+
+.modal-body * {
+   color: #fff;
+}
+
+.modal {
+   background: var(--color-black);
 }
 
 .lista-favoritos .icon-plus::before {
@@ -3065,39 +3093,6 @@ ul.slick-dots li {
 
 #buy-together-position1 {
    display: block!important;
-}
-
-.share-menu {
-   position: absolute;
-   left: 0;
-   right: 0;
-   top: 40px;
-   display: flex;
-   gap: 10px;
-   justify-content: center;
-   background: var(--color-secondary);
-   width: fit-content;
-   margin: 0 auto;
-   font-size: 14px;
-   padding: 16px 30px;
-   border-radius: 6px;
-   box-shadow: 1px 6px 30px rgba(0, 0, 0, .4);
-}
-
-.modal-footer {
-   display: flex;
-   justify-content: flex-end;
-   background: var(--color-secondary);
-   border-top: 1px solid rgba(255,255,255,.1);
-   box-shadow: none;
-}
-
-.modal-body * {
-   color: #fff;
-}
-
-.modal {
-   background: var(--color-black);
 }
 
 }
