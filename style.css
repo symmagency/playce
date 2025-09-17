@@ -3103,10 +3103,11 @@ ul.slick-dots li {
    position: fixed;
    left: 0;
    top: 0;
-   background: #000;
+   background: var(--color-black);
    border: 0;
    height: 100%;
-   overflow-y: scroll   ;
+   overflow-y: scroll;
+   padding: 0;
 }
 
 .menu.superior .nivel-um {
@@ -3118,6 +3119,20 @@ ul.slick-dots li {
    transition: all .5s;
    margin: 0!important;
    padding: 10px;
+}
+
+.menu.superior .nivel-dois {
+   background: none;
+   border: 0;
+   padding: 0;
+}
+
+.menu.superior .nivel-dois > li {
+   padding: 0;
+}
+
+.menu.superior .nivel-um>li {
+   padding: 0 32px;
 }
 
 .account-menu {
