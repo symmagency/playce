@@ -3120,6 +3120,37 @@ ul.slick-dots li {
    padding: 10px;
 }
 
+.account-menu {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 32px;
+}
+
+.account-menu .myaccount, 
+.account-menu .myorders {
+   background: var(--color-secondary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   color: var(--color-white);
+}
+
+.hello-menu i {
+   width: 32px;
+   height: 32px;
+   display: block;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/icon-visit.svg) center no-repeat;
+}
+
+.hello-menu {
+   font-size: 16px;
+   color: var(--color-white);
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
 }
 
 /* Ajustes somente no desktop */

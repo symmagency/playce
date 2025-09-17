@@ -551,11 +551,26 @@ btnShare.on('click', function() {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
         $('#cabecalho .span3 > .logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
-        $('.menu.superior .nivel-um').prepend('<button class="close-menu">X</button>');
+        $('.menu.superior').addClass('active');
+        $('.menu.superior').prepend('<button class="close-menu">X</button>');
         $('.close-menu').click(function(){
            $('.menu.superior .nivel-um').removeClass('active');
         });
-        
+        $('.menu.superior .nivel-um').prepend(`
+            <div class="account-menu">
+              <div class="hello-menu">
+                <i></i>Olá, visitante!
+              </div>
+              <button class="myaccount">
+                Minha conta
+              </button>
+              <button class="myorders">
+                Meus pedidos
+              </button>
+            </div>
+        `);
+
+
         if ($('#cabecalho .sign-up-header').length === 0) {
             $('#cabecalho .span3 > .logo').after(`
                 <div class="sign-up-header">
