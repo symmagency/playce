@@ -1340,11 +1340,6 @@ modal-review .actions button {
    border-radius: 10px 10px 0 0;
 }
 
-.compre-junto__selecionar input {
-   /* padding: 0!Important; */
-   /* appearance: auto; */
-}
-
 
 .compre-junto__selecionar input {
    height: 36px !important;
@@ -1368,9 +1363,6 @@ modal-review .actions button {
 .compre-junto__selecionar input:checked::after {
    top: 10px;
    left: 13px;
-}
-
-.compre-junto__produto--grade .compre-junto__selecionar {
 }
 
 .compre-junto__selecionar input:checked::before {
@@ -2724,14 +2716,19 @@ modal-review .actions button {
       flex-direction: column;
    }
 
-   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
-      flex-direction: column;
-   }
-
    #rodape .assinatura-rodape {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      width: 100%;
+   }
+
+   #rodape>div:last-child .conteiner {
+      padding: 0;
+  }
+
+  #rodape>div:last-child .conteiner .row-fluid > .span9.span12 p {
       text-align: center;
    }
 
@@ -2746,6 +2743,7 @@ modal-review .actions button {
   
   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
       flex-direction: column;
+      font-size: 14px;
   }
   
   #rodape .assinatura-rodape {
@@ -2756,16 +2754,11 @@ modal-review .actions button {
   }
   
   .assinatura-rodape a.symm {
-      width: auto;
+      width: inherit;
   }
   
   #rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid {
       flex-direction: column;
-  }
-  
-  #rodape .institucional > .conteiner > .row-fluid {
-      flex-direction: column-reverse;
-      padding: 0 16px;
   }
   
   #rodape .span4.selos {
@@ -2854,6 +2847,8 @@ modal-review .actions button {
 #rodape .institucional > .conteiner > .row-fluid {
    width: 100%;
    box-sizing: border-box;
+   flex-direction: column-reverse;
+   padding: 0 16px;
 }
 
 .listagem .listagem-linha li {
@@ -3133,7 +3128,7 @@ ul.slick-dots li {
 }
 
 .menu.superior .nivel-um>li {
-   padding: 0 32px;
+   padding: 0 32px 24px;
 }
 
 .account-menu {
@@ -3195,6 +3190,7 @@ ul.slick-dots li {
    height: 20px;
    background: var(--icon-x);
    display: block;
+   background-size: 100%;
 }
 
 }
