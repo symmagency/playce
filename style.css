@@ -2717,7 +2717,7 @@ modal-review .actions button {
    }
 
    #rodape .assinatura-rodape {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -2739,18 +2739,12 @@ modal-review .actions button {
   #rodape>div:last-child .conteiner > .row-fluid {
       display: flex;
       flex-direction: column;
+      gap: 24px;
   }
   
   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
       flex-direction: column;
       font-size: 14px;
-  }
-  
-  #rodape .assinatura-rodape {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
   }
   
   .assinatura-rodape a.symm {
@@ -2849,6 +2843,7 @@ modal-review .actions button {
    box-sizing: border-box;
    flex-direction: column-reverse;
    padding: 0 16px;
+   gap: 40px;
 }
 
 .listagem .listagem-linha li {
