@@ -45,6 +45,8 @@
    --icon-heart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/heart.svg');
    --icon-share: url('https://cdn.awsli.com.br/2830/2830294/arquivos/share.svg');
    --icon-x: url('https://cdn.awsli.com.br/2830/2830294/arquivos/x.svg');
+   --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
+   --icon-pedidos: url('https://cdn.awsli.com.br/2830/2830294/arquivos/package.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -3211,6 +3213,29 @@ ul.slick-dots li {
    align-items: center;
    border-right: 1px solid rgba(255,255,255,.2);
    color: var(--color-white);
+   flex-direction: column;
+}
+
+span.icon-contato,
+span.icon-conta,
+span.icon-pedidos,
+span.icon-favoritos,
+span.icon-buscar {
+   width: 18px;
+   height: 18px;
+   background-size: 100%;
+}
+
+span.icon-contato {
+   background: var(--icon-chat) center no-repeat;
+}
+
+span.icon-conta {
+   background: var(--icon-user) center no-repeat;
+}
+
+span.icon-pedidos {
+   background: var(--icon-pedidos) center no-repeat;
 }
 
 }
