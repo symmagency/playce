@@ -3238,6 +3238,14 @@ span.icon-pedidos {
    background: var(--icon-pedidos) center no-repeat;
 }
 
+span.icon-favoritos {
+   background: var(--icon-heart) center no-repeat;
+}
+
+span.icon-buscar {
+   background: var(--icon-search) center no-repeat;
+}
+
 }
 
 /* Ajustes somente no desktop */
