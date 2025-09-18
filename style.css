@@ -3223,7 +3223,7 @@ span.icon-favoritos,
 span.icon-buscar {
    width: 18px;
    height: 18px;
-   background-size: 100%;
+   background-size: 100%!important;
 }
 
 span.icon-contato {

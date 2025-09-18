@@ -587,12 +587,16 @@ btnShare.on('click', function() {
                 <span class="icon-favoritos"></span>
                 <span class="floating-bar-label">Favoritos</span>
               </a>
-              <a class="floating-bar-item" href="/busca">
+              <a class="floating-bar-item search-bar" href="#">
                 <span class="icon-buscar"></span>
                 <span class="floating-bar-label">Buscar</span>
               </a>
             </div>
         `);
+
+        $('.search-bar').on('click', function () {
+            $('.busca #form-buscar input#auto-complete').focus();
+        });
 
 
         if ($('#cabecalho .sign-up-header').length === 0) {
