@@ -2871,6 +2871,15 @@ modal-review .actions button {
    font-size: 14px;
    margin-top: 12px;
    opacity: .7;
+} 
+
+.pagina-categoria .caixa-destaque h1:before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/cat-box.png) center no-repeat;
+   display: block;
+   width: 80px;
+   height: 80px;
+   margin: 0 auto;
 }
 
 /* Código Mobile */
