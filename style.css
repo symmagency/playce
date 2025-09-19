@@ -3693,6 +3693,10 @@ form#formCalcularFrete {
    height: 20px;
 }
 
+.tabela-carrinho .bg-dark {
+   display: none;
+}
+
 .append-controls {
    display: flex;
    flex-direction: column;
