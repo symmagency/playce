@@ -741,9 +741,9 @@ $(document).on('click', '.faq-pergunta', function() {
 });
 
 // Código do carrinho
-$('.pagina-carrinho .tabela-carrinho').after(`<div class="order-resume"><h3>Resumo do pedido</h3><div class="append-controls"></div></div>`);
-$('.pagina-carrinho .append-controls').append($('.subtotal'));
-$('.pagina-carrinho .append-controls').append($('.total'));
+$('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').after(`<div class="order-resume"><h3>Resumo do pedido</h3><div class="append-controls"></div></div>`);
+$('.pagina-carrinho:not(.carrinho-checkout) .append-controls').append($('.subtotal'));
+$('.pagina-carrinho:not(.carrinho-checkout) .append-controls').append($('.total'));
 $('.append-controls').after($('.finalizar-compra > form'));
 
 });
