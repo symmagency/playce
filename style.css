@@ -3962,6 +3962,8 @@ form#formCalcularFrete {
 .identificacao .control-group .submit-email.botao.principal {
    height: 40px!important;
    position: relative;
+   display: flex;
+   margin: 0;
 }
 
 .carrinho-checkout .identificacao .control-group {
@@ -4029,6 +4031,15 @@ div#login-content {
 
   .acao-editar .selo-ssl {
       display: flex!important;
+  }
+
+  .identificacao .control-group .submit-email.botao.principal {
+      width: 100%;
+   }
+
+   .carrinho-checkout .identificacao .form-horizontal .control-group {
+      flex-direction: column;
+      padding: 0 20px;
   }
 
 }
