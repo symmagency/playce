@@ -470,8 +470,8 @@ btnShare.on('click', function() {
             });
         });
 
-        // Verifica se está na página de categoria antes de executar
-        if ($('.pagina-categoria').length > 0) {
+        // Verifica se está na página de categoria OU na página de busca antes de executar
+        if ($('.pagina-categoria').length > 0 || $('.pagina-busca').length > 0) {
             // Altera o atributo data-produtos-linha para 3
             $('#listagemProdutos').attr('data-produtos-linha', '3');
             
