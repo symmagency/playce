@@ -3650,3 +3650,7 @@ floating-bar-item.search-bar {
    color: var(--color-white);
    opacity: .7;
 }
+
+form#formCalcularFrete {
+   display: none;
+}
