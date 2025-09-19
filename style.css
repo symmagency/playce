@@ -3762,3 +3762,7 @@ form#formCalcularFrete {
    font-size: 16px;
    font-weight: 500;
 }
+
+div#corpo {
+   min-height: calc(100vh - 218px);
+}
