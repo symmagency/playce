@@ -2531,6 +2531,7 @@ modal-review .actions button {
 
 .breadcrumbs ul li * {
    font-size: 12px;
+   color: var(--color-white);
 }
 
 .breadcrumbs ul li:last-child a {
@@ -2795,6 +2796,50 @@ modal-review .actions button {
    position: relative;
 }
 
+.coluna.span3.no-results {
+   display: none;
+}
+
+.conteudo.span9.no-results {
+   margin: 50px 0 0;
+   text-align: center;
+   padding: 60px;
+   background: var(--color-black);
+   border-radius: 10px;
+   width: 100%;
+}
+
+.conteudo.span9.no-results .breadcrumbs {
+   background: var(--color-secondary);
+   margin: 0 auto 30px;
+}
+
+.conteudo.span9.no-results h1:before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/search-empty.png) center no-repeat;
+   display: block;
+   width: 80px;
+   height: 80px;
+   margin: 0 auto;
+}
+
+.conteudo.span9.no-results>.row-fluid {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.conteudo.span9.no-results>.row-fluid .span6 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.conteudo.span9.no-results>.row-fluid .span6 ol {
+   margin: 0 0 32px;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -2802,6 +2847,18 @@ modal-review .actions button {
    .atalhos-mobile.visible-phone.fundo-secundario.borda-principal {
       display: none !important;
   }
+
+   .breadcrumbs ul li a {
+      font-size: 12px;
+   }
+
+   .breadcrumbs ul li:nth-last-child(2) {
+      display: flex;
+   }
+
+   .conteudo.span9.no-results {
+      padding: 32px;
+   }
 
   .benefits-row {
       background: none;
