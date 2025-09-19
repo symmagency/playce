@@ -3642,6 +3642,9 @@ floating-bar-item.search-bar {
    width: 350px;
    background: var(--color-black);
    border-radius: 4px;
+   max-width: 350px;
+   padding: 20px;
+   margin-left: 10px;
 }
 
 .order-resume h3 {
@@ -3649,8 +3652,29 @@ floating-bar-item.search-bar {
    font-weight: 500;
    color: var(--color-white);
    opacity: .7;
+   margin: 0 0 20px;
 }
 
 form#formCalcularFrete {
    display: none;
+}
+
+.acao-editar .selo-ssl {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: center;
+}
+
+.acao-editar .span12 > a.botao {
+   display: none;
+}
+
+
+.acao-editar .botao.principal {
+   width: 100%;
+   margin: 0;
+   height: 54px !important;
+   font-size: 16px !important;
 }
