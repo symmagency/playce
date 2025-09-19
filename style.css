@@ -2621,6 +2621,17 @@ modal-review .actions button {
    box-shadow: none;
    border: 0;
    padding: 0;
+   width: 100%;
+}
+
+.dropdown-backdrop {
+   display: none;
+}
+
+.btn-group.open .dropdown-toggle {
+   background: none !important;
+   border: 0;
+   box-shadow: none;
 }
 
 .ordenar-listagem .btn-group>.btn:first-child {
