@@ -3780,3 +3780,14 @@ div#corpo {
 .tabela-carrinho * {
    color: var(--color-white);
 }
+
+.tabela-carrinho .quantidade input[type="text"] {
+   background: none!important;
+   border: 0!important;
+   color: var(--color-white);
+}
+
+.tabela-carrinho .quantidade {
+   background: var(--color-secondary);
+   border-radius: var(--border-radius-md);
+}
