@@ -3985,6 +3985,7 @@ form#formCalcularFrete {
 
 .modal-comprar-ajax-status .fancybox-skin {
    background: var(--color-black);
+   height: fit-content !important;
 }
 
 #comprar-ajax-status .sucesso .buttons .botao.principal {
