@@ -1675,6 +1675,7 @@ modal-review .actions button {
 #barraNewsletter .componente .botao {
    display: flex;
    gap: 10px;
+   z-index: 0;
 }
 
 #rodape .institucional {
@@ -2631,6 +2632,21 @@ modal-review .actions button {
    font-weight: 400;
 }
 
+.produto .principal .acoes-produto .icon-shopping-cart:before {
+   background: var(--icon-purchase);
+   background-size: 100%;
+}
+
+.produto .principal .acoes-produto .icon-shopping-cart {
+   width: 20px;
+   height: 20px;
+}
+.produto .acoes-produto .comprar .botao.principal {
+   flex-direction: row-reverse;
+   gap: 12px;
+   align-items: center;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -2942,6 +2958,7 @@ ul.slick-dots li {
    padding: 0 16px!important;
    width: 100%;
    box-sizing: border-box;
+   margin: 32px auto 0 !important;
 }
 
 .listagem .listagem-item {
@@ -3246,6 +3263,21 @@ span.icon-buscar {
    background: var(--icon-search) center no-repeat;
 }
 
+floating-bar-item.search-bar {
+   border: 0;
+}
+
+.produto .principal > div.append-share-fav {
+   padding: 17px 0;
+}
+
+.append-flags > span {
+   font-size: 11px;
+}
+
+.produto>.row-fluid:nth-child(2) {
+   margin: 0;
+}
 }
 
 /* Ajustes somente no desktop */
@@ -3281,7 +3313,7 @@ span.icon-buscar {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: linear-gradient(180deg, #14171A00 0%, #14171A 100%);
+      background: linear-gradient(180deg, #14171A00 0%, #14171A 60%);
       z-index: 1;
       top: 0;
       display: block;
