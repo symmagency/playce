@@ -3483,6 +3483,37 @@ floating-bar-item.search-bar {
 .produto>.row-fluid:nth-child(2) {
    margin: 0;
 }
+
+.pagina-categoria .listagem .listagem-linha>ul,
+.pagina-busca .listagem .listagem-linha>ul {
+   margin: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 12px;
+}
+
+.pagina-categoria .row-fluid:before, 
+.pagina-categoria .row-fluid:after,
+.pagina-busca .row-fluid:before, 
+.pagina-busca .row-fluid:after {
+   display: none;
+}
+
+.pagina-busca .listagem .listagem-linha,
+.pagina-categoria .listagem .listagem-linha {
+   padding: 0;
+   margin: 0;
+}
+
+.pagina-categoria .listagem .listagem-item, .pagina-busca .listagem .listagem-item {
+   margin: 0px !important;
+}
+
+.pagina-categoria .listagem .listagem-linha ul:after,
+.pagina-busca .listagem .listagem-linha ul:after {
+   display: none;
+}
+
 }
 
 /* Ajustes somente no desktop */
