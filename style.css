@@ -2612,6 +2612,7 @@ modal-review .actions button {
    height: 36px;
    display: flex;
    align-items: center;
+   box-sizing: border-box;
 }
 
 .ordenar-listagem label {
@@ -2624,12 +2625,32 @@ modal-review .actions button {
    background: none;
    border: oldlace;
    box-shadow: none;
-   padding-left: 0;
+   padding: 0;
+}
+
+.ordenar-listagem .btn .icon-caret-down:before {
+   font-size: 19px;
+}
+
+.coluna>div, #corpo .conteiner>div {
+   margin-bottom: 4px;
+}
+
+.ordenar-listagem .dropdown-menu {
+   right: -16px;
+   left: auto;
+   background: var(--color-secondary);
+   top: 30px;
+}
+
+.ordenar-listagem .dropdown-menu * {
+   color: #fff;
 }
 
 .pagina-categoria .breadcrumbs ul li strong {
    color: var(--color-white);
    font-weight: 400;
+   padding: 0;
 }
 
 .produto .principal .acoes-produto .icon-shopping-cart:before {
@@ -2645,6 +2666,66 @@ modal-review .actions button {
    flex-direction: row-reverse;
    gap: 12px;
    align-items: center;
+}
+
+.pagination ul > li a {
+   display: flex;
+   gap: 4px;
+   background: var(--color-secondary);
+   padding: 8px 16px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   border: 0;
+   height: 36px;
+   box-sizing: border-box;
+   align-items: center;
+   font-size: 14px;
+   color: var(--color-white);
+   transition: all .4s;
+}
+
+.pagination ul>.active>a, .pagination ul>.active>span {
+   background: var(--color-primary);
+   color: #fff;
+   font-weight: 500;
+}
+
+.ordenar-listagem .pagination ul {
+   display: flex;
+   gap: 8px;
+}
+
+.ordenar-listagem .pagination {
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+}
+
+.pagination ul>.disabled>span, .pagination ul>.disabled>a, .pagination ul>.disabled>a:hover, .pagination ul>.disabled>a:focus {
+   background: var(--color-secondary);
+   opacity: .5;
+}
+
+
+.pagination ul>li>a:hover {
+   background: var(--color-black);
+}
+
+.pagination .icon-double-angle-right:before {
+   content: "";
+   background: var(--icon-chev-right);
+   width: 20px;
+   height: 20px;
+   background-size: 100%;
+}
+
+.pagination .icon-double-angle-left:before {
+   content: "";
+   background: var(--icon-chev-left);
+   width: 20px;
+   height: 20px;
+   background-size: 100%;
 }
 
 /* Código Mobile */

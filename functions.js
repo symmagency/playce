@@ -439,7 +439,7 @@ btnShare.on('click', function() {
         $('#cabecalho .conteudo-topo').prepend($('#cabecalho .menu.superior'));
         $('.pagina-produto').prepend($('.append-bg-product'));
         $('.pagina-categoria .conteudo').prepend($('.pagina-categoria .breadcrumbs'));
-        $('.pagina-categoria .conteudo .ordenar-listagem > .row-fluid').prepend($('.pagina-categoria .conteudo h1'));
+        $('.pagina-categoria .conteudo .ordenar-listagem.topo > .row-fluid').prepend($('.pagina-categoria .conteudo h1'));
         
         
 
