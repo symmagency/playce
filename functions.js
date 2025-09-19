@@ -657,7 +657,7 @@ btnShare.on('click', function() {
         }
     }
 
-    
+
 // Estrutura para múltiplas categorias, cada uma com seu próprio FAQ
 var faqsPorCategoria = [
     {
@@ -709,7 +709,7 @@ faqsPorCategoria.forEach(function(cat) {
     if ($(seletor).length > 0) {
         // Evita duplicação
         if ($(seletor + ' .faq-categoria').length === 0) {
-            $(seletor).prepend(criarFaqHtml(cat.faqs));
+            $(seletor).append(criarFaqHtml(cat.faqs));
         }
     }
 });
