@@ -3831,4 +3831,8 @@ form#formCalcularFrete {
       box-sizing: border-box;
   }
 
+  .acao-editar .selo-ssl {
+      display: flex!important;
+  }
+
 }
