@@ -554,11 +554,21 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             var valorAtual = parseInt($input.val(), 10) || 1;
             $input.val(valorAtual + 1).trigger('change');
         });
-        
-        // Corrigido: agora clona o menu do usuário logado e substitui corretamente o header de cadastro
-        if ($('.menu-user-logged').length && $('.menu-user-logged').is(':visible')) {
-            $('.sign-up-header').replaceWith($('.menu-user-logged').first().clone(true, true));
+
+    // Tenta substituir o .sign-up-header pelo .menu-user-logged, com até 5 tentativas caso não esteja disponível imediatamente
+    function tentarSubstituirMenuUserLogged(tentativasRestantes = 5) {
+        var $menuUserLogged = $('.btn-group.menu-user-logged');
+        var $signUpHeader = $('.sign-up-header');
+        // Verifica se o usuário está logado pelo atributo style vazio ou undefined
+        if (($menuUserLogged.attr('style') === '' || $menuUserLogged.attr('style') === undefined) && $signUpHeader.length) {
+            $signUpHeader.replaceWith($menuUserLogged.show());
+        } else if (tentativasRestantes > 0) {
+            setTimeout(function() {
+                tentarSubstituirMenuUserLogged(tentativasRestantes - 1);
+            }, 300);
         }
+    }
+    tentarSubstituirMenuUserLogged();
     
     } else {
         //mobile 
