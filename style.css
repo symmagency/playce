@@ -3645,6 +3645,7 @@ floating-bar-item.search-bar {
    max-width: 350px;
    padding: 20px;
    margin-left: 10px;
+   height: fit-content;
 }
 
 .order-resume h3 {
