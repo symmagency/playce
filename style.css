@@ -2729,6 +2729,57 @@ modal-review .actions button {
    background-size: 100%;
 }
 
+.faq-categoria {
+   padding: 32px;
+   background: var(--color-black);
+   display: flex;
+   gap: 4px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   flex-direction: column;
+   color: #fff;
+   margin-top: 32px;
+}
+
+.faq-categoria h2 {
+   font-size: 24px;
+   font-weight: 500;
+}
+
+.faq-pergunta {
+   background: var(--color-secondary);
+   display: flex;
+   gap: 4px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+   height: 36px;
+   align-items: center;
+   padding: 0 16px;
+   color: #fff;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.faq-pergunta:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: var(--icon-chev-down);
+   background-size: 100%;
+}
+
+.faq-resposta {
+   padding: 16px 24px 24px;
+   font-size: 14px;
+   line-height: 20px;
+   opacity: .7;
+}
+
+.faq-pergunta[aria-expanded="true"]:after {
+   background: var(--icon-chev-up);
+   background-size: 100%;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
