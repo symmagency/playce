@@ -3945,6 +3945,54 @@ form#formCalcularFrete {
    height: 40px !important;
 }
 
+.tema-transparente .identificacao .identificacao-inner {
+   background: none;
+   border: 0;
+}
+
+.carrinho-checkout .identificacao hr.sem-margem {
+   display: none;
+}
+
+.identificacao .control-group input {
+   box-shadow: none;
+   width: 100%;
+}
+
+.identificacao .control-group .submit-email.botao.principal {
+   height: 40px!important;
+   position: relative;
+}
+
+.carrinho-checkout .identificacao .control-group {
+   display: flex;
+   gap: 12px;
+}
+
+.identificacao .email-box {
+   margin: 0!important;
+   width: 100%;
+}
+
+.checkout-alerta-seguro {
+   background: var(--color-black);
+   border: 1px solid rgba(255,255,255,.1);
+}
+
+.checkout-alerta-seguro .checkout-alerta-seguro-icon {
+   color: #2a382d;
+}
+
+.checkout-alerta-seguro span {
+   color: #fff;
+   opacity: .7;
+}
+
+div#login-content {
+   background: var(--color-black);
+   border-radius: var(--border-radius-md);
+}
+
 @media screen and (max-width: 768px) {
 
    .finalizar-compra .caixa-sombreada {
