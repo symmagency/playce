@@ -657,5 +657,76 @@ btnShare.on('click', function() {
         }
     }
 
+    
+// Estrutura para múltiplas categorias, cada uma com seu próprio FAQ
+var faqsPorCategoria = [
+    {
+        id: '23387220', // Exemplo de ID de categoria
+        faqs: [
+            {
+                pergunta: "O que é um Gift Card da PlayStation Store?",
+                resposta: "Um Gift Card da PlayStation Store é um cartão pré-pago que pode ser utilizado para adicionar créditos à sua conta PlayStation, permitindo a compra de jogos, assinaturas e outros conteúdos digitais."
+            },
+            {
+                pergunta: "Como posso resgatar um Gift Card da PlayStation Store?",
+                resposta: "<ol><li>No console PlayStation 4 ou PlayStation 5:<ol type='a'><li>Acesse a PlayStation Store no menu principal.</li><li>Selecione 'Resgatar Códigos'.</li><li>Digite o código do Gift Card e siga as instruções.</li></ol></li><li>Pela web ou aplicativo do PlayStation App:<ol type='a'><li>Faça login na sua conta PlayStation.</li><li>No menu, selecione 'Resgatar Códigos'.</li><li>Digite o código de 12 dígitos do cartão.</li></ol></li></ol>"
+            },
+            {
+                pergunta: "Onde posso comprar Gift Cards da PlayStation Store?",
+                resposta: "Você pode adquirir Gift Cards em lojas físicas, supermercados, lojas online ou diretamente em revendedores autorizados."
+            },
+            {
+                pergunta: "Posso usar um Gift Card para comprar assinaturas do PlayStation Plus?",
+                resposta: "Sim, os créditos adicionados à sua conta com o Gift Card podem ser usados para adquirir assinaturas do PlayStation Plus."
+            },
+            {
+                pergunta: "É possível comprar moedas virtuais de jogos, como V-Bucks do Fortnite, com um Gift Card?",
+                resposta: "Sim, após resgatar o Gift Card, você pode usar o saldo para comprar moedas virtuais de diversos jogos disponíveis na PlayStation Store."
+            }
+        ]
+    },
+    // Adicione outros objetos de categoria conforme necessário, mudando o id e as perguntas/respostas
+];
+
+// Função para criar o HTML do FAQ
+function criarFaqHtml(faqs) {
+    var html = '<div class="faq-categoria"><h2>Perguntas Frequentes</h2>';
+    faqs.forEach(function(faq, idx) {
+        html += `
+        <div class="faq-item">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resposta-${idx}">${faq.pergunta}</button>
+            <div class="faq-resposta" id="faq-resposta-${idx}" style="display:none;">${faq.resposta}</div>
+        </div>
+        `;
+    });
+    html += '</div>';
+    return html;
+}
+
+// Insere o FAQ em cada categoria definida
+faqsPorCategoria.forEach(function(cat) {
+    var seletor = '.categoria-' + cat.id + ' .secao-principal .conteudo.span9';
+    if ($(seletor).length > 0) {
+        // Evita duplicação
+        if ($(seletor + ' .faq-categoria').length === 0) {
+            $(seletor).prepend(criarFaqHtml(cat.faqs));
+        }
+    }
 });
+
+// Evento para abrir/fechar as respostas
+$(document).on('click', '.faq-pergunta', function() {
+    var $btn = $(this);
+    var $resposta = $btn.next('.faq-resposta');
+    var aberto = $btn.attr('aria-expanded') === 'true';
+    $('.faq-pergunta').attr('aria-expanded', 'false');
+    $('.faq-resposta').slideUp(200);
+    if (!aberto) {
+        $btn.attr('aria-expanded', 'true');
+        $resposta.slideDown(200);
+    }
+});
+
+});
+
 
