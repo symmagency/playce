@@ -3631,3 +3631,22 @@ floating-bar-item.search-bar {
   }
 
 }
+
+/* Código do carrinho  */
+
+.finalizar-compra .caixa-sombreada {
+   display: flex;
+}
+
+.order-resume {
+   width: 350px;
+   background: var(--color-black);
+   border-radius: 4px;
+}
+
+.order-resume h3 {
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--color-white);
+   opacity: .7;
+}

@@ -740,4 +740,7 @@ $(document).on('click', '.faq-pergunta', function() {
     }
 });
 
+// Código do carrinho
+$('.pagina-carrinho .tabela-carrinho').after(`<div class="order-resume"><h3></h3><div class="append-controls"></div></div>`);
+
 });
