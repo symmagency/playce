@@ -3711,8 +3711,18 @@ form#formCalcularFrete {
 .total {
    padding-top: 20px;
    border-top: 1px solid rgba(255,255,255,.10);
-   margin-top: 20px;
+   margin-top: 0px;
    align-items: center;
+}
+
+.acao-editar .span12:after {
+   content: "Ao clicar em “Finalizar compra”, você confirma que conferiu as informações do produto e está ciente de que está adquirindo o item correto.";
+   margin-top: 20px;
+   display: block;
+   font-size: 12px;
+   text-align: left;
+   color: var(--color-white);
+   opacity: .7;
 }
 
 .acao-editar:before,
