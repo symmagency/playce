@@ -3920,6 +3920,14 @@ form#formCalcularFrete {
    justify-content: space-between;
 }
 
+.carrinho-checkout a.btn.btn-small {
+   background: var(--color-secondary);
+   border: 0;
+   padding: 4px 16px;
+   text-shadow: none;
+   font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
 
    .finalizar-compra .caixa-sombreada {
