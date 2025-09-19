@@ -2596,7 +2596,7 @@ modal-review .actions button {
    font-weight: 500;
 }
 
-.conteudo .input-append {
+.conteudo .ordenar-listagem .input-append:first-child {
    box-shadow: var(--shadow-button);
    background: var(--color-secondary);
    font-size: 14px;
