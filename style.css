@@ -2851,6 +2851,28 @@ modal-review .actions button {
    margin: 0 0 32px;
 }
 
+.pagina-carrinho .caixa-destaque h1:before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/cart-icon.png) center no-repeat;
+   display: block;
+   width: 80px;
+   height: 80px;
+   margin: 0 auto;
+}
+
+.pagina-carrinho .caixa-destaque h1 {
+   font-size: 22px;
+   font-weight: 500;
+}
+
+.pagina-carrinho .caixa-destaque h1:after {
+   content: "Hey, gamer! Você está tentando acessar uma categoria, mas não existem produtos adicionados nela.";
+   display: block;
+   font-size: 14px;
+   margin-top: 12px;
+   opacity: .7;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -3408,7 +3430,7 @@ ul.slick-dots li {
    color: var(--color-white);
    font-size: 0;
    line-height: 0;
-   position: absolute;
+   position: fixed;
    right: 20px;
    top: 30px;
    z-index: 10;
@@ -3549,6 +3571,7 @@ floating-bar-item.search-bar {
 #corpo .conteiner > div.breadcrumbs {
    margin-bottom: 32px;
 }
+
 
 }
 
