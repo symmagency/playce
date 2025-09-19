@@ -2596,7 +2596,7 @@ modal-review .actions button {
    font-weight: 500;
 }
 
-.pagina-categoria .conteudo .input-append {
+.conteudo .input-append {
    box-shadow: var(--shadow-button);
    background: var(--color-secondary);
    font-size: 14px;
