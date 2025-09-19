@@ -3983,6 +3983,15 @@ form#formCalcularFrete {
    height: fit-content;
 }
 
+.modal-comprar-ajax-status .fancybox-skin {
+   background: var(--color-black);
+}
+
+#comprar-ajax-status .sucesso .buttons .botao.principal {
+   display: flex;
+   align-items: center;
+}
+
 .checkout-alerta-seguro .checkout-alerta-seguro-icon {
    color: #2a382d;
 }
