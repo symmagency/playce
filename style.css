@@ -2780,6 +2780,21 @@ modal-review .actions button {
    background-size: 100%;
 }
 
+.coluna .newsletter input[type="text"] {
+   height: 36px !important;
+   box-sizing: border-box!important;
+   width: 100%;
+}
+
+.coluna .newsletter .input-conteiner {
+   display: flex;
+   gap: 10px;
+}
+
+.coluna .newsletter .botao {
+   position: relative;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
