@@ -3677,6 +3677,20 @@ form#formCalcularFrete {
    margin: 0;
    height: 54px !important;
    font-size: 16px !important;
+   flex-direction: row-reverse;
+}
+
+.acao-editar .botao.principal .icon-ok:before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: var(--icon-chev-right);
+   background-size: 100%;
+}
+
+.acao-editar .botao.principal .icon-ok {
+   margin: 0 0 0 10px;
+   height: 20px;
 }
 
 .append-controls {
@@ -3773,7 +3787,7 @@ form#formCalcularFrete {
    font-weight: 500;
 }
 
-div#corpo {
+.pagina-carrinho #corpo {
    min-height: calc(100vh - 218px);
 }
 
