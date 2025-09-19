@@ -555,8 +555,9 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             $input.val(valorAtual + 1).trigger('change');
         });
         
-        if ($('.menu-user-logged').is(':visible')) {
-            $('.sign-up-header').replaceWith($('.menu-user-logged'));
+        // Corrigido: agora clona o menu do usuário logado e substitui corretamente o header de cadastro
+        if ($('.menu-user-logged').length && $('.menu-user-logged').is(':visible')) {
+            $('.sign-up-header').replaceWith($('.menu-user-logged').first().clone(true, true));
         }
     
     } else {
