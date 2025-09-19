@@ -564,6 +564,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.close-menu').click(function(){
            $('.menu.superior .nivel-um').removeClass('active');
         });
+        
         $('.menu.superior .nivel-um').prepend(`
             <div class="account-menu">
               <div class="hello-menu">
@@ -617,6 +618,8 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
                 </div>    
             `);
         }
+        
+        $('.ordenar-listagem.topo').before($('.conteudo h1'));
 
         // Array de banners: cada objeto define o seletor do li (ex: 'first-child', '2', 'nth-child(3)') e o link da imagem
         var banners = [

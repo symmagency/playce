@@ -3514,6 +3514,31 @@ floating-bar-item.search-bar {
    display: none;
 }
 
+.ordenar-listagem.topo {
+   border: 0;
+}
+
+.conteudo .ordenar-listagem .input-append:first-child {
+   width: 100%;
+   justify-content: space-between;
+}
+
+.conteudo .ordenar-listagem.topo .row-fluid {
+   width: 100%;
+}
+
+.conteudo .ordenar-listagem.topo .row-fluid .span6, .conteudo .ordenar-listagem.topo .row-fluid .span6 > div {
+   width: 100%;
+}
+
+.conteudo h1 {
+   margin: 24px 0 24px;
+}
+
+#corpo .conteiner > div.breadcrumbs {
+   margin-bottom: 32px;
+}
+
 }
 
 /* Ajustes somente no desktop */
