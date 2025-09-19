@@ -439,7 +439,9 @@ btnShare.on('click', function() {
         $('#cabecalho .conteudo-topo').prepend($('#cabecalho .menu.superior'));
         $('.pagina-produto').prepend($('.append-bg-product'));
         $('.pagina-categoria .conteudo').prepend($('.pagina-categoria .breadcrumbs'));
+        $('.pagina-busca .conteudo').prepend($('.pagina-busca .breadcrumbs'));
         $('.pagina-categoria .conteudo .ordenar-listagem.topo > .row-fluid').prepend($('.pagina-categoria .conteudo h1'));
+        $('.pagina-busca .conteudo .ordenar-listagem.topo > .row-fluid').prepend($('.pagina-busca .conteudo h1'));
         
         
 
