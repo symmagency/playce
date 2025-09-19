@@ -3979,6 +3979,10 @@ form#formCalcularFrete {
    border: 1px solid rgba(255,255,255,.1);
 }
 
+.pagina-carrinho .table {
+   height: fit-content;
+}
+
 .checkout-alerta-seguro .checkout-alerta-seguro-icon {
    color: #2a382d;
 }
