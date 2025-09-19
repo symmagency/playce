@@ -3766,3 +3766,7 @@ form#formCalcularFrete {
 div#corpo {
    min-height: calc(100vh - 218px);
 }
+
+.tabela-carrinho * {
+   color: var(--color-white);
+}
