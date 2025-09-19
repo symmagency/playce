@@ -200,7 +200,7 @@ input {
    background: var(--input-bg) !important;
    border: 1px solid #ffffff10 !important;
    padding: 0 16px !important;
-   color: var(--color-white);
+   color: var(--color-white)!important;
    border-radius: var(--border-radius-md)!important;
 }
 
@@ -3809,6 +3809,36 @@ form#formCalcularFrete {
 .tabela-carrinho .quantidade {
    background: var(--color-secondary);
    border-radius: var(--border-radius-md);
+}
+
+.cadastro legend,
+.cadastro .dados-acesso label,
+.form-horizontal .control-label{
+    color: var(--color-white);
+}
+
+.pagina-cadastro .form-search input, 
+.pagina-cadastro .form-inline input, 
+.pagina-cadastro .form-horizontal input, 
+.pagina-cadastro .form-search textarea, 
+.pagina-cadastro .form-inline textarea, 
+.pagina-cadastro .form-horizontal textarea, 
+.pagina-cadastro .form-search select, 
+.pagina-cadastro .form-inline select, 
+.pagina-cadastro .form-horizontal select, 
+.pagina-cadastro .form-search .help-inline, 
+.pagina-cadastro .form-inline .help-inline, 
+.pagina-cadastro .form-horizontal .help-inline, 
+.pagina-cadastro .form-search .uneditable-input, 
+.pagina-cadastro .form-inline .uneditable-input, 
+.pagina-cadastro .form-horizontal .uneditable-input, 
+.pagina-cadastro .form-search .input-prepend, 
+.pagina-cadastro .form-inline .input-prepend, 
+.pagina-cadastro .form-horizontal .input-prepend, 
+.pagina-cadastro .form-search .input-append, 
+.pagina-cadastro .form-inline .input-append, 
+.pagina-cadastro .form-horizontal .input-append {
+   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
