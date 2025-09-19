@@ -555,20 +555,20 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             $input.val(valorAtual + 1).trigger('change');
         });
 
-    // Tenta substituir o .sign-up-header pelo .menu-user-logged, com até 5 tentativas caso não esteja disponível imediatamente
-    function tentarSubstituirMenuUserLogged(tentativasRestantes = 5) {
-        var $menuUserLogged = $('.btn-group.menu-user-logged');
-        var $signUpHeader = $('.sign-up-header');
-        // Verifica se o usuário está logado pelo atributo style vazio ou undefined
-        if (($menuUserLogged.attr('style') === '' || $menuUserLogged.attr('style') === undefined) && $signUpHeader.length) {
-            $signUpHeader.replaceWith($menuUserLogged.show());
-        } else if (tentativasRestantes > 0) {
-            setTimeout(function() {
-                tentarSubstituirMenuUserLogged(tentativasRestantes - 1);
-            }, 300);
+        // Tenta substituir o .sign-up-header pelo .menu-user-logged, com até 5 tentativas caso não esteja disponível imediatamente
+        function tentarSubstituirMenuUserLogged(tentativasRestantes = 5) {
+            var $menuUserLogged = $('.btn-group.menu-user-logged');
+            var $signUpHeader = $('.sign-up-header');
+            // Verifica se o usuário está logado pelo atributo style vazio ou undefined
+            if (($menuUserLogged.attr('style') === '' || $menuUserLogged.attr('style') === undefined) && $signUpHeader.length) {
+                $signUpHeader.replaceWith($menuUserLogged.show());
+            } else if (tentativasRestantes > 0) {
+                setTimeout(function() {
+                    tentarSubstituirMenuUserLogged(tentativasRestantes - 1);
+                }, 300);
+            }
         }
-    }
-    tentarSubstituirMenuUserLogged();
+        tentarSubstituirMenuUserLogged();
     
     } else {
         //mobile 
