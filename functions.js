@@ -420,6 +420,13 @@ btnShare.on('click', function() {
     });
 });
 
+// Verifica se o h1 da busca contém o texto "não encontrou nenhum resultado"
+var $h1Busca = $('.pagina-busca .conteudo h1');
+if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nenhum resultado') !== -1) {
+    $('.pagina-busca .conteudo.span9').addClass('no-results');
+    $('.pagina-busca .coluna.span3').addClass('no-results');
+}
+
 
     if ($(window).width() > 768) {
         // desktop
@@ -731,5 +738,3 @@ $(document).on('click', '.faq-pergunta', function() {
 });
 
 });
-
-
