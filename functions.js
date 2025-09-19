@@ -658,10 +658,11 @@ btnShare.on('click', function() {
     }
 
 
-// Estrutura para múltiplas categorias, cada uma com seu próprio FAQ
+// Estrutura para múltiplas categorias, cada uma com seu próprio FAQ e título customizável
 var faqsPorCategoria = [
     {
         id: '23387220', // Exemplo de ID de categoria
+        titulo: "PlayStation", // Título customizável para esta categoria
         faqs: [
             {
                 pergunta: "O que é um Gift Card da PlayStation Store?",
@@ -685,12 +686,12 @@ var faqsPorCategoria = [
             }
         ]
     },
-    // Adicione outros objetos de categoria conforme necessário, mudando o id e as perguntas/respostas
+    // Adicione outros objetos de categoria conforme necessário, mudando o id, o título e as perguntas/respostas
 ];
 
-// Função para criar o HTML do FAQ
-function criarFaqHtml(faqs) {
-    var html = '<div class="faq-categoria"><h2>Perguntas Frequentes</h2>';
+// Função para criar o HTML do FAQ, agora aceita o título como parâmetro
+function criarFaqHtml(faqs, titulo) {
+    var html = '<div class="faq-categoria"><h2>' + (titulo || 'Perguntas Frequentes') + '</h2>';
     faqs.forEach(function(faq, idx) {
         html += `
         <div class="faq-item">
@@ -703,13 +704,13 @@ function criarFaqHtml(faqs) {
     return html;
 }
 
-// Insere o FAQ em cada categoria definida
+// Insere o FAQ em cada categoria definida, usando o título customizável se existir
 faqsPorCategoria.forEach(function(cat) {
     var seletor = '.categoria-' + cat.id + ' .secao-principal .conteudo.span9';
     if ($(seletor).length > 0) {
         // Evita duplicação
         if ($(seletor + ' .faq-categoria').length === 0) {
-            $(seletor).append(criarFaqHtml(cat.faqs));
+            $(seletor).append(criarFaqHtml(cat.faqs, cat.titulo));
         }
     }
 });
