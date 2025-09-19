@@ -3841,6 +3841,18 @@ form#formCalcularFrete {
    width: 100%;
 }
 
+.acao-editar > div a.botao {
+   margin: 0;
+}
+.acao-editar > div {
+   display: flex !important
+;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
 @media screen and (max-width: 768px) {
 
    .finalizar-compra .caixa-sombreada {
