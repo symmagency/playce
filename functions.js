@@ -555,7 +555,10 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             $input.val(valorAtual + 1).trigger('change');
         });
         
-
+        if ($('.menu-user-logged').is(':visible')) {
+            $('.sign-up-header').replaceWith($('.menu-user-logged'));
+        }
+    
     } else {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
