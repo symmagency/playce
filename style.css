@@ -3678,3 +3678,10 @@ form#formCalcularFrete {
    height: 54px !important;
    font-size: 16px !important;
 }
+
+.append-controls {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-bottom: 20px;
+}
