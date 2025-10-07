@@ -272,26 +272,37 @@ var bannerVideoUrl = "https://www.youtube.com/embed/ENf1yjCMpZo";
 var videoId = "ENf1yjCMpZo";
 var bannerVideoWidth = 360;
 var bannerVideoHeight = 202;
+var bannerImgUrl = "https://cdn.awsli.com.br/2830/2830294/arquivos/banner-bg.png"; // URL da imagem do banner
+
+// Opções para ativar/desativar seções
+var mostrarGamePromo = true;      // true para mostrar, false para ocultar a seção "game-promo"
+var mostrarVideoFundo = true;     // true para mostrar, false para ocultar a seção "video-fundo"
+var mostrarImagemBanner = true;   // true para mostrar, false para ocultar a imagem do banner
 
 // Monta o HTML usando as variáveis acima
 var htmlBanner = `
   <div class="banner-fundo">
-    <div class="game-promo" >
-        <div class="game-title">${bannerTitulo}</div>
-        <div class="game-description">
-            ${bannerDescricao}
-        </div>
-        <div class="game-price-section" >
-            <span class="game-price">${bannerPreco}</span>
-            <span class="discount-tag">${bannerDesconto}</span>
-        </div>
-        <a href="${bannerLinkBotao}" class="buy-now-btn">
-            ${bannerTextoBotao}
-        </a>
-    </div>
-    <div class="video-fundo">
-      <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?rel=0?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&playlist=${videoId}" frameborder="0" allowfullscreen></iframe>
-    </div>
+    ${mostrarImagemBanner ? `<div class="banner-img"><img src="${bannerImgUrl}" alt="${bannerTitulo}"></div>` : ''}
+    ${mostrarGamePromo ? `
+      <div class="game-promo">
+          <div class="game-title">${bannerTitulo}</div>
+          <div class="game-description">
+              ${bannerDescricao}
+          </div>
+          <div class="game-price-section">
+              <span class="game-price">${bannerPreco}</span>
+              <span class="discount-tag">${bannerDesconto}</span>
+          </div>
+          <a href="${bannerLinkBotao}" class="buy-now-btn">
+              ${bannerTextoBotao}
+          </a>
+      </div>
+    ` : ''}
+    ${mostrarVideoFundo ? `
+      <div class="video-fundo">
+        <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?rel=0?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&playlist=${videoId}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    ` : ''}
   </div>
 `;
 
