@@ -155,10 +155,12 @@ $('.categorias-section ul').slick({
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
-          dots: false
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
         }
       }
     ]
