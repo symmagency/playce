@@ -134,7 +134,7 @@ var categorias = [
 
 // Insere a seção de categorias antes de .pagina-inicial #corpo
 if ($('.pagina-inicial #corpo').length > 0) {
-    var categoriasHtml = '<div class="categorias-section"><span class="titulo-categoria"><strong>Compre por marca ou jogo</strong></span><ul>';
+    var categoriasHtml = '<div class="categorias-section"><ul>';
     
     categorias.forEach(function(categoria) {
         categoriasHtml += '<li><a href="' + categoria.link + '"><img src="' + categoria.img + '" alt="' + categoria.alt + '" /><span class="nome-categoria">' + categoria.nome + '</span></a></li>';
@@ -149,8 +149,8 @@ $('.categorias-section ul').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 7,
-    slidesToScroll: 7,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     responsive: [
       {
         breakpoint: 768,
@@ -311,17 +311,17 @@ var htmlBanner = `
 $('.pagina-inicial .secao-banners').before(htmlBanner);
 
 // Variáveis para personalizar as informações da tarja de benefícios
-var benefit1Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-mailcheck.svg";
+var benefit1Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-mailcheck_one.svg";
 var benefit1IconAlt = "Ícone de e-mail";
 var benefit1Title = "Receba por e-mail";
 var benefit1Description = "Seu código digital vai direto para o seu e-mail";
 
-var benefit2Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-send.svg";
+var benefit2Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-send_one.svg";
 var benefit2IconAlt = "Ícone de envio rápido";
 var benefit2Title = "Entrega rápida e segura";
 var benefit2Description = "Enviado logo após a confirmação do pagamento";
 
-var benefit3Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-star.svg";
+var benefit3Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-star_one.svg";
 var benefit3IconAlt = "Ícone de avaliação";
 var benefit3Title = "Avaliação 4.9 dos clientes";
 var benefit3Description = "Quem compra, recomenda.";
