@@ -27,7 +27,9 @@
    --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
    --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
    --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
+   --icon-chev-right-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-move-front.svg');
    --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
+   --icon-chev-left-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-move-back.svg');
    --icon-chev-down: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-down.svg');
    --icon-chev-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-up.svg');
    --icon-check: url('https://cdn.awsli.com.br/2830/2830294/arquivos/check.svg');
@@ -2035,7 +2037,7 @@ modal-review .actions button {
    z-index: 10;
    width: 40px;
    height: 40px;
-   background: var(--icon-chev-left) center no-repeat;
+   background: var(--icon-chev-left-black) center no-repeat;
    background-size: 100%;
    text-indent: -99999px;
 }
@@ -2048,7 +2050,7 @@ modal-review .actions button {
    z-index: 10;
      width: 40px;
    height: 40px;
-   background: var(--icon-chev-right) center no-repeat;
+   background: var(--icon-chev-right-black) center no-repeat;
    background-size: 100%;
    text-indent: -99999px;
 }
@@ -2131,7 +2133,18 @@ modal-review .actions button {
 
 .categorias-section {
    max-width: 1180px;
-   margin: 0 auto;
+   margin: 60px auto 0;
+}
+
+.categorias-section li.slick-slide a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   font-size: 14px;
+   color: #000;
+   gap: 10px;
 }
 
 .categorias-section ul {
