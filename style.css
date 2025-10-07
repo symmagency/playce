@@ -665,6 +665,7 @@ input[type="text"]:focus {
    justify-content: center;
    height: 32px;
    background: var(--badge-color);
+   border-radius: 0 0 8px 8px;
 }
 
 .listagem-item.produto-adicionado .bandeiras-produto .adicionado-carrinho {
@@ -708,6 +709,7 @@ input[type="text"]:focus {
    position: relative;
    width: 100%;
    max-height: fit-content;
+   border-radius: 8px 8px 0 0;
 }
 
 .listagem .span4 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="3"] .imagem-produto {
@@ -2003,6 +2005,7 @@ modal-review .actions button {
 .listagem-linha .slick-track,
 .listagem-linha li.slick-slide {
    display: flex!important;
+   border: 0;
 }
 
 .pagina-inicial #corpo > .conteiner {
