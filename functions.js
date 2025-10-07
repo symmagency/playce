@@ -71,8 +71,8 @@ $slider.slick({
     dots: false,
         infinite: false,
         speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
             breakpoint: 768,
@@ -275,8 +275,8 @@ var bannerVideoHeight = 202;
 var bannerImgUrl = "https://cdn.awsli.com.br/2830/2830294/arquivos/banner-bg.png"; // URL da imagem do banner
 
 // Opções para ativar/desativar seções
-var mostrarGamePromo = true;      // true para mostrar, false para ocultar a seção "game-promo"
-var mostrarVideoFundo = true;     // true para mostrar, false para ocultar a seção "video-fundo"
+var mostrarGamePromo = false;      // true para mostrar, false para ocultar a seção "game-promo"
+var mostrarVideoFundo = false;     // true para mostrar, false para ocultar a seção "video-fundo"
 var mostrarImagemBanner = true;   // true para mostrar, false para ocultar a imagem do banner
 
 // Monta o HTML usando as variáveis acima

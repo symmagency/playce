@@ -4,9 +4,9 @@
 :root {
    /* Cores
       ----------------------------------------------------------------------- */
-   --bg-store-color: #14171A;
-   --color-primary: #0056B3;
-   --button-hover: #00356E;
+   --bg-store-color: #FFFFFF;
+   --color-primary: #E9222A;
+   --button-hover: #B0292F;
    --color-secondary: #33373C; 
    --color-success: #28a745;
    --color-danger: #dc3545;
@@ -74,7 +74,7 @@
    --news-char: url('https://cdn.awsli.com.br/2830/2830294/arquivos/news-char.png');
    --featured-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/featured-showcase.png');
    --featured-home-mobile: url('https://cdn.awsli.com.br/2830/2830294/arquivos/gtav-featured-bg.png');
-   --bg-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/bg-spider.png');
+   /*--bg-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/bg-spider.png');*/
 
 
 }
@@ -590,6 +590,7 @@ input[type="text"]:focus {
    background-image: var(--icon-chev-right);
    background-repeat: no-repeat;
    background-position: 94px 50%;
+   color: var(--color-white);
 }
 
 
@@ -610,7 +611,7 @@ input[type="text"]:focus {
 .listagem .titulo-categoria,
 .categorias-section .titulo-categoria {
    font-size: 24px;
-   color: var(--color-white);
+   color: var(--color-black);
    display: flex;
    justify-content: space-between;
    border: 0;
@@ -690,11 +691,12 @@ input[type="text"]:focus {
 .listagem .listagem-item {
    margin: 12px !important;
    padding: 0;
-   background: var(--color-black);
+   background: var(--color-white);
    border-radius: var(--border-radius-md);
    overflow: hidden;
    display: flex;
    flex-direction: column;
+   border: 1px solid var(--border-color);
 }
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
@@ -758,7 +760,7 @@ input[type="text"]:focus {
 }
 
 .listagem .listagem-item .nome-produto, .listagem .listagem-item .preco-produto strong {
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 .konfidency.summary.kfy-align-center {
@@ -901,7 +903,7 @@ input[type="text"]:focus {
    gap: 20px;
    align-items: center;
    justify-content: center;
-   color: var(--color-white);
+   color: var(--color-black);
    flex: 1;
    padding: 10px 32px;
 }
@@ -1984,7 +1986,7 @@ modal-review .actions button {
 
 .listagem-item .acoes-produto {
    border: 0;
-   background: var(--color-black);
+   background: var(--color-white);
    padding: 24px 16px;
    display: flex;
    gap: 8px;
@@ -2093,6 +2095,12 @@ modal-review .actions button {
    padding: 0;
    flex-direction: row-reverse;
    gap: 10px;
+   font-size: 0 !important;
+}
+
+.listagem-item .acoes-produto .botao-comprar:after {
+   content: "Adicionar";
+   font-size: 14px !important;
 }
 
 .listagem-item .acoes-produto .botao-comprar i {
@@ -2105,7 +2113,8 @@ modal-review .actions button {
    max-width: 80px;
    text-align: center;
    margin: 0;
-   color: var(--color-white);
+   color: var(--color-black) !important;
+   border: 1px solid var(--border-color) !important;
 }
 
 .quantidade-wrapper .input-quantidade::-webkit-outer-spin-button,
