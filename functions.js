@@ -89,54 +89,55 @@ $slider.slick({
 // Categorias home
 var categorias = [
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-cat.svg",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-apple.png",
         alt: "Categoria Apple",
-        link: "/apple"
+        link: "/apple",
+        nome: "Apple"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/google-cat.svg",
-        alt: "Categoria Google",
-        link: "/google"
-    },
-    {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/play-cat.svg",
-        alt: "Categoria PlayStation",
-        link: "/playstation"
-    },
-    {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-cat.svg",
-        alt: "Categoria Nintendo",
-        link: "/nintendo"
-    },
-    {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/v-bucks-cat.svg",
-        alt: "Categoria V-bucks",
-        link: "/v-bucks"
-    },
-    {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-cat.svg",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-xbox.png",
         alt: "Categoria Xbox",
-        link: "/xbox"
+        link: "/google",
+        nome: "Xbox"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-cat.svg",
-        alt: "Categoria Apple",
-        link: "/apple"
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-playstation.png",
+        alt: "Categoria PlayStation",
+        link: "/playstation",
+        nome: "PlayStation"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/google-cat.svg",
-        alt: "Categoria Google",
-        link: "/google"
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-nintendo.png",
+        alt: "Categoria Nintendo",
+        link: "/nintendo",
+        nome: "Nintendo"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-fortinite.png",
+        alt: "Categoria V-bucks",
+        link: "/v-bucks",
+        nome: "Fortnite"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-roblox.png",
+        alt: "Categoria Roblox",
+        link: "/xbox",
+        nome: "Roblox"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-steam.png",
+        alt: "Categoria steam",
+        link: "/Steam",
+        nome: "Steam"
     }
 ];
-
 
 // Insere a seção de categorias antes de .pagina-inicial #corpo
 if ($('.pagina-inicial #corpo').length > 0) {
     var categoriasHtml = '<div class="categorias-section"><span class="titulo-categoria"><strong>Compre por marca ou jogo</strong></span><ul>';
     
     categorias.forEach(function(categoria) {
-        categoriasHtml += '<li><a href="' + categoria.link + '"><img src="' + categoria.img + '" alt="' + categoria.alt + '" /></a></li>';
+        categoriasHtml += '<li><a href="' + categoria.link + '"><img src="' + categoria.img + '" alt="' + categoria.alt + '" /><span class="nome-categoria">' + categoria.nome + '</span></a></li>';
     });
     
     categoriasHtml += '</ul></div>';
