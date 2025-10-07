@@ -886,6 +886,7 @@ input[type="text"]:focus {
 
 .secao-banners .conteiner {
    padding-top: 0;
+   padding-bottom: 20px;
 }
 
 .banner-fundo .game-promo {
