@@ -2258,7 +2258,7 @@ modal-review .actions button {
     left: 0;
     bottom: 0;
     margin: 0;
-    display: flex;
+    display: none!important;
     background: var(--color-black);
     border: 0;
     box-shadow: 0 -8px 24px rgba(0, 0, 0, .25);
@@ -2331,12 +2331,14 @@ modal-review .actions button {
 
 .produto>.row-fluid:nth-child(2) {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    margin-bottom: 60px;
 }
 
 .produto>.row-fluid:nth-child(2) > div.span5 {
    width: fit-content;
+   top: 40px;
+   position: sticky;
 }
 
 .produto>.row-fluid:nth-child(2) > div.span7 {
@@ -2355,6 +2357,8 @@ modal-review .actions button {
    border-radius: 8px;
    background: var(--color-black);
    padding: 32px;
+   order: inherit;
+   margin-top: 24px;
 }
 
 .pagina-produto .konfidency-reviews-details.conteiner * {
@@ -2426,7 +2430,7 @@ modal-review .actions button {
    font-size: 24px;
    font-weight: 500;
    margin: 24px 0;
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 
@@ -3045,6 +3049,30 @@ button.about-banner-btn {
 
 .produto .conteiner-imagem > div {
    width: 100%;
+}
+
+.produto>.row-fluid:nth-child(2) > div.span7 {
+   flex-direction: column;
+}
+
+.thumbs-vertical {
+   display: none;
+}
+
+.pagina-produto.listagem .listagem-linha li:last-child {
+   display: none;
+}
+
+.pagina-produto.listagem .listagem-linha li {
+   flex: 1;
+}
+
+.pagina-produto.listagem .listagem-linha .row-fluid {
+   display: flex;
+}
+
+.pagina-produto .produto>.row-fluid+.row-fluid {
+   display: none;
 }
 
 /* Código Mobile */
