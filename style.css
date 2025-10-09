@@ -3036,6 +3036,17 @@ button.about-banner-btn {
     padding: 0 20px;
 }
 
+/* Ajustes na coluna da página de produto */
+
+.produto .conteiner-imagem {
+   display: flex;
+   gap: 32px;
+}
+
+.produto .conteiner-imagem > div {
+   width: 100%;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
