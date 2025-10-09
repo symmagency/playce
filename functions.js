@@ -614,18 +614,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         `);
 
         $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .info-principal-produto'));
-        $('.produto .produto-detalhe-info').append(`
-            <div class="produto-detalhe">
-                <div class="produto-detalhe-info-item">
-                  <span>🖥️</span>
-                  <span>Plataforma: <strong>PlayStation</strong></span>
-                </div>
-                <div class="produto-detalhe-info-item">
-                  <span>🌎</span>
-                  <span>Região: <strong>Brasil</strong></span>
-                </div>
-            </div>
-        `);
+        $('.produto .produto-detalhe-info').append($('.produto-detalhe'));
         $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .append-share-fav'));
     
     } else {
