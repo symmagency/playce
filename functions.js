@@ -612,7 +612,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.produto .conteiner-imagem').append(`
             <div class="produto-detalhe-info"></div>
         `);
-
         $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .info-principal-produto'));
         $('.produto .produto-detalhe-info').append($('.produto-detalhe'));
         $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .append-share-fav'));

@@ -3071,10 +3071,6 @@ button.about-banner-btn {
    display: flex;
 }
 
-.pagina-produto .produto>.row-fluid+.row-fluid {
-   display: none;
-}
-
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
