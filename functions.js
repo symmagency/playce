@@ -615,6 +615,12 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .info-principal-produto'));
         $('.produto .produto-detalhe-info').append($('.produto-detalhe'));
         $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .append-share-fav'));
+
+        $('.produto>.row-fluid:nth-child(2) > div.span7').append($('#buy-together-position1'));
+        $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.produto .row-fluid .span12 .abas-custom'));
+        $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.pagina-produto .konfidency-reviews-details.conteiner'));
+        $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.listagem.aproveite-tambem'));
+
     
     } else {
         //mobile 
