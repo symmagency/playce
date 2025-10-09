@@ -2912,6 +2912,130 @@ modal-review .actions button {
    margin: 0 auto;
 }
 
+/* Sobre a loja */
+
+.about-banner {
+    max-width: 1180px;
+    margin: 60px auto;
+    display: flex;
+    background: linear-gradient(270deg, rgba(233, 34, 42, 0) 63.09%, rgba(233, 34, 42, 0.2) 100%), linear-gradient(270deg, rgba(233, 34, 42, 0.2) 0%, rgba(233, 34, 42, 0) 50%), #FFFFFF;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-banner-content {
+    max-width: 420px;
+    left: 100px;
+    position: relative;
+}
+
+.about-banner-image {
+    position: relative;
+    top: -60px;
+}
+
+.about-banner-icon-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+.about-banner-title strong {
+    font-weight: 500;
+}
+
+.about-banner-description p {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.about-banner-description p:first-child {
+    font-weight: 600;
+}
+
+.about-banner-description {
+    margin: 10px auto;
+}
+
+button.about-banner-btn {
+    background: var(--color-secondary);
+    color: var(--color-white);
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    box-shadow: var(--shadow-button);
+    border-radius: var(--border-radius-md);
+    height: 36px;
+    align-items: center;
+    padding: 10px 16px;
+    box-sizing: border-box;
+}
+
+/* Vitrine destaque */
+.vitrine-23387218 + ul .slick-track:before,
+.vitrine-23387218 + ul .slick-track:after {
+    display: none!important;
+}
+
+.vitrine-23387218 + ul .slick-track {
+    width: auto!important;
+    display: grid!important;
+    grid-template-columns: 1fr 1fr;
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide {
+    width: 100%!important;
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.vitrine-23387218 + ul .listagem-item .acoes-produto {
+    position: absolute;
+    opacity: 1;
+    bottom: 0;
+    padding: 0;
+    background: none;
+    width: fit-content;
+    right: 16px;
+    left: auto;
+    bottom: 12px;
+}
+
+.vitrine-23387218 + ul .listagem-item .acoes-produto .quantidade-wrapper {
+    display: none;
+}
+
+.vitrine-23387218 + ul .listagem-item .acoes-produto .botao-comprar {
+    padding: 0 16px;
+    gap: 4px;
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item .bandeiras-produto {
+    display: none;
+}
+
+.vitrine-23387218 + ul .imagem-produto, .vitrine-23387218 + ul .imagem-produto {
+    max-height: 128px;
+}
+
+.vitrine-23387218 + ul .imagem-produto img {
+    height: 100%;
+    max-height: inherit;
+    width: auto;
+    border-radius: 0;
+}
+
+.vitrine-23387218 + ul .info-produto {
+    padding: 0 20px;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
