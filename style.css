@@ -697,7 +697,7 @@ input[type="text"]:focus {
 
 .listagem .listagem-item {
    margin: 12px !important;
-   padding: 0;
+   padding: 12px;
    background: var(--color-white);
    border-radius: var(--border-radius-md);
    overflow: hidden;
