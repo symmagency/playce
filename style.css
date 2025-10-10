@@ -2294,6 +2294,7 @@ modal-review .actions button {
    padding: 12px 16px;
    background: var(--color-primary);
    font-size: 14px;
+   color: var(--color-white);
 }
 
 .info-box ul li {
@@ -3150,16 +3151,20 @@ button.about-banner-btn {
    display: none;
 }
 
-.pagina-produto.listagem .listagem-linha li:last-child {
+.pagina-produto .listagem .listagem-linha li:last-child {
    display: none;
 }
 
-.pagina-produto.listagem .listagem-linha li {
+.pagina-produto .listagem .listagem-linha li {
    flex: 1;
 }
 
-.pagina-produto.listagem .listagem-linha .row-fluid {
+.pagina-produto .listagem .listagem-linha .row-fluid {
    display: flex;
+}
+
+.pagina-produto .listagem {
+   margin-top: 24px;
 }
 
 /* Código Mobile */
