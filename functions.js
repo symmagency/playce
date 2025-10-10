@@ -465,6 +465,34 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
     $('.pagina-busca .coluna.span3').addClass('no-results');
 }
 
+    // Adiciona botões de mais e menos ao lado do input quantidade carrinho
+    $('.pagina-produto .qtde-carrinho').each(function() {
+        // Garante que não adicionaremos botões duplicados
+        if ($(this).parent('.input-qtde-wrapper').length === 0) {
+            var $input = $(this);
+            $input.wrap('<div class="input-qtde-wrapper" style="display:inline-flex;align-items:center;"></div>');
+            var $wrapper = $input.parent();
+            var $btnMinus = $('<button type="button" class="btn-qtde-menos">-</button>');
+            var $btnPlus = $('<button type="button" class="btn-qtde-mais">+</button>');
+            $wrapper.prepend($btnMinus);
+            $wrapper.append($btnPlus);
+
+            $btnMinus.on('click', function() {
+                var current = parseInt($input.val(), 10) || 1;
+                var min = parseInt($input.attr('min'), 10) || 1;
+                if(current > min) {
+                    $input.val(current - 1).trigger('change');
+                }
+            });
+
+            $btnPlus.on('click', function() {
+                var current = parseInt($input.val(), 10) || 1;
+                $input.val(current + 1).trigger('change');
+            });
+        }
+    });
+
+
 
     if ($(window).width() > 768) {
         // desktop
@@ -621,7 +649,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.pagina-produto .konfidency-reviews-details.conteiner'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.listagem.aproveite-tambem'));
 
-    
     } else {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));

@@ -49,6 +49,10 @@
    --icon-x: url('https://cdn.awsli.com.br/2830/2830294/arquivos/x.svg');
    --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
    --icon-pedidos: url('https://cdn.awsli.com.br/2830/2830294/arquivos/package.svg');
+   --icon-chev-right-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-chev-black.svg');
+   --icon-home-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-home-black.svg');
+   --icon-heart-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-heart-black.svg');
+   --icon-share-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-share-black.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -1109,17 +1113,20 @@ input[type="text"]:focus {
 
 .pagina-produto .produto div.principal {
    padding: 32px;
-   background: var(--color-black);
+   background: var(--color-white);
    max-width: 400px;
    box-sizing: border-box;
    border-radius: 8px;
+   border: 1px solid #20232620;
+   box-shadow: 0 0 50px rgba(0, 0, 0, .15);
 }
 
 .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho {
    height: 54px !important;
    margin: 0;
-   background: var(--color-black) !important;
-   border: 1px solid rgba(255, 255, 255, .2) !important;
+   border: 1px solid #d8d8d8 !important;
+   background: var(--color-white) !important;
+   color: var(--color-black) !important;
 }
 
 .produto div.principal .acoes-produto {
@@ -1136,7 +1143,7 @@ input[type="text"]:focus {
 }
 
 .pagina-produto .produto div.principal * {
-   color: #fff;
+   color: var(--color-black);
 }
 
 #carouselImagem .elastislide-carousel ul li a span img {
@@ -1288,12 +1295,12 @@ modal-review .actions button {
 }
 
 .produto .principal .acoes-produto .preco-produto .preco-venda {
-   font-size: 14px;
+   font-size: 18px;
    opacity: .7;
 }
 
 .produto .principal .acoes-produto .preco-produto .preco-promocional.titulo {
-   font-size: 22px;
+   font-size: 40px;
 }
 
 .pagina-produto .produto div.principal .preco-produto > div {
@@ -1506,7 +1513,7 @@ modal-review .actions button {
 
 .append-share-fav {
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 40px;
    position: relative;
 }
@@ -1546,7 +1553,7 @@ modal-review .actions button {
 
 .lista-favoritos .icon-plus::before {
    content: "";
-   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/heart.svg);
+   background: var(--icon-heart-black);
    width: 20px;
    height: 20px;
    background-size: 100%;
@@ -1560,6 +1567,15 @@ modal-review .actions button {
 .lista-favoritos:after {
    content: "Favoritar";
    font-size: 16px;
+   font-weight: 600;
+}
+
+.produto .nome-produto {
+   line-height: 33px;
+   margin: 0;
+   font-size: 24px;
+   text-align: left;
+   margin-bottom: 12px;
 }
 
 .append-share-fav .btn-share {
@@ -1570,11 +1586,39 @@ modal-review .actions button {
    align-items: center;
 }
 
+.append-share-fav a {
+   color: var(--color-black);
+   height: 54px;
+}
+
+.produto-detalhe {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 22px 0;
+   gap: 10px;
+   font-size: 14px;
+}
+
+.produto-detalhe-alerta {
+   background: rgba(233,34,42,.05);
+   border: 1px solid rgba(233,34,42,.30);
+   border-radius: var(--border-radius-md);
+   text-align: left;
+   padding: 12px 16px;
+   font-size: 14px;
+   color: var(--color-black);
+}
+
+.produto-detalhe-alerta strong {
+   color: rgba(233,34,42,1);
+}
+
 .append-share-fav .btn-share:after {
    content: "";
    width: 20px;
    height: 20px;
-   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/share.svg);
+   background: var(--icon-share-black);
    display: block;
    background-size: 100%;
 }
@@ -2075,6 +2119,31 @@ modal-review .actions button {
    margin: 0;
 }
 
+.produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho::-webkit-outer-spin-button,
+.produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho::-webkit-inner-spin-button {
+    display: none;
+}
+
+.input-qtde-wrapper > button {
+    position: absolute;
+    font-size: 30px;
+    background: none;
+    line-height: 20px;
+    vertical-align: baseline;
+}
+
+.input-qtde-wrapper > button.btn-qtde-menos {
+    left: 20px;
+}
+
+.input-qtde-wrapper {
+    position: relative;
+}
+
+.input-qtde-wrapper > button.btn-qtde-mais {
+    right: 20px;
+}
+
 .quantidade-wrapper .btn-quantidade {
    position: absolute;
    background: none!important;
@@ -2533,7 +2602,7 @@ modal-review .actions button {
 .breadcrumbs .fa-folder::before,
 .breadcrumbs .icon-home::before {
    content: "";
-   background: var(--icon-home);
+   background: var(--icon-home-black);
    width: 16px;
    height: 16px;
    display: block;
@@ -2558,7 +2627,7 @@ modal-review .actions button {
 .breadcrumbs ul li a {
    align-items: center;
    display: flex;
-   color: rgba(255,255,255,.6);
+   color: rgba(0,0,0,.6);
    font-weight: 500;
    padding: 0;
 }
@@ -2569,13 +2638,13 @@ modal-review .actions button {
 }
 
 .breadcrumbs ul li:last-child a {
-   color: rgba(255,255,255,1);
+   color: rgba(0,0,0,1);
 }
 
 .breadcrumbs ul li:not(:last-child):after {
    content: "";
    display: block;
-   background: var(--icon-chev-right);
+   background: var(--icon-chev-right-black);
    width: 12px;
    height: 12px;
    background-size: 100%;
@@ -3817,6 +3886,7 @@ floating-bar-item.search-bar {
       z-index: 0;
       height: fit-content;
       top: 112px;
+      display: none;
   }
 
 }
