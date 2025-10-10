@@ -758,6 +758,8 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
                 </div>
             `);
         }
+
+        $('.konfidency-reviews-summary').after($('.produto-detalhe'));
     }
 
     $('.produto .produto-detalhe-info').append(`
