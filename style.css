@@ -2256,15 +2256,15 @@ modal-review .actions button {
 }
 
 .info-box {
-   background: rgba(0, 86, 179, 0.1);
-   color: #fff;
+   background: rgba(233, 34, 42, 0.1);
+   color: var(--color-black);
    overflow: hidden;
    border-radius: 4px;
    margin-top: 10px;
 }
 
 .descricao-produto {
-   color: #fff;
+   color: var(--color-black);
    font-size: 14px;
 }
 
@@ -2299,8 +2299,9 @@ modal-review .actions button {
 .append-descricao,
 .konfidency-reviews-details {
     padding: 32px;
-    background: var(--color-black);
+    background: var(--color-white);
     border-radius: var(--border-radius-md);
+    border: 1px solid #20232620;
     margin-top: 24px;
     display: flex;
     gap: 24px;
