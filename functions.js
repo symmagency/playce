@@ -492,7 +492,11 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         }
     });
 
-
+    $('.produto .produto-detalhe-info').append(`
+        <div class="produto-detalhe-alerta">
+           <span>* Todos os produtos do nosso site <strong>são códigos 100% originais</strong>, enviados por e-mail.</span>
+         </div>
+    `);
 
     if ($(window).width() > 768) {
         // desktop
