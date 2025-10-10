@@ -1615,6 +1615,26 @@ modal-review .actions button {
    color: rgba(233,34,42,1);
 }
 
+.botao.principal.add-cart-product {
+   width: 100%;
+   margin-top: 10px;
+   height: 54px !important;
+   color: var(--color-black) !important;
+   font-weight: 600;
+   background: transparent;
+   border: 1px solid var(--color-primary);
+   box-shadow: none;
+   font-size: 16px !important;
+}
+
+.botao.principal.add-cart-product:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/icon-add-to-cart.svg);
+   margin-left: 8px;
+}
+
 .append-share-fav .btn-share:after {
    content: "";
    width: 20px;
