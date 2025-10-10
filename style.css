@@ -3151,22 +3151,6 @@ button.about-banner-btn {
    display: none;
 }
 
-.pagina-produto .listagem .listagem-linha li:last-child {
-   display: none;
-}
-
-.pagina-produto .listagem .listagem-linha li {
-   flex: 1;
-}
-
-.pagina-produto .listagem .listagem-linha .row-fluid {
-   display: flex;
-}
-
-.pagina-produto .listagem {
-   margin-top: 24px;
-}
-
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -3915,6 +3899,22 @@ floating-bar-item.search-bar {
       top: 112px;
       display: none;
   }
+
+  .pagina-produto .listagem .listagem-linha li:last-child {
+      display: none;
+   }
+
+   .pagina-produto .listagem .listagem-linha li {
+      flex: 1;
+   }
+
+   .pagina-produto .listagem .listagem-linha .row-fluid {
+      display: flex;
+   }
+
+   .pagina-produto .listagem {
+      margin-top: 24px;
+   }
 
 }
 
