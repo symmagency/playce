@@ -51,8 +51,8 @@
    --icon-pedidos: url('https://cdn.awsli.com.br/2830/2830294/arquivos/package.svg');
    --icon-chev-right-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-chev-black.svg');
    --icon-home-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-home-black.svg');
-   --icon-heart-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-heart-black.svg');
-   --icon-share-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-share-black.svg');
+   --icon-heart-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/heart-icon-black.svg');
+   --icon-share-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/share-icon-black.svg');
    
    /* Tipografia
       ----------------------------------------------------------------------- */
@@ -2618,7 +2618,7 @@ modal-review .actions button {
 
 .breadcrumbs {
    width: fit-content;
-   background: var(--color-black);
+   background: var(--color-white);
    padding: 10px 20px;
    max-height: 40px;
    border-radius: 4px;
