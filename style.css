@@ -1499,7 +1499,7 @@ modal-review .actions button {
    background: #F1F1F1;
    border-radius: 6px;
    position: relative;
-   max-width: 190px;
+   /* max-width: 190px; */
    box-sizing: border-box;
    z-index: 10;
 }
@@ -1551,7 +1551,7 @@ modal-review .actions button {
    display: flex;
    align-items: center;
    justify-content: center;
-   left: -16px;
+   left: -42px;
    box-shadow: 1px 1px 11px rgba(0, 0, 0, .2);
 }
 
