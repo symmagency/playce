@@ -27,7 +27,7 @@
    --icon-cart: url('https://cdn.awsli.com.br/2830/2830294/arquivos/shopping-bag.svg');
    --icon-purchase: url('https://cdn.awsli.com.br/2830/2830294/arquivos/purchase.svg');
    --icon-chev-right: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-right.svg');
-   --icon-chev-right-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-move-front.svg');
+   --icon-chev-right-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/move-front.svg');
    --icon-chev-left: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-left.svg');
    --icon-chev-left-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/icon-move-back.svg');
    --icon-chev-down: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chevron-down.svg');
@@ -3245,6 +3245,11 @@ button.about-banner-btn {
     width: auto!important;
     display: grid!important;
     grid-template-columns: 1fr 1fr;
+    transform: none!important;
+}
+
+.vitrine-23387218 + ul .slick-arrow {
+   display: none !important;
 }
 
 .vitrine-23387218 + ul .listagem-linha li.slick-slide {
