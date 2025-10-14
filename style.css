@@ -1121,14 +1121,17 @@ input[type="text"]:focus {
 
 .filtro *, 
 .componente * {
-   color: #fff;
+   color: var(--color-black);
 }
 
 .filtro, .componente {
    border-top: 1px solid #ffffff20;
    border-radius: var(--border-radius-md);
-   background: var(--color-black);
+   background: var(--color-white);
    padding: 32px;
+   border: 1px solid #d8d8d8;
+   box-shadow: none;
+   outline: 0;
 }
 
 .componente .interno {
@@ -3065,8 +3068,10 @@ modal-review .actions button {
 
 .coluna .newsletter input[type="text"] {
    height: 36px !important;
-   box-sizing: border-box!important;
+   box-sizing: border-box !important;
    width: 100%;
+   background: var(--color-white) !important;
+   border: 1px solid #d8d8d8 !important;
 }
 
 .coluna .newsletter .input-conteiner {
@@ -3076,6 +3081,7 @@ modal-review .actions button {
 
 .coluna .newsletter .botao {
    position: relative;
+   color: var(--color-white);
 }
 
 .coluna.span3.no-results {
