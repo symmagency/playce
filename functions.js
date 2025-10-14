@@ -645,7 +645,15 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('#buy-together-position1'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.produto .row-fluid .span12 .abas-custom'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.listagem.aproveite-tambem'));
-        $('.pagina-produto .listagem.aproveite-tambem').before($('.pagina-produto .konfidency-reviews-details.conteiner'));
+        (function tentarInserirReviews() {
+            var $aproveiteTambem = $('.pagina-produto .listagem.aproveite-tambem');
+            var $reviews = $('.pagina-produto .konfidency-reviews-details.conteiner');
+            if ($aproveiteTambem.length && $reviews.length) {
+                $aproveiteTambem.before($reviews);
+            } else {
+                setTimeout(tentarInserirReviews, 250);
+            }
+        })();
 
         $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
         $('.pagina-produto .produto div.principal').after(`

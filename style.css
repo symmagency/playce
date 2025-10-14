@@ -1551,7 +1551,7 @@ modal-review .actions button {
    display: flex;
    align-items: center;
    justify-content: center;
-   left: -42px;
+   left: -52px;
    box-shadow: 1px 1px 11px rgba(0, 0, 0, .2);
 }
 
@@ -2726,6 +2726,16 @@ modal-review .actions button {
    padding: 10px 20px;
    max-height: 40px;
    border-radius: 4px;
+   border: 1px solid #d8d8d8;
+}
+
+.compre-junto__imagem {
+   padding: 10px;
+   overflow: hidden;
+}
+
+.compre-junto__imagem img {
+   border-radius: 6px;
 }
 
 .breadcrumbs ul li a {
