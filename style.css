@@ -1121,6 +1121,49 @@ input[type="text"]:focus {
    box-shadow: 0 0 50px rgba(0, 0, 0, .15);
 }
 
+#principal-konfidency {
+   padding: 32px;
+   text-align: center;
+   background: var(--color-white);
+   box-sizing: border-box;
+   border-radius: 8px;
+   border: 1px solid #20232620;
+   box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+   margin-top: 20px;
+   z-index: 0;
+   position: relative;
+}
+
+#principal-konfidency > div {
+   margin: 4px 0;
+}
+
+#principal-konfidency > div i {
+   color: #FFC240;
+   font-size: 14px;
+}
+
+#principal-konfidency p {
+   margin: 0;
+}
+
+.compre-junto__produto.compre-junto__produto--principal {
+   display: none;
+}
+
+.produto .principal .gateways-rodape li {
+   border: 0;
+   max-width: 90px;
+}
+
+.produto .principal .gateways-rodape {
+   background: none;
+   margin: 20px 0 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
 .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho {
    height: 54px !important;
    margin: 0;
@@ -1308,15 +1351,6 @@ modal-review .actions button {
    flex-direction: column;
 }
 
-.produto .principal .acoes-produto .preco-produto .preco-venda {
-   font-size: 14px;
-   opacity: .7;
-}
-
-.produto .principal .acoes-produto .preco-produto .preco-promocional.titulo {
-   font-size: 22px;
-}
-
 .pagina-produto .produto div.principal .preco-produto > div {
    display: flex;
    flex-direction: column;
@@ -1346,8 +1380,8 @@ modal-review .actions button {
 }
 
 .compre-junto__produto {
-   background: var(--color-black);
-   border: 0;
+   background: var(--color-white);
+   border: 1px solid #20232620;
    padding: 0 0 20px;
    border-radius: 10px;
    max-width: 205px;
@@ -1421,18 +1455,21 @@ modal-review .actions button {
 }
 
 .compre-junto__nome a {
-   color: #fff;
+   color: var(--color-black);
 }
 
 .compre-junto__resumo {
    border: 0;
-   background: var(--color-secondary);
+   background: #F1F1F1;
    border-radius: 6px;
    position: relative;
+   max-width: 190px;
+   box-sizing: border-box;
+   z-index: 10;
 }
 
 .compre-junto__resumo * {
-   color: #fff;
+   color: var(--color-black);
 }
 
 .compre-junto__comprar button {
@@ -1449,6 +1486,14 @@ modal-review .actions button {
    justify-content: center;
    color: var(--color-white) !important;
    transition: all .3s;
+}
+
+.compre-junto__produto.compre-junto__produto--principal {
+   display: none;
+}
+
+.compre-junto .slick-track {
+   display: flex;
 }
 
 .compre-junto__titulo {
@@ -1487,7 +1532,7 @@ modal-review .actions button {
 
 .compre-junto__preco--promocional, .compre-junto__preco--promocional:empty+.compre-junto__preco--regular {
    font-size: 18px;
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 .lista-favoritos {
@@ -1658,7 +1703,7 @@ modal-review .actions button {
 }
 
 .compre-junto .slick-slide:not(.slick-active)::after {
-   background: linear-gradient(270deg, var(--color-black) 0,rgba(255,255,255,0) 100%)
+   background: linear-gradient(270deg, var(--color-white) 0,rgb(255, 255, 255,0) 100%)
 }
 
 /* Rodapé */

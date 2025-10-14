@@ -647,6 +647,21 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.pagina-produto .konfidency-reviews-details.conteiner'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.listagem.aproveite-tambem'));
 
+        $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
+        $('.pagina-produto .produto div.principal').after(`
+            <div id="principal-konfidency">
+                <img src="https://cdn.awsli.com.br/2830/2830294/arquivos/konfi.png" alt="Konfidency"/>
+                <div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p><strong>Nota 5.0</strong> baseado em +1000 avaliações</p>
+            </div>
+            `)
+
     } else {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
