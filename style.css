@@ -1224,7 +1224,7 @@ input[type="text"]:focus {
 }
 
 .pagina-produto .konfidency-reviews-details.conteiner .modal-review {
-   background: var(--color-secondary);
+   background: var(--color-white);
    border: 0;
    padding: 40px;
 }
