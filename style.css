@@ -2774,6 +2774,7 @@ modal-review .actions button {
 .breadcrumbs ul li {
    display: flex;
    align-items: center;
+   border: 0;
 }
 
 .append-flags {
@@ -2885,7 +2886,7 @@ modal-review .actions button {
 }
 
 .pagina-categoria .breadcrumbs ul li strong {
-   color: var(--color-white);
+   color: var(--color-black);
    font-weight: 400;
    padding: 0;
 }
@@ -4098,8 +4099,12 @@ form#formCalcularFrete {
 }
 
 .subtotal span, .total span {
-   color: var(--color-white);
+   color: var(--color-black);
    font-size: 14px;
+}
+
+.pagina-carrino tbody {
+    border: 1px solid #f0f0f0;
 }
 
 .subtotal strong, .total strong {
@@ -4190,12 +4195,13 @@ form#formCalcularFrete {
 .tabela-carrinho .quantidade input[type="text"] {
    background: none!important;
    border: 0!important;
-   color: var(--color-black);
+   color: var(--color-black)!important;
 }
 
 .tabela-carrinho .quantidade {
-   background: var(--color-secondary);
+   background: var(--color-white);
    border-radius: var(--border-radius-md);
+   border: 1px solid #d8d8d8;
 }
 
 .cadastro legend,
@@ -4251,14 +4257,15 @@ form#formCalcularFrete {
 
 .campos-pedido .caixa-sombreada, .campos-pedido .acao-editar button:first-child {
    border-radius: var(--border-radius-md);
-   background: var(--color-black);
-   border: 0;
+   background: var(--color-white);
    padding: 24px;
    color: #fff;
+   box-shadow: none;
+   border: 1px solid #d8d8d8;
 }
 
 .campos-pedido .caixa-sombreada * {
-   color: #fff;
+   color: var(--color-black);
 }
 
 .caixa-info {
@@ -4277,7 +4284,7 @@ form#formCalcularFrete {
 
 .accordion-group {
    border: 0;
-   background: var(--color-secondary);
+   background: #f1f1f1;
 }
 
 .campos-pedido .acao-editar button:first-child {
@@ -4344,6 +4351,15 @@ form#formCalcularFrete {
 .identificacao .control-group input {
    box-shadow: none;
    width: 100%;
+   background: var(--color-white) !important;
+   border: 1px solid #d8d8d8 !important;
+   color: #000 !important;
+}
+
+.campos-pedido .caixa-sombreada input {
+   background: var(--color-white) !important;
+   border: 1px solid #d8d8d8 !important;
+   color: var(--color-black)!important;
 }
 
 .identificacao .control-group .submit-email.botao.principal {
@@ -4364,8 +4380,9 @@ form#formCalcularFrete {
 }
 
 .checkout-alerta-seguro {
-   background: var(--color-black);
-   border: 1px solid rgba(255,255,255,.1);
+   background: var(--color-white);
+   border: 1px solid rgba(0, 0, 0, .1);
+   margin-top: 20px;
 }
 
 .pagina-carrinho .table {
@@ -4382,18 +4399,19 @@ form#formCalcularFrete {
    align-items: center;
 }
 
-.checkout-alerta-seguro .checkout-alerta-seguro-icon {
+/* .checkout-alerta-seguro .checkout-alerta-seguro-icon {
    color: #2a382d;
-}
+} */
 
 .checkout-alerta-seguro span {
-   color: #fff;
+   color: var(--color-black);
    opacity: .7;
 }
 
 div#login-content {
-   background: var(--color-black);
+   background: var(--color-white);
    border-radius: var(--border-radius-md);
+   border: 1px solid #d8d8d8;
 }
 
 @media screen and (max-width: 768px) {
