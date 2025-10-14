@@ -3074,6 +3074,11 @@ modal-review .actions button {
    line-height: 20px;
    opacity: .7;
    background: #f1f1f1;
+   color: var(--color-black);
+}
+
+.ordenar-listagem.rodape {
+   border: 0;
 }
 
 .faq-pergunta[aria-expanded="true"]:after {
@@ -4112,6 +4117,23 @@ floating-bar-item.search-bar {
 .vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item {
    margin: 20px 0 0 !important;
    padding: 0;
+}
+
+.vitrine-23387218 + ul .listagem-item .nome-produto {
+   margin: 0;
+}
+
+.vitrine-23387218 + ul .listagem-item .acoes-produto .botao-comprar {
+   gap: 0;
+}
+
+.vitrine-23387218 + ul .listagem-item .acoes-produto {
+   display: block!important;
+}
+
+.vitrine-23387218 + ul .listagem-item .acoes-produto .botao-comprar:after {
+   content: "";
+   display: none;
 }
 
 .vitrine-23387218 + ul .span3 .imagem-produto, .vitrine-23387218 + ul .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
