@@ -1218,6 +1218,12 @@ input[type="text"]:focus {
    color: var(--color-black);
 }
 
+.produto .conteiner-imagem #abreZoom,
+.pagina-produto .zm-viewer {
+   z-index: -100;
+   display: none!important;
+}
+
 #carouselImagem .elastislide-carousel ul li a span img {
    border-radius: 4px;
 }
@@ -1709,7 +1715,7 @@ modal-review .actions button {
 }
 
 .append-share-fav a {
-   color: var(--color-black);
+   color: var(--color-black)!important;
    height: 54px;
 }
 
@@ -2580,6 +2586,8 @@ modal-review .actions button {
 
 .pagina-produto .konfidency-reviews-details.conteiner * {
    color: var(--color-black);
+   font-size: 24px;
+   font-weight: 500;
 }
 
 #konfidency-reviews-container.full {
@@ -3015,7 +3023,7 @@ modal-review .actions button {
 
 .faq-categoria {
    padding: 32px;
-   background: var(--color-white);
+   background: #f1f1f1;
    display: flex;
    gap: 4px;
    border-radius: var(--border-radius-md);
@@ -3157,6 +3165,10 @@ modal-review .actions button {
    width: 80px;
    height: 80px;
    margin: 0 auto;
+}
+
+.pagina-categoria .secao-banners .conteiner {
+   padding: 20px;
 }
 
 /* Sobre a loja */
