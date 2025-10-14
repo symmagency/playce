@@ -3260,7 +3260,8 @@ button.about-banner-btn {
 
 .vitrine-23387218 + ul .span3 .imagem-produto, .vitrine-23387218 + ul.produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
    height: fit-content;
-   width: max-content;
+   width: inherit;
+   max-width: 128px;
 }
 
 .vitrine-23387218 + ul .listagem-item .acoes-produto {
