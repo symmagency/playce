@@ -3947,11 +3947,11 @@ ul.slick-dots li {
    justify-content: center;
    position: fixed;
    bottom: 0;
-   background: var(--color-black);
+   background: var(--color-white);
    z-index: 10000000000000;
    align-items: center;
    width: 100%;
-   border-top: 1px solid rgba(255,255,255,.2);
+   border-top: 1px solid rgba(0,0,0,.2);
    box-sizing: border-box;
    overflow: hidden;
 }
@@ -3963,9 +3963,13 @@ ul.slick-dots li {
    flex: 1;
    justify-content: center;
    align-items: center;
-   border-right: 1px solid rgba(255,255,255,.2);
-   color: var(--color-white);
+   border-right: 1px solid rgba(0,0,0,.2);
+   color: var(--color-black);
    flex-direction: column;
+}
+
+.floating-bar .floating-bar-item:last-child {
+   border: 0;
 }
 
 span.icon-contato,
@@ -3979,23 +3983,23 @@ span.icon-buscar {
 }
 
 span.icon-contato {
-   background: var(--icon-chat) center no-repeat;
+   background: url('https://cdn.awsli.com.br/2830/2830294/arquivos/floating-contact.svg') center no-repeat;
 }
 
 span.icon-conta {
-   background: var(--icon-user) center no-repeat;
+   background: url('https://cdn.awsli.com.br/2830/2830294/arquivos/floating-account.svg') center no-repeat;
 }
 
 span.icon-pedidos {
-   background: var(--icon-pedidos) center no-repeat;
+   background: url('https://cdn.awsli.com.br/2830/2830294/arquivos/floating-order.svg') center no-repeat;
 }
 
 span.icon-favoritos {
-   background: var(--icon-heart) center no-repeat;
+   background: url('https://cdn.awsli.com.br/2830/2830294/arquivos/floating-fav.svg') center no-repeat;
 }
 
 span.icon-buscar {
-   background: var(--icon-search) center no-repeat;
+   background: url('https://cdn.awsli.com.br/2830/2830294/arquivos/floating-search.svg') center no-repeat;
 }
 
 floating-bar-item.search-bar {
