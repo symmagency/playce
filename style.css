@@ -2592,6 +2592,10 @@ modal-review .actions button {
 
 .pagina-produto .konfidency-reviews-details.conteiner * {
    color: var(--color-black);
+}
+
+
+.pagina-produto .konfidency-reviews-details.conteiner h2 {
    font-size: 24px;
    font-weight: 500;
 }
