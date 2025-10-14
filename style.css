@@ -2528,14 +2528,14 @@ modal-review .actions button {
 
 .pagina-produto .konfidency-reviews-details.conteiner {
    border-radius: 8px;
-   background: var(--color-black);
+   background: var(--color-white);
    padding: 32px;
    order: inherit;
    margin-top: 24px;
 }
 
 .pagina-produto .konfidency-reviews-details.conteiner * {
-   color: #fff;
+   color: var(--color-black);
 }
 
 #konfidency-reviews-container.full {
@@ -2555,10 +2555,12 @@ modal-review .actions button {
 
 #konfidency-reviews-container .details .reviews .review-feedbacks .votes .helpful {
    background-image: var(--icon-thumbs-up);
+   color: #fff;
 }
 
 #konfidency-reviews-container .details .reviews .review-feedbacks .votes .unhelpful {
    background-image: var(--icon-thumbs-down);
+   color: #fff;
 }
 
 #konfidency-reviews-container .details .details-header {
