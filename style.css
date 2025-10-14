@@ -552,6 +552,7 @@ input[type="text"]:focus {
 
 .menu.superior .nivel-um>li {
    padding: 14px 16px;
+   transition: all .4s;
 }
 
 .menu.superior .nivel-um>li>a i {
@@ -792,6 +793,13 @@ input[type="text"]:focus {
    height: 34px;
    display: flex;
    align-items: center;
+}
+
+#konfidency-reviews-container .details .no-reviews button {
+   background: var(--color-secondary);
+   color: var(--color-white);
+   box-shadow: var(--shadow-button);
+   border: 0;
 }
 
 .listagem .listagem-item .preco-produto s.preco-venda {
@@ -1223,6 +1231,18 @@ input[type="text"]:focus {
 
 .pagina-produto .konfidency-reviews-details.conteiner .modal-review * {
    border-radius: 4px !important;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review input {
+   background: var(--color-white) !important;
+   border: 1px solid #d8d8d8 !important;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review .actions button {
+   background: var(--color-secondary);
+   color: var(--color-white);
+   box-shadow: var(--shadow-button);
+   margin-top: 20px;
 }
 
 modal-review .actions button {
@@ -2551,6 +2571,8 @@ modal-review .actions button {
    padding: 32px;
    order: inherit;
    margin-top: 24px;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 .pagina-produto .konfidency-reviews-details.conteiner * {
