@@ -613,6 +613,11 @@ input[type="text"]:focus {
    color: var(--color-white);
 }
 
+.listagem .listagem-linha {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
 
 .listagem .titulo-categoria strong,
 .categorias-section .titulo-categoria strong {
