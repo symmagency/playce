@@ -36,7 +36,9 @@
    --icon-instagram: url('https://cdn.awsli.com.br/2830/2830294/arquivos/instagram.svg');
    --icon-facebook: url('https://cdn.awsli.com.br/2830/2830294/arquivos/facebook.svg');
    --icon-minus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/minus.svg');
+   --icon-minus-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/i-minus.svg');
    --icon-plus: url('https://cdn.awsli.com.br/2830/2830294/arquivos/plus.svg');
+   --icon-plus-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/i-plus.svg');
    --icon-key: url('https://cdn.awsli.com.br/2830/2830294/arquivos/key.svg');
    --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
    --icon-lock: url('https://cdn.awsli.com.br/2830/2830294/arquivos/lock.svg');
@@ -2264,14 +2266,14 @@ modal-review .actions button {
 .quantidade-wrapper .btn-quantidade.btn-menos {
    left: 8px;
    width: 18px;
-   background: var(--icon-minus) !important;
+   background: var(--icon-minus-black) !important;
    background-size: 100% !important;
 }
 
 .quantidade-wrapper .btn-quantidade.btn-mais {
    right: 8px;
    width: 18px;
-   background: var(--icon-plus) !important;
+   background: var(--icon-plus-black) !important;
    background-size: 100% !important;
 }
 
@@ -2301,6 +2303,7 @@ modal-review .actions button {
    margin: 0;
    color: var(--color-black) !important;
    border: 1px solid var(--border-color) !important;
+   background: var(--color-white) !important;
 }
 
 .quantidade-wrapper .input-quantidade::-webkit-outer-spin-button,
