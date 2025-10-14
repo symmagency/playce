@@ -4027,6 +4027,16 @@ floating-bar-item.search-bar {
 
 .compre-junto .slick-track {
    gap: 20px;
+   transform: none !important;
+   width: 100% !important;
+}
+
+.compre-junto .slick-slide:not(.slick-active)::after {
+   display: none;
+}
+
+.compre-junto__conteudo--grade .compre-junto__produtos {
+   padding: 1px;
 }
 
 .compre-junto .slick-track:before, .compre-junto .slick-track:after {
