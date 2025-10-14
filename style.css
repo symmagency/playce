@@ -3327,6 +3327,10 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
+   .listagem .titulo-categoria strong, .categorias-section .titulo-categoria strong {
+      font-size: 20px;
+   }
+
    .about-banner-icon-title {
       margin-bottom: 32px;
   }
@@ -3415,6 +3419,7 @@ button.about-banner-btn {
   
   .categorias-section {
       padding: 0 16px;
+      margin-top: 32px;
   }
 
   /* Listagem Mobile */
@@ -3430,7 +3435,13 @@ button.about-banner-btn {
    /* Vitrine Destaque home */
    #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
       width: 100%!important;
+      margin-top: 32px;
   }
+
+
+.listagem .preco-produto .bandeira-promocao {
+   font-size: 11px;
+}
 
   #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
       width: 100%!important;
@@ -3544,6 +3555,7 @@ button.about-banner-btn {
    box-sizing: border-box;
    max-width: 100%;
    justify-content: center;
+   display: none;
 }
 
 .banner .flexslider .slides>li >    a {
@@ -3619,7 +3631,7 @@ ul.slick-dots {
    width: fit-content;
    margin: 0 auto 24px;
    border-radius: 10px;
-   background: rgba(0,0,0,.7);
+   background: rgba(0,0,0,.1);
    padding: 10px;
 }
 
@@ -3628,8 +3640,18 @@ ul.slick-dots {
    width: 8px;
    height: 8px;
    border-radius: 999px;
-   opacity: .4;
+   opacity: 1;
    transition: all .3s;
+   background: #ffffff;
+}
+
+.listagem a.titulo-categoria:after {
+   color: var(--color-black);
+   background: #f1f1f1;
+   background-image: var(--icon-chev-right-black);
+   background-repeat: no-repeat;
+   background-position: 102px 52%;
+   background-size: auto 40%;
 }
 
 .slick-dots .slick-active button {
@@ -3637,6 +3659,7 @@ ul.slick-dots {
    opacity: 1;
    width: 20px;
    outline: 4px solid #d71d1d59;
+   margin-right: 4px;
 }
 
 ul.slick-dots li {
@@ -3669,6 +3692,7 @@ ul.slick-dots li {
    width: 100%;
    box-sizing: border-box;
    margin: 32px auto 0 !important;
+   align-items: center;
 }
 
 .listagem .listagem-item {
