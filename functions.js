@@ -782,7 +782,24 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             `);
         }
 
-        $('.konfidency-reviews-summary').after($('.produto-detalhe'));
+        // Tenta mover .produto-detalhe após .konfidency-reviews-summary até conseguir
+        (function retryMoveProdutoDetalhe(maxRetries) {
+            var moved = false;
+            var retries = 0;
+            function tryMove() {
+                var $summary = $('.konfidency-reviews-summary');
+                var $detalhe = $('.produto-detalhe');
+                if ($summary.length && $detalhe.length && !$summary.next().is($detalhe)) {
+                    $summary.after($detalhe);
+                    moved = true;
+                }
+                if (!moved && retries < maxRetries) {
+                    retries++;
+                    setTimeout(tryMove, 150);
+                }
+            }
+            tryMove();
+        })(20);
     }
 
     $('.produto .produto-detalhe-info').append(`
