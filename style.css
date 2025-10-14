@@ -1437,6 +1437,34 @@ modal-review .actions button {
    box-shadow: 1px 1px 11px rgba(0,0,0,.2);
 }
 
+.produto-detalhe-info-item > span:first-child {
+   font-size: 0;
+   width: 16px;
+   height: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.produto-detalhe-info-item {
+   display: flex;
+   align-items: center;
+}
+
+.produto-detalhe-info-item:first-child > span:first-child {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/platform.svg);
+   margin-right: 6px;
+}
+
+.produto-detalhe-info-item:last-child > span:first-child {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/region.svg);
+   margin-right: 6px;
+}
+
+.produto-detalhe-info-item strong {
+   color: var(--color-black);
+}
+
 .compre-junto__produto--grade:first-child::before {
    display: none;
 }
