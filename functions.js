@@ -644,8 +644,8 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
 
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('#buy-together-position1'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.produto .row-fluid .span12 .abas-custom'));
-        $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.pagina-produto .konfidency-reviews-details.conteiner'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.listagem.aproveite-tambem'));
+        $('.pagina-produto .listagem.aproveite-tambem').before($('.pagina-produto .konfidency-reviews-details.conteiner'));
 
         $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
         $('.pagina-produto .produto div.principal').after(`
