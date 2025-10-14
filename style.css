@@ -952,6 +952,8 @@ input[type="text"]:focus {
 
 .pagina-login .form-horizontal .controls input {
    width: 100%;
+   background: var(--color-white) !important;
+   border: 1px solid #d8d8d8 !important;
 }
 
 .pagina-login .cadastro-logar .control-group label {
@@ -973,18 +975,19 @@ input[type="text"]:focus {
 }
 
 .pagina-login .caixa-sombreada fieldset legend {
-   color: var(--color-white);
+   color: var(--color-black);
    padding-bottom: 32px;
    font-size: 15px;
    font-weight: normal;
+   border: 0;
 }
 
 .pagina-login .caixa-sombreada {
    padding: 40px;
-   border: 0;
+   border: 1px solid #d8d8d8;
    border-radius: var(--border-radius-md);
    box-shadow: none;
-   background: var(--color-black);
+   background: var(--color-white);
 }
 
 .pagina-login .cadastro-logar .botao.principal {
@@ -999,14 +1002,16 @@ input[type="text"]:focus {
 
 .pagina-login .cadastro-logar input {
     width: 100% !important;
+    background: var(--color-white) !important;
+    border: 1px solid #d8d8d8 !important;
 }
 
 .pagina-login .caixa-sombreada fieldset .recuperar-senha i {
-   color: #fff;
+   color: #000;
 }
 
 .pagina-login .caixa-sombreada fieldset .recuperar-senha {
-   color: #fff;
+   color: #000;
    opacity: .5;
    font-size: 12px;
    display: flex;
@@ -4014,23 +4019,26 @@ floating-bar-item.search-bar {
 /* Código do carrinho  */
 
 .finalizar-compra .caixa-sombreada {
+   box-shadow: none;
    display: flex;
 }
 
 .order-resume {
    width: 350px;
-   background: var(--color-black);
-   border-radius: 4px;
+   background: var(--color-white);
    max-width: 350px;
    padding: 20px;
    margin-left: 10px;
    height: fit-content;
+   border-radius: 8px;
+   border: 1px solid #20232620;
+   box-shadow: 0 0 50px rgba(0, 0, 0, .15);
 }
 
 .order-resume h3 {
    font-size: 18px;
    font-weight: 500;
-   color: var(--color-white);
+   color: var(--color-black);
    opacity: .7;
    margin: 0 0 20px;
 }
@@ -4096,7 +4104,7 @@ form#formCalcularFrete {
 
 .subtotal strong, .total strong {
    font-size: 16px;
-   color: var(--color-white);
+   color: var(--color-black);
    font-weight: 500;
    margin: 0;
    letter-spacing: 0px;
@@ -4119,7 +4127,7 @@ form#formCalcularFrete {
    display: block;
    font-size: 12px;
    text-align: left;
-   color: var(--color-white);
+   color: var(--color-black);
    opacity: .7;
 }
 
@@ -4134,7 +4142,7 @@ form#formCalcularFrete {
    gap: 20px;
 }
 .tabela-carrinho thead {
-   background: #2023269c;
+   background: #f1f1f1;
    border: 0;
 }
 
@@ -4143,12 +4151,12 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho thead * {
-   color: #fff;
+   color: var(--color-black);
    font-weight: 500;
 }
 
 .tabela-carrinho tbody tr {
-   background: var(--color-black);
+   background: var(--color-white);
    border: 0;
 }
 
@@ -4157,7 +4165,7 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho .produto-info * {
-   color: var(--color-white);
+   color: var(--color-black);
    font-size: 14px;
 }
 
@@ -4166,7 +4174,7 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho .preco-produto .preco-promocional {
-   color: var(--color-white);
+   color: var(--color-black);
    font-size: 16px;
    font-weight: 500;
 }
@@ -4176,13 +4184,13 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho * {
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 .tabela-carrinho .quantidade input[type="text"] {
    background: none!important;
    border: 0!important;
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 .tabela-carrinho .quantidade {
@@ -4193,7 +4201,7 @@ form#formCalcularFrete {
 .cadastro legend,
 .cadastro .dados-acesso label,
 .form-horizontal .control-label{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .pagina-cadastro .form-search input, 

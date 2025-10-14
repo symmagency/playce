@@ -61,7 +61,7 @@ $('.barra-inicial .conteiner > .row-fluid').prepend(`
        </div>
      </div>
 `);
-$('#barraNewsletter').before(`
+$('.pagina-inicial #barraNewsletter').before(`
     <div class="about-banner">
       <div class="about-banner-content">
         <div class="about-banner-icon-title">
@@ -869,6 +869,6 @@ $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').after(`<div class
 $('.pagina-carrinho:not(.carrinho-checkout) .append-controls').append($('.subtotal'));
 $('.pagina-carrinho:not(.carrinho-checkout) .append-controls').append($('.total'));
 $('.append-controls').after($('.finalizar-compra > form'));
-$('.selo-ssl img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/site-protegido.svg');
+$('.selo-ssl img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/selo-protegido.svg');
 
 });
