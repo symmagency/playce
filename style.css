@@ -1580,7 +1580,7 @@ modal-review .actions button {
 }
 
 .compre-junto__titulo {
-   color: #fff;
+   color: var(--color-black);
    font-weight: normal;
 }
 
@@ -3318,6 +3318,10 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
+   .zm-handler {
+      display: none!important;
+   }
+
    .atalhos-mobile.visible-phone.fundo-secundario.borda-principal {
       display: none !important;
   }
@@ -3369,14 +3373,14 @@ button.about-banner-btn {
 
    .slick-slider .slick-prev {
       left: -12px;
-      background-color: var(--color-primary);
+      background-color: var(--color-white);
       border-radius: 999px;
       background-size: 20px;
    }
 
    .slick-slider .slick-next {
       right: -12px;
-      background-color: var(--color-primary);
+      background-color: var(--color-white);
       border-radius: 999px;
       background-size: 20px;
    }
@@ -3605,7 +3609,7 @@ ul.slick-dots {
    background: var(--color-primary);
    opacity: 1;
    width: 20px;
-   outline: 4px solid #1d68d759;
+   outline: 4px solid #d71d1d59;
 }
 
 ul.slick-dots li {
@@ -3683,6 +3687,7 @@ ul.slick-dots li {
 
 .produto-thumbs.thumbs-horizontal {
    width: 100%;
+   display: none;
 }
 
 #carouselImagem .flex-viewport {
@@ -3948,6 +3953,15 @@ floating-bar-item.search-bar {
 
 .produto .principal > div.append-share-fav {
    padding: 17px 0;
+   justify-content: center;
+}
+
+.compre-junto .slick-track {
+   gap: 20px;
+}
+
+.compre-junto .slick-track:before, .compre-junto .slick-track:after {
+   display: none;
 }
 
 .append-flags > span {
@@ -4019,6 +4033,40 @@ floating-bar-item.search-bar {
    margin-bottom: 32px;
 }
 
+.vitrine-23387218 + ul .slick-track {
+   grid-template-columns: 1fr;
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item {
+   margin: 20px 0 0 !important;
+   padding: 0;
+}
+
+.vitrine-23387218 + ul .slick-dots {
+   display: none!important;
+}
+
+.vitrine-23387218 + ul .imagem-produto, .vitrine-23387218 + ul .listagem-item .info-produto {
+   width: max-content;
+}
+
+.about-banner {
+   padding: 32px;
+   margin: 60px 16px;
+}
+
+.about-banner-content {
+   left: 20px;
+}
+
+.about-banner-image {
+   display: none;
+}
+
+.vitrine-23387218 + ul .slick-list.draggable {
+   margin-left: 0!important;
+   margin-right: 0!important;
+}
 
 }
 

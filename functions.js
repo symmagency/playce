@@ -477,53 +477,18 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             $wrapper.prepend($btnMinus);
             $wrapper.append($btnPlus);
 
-            // Função para atualizar o link do botão comprar com a quantidade correta
-            function atualizarLinkComprar(qtde) {
-                var $botaoComprar = $('.produto .acoes-produto .comprar .botao.principal');
-                var href = $botaoComprar.attr('href');
-                if (href) {
-                    // Substitui quantidade no final do link, ou adiciona se não existir
-                    var novoHref = href.replace(/(adicionar\/)(\d+)$/, 'adicionar/' + qtde);
-                    // Caso não encontre o padrão, mas exista o adicionar/, adiciona a quantidade no final
-                    if (!novoHref.match(/adicionar\/\d+$/)) {
-                        if (novoHref.match(/adicionar\/$/)) {
-                            novoHref += qtde;
-                        } else if (novoHref.match(/adicionar\/[^\/]+/)) {
-                            novoHref = novoHref.replace(/(adicionar\/)[^\/]+/, 'adicionar/' + qtde);
-                        } else {
-                            // Se não tem adicionar/, mantém o href original
-                            // Ou você pode ajustar de acordo com a estrutura da URL desejada
-                        }
-                    }
-                    $botaoComprar.attr('href', novoHref);
-                }
-            }
-
             $btnMinus.on('click', function() {
                 var current = parseInt($input.val(), 10) || 1;
                 var min = parseInt($input.attr('min'), 10) || 1;
                 if(current > min) {
-                    var novaQtde = current - 1;
-                    $input.val(novaQtde).trigger('change');
-                    atualizarLinkComprar(novaQtde);
+                    $input.val(current - 1).trigger('change');
                 }
             });
 
             $btnPlus.on('click', function() {
                 var current = parseInt($input.val(), 10) || 1;
-                var novaQtde = current + 1;
-                $input.val(novaQtde).trigger('change');
-                atualizarLinkComprar(novaQtde);
+                $input.val(current + 1).trigger('change');
             });
-
-            // Atualiza o link ao digitar manualmente a quantidade
-            $input.on('change', function() {
-                var qtde = parseInt($input.val(), 10) || 1;
-                atualizarLinkComprar(qtde);
-            });
-
-            // Atualiza o link inicialmente
-            atualizarLinkComprar(parseInt($input.val(), 10) || 1);
         }
     });
 
