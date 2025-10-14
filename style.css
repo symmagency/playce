@@ -1437,6 +1437,14 @@ modal-review .actions button {
    box-shadow: 1px 1px 11px rgba(0,0,0,.2);
 }
 
+.compre-junto__produto--grade:first-child::before {
+   display: none;
+}
+
+.compre-junto__produto--grade:first-child {
+   margin: 0;
+}
+
 .compre-junto__produtos.slick-initialized.slick-slider {
    z-index: 2;
    position: relative;
