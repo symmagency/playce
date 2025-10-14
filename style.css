@@ -4462,12 +4462,13 @@ form#formCalcularFrete {
    box-shadow: none;
 }
 
-.acao-editar > div a.botao {
+.cadastro .acao-editar > div a.botao {
    margin: 0;
 }
-.acao-editar > div {
+
+.pagina-carrinho .acao-editar > div {
    display: flex !important;
-   flex-direction: row;
+   flex-direction: column-reverse;
    justify-content: center;
    align-items: center;
    gap: 20px;
