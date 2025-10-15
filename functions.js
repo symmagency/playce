@@ -492,6 +492,8 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         }
     });
 
+    $('.produto .conteiner-imagem #abreZoom').remove()
+
     if ($(window).width() > 768) {
         // desktop
         // Antes de adicionar, verifica se já existe para evitar duplicação
