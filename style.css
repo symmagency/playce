@@ -325,9 +325,13 @@ input[type="text"]:focus {
    display: flex;
    gap: 4px;
    background: var(--color-primary);
-   padding: 8px 16px;
+   padding: 10px 16px;
    border-radius: var(--border-radius-md);
    box-shadow: var(--shadow-button);
+}
+
+.fundo-principal:hover {
+   opacity: 1;
 }
 
 /* Estilos da busca */
@@ -500,6 +504,11 @@ i.icon-instagram:before {
    display: flex;
 }
 
+.sign-up-header i.user {
+   display: flex;
+   align-items: center;
+}
+
 .sign-up-header a {
    color: var(--color-white);
    display: flex;
@@ -510,6 +519,7 @@ i.icon-instagram:before {
    font-size: var(--font-size-sm);
    line-height: 20px;
    padding: 8px 16px;
+   align-items: center;
 }
 
 .sign-up-header i.user:before {
