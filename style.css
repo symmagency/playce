@@ -41,7 +41,7 @@
    --icon-plus-black: url('https://cdn.awsli.com.br/2830/2830294/arquivos/i-plus.svg');
    --icon-key: url('https://cdn.awsli.com.br/2830/2830294/arquivos/key.svg');
    --icon-chat: url('https://cdn.awsli.com.br/2830/2830294/arquivos/chat.svg');
-   --icon-lock: url('https://cdn.awsli.com.br/2830/2830294/arquivos/lock.svg');
+   --icon-lock: url('https://cdn.awsli.com.br/2830/2830294/arquivos/locks.svg');
    --icon-menu: url('https://cdn.awsli.com.br/2830/2830294/arquivos/menu.svg');
    --icon-thumbs-up: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_up.svg');
    --icon-thumbs-down: url('https://cdn.awsli.com.br/2830/2830294/arquivos/thumbs_down.svg');
@@ -149,6 +149,15 @@
               }
 
                /* Fim alterar vitrine em destaque */
+
+
+
+               /* Esconde categorias do menu */
+               .menu.superior .nivel-um>li.categoria-id-23387278,
+               .menu.superior .nivel-um>li.categoria-id-23499980 {
+                   display: none;
+               }
+               /* Fim esconde categorias do menu */
 
 
 
@@ -368,6 +377,44 @@ input[type="text"]:focus {
 
 .barra-inicial {
    background: var(--color-primary);
+}
+
+.canais-contato .icon-comment:before {
+   content: "";
+   width: 18px;
+   height: 18px;
+   background: var(--icon-chat);
+}
+
+.canais-contato ul li > a {
+   display: flex;
+   align-items: center;
+   font-size: 0;
+}
+
+.canais-contato ul li.hidden-phone > a:after {
+   content: "Precisa de ajuda?";
+   font-size: 14px;
+   font-weight: 500;
+}
+
+i.icon-facebook:before {
+   content: "";
+   width: 18px;
+   height: 18px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/facebook.svg) center no-repeat;
+}
+
+i.icon-instagram:before {
+   content: "";
+   width: 18px;
+   height: 18px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/instagram.svg) center no-repeat;
+}
+
+.lista-redes i {
+   display: flex;
+   align-items: center;
 }
 
 .canais-contato > ul > li:not(.hidden-phone) {
@@ -1708,6 +1755,8 @@ modal-review .actions button {
    font-size: 24px;
    text-align: left;
    margin-bottom: 12px;
+   font-weight: 600;
+   color: var(--color-black);
 }
 
 .append-share-fav .btn-share {
