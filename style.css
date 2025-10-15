@@ -1194,7 +1194,7 @@ i.icon-instagram:before {
 .pagina-produto .produto div.principal {
    padding: 32px;
    background: var(--color-white);
-   max-width: 400px;
+   max-width: 350px;
    box-sizing: border-box;
    border-radius: 8px;
    border: 1px solid #20232620;
@@ -1441,7 +1441,8 @@ modal-review .actions button {
 }
 
 .produto .principal .acoes-produto .preco-produto .preco-promocional.titulo {
-   font-size: 40px;
+   font-size: 32px;
+   font-weight: 600;
 }
 
 .pagina-produto .produto div.principal .preco-produto > div {
@@ -2337,7 +2338,7 @@ modal-review .actions button {
 }
 
 .input-qtde-wrapper > button.btn-qtde-menos {
-    left: 20px;
+    left: 12px;
 }
 
 .input-qtde-wrapper {
@@ -2345,7 +2346,7 @@ modal-review .actions button {
 }
 
 .input-qtde-wrapper > button.btn-qtde-mais {
-    right: 20px;
+    right: 12px;
 }
 
 .quantidade-wrapper .btn-quantidade {
