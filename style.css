@@ -1912,6 +1912,11 @@ modal-review .actions button {
 
 #barraNewsletter .componente .interno-conteudo {
    flex: 1;
+   position: relative;
+}
+
+a {
+   text-decoration: none !important;
 }
 
 #barraNewsletter .componente input[type="text"] {
