@@ -492,7 +492,12 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         }
     });
 
-    $('.produto .conteiner-imagem #abreZoom').remove()
+    $('.produto .conteiner-imagem #abreZoom').remove();
+    
+    // Remove atributos data-target e data-toggle seguindo boas práticas
+    $('.links-rodape ul li:first-child > a, .canais-contato ul li > a').each(function() {
+        $(this).removeAttr('data-target data-toggle');
+    });
 
     if ($(window).width() > 768) {
         // desktop
