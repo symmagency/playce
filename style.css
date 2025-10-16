@@ -3706,6 +3706,11 @@ button.about-banner-btn {
    justify-content: center;
 }
 
+.append-benefits span {
+   font-size: 14px;
+   font-weight: 500;
+}
+
 #cabecalho {
    padding: 0;
 }
