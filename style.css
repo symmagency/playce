@@ -1312,10 +1312,32 @@ i.icon-instagram:before {
 }
 
 .pagina-produto .konfidency-reviews-details.conteiner .modal-review .actions button {
-   background: var(--color-secondary);
+   background: var(--color-primary);
    color: var(--color-white);
    box-shadow: var(--shadow-button);
    margin-top: 20px;
+   padding: 16px;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review label.option {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   gap: 6px;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review .options {
+   display: flex;
+   gap: 20px;
+   margin: 10px auto 20px;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review .stars {
+   margin: 10px 0 20px;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review label.option input {
+   margin: 0;
 }
 
 modal-review .actions button {
@@ -2680,6 +2702,7 @@ a {
 .pagina-produto .konfidency-reviews-details.conteiner h2 {
    font-size: 24px;
    font-weight: 500;
+   text-align: left;
 }
 
 #konfidency-reviews-container.full {
