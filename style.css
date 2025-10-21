@@ -1807,7 +1807,7 @@ modal-review .actions button {
    align-items: center;
 }
 
-.append-share-fav a {
+.append-share-fav > a {
    color: var(--color-black)!important;
    height: 54px;
 }
@@ -1995,6 +1995,7 @@ a {
    display: flex;
    gap: 10px;
    z-index: 0;
+   height: 40px!important;
 }
 
 #rodape .institucional {
@@ -2681,7 +2682,7 @@ a {
 
 .produto>.row-fluid:nth-child(2) > div.span5 {
    width: fit-content;
-   top: 40px;
+   top: 88px;
    position: sticky;
 }
 
