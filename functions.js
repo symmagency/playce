@@ -468,7 +468,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
     $('.pagina-busca .coluna.span3').addClass('no-results');
 }
 
-    // Adiciona botões de mais e menos ao lado do input quantidade carrinho e altera o link do botão comprar corretamente
+    // Adiciona botões de mais e menos ao lado do input quantidade carrinho
     $('.pagina-produto .qtde-carrinho').each(function() {
         // Garante que não adicionaremos botões duplicados
         if ($(this).parent('.input-qtde-wrapper').length === 0) {
@@ -492,31 +492,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
                 var current = parseInt($input.val(), 10) || 1;
                 $input.val(current + 1).trigger('change');
             });
-
-            // Também altera o botão comprar ao mudar o input quantidade
-            $input.on('input change', function() {
-                var $botaoComprar = $wrapper.siblings('.botao-comprar');
-                var produtoId = '';
-                var quantidade = parseInt($input.val(), 10) || 1;
-
-                // Captura o id do produto pelo href do botão comprar
-                var hrefAntigo = $botaoComprar.attr('href') || '';
-                // Exemplo de href: /carrinho/produto/359139343/adicionar ou /carrinho/produto/359139343/adicionar/5
-                var regex = /(\/carrinho\/produto\/(\d+)\/adicionar)(\/\d+)?/;
-                var match = hrefAntigo.match(regex);
-
-                if (match) {
-                    produtoId = match[2];
-                    var novoHref = '/carrinho/produto/' + produtoId + '/adicionar';
-                    if (quantidade > 1) {
-                        novoHref += '/' + quantidade;
-                    }
-                    $botaoComprar.attr('href', novoHref);
-                }
-            });
-
-            // Dispara change inicial para corrigir o href inicialmente
-            $input.trigger('change');
         }
     });
 
