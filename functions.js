@@ -433,11 +433,6 @@ btnShare.on('click', function() {
             url: 'https://x.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title)
         },
         {
-            nome: 'Instagram',
-            classe: 'instagram',
-            url: 'https://www.instagram.com/?url=' + encodeURIComponent(url)
-        },
-        {
             nome: 'WhatsApp',
             classe: 'whatsapp',
             url: 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ' ' + url)
