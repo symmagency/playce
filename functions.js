@@ -424,14 +424,22 @@ btnShare.on('click', function() {
     var shareLinks = [
         {
             nome: 'Facebook',
+            classe: 'facebook',
             url: 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url)
         },
         {
-            nome: 'Twitter',
-            url: 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title)
+            nome: 'X (Twitter)',
+            classe: 'x-twitter',
+            url: 'https://x.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title)
+        },
+        {
+            nome: 'Instagram',
+            classe: 'instagram',
+            url: 'https://www.instagram.com/?url=' + encodeURIComponent(url)
         },
         {
             nome: 'WhatsApp',
+            classe: 'whatsapp',
             url: 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ' ' + url)
         }
     ];
@@ -439,7 +447,7 @@ btnShare.on('click', function() {
     // Cria um menu simples de compartilhamento
     var $menu = $('<div class="share-menu"></div>');
     shareLinks.forEach(function(rede) {
-        var $link = $('<a href="' + rede.url + '" target="_blank" rel="noopener noreferrer">' + rede.nome + '</a><br>');
+        var $link = $('<a href="' + rede.url + '" target="_blank" rel="noopener noreferrer" class="' + rede.classe + '">' + rede.nome + '</a><br>');
         $menu.append($link);
     });
 
