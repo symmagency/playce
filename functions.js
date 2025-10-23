@@ -467,49 +467,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
     $('.pagina-busca .conteudo.span9').addClass('no-results');
     $('.pagina-busca .coluna.span3').addClass('no-results');
 }
-
-    // Adiciona botões de mais e menos ao lado do input quantidade carrinho, igual à listagem de produtos
-    $('.pagina-produto .qtde-carrinho').each(function () {
-        var $input = $(this);
-    
-        // Cria wrapper apenas visual (sem remover input)
-        if ($input.parent('.input-qtde-wrapper').length === 0) {
-            $input.before('<button type="button" class="btn-qtde-menos" tabindex="-1" aria-label="Diminuir quantidade">-</button>');
-            $input.after('<button type="button" class="btn-qtde-mais" tabindex="-1" aria-label="Aumentar quantidade">+</button>');
-            $input.wrap('<div class="input-qtde-wrapper" style="display:inline-flex;align-items:center;"></div>');
-        }
-    
-        var $wrapper = $input.closest('.input-qtde-wrapper');
-        var $btnMinus = $wrapper.find('.btn-qtde-menos');
-        var $btnPlus = $wrapper.find('.btn-qtde-mais');
-    
-        function updateBtnState() {
-            var val = parseInt($input.val(), 10) || 1;
-            var min = parseInt($input.attr('min'), 10) || 1;
-            var max = parseInt($input.attr('max'), 10) || null;
-            $btnMinus.prop('disabled', val <= min);
-            $btnPlus.prop('disabled', max && val >= max);
-        }
-    
-        $btnMinus.on('click', function () {
-            var val = parseInt($input.val(), 10) || 1;
-            var min = parseInt($input.attr('min'), 10) || 1;
-            if (val > min) $input.val(val - 1).trigger('change');
-            updateBtnState();
-        });
-    
-        $btnPlus.on('click', function () {
-            var val = parseInt($input.val(), 10) || 1;
-            var max = parseInt($input.attr('max'), 10) || null;
-            if (!max || val < max) $input.val(val + 1).trigger('change');
-            updateBtnState();
-        });
-    
-        $input.on('input change', updateBtnState);
-        updateBtnState();
-    });
-    
-    
     
 
     $('.produto .conteiner-imagem #abreZoom').remove();
