@@ -809,6 +809,57 @@ i.icon-instagram:before {
    display: none;
 }
 
+#carrinho-mini thead {
+   background: rgba(255,255,255,.1);
+}
+
+#carrinho-mini thead * {
+   color: var(--color-white);
+}
+
+.modal-comprar-ajax-status .fancybox-skin {
+   padding: 0!important;
+}
+
+#comprar-ajax-status .buttons {
+   display: flex;
+   padding: 20px 20px;
+   justify-content: space-between;
+   align-items: center;
+   border-top: 1px solid rgba(255,255,255,.1);
+}
+
+#comprar-ajax-status .sucesso #carrinho-mini {
+   margin: 0;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr {
+   background: none;
+   border-bottom: 1px solid rgba(255,255,255,.1)!important;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr * {
+   color: #fff;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr form * {
+   color: #000;
+}
+
+#comprar-ajax-status .sucesso .buttons .botao.principal {
+   padding: 20px 28px!important;
+   height: 56px!important;
+   font-size: 16px!important;
+}
+
+#carrinho-mini thead th {
+   padding: 16px 20px;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr td {
+   padding: 20px;
+}
+
 .bandeiras-produto span {
    line-height: 20px;
 }
