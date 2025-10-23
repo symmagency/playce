@@ -469,9 +469,24 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
 }
 
     // Adiciona botões de mais e menos ao lado do input quantidade carrinho, igual à listagem de produtos
-    $('.pagina-produto .input-qtde-wrapper').each(function () {
-        var $wrapper = $(this);
-        var $input = $wrapper.find('.qtde-carrinho');
+    $('.pagina-produto .qtde-carrinho').each(function () {
+        var $input = $(this);
+        var $wrapper = $input.closest('.input-qtde-wrapper');
+    
+        // Se não houver wrapper, cria um
+        if ($wrapper.length === 0) {
+            $input.wrap('<div class="input-qtde-wrapper" style="display:inline-flex;align-items:center;"></div>');
+            $wrapper = $input.parent();
+        }
+    
+        // Se os botões ainda não existem, cria
+        if ($wrapper.find('.btn-qtde-menos').length === 0) {
+            $wrapper.prepend('<button type="button" class="btn-qtde-menos" tabindex="-1" aria-label="Diminuir quantidade">-</button>');
+        }
+        if ($wrapper.find('.btn-qtde-mais').length === 0) {
+            $wrapper.append('<button type="button" class="btn-qtde-mais" tabindex="-1" aria-label="Aumentar quantidade">+</button>');
+        }
+    
         var $btnMinus = $wrapper.find('.btn-qtde-menos');
         var $btnPlus = $wrapper.find('.btn-qtde-mais');
     
@@ -501,6 +516,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $input.on('input change', updateBtnState);
         updateBtnState();
     });
+    
     
 
     $('.produto .conteiner-imagem #abreZoom').remove();
