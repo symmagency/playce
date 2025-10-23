@@ -1851,6 +1851,40 @@ modal-review .actions button {
    box-shadow: 1px 6px 30px rgba(0, 0, 0, .4);
 }
 
+.share-menu a.facebook,
+.share-menu a.x-twitter,
+.share-menu a.whatsapp {
+    font-size: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 888px;
+    background: rgba(255,255,255, .1);
+}
+
+.share-menu a.facebook:before,
+.share-menu a.x-twitter:before,
+.share-menu a.whatsapp:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.share-menu a.facebook:before {
+    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/fb-icon.svg) center no-repeat;
+}
+
+.share-menu a.x-twitter:before {
+    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/x-icon.svg) center no-repeat;
+}
+
+.share-menu a.whatsapp:before {
+    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/whats-icon.svg) center no-repeat;
+}
+
 .modal-footer {
    display: flex;
    justify-content: flex-end;
