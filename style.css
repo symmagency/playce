@@ -336,6 +336,33 @@ input[type="text"]:focus {
 
 /* Estilos da busca */
 
+@media screen and (min-with: 768px) {
+
+#form-buscar #auto-complete:focus ~ .icon-search::before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/search-black.svg) center no-repeat!important;
+}
+
+.busca #form-buscar #auto-complete:focus {
+   border: 2px solid var(--color-primary) !important;
+   box-shadow: 0 0 10px rgb(255 0 0 / 90%);
+}
+
+.menu.superior:has(~ .inferior .busca-mobile:focus-within) {
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.25s ease;
+ }
+
+.conteudo-topo .inferior .busca-mobile:focus-within {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: auto;
+   max-width: 1000px;
+}
+
+}
+
 .busca {
    padding: 0;
    margin: 0;
@@ -368,6 +395,7 @@ input[type="text"]:focus {
    border-radius: var(--border-radius-md);
    padding: 8px 16px;
    border-color: var(--color-half-white);
+   transition: all .3s;
 }
 
 .icon-search:before {
@@ -375,6 +403,7 @@ input[type="text"]:focus {
    width: 24px;
    height: 24px;
    background: var(--icon-search) no-repeat;
+   transition: all .3s;
 }
 
 /* Ajustes cabeçalho */
@@ -543,6 +572,7 @@ i.icon-instagram:before {
    max-width: 460px;
    display: flex;
    gap: 20px;
+   justify-content: flex-end;
 }
 
 /* Estrutura do header */
