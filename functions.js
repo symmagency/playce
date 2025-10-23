@@ -468,30 +468,67 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
     $('.pagina-busca .coluna.span3').addClass('no-results');
 }
 
-    // Adiciona botões de mais e menos ao lado do input quantidade carrinho
-    $('.pagina-produto .qtde-carrinho').each(function() {
+    // Adiciona botões de mais e menos ao lado do input quantidade carrinho, igual à listagem de produtos
+    $('.pagina-produto .qtde-carrinho').each(function () {
+        var $input = $(this);
+
         // Garante que não adicionaremos botões duplicados
-        if ($(this).parent('.input-qtde-wrapper').length === 0) {
-            var $input = $(this);
+        if ($input.parent('.input-qtde-wrapper').length === 0) {
             $input.wrap('<div class="input-qtde-wrapper" style="display:inline-flex;align-items:center;"></div>');
             var $wrapper = $input.parent();
-            var $btnMinus = $('<button type="button" class="btn-qtde-menos">-</button>');
-            var $btnPlus = $('<button type="button" class="btn-qtde-mais">+</button>');
+            var $btnMinus = $('<button type="button" class="btn-qtde-menos" tabindex="-1" aria-label="Diminuir quantidade">-</button>');
+            var $btnPlus = $('<button type="button" class="btn-qtde-mais" tabindex="-1" aria-label="Aumentar quantidade">+</button>');
+
             $wrapper.prepend($btnMinus);
             $wrapper.append($btnPlus);
 
-            $btnMinus.on('click', function() {
-                var current = parseInt($input.val(), 10) || 1;
+            // Atualiza/desabilita corretamente botões de acordo com min/max igual à listagem de produtos
+            function updateBtnState() {
+                var val = parseInt($input.val(), 10) || 1;
                 var min = parseInt($input.attr('min'), 10) || 1;
-                if(current > min) {
-                    $input.val(current - 1).trigger('change');
+                var max = parseInt($input.attr('max'), 10) || null;
+
+                if (val <= min) {
+                    $btnMinus.prop('disabled', true);
+                } else {
+                    $btnMinus.prop('disabled', false);
+                }
+                if (max && val >= max) {
+                    $btnPlus.prop('disabled', true);
+                } else {
+                    $btnPlus.prop('disabled', false);
+                }
+            }
+
+            $btnMinus.on('click', function () {
+                var val = parseInt($input.val(), 10) || 1;
+                var min = parseInt($input.attr('min'), 10) || 1;
+                if (val > min) {
+                    $input.val(val - 1).trigger('change');
                 }
             });
 
-            $btnPlus.on('click', function() {
-                var current = parseInt($input.val(), 10) || 1;
-                $input.val(current + 1).trigger('change');
+            $btnPlus.on('click', function () {
+                var val = parseInt($input.val(), 10) || 1;
+                var max = parseInt($input.attr('max'), 10) || null;
+                if (!max || val < max) {
+                    $input.val(val + 1).trigger('change');
+                }
             });
+
+            // Atualiza o estado quando o campo é alterado manualmente
+            $input.on('input change', function () {
+                var val = parseInt($input.val(), 10) || 1;
+                var min = parseInt($input.attr('min'), 10) || 1;
+                var max = parseInt($input.attr('max'), 10) || null;
+
+                if (val < min) $input.val(min);
+                if (max && val > max) $input.val(max);
+                updateBtnState();
+            });
+
+            // Garantir estado inicial dos botões
+            updateBtnState();
         }
     });
 
