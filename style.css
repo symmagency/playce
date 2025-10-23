@@ -336,7 +336,7 @@ input[type="text"]:focus {
 
 /* Estilos da busca */
 
-@media screen and (min-with: 768px) {
+@media screen and (min-width: 768px) {
 
 #form-buscar #auto-complete:focus ~ .icon-search::before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/search-black.svg) center no-repeat!important;
