@@ -2515,10 +2515,10 @@ a {
    margin: 0;
 }
 
-.produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho::-webkit-outer-spin-button,
+/* .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho::-webkit-outer-spin-button,
 .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho::-webkit-inner-spin-button {
     display: none;
-}
+} */
 
 .input-qtde-wrapper > button {
     position: absolute;
