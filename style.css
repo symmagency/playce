@@ -363,6 +363,22 @@ input[type="text"]:focus {
 
 }
 
+.ui-autocomplete {
+   border-radius: 8px;
+   box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.ui-autocomplete .ui-menu-item .ui-corner-all {
+   border: 0;
+   color: #000;
+   font-size: 13px;
+   padding: 8px 12px;
+}
+
+.ui-autocomplete .ui-menu-item {
+   border: 0;
+}
+
 .busca {
    padding: 0;
    margin: 0;
