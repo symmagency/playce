@@ -260,7 +260,8 @@ input[type="text"]:focus {
     width: fit-content;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-white) !important;
+    background-image: none !important;
 }
 
 
@@ -3213,9 +3214,7 @@ a {
 }
 
 .btn-group.open .dropdown-toggle {
-   background: none !important;
-   border: 0;
-   box-shadow: none;
+   box-shadow: var(--shadow-button);
 }
 
 .ordenar-listagem .btn-group>.btn:first-child {
@@ -4947,6 +4946,32 @@ form#formCalcularFrete {
 
 .menu-user-logged .botao {
    height: 40px !important;
+}
+
+.menu-user-logged span.icon-chevron-down:before {
+   content: "";
+   background: var(--icon-chev-down);
+   width: 20px;
+   height: 20px;
+   background-size: 100%;
+}
+
+.menu-user-logged span.icon-chevron-down {
+   height: 20px;
+   margin-left: 4px;
+}
+
+.open>.dropdown-menu {
+   padding: 10px 0;
+   margin: 0;
+   box-shadow: 0 0 30px rgba(0,0,0,.2);
+   border: 0;
+   left: auto;
+   right: 0;
+}
+
+.dropdown-menu>li>a {
+   padding: 8px 24px;
 }
 
 .tema-transparente .identificacao .identificacao-inner {
