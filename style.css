@@ -4671,11 +4671,12 @@ form#formCalcularFrete {
    margin: 0 0 0 10px;
    height: 20px;
 }
-
+/*
 .tabela-carrinho .bg-dark {
    display: none;
 }
-/* 
+   */
+ 
 .append-controls {
    display: flex;
    flex-direction: column;
@@ -4714,7 +4715,7 @@ form#formCalcularFrete {
    border-top: 1px solid rgba(255,255,255,.10);
    margin-top: 0px;
    align-items: center;
-} */
+}
 
 .acao-editar .span12:after {
    content: "Ao clicar em “Finalizar compra”, você confirma que conferiu as informações do produto e está ciente de que está adquirindo o item correto.";
