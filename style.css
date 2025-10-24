@@ -4675,13 +4675,21 @@ form#formCalcularFrete {
 .tabela-carrinho .bg-dark {
    display: none;
 }
-   */
+*/
+
+.tabela-carrinho .bg-dark:not(:last-child) {
+   display: none;
+}
  
 .append-controls {
    display: flex;
    flex-direction: column;
    gap: 20px;
    margin-bottom: 20px;
+}
+
+.table th, .table td {
+   border: 1px solid #e9e9e9 !important;
 }
 
 .subtotal, .total {
