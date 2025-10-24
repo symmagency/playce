@@ -3530,6 +3530,14 @@ a {
    padding: 20px;
 }
 
+.pagina-categoria .listagem .listagem-item {
+   margin: 0!important;
+}
+
+.pagina-categoria .listagem .listagem-linha {
+   margin-bottom: 20px;
+}
+
 /* Sobre a loja */
 
 .about-banner {
