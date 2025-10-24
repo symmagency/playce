@@ -1927,6 +1927,21 @@ modal-review .actions button {
     background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/whats-icon.svg) center no-repeat;
 }
 
+#AdicionarFavoritoSucessoModal .modal-body {
+   color: #fff;
+   font-size: 14px;
+}
+
+#AdicionarFavoritoSucessoModal {
+   z-index: 100000000;
+}
+
+div#AdicionarFavoritoSucessoModal .modal-header {
+   font-size: 18px;
+   color: #fff;
+   font-weight: 600;
+}
+
 .modal-footer {
    display: flex;
    justify-content: flex-end;
