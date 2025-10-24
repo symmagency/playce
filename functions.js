@@ -654,10 +654,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             </div>
             `)
 
-        $('.pagina-produto .produto div.principal').prepend(`
-            <div class="chave-digital"><img src="https://cdn.awsli.com.br/2775/2775575/arquivos/envelope-red.svg" alt="Código digital"/>Código digital</div>
-        `);
-
     } else {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
@@ -789,6 +785,11 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             tryMove();
         })(20);
     }
+
+
+    $('.pagina-produto .produto div.principal').prepend(`
+        <div class="chave-digital"><img src="https://cdn.awsli.com.br/2775/2775575/arquivos/envelope-red.svg" alt="Código digital"/>Código digital</div>
+    `);
 
     $('.produto .produto-detalhe-info').append(`
         <div class="produto-detalhe-alerta">
