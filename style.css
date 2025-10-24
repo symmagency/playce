@@ -266,12 +266,16 @@ input[type="text"]:focus {
 
 
 .caixa-destaque * {
-   color: #fff;
+   color: #000;
+}
+
+.spanNone.banner.tarja:not(:has(a)) {
+   display: none;
 }
 
 .caixa-destaque {
    padding: 80px 40px;
-   background: var(--color-black);
+   background: #f1f1f1;
    border-radius: var(--border-radius-md);
    margin: 0;
    display: flex;
@@ -3102,7 +3106,7 @@ a {
 
 .breadcrumbs ul li * {
    font-size: 12px;
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 .breadcrumbs ul li:last-child a {
@@ -3461,13 +3465,13 @@ a {
    margin: 50px 0 0;
    text-align: center;
    padding: 60px;
-   background: var(--color-black);
+   background: #f1f1f1;
    border-radius: 10px;
    width: 100%;
 }
 
 .conteudo.span9.no-results .breadcrumbs {
-   background: var(--color-secondary);
+   background: #fff;
    margin: 0 auto 30px;
 }
 
