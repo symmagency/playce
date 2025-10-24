@@ -960,6 +960,33 @@ i.icon-instagram:before {
    margin: 0;
 }
 
+.modal-store-reviews[data-v-0e40cfb5] {
+   width: 100%;
+   max-width: 1000px;
+   border-radius: 12px;
+   border: 0;
+   box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+#konfidency-reviews-container .content .details .reviews .fetch-button button {
+   border: 0;
+   box-shadow: var(--shadow-button);
+   background: var(--color-primary);
+   color: var(--color-white);
+   border-radius: var(--border-radius-md);
+}
+
+.btn-close[data-v-0e40cfb5] {
+   font-size: 0;
+   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/x-black.svg) center no-repeat;
+   width: 20px;
+   height: 20px;
+   display: block;
+   opacity: 1;
+   right: 20px;
+   top: 20px;
+}
+
 .listagem-item .konfidency-reviews-multi {
    height: 34px;
    display: flex;
@@ -1257,7 +1284,7 @@ i.icon-instagram:before {
 
 .menu.lateral .nivel-dois>li {
    padding-left: 12px !important;
-   border-left: 1px solid #ffffff20!important;
+   border-left: 1px solid #00000020!important;
 }
 
 .menu.lateral .nivel-dois>li>a {
@@ -3365,12 +3392,53 @@ a {
    background-size: 100%;
 }
 
+.menu li.com-filho>a i {
+   background: none!important;
+}
+
+.menu li.com-filho>a i:before {
+   content: "";
+   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/chev-down-black.svg) center no-repeat;
+   width: 18px;
+   height: 18px;
+   background-size: 100%;
+}
+
+.filtro h4 {
+   border: 0;
+}
+
+.filtro.lista ul {
+   border-radius: 4px;
+}
+
+.filtro.lista ul li label {
+   padding: 6px 12px;
+   text-overflow: ellipsis;
+}
+
+.coluna .newsletter .newsletter-confirmacao {
+   padding: 10px;
+   background: #f1f1f1;
+   margin-top: 10px;
+   border-radius: 6px;
+}
+
+.coluna .newsletter .newsletter-confirmacao i {
+   font-size: 24px;
+}
+
+.coluna .newsletter .newsletter-confirmacao span {
+   margin-left: 34px;
+}
+
 .coluna .newsletter input[type="text"] {
    height: 36px !important;
    box-sizing: border-box !important;
    width: 100%;
    background: var(--color-white) !important;
    border: 1px solid #d8d8d8 !important;
+   color: #000!important;
 }
 
 .coluna .newsletter .input-conteiner {
@@ -3607,6 +3675,7 @@ button.about-banner-btn {
 
 .produto .conteiner-imagem > div {
    width: 100%;
+   cursor: default;
 }
 
 .produto>.row-fluid:nth-child(2) > div.span7 {
