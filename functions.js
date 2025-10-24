@@ -791,6 +791,8 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         <div class="chave-digital"><img src="https://cdn.awsli.com.br/2775/2775575/arquivos/envelope-red.svg" alt="Código digital"/>Código digital</div>
     `);
 
+    $('.pagina-carrinho .finalizar-compra > .cabecalho-interno').after(`<div id="avisoEnvioCart"><span>Atenção! Todos os nossos envios são feitos por e-mail.</span></div>`);
+
     $('.produto .produto-detalhe-info').append(`
         <div class="produto-detalhe-alerta">
            <span>* Todos os produtos do nosso site <strong>são códigos 100% originais</strong>, enviados por e-mail.</span>

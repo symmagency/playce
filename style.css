@@ -195,12 +195,12 @@ h6,
 
 .cabecalho-interno .titulo small {
    font-size: 14px;
-   color: var(--color-white);
+   color: var(--color-black);
    opacity: .7;
 }
 
 .cabecalho-interno .titulo {
-   color: var(--color-white);
+   color: var(--color-black);
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -285,6 +285,16 @@ input[type="text"]:focus {
    background: var(--icon-cart);
    width: 20px;
    height: 20px;
+}
+
+div#avisoEnvioCart {
+   padding: 12px 24px;
+   background: #ffedee;
+   font-size: 14px;
+   border-radius: 4px;
+   color: #000;
+   border: 1px solid #ea222a;
+   margin-bottom: 20px;
 }
 
 .carrinho>a i {
@@ -3227,8 +3237,7 @@ a {
 .chave-digital {
    padding: 4px 8px;
    background: #F3F3F3;
-   display: flex
-;
+   display: flex;
    justify-content: center;
    gap: 4px;
    text-transform: uppercase;
