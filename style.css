@@ -3398,7 +3398,7 @@ a {
    background: none!important;
 }
 
-.menu li.com-filho>a i:before {
+.menu.lateral li.com-filho>a i:before {
    content: "";
    background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/chev-down-black.svg) center no-repeat;
    width: 18px;
