@@ -834,6 +834,27 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
     $('.produto .principal > .acoes-produto .comprar .botao.principal').clone().text('Adicionar ao carrinho').addClass('add-cart-product botao-comprar-ajax').appendTo($('.produto .principal > .acoes-produto'));
 
 
+// Adiciona um banner de destaque dinâmico após .vitrine-23387220+ul em #listagemProdutos
+
+// Defina as variáveis de conteúdo
+var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gta-v-featured.png";
+var featuredTitle = "GTA 6";
+var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
+
+// Só adicionar se ainda não existe para evitar duplicação
+if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
+    $('#listagemProdutos > .vitrine-23387220+ul').after(`
+        <div class="banner-featured append-featured">
+          <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
+          <div class="append-text">
+            <h2 class="bn-featured-title">${featuredTitle}</h2>
+            <p>${featuredText}</p>
+          </div>
+        </div>
+    `);
+}
+
+
 // Estrutura para múltiplas categorias, cada uma com seu próprio FAQ e título customizável
 var faqsPorCategoria = [
     {
