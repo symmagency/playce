@@ -5341,3 +5341,138 @@ div#login-content {
   }
 
 }
+
+/* ------ Páginas internas */
+
+/* Minha conta */
+
+.conta-menu {
+   box-shadow: none;
+   border: 1px solid #d8d8d8;
+   border-radius: 8px;
+}
+
+.conta-menu * {
+   border: 0!important;
+}
+
+.conta-menu li.divisor {
+   display: none;
+}
+
+.conta-menu .menu-simples li a {
+   padding: 10px 0;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   color: #000;
+}
+
+.conta-menu .nome-usuario {
+   padding: 0;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.conta-menu .nome-usuario i {
+   display: none;
+}
+
+.pagina-conta .secao-principal {
+   margin-top: 30px;
+}
+
+.pagina-conta .breadcrumbs {
+   margin-top: 20px;
+}
+
+.abas-conta {
+   display: flex;
+   gap: 0;
+   padding: 8px;
+   background: #f1f1f1;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   width: fit-content;
+}
+
+.abas-conta li {
+   margin: 0;
+}
+
+.abas-conta li a {
+   border: 0;
+   font-size: 16px;
+   font-weight: 600;
+   box-shadow: none;
+   background: none;
+}
+
+.abas-conta li a i {
+   display: none;
+}
+
+.abas-conta li.active a {
+   background: var(--color-primary);
+   color: var(--color-white);
+   border-radius: 4px;
+}
+
+.abas-conteudo {
+   padding: 32px;
+}
+
+.caixa-dados {
+   padding: 0;
+}
+
+.caixa-dados h3 {
+   display: none;
+}
+
+.abas-conteudo .acao-editar {
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 16px;
+}
+
+.abas-conteudo .acao-editar .botao.principal {
+   height: 36px!important;
+   font-size: 14px!important;
+   gap: 7px;
+   align-items: center;
+   background: var(--color-secondary);
+   width: fit-content;
+}
+
+.abas-conteudo .acao-editar .botao.principal i, .abas-conteudo .acao-editar .botao i {
+   display: none;
+}
+
+.caixa-dados legend {
+   border-bottom: 1px solid #d8d8d8;
+   background: none;
+   padding: 8px 16px;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+.caixa-dados {
+   border: 0;
+}
+
+.abas-conteudo fieldset {
+   border: 1px solid #d8d8d8;
+   border-radius: 8px;
+}
+
+.abas-conteudo .caixa-info {
+   background: none;
+   padding: 16px 16px 0;
+   margin: 0;
+}
+
+.caixa-dados legend i {
+   display: none;
+}
