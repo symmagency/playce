@@ -4748,7 +4748,7 @@ form#formCalcularFrete {
 }
 
 .acao-editar .span12:after {
-   content: "Ao clicar em “Finalizar compra”, você confirma que conferiu as informações do produto e está ciente de que está adquirindo o item correto.";
+   content: "⚠ Aviso: Ao comprar, você declara ter conferido que este produto é compatível com sua plataforma. Revise antes de prosseguir!";
    margin-top: 20px;
    display: block;
    font-size: 12px;
