@@ -3704,6 +3704,59 @@ button.about-banner-btn {
     padding: 0 20px;
 }
 
+.vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item:after {
+   content: "1";
+   width: 26px;
+   height: 26px;
+   background: #E9E9E9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+   font-weight: bold;
+   color: var(--color-black);
+   border-radius: 4px;
+   position: absolute;
+   right: 16px;
+   top: 16px;
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(2) .listagem-item:after {
+   content: "2";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(3) .listagem-item:after {
+   content: "3";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(4) .listagem-item:after {
+   content: "4";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(5) .listagem-item:after {
+   content: "5";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(6) .listagem-item:after {
+   content: "6";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(7) .listagem-item:after {
+   content: "7";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(8) .listagem-item:after {
+   content: "8";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(9) .listagem-item:after {
+   content: "9";
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide:nth-child(10) .listagem-item:after {
+   content: "10";
+}
+
 /* Ajustes na coluna da página de produto */
 
 .produto .conteiner-imagem {
