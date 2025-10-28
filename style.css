@@ -2505,7 +2505,7 @@ a {
    background: var(--color-white);
    padding: 24px 16px;
    display: flex;
-   gap: 8px;
+   gap: 4px;
 }
 
 .listagem-item .acoes-produto:after {
@@ -2617,6 +2617,11 @@ a {
    text-indent: -99999px;
 }
 
+.quantidade-wrapper .btn-quantidade:hover {
+   background-color: #f1f1f1 !important;
+   border-radius: 999px;
+}
+
 .quantidade-wrapper .btn-quantidade.btn-menos {
    left: 8px;
    width: 18px;
@@ -2636,7 +2641,7 @@ a {
    width: 100%;
    padding: 0;
    flex-direction: row-reverse;
-   gap: 10px;
+   gap: 4px;
    font-size: 0 !important;
 }
 
