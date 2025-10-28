@@ -337,7 +337,7 @@ var bannerImgUrl = "https://cdn.awsli.com.br/2830/2830294/arquivos/banner-bg.png
 var mostrarGamePromo = false;       // true para mostrar, false para ocultar a seção "game-promo"
 var mostrarVideoFundo = false;      // true para mostrar, false para ocultar a seção "video-fundo"
 var mostrarImagemBanner = true;     // true para mostrar, false para ocultar a imagem do banner
-var mostrarBannerFundo = false;      // true para mostrar o banner de fundo, false para ocultar totalmente o .banner-fundo
+var mostrarBannerFundo = true;      // true para mostrar o banner de fundo, false para ocultar totalmente o .banner-fundo
 
 var htmlBanner = '';
 if (mostrarBannerFundo) {
