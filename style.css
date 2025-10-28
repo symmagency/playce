@@ -88,7 +88,7 @@
 
                /* Alterar imagem e informações da vitrine em destaque */
 
-               #listagemProdutos > .vitrine-23499980+ul {
+               /* #listagemProdutos > .vitrine-23499980+ul {
                   background: var(--featured-home) center no-repeat;
                   background-color: #6554a2;
                   display: flex;
@@ -146,7 +146,7 @@
                      background: var(--featured-home) center no-repeat;
                      background-size: auto 100%;
                   }
-              }
+              } */
 
                /* Fim alterar vitrine em destaque */
 
