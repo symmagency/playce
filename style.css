@@ -2621,7 +2621,8 @@ a {
    text-indent: -99999px;
 }
 
-.quantidade-wrapper .btn-quantidade:hover {
+.quantidade-wrapper .btn-quantidade.btn-qtde-mais:hover,
+.quantidade-wrapper .btn-quantidade.btn-qtde-menos:hover {
    background-color: #f1f1f1 !important;
    border-radius: 999px;
 }
