@@ -819,7 +819,83 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             tryMove();
         })(20);
     }
-
+        // Encontra o input de quantidade
+        const $qtyInput = $('input[name="qtde-carrinho"]');
+        
+        if ($qtyInput.length === 0) return; // Sai se não encontrar o input
+        
+        // Obtém o valor inicial
+        const initialQty = parseInt($qtyInput.val()) || 1;
+        
+        // HTML do novo input com botões
+        const newInputHtml = `
+          <div class="qty-control" style="display: flex; align-items: center; gap: 8px; width: fit-content;">
+            <button type="button" class="qty-btn qty-minus" style="width: 32px; height: 32px; padding: 0; cursor: pointer;">−</button>
+            <input type="number" class="qty-input" value="${initialQty}" min="1" style="width: 60px; text-align: center;">
+            <button type="button" class="qty-btn qty-plus" style="width: 32px; height: 32px; padding: 0; cursor: pointer;">+</button>
+          </div>
+        `;
+        
+        // Substitui o input antigo
+        $qtyInput.replaceWith(newInputHtml);
+        
+        // Referências dos novos elementos
+        const $newInput = $('.qty-input');
+        const $minusBtn = $('.qty-minus');
+        const $plusBtn = $('.qty-plus');
+        const $buyLink = $('a[href*="/adicionar"]');
+        
+        // Função para atualizar o link
+        function updateBuyLink() {
+          const qty = parseInt($newInput.val()) || 1;
+          
+          $buyLink.each(function() {
+            let href = $(this).attr('href');
+            
+            // Remove quantidade existente no final da URL
+            href = href.replace(/\/\d+$/, '');
+            
+            // Adiciona a nova quantidade se for diferente de 1
+            if (qty > 1) {
+              href += '/' + qty;
+            }
+            
+            $(this).attr('href', href);
+          });
+        }
+        
+        // Botão menos
+        $(document).on('click', '.qty-minus', function(e) {
+          e.preventDefault();
+          let currentQty = parseInt($newInput.val()) || 1;
+          if (currentQty > 1) {
+            $newInput.val(currentQty - 1);
+            updateBuyLink();
+          }
+        });
+        
+        // Botão mais
+        $(document).on('click', '.qty-plus', function(e) {
+          e.preventDefault();
+          let currentQty = parseInt($newInput.val()) || 1;
+          $newInput.val(currentQty + 1);
+          updateBuyLink();
+        });
+        
+        // Quando o usuário digita no input
+        $(document).on('change', '.qty-input', function() {
+          let qty = parseInt($(this).val());
+          
+          // Validação
+          if (isNaN(qty) || qty < 1) {
+            $(this).val(1);
+          }
+          
+          updateBuyLink();
+        });
+        
+        // Atualiza o link na primeira carga
+        updateBuyLink();
 
     $('.pagina-produto .produto div.principal').prepend(`
         <div class="chave-digital"><img src="https://cdn.awsli.com.br/2775/2775575/arquivos/envelope-red.svg" alt="Código digital"/>Código digital</div>
