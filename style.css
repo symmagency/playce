@@ -2375,6 +2375,10 @@ a {
    background: none!important;
 }
 
+#konfidency-reviews-container .details .reviews .review-feedbacks .votes .helpful.highlight, #konfidency-reviews-container .details .reviews .review-feedbacks .votes .unhelpful.highlight {
+   border: 0;
+}
+
 .konfidency-badge a {
    background: none!important;
 }
