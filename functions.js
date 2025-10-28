@@ -757,23 +757,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         
         $('.ordenar-listagem.topo').before($('.conteudo h1'));
 
-        // Array de banners: cada objeto define o seletor do li (ex: 'first-child', '2', 'nth-child(3)') e o link da imagem
-        var banners = [
-            { posicao: 'first-child', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/gow-r.png' },
-            { posicao: '2', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/banner_m2.png' },
-        ];
-
-        banners.forEach(function(banner) {
-            var seletorLi;
-            // Se for um número, assume nth-child
-            if (/^\d+$/.test(banner.posicao)) {
-                seletorLi = 'li:nth-child(' + banner.posicao + ')';
-            } else {
-                seletorLi = 'li:' + banner.posicao;
-            }
-            $('.banner.cheio .slides ' + seletorLi + ' > a > img').attr('src', banner.imagem);
-        });
-
         // Agora é possível alterar vários banners usando um array de objetos
         var bannersMapeados = [
             { map: '4080625', imagem: 'https://cdn.awsli.com.br/2830/2830294/arquivos/tempest-m1.png' },
