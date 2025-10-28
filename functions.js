@@ -418,7 +418,7 @@ var htmlBenefits = `
 `;
 
 // Insere o HTML no local desejado (substitua o seletor conforme necessário)
-$('.pagina-inicial .secao-banners .conteiner').after(htmlBenefits);
+$('.pagina-inicial .secao-banners').after(htmlBenefits);
 
 // Ajusta as tags na vitrine
 $('.listagem-item .bandeira-promocao').each(function() {

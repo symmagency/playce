@@ -139,6 +139,18 @@
       }
 
 
+      /* Home sem bg */
+
+      .secao-banners.no-bg .banner.cheio .flex-direction-nav {
+         right: 0;
+         left: 0;
+         margin: 0 auto;
+      }
+
+      .secao-banners.no-bg {
+         background: #120F0F;
+      }
+
                /* Alterar imagem e informações da vitrine em destaque */
 
                /* #listagemProdutos > .vitrine-23499980+ul {
