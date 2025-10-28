@@ -125,6 +125,15 @@
          justify-content: center;
       }
 
+      .banner-featured span.bandeira-prevenda {
+         font-size: 11px;
+         text-transform: uppercase;
+         background: #FFD30D;
+         padding: 2px 8px;
+         border-radius: 4px;
+         color: var(--color-black);
+      }
+
 
                /* Alterar imagem e informações da vitrine em destaque */
 
@@ -4261,19 +4270,14 @@ h2.bn-featured-title {
    justify-content: center;
 }
 
-.banner-featured span.bandeira-prevenda {
-   font-size: 11px;
-   text-transform: uppercase;
-   background: #FFD30D;
-   padding: 2px 8px;
-   border-radius: 4px;
-   color: var(--color-black);
-}
-
 .append-text p {
    font-size: 14px;
    max-width: 100%;
    text-align: center;
+}
+
+.append-text {
+   align-items: center;
 }
 
 /* Página produto celular */
