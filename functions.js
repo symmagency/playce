@@ -847,11 +847,13 @@ var featuredText = "Será o oitavo título principal da franquia Grand Theft Aut
 if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
     $('#listagemProdutos > .vitrine-23387220+ul').after(`
         <div class="banner-featured append-featured">
-          <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
-          <div class="append-text">
-            <h2 class="bn-featured-title">${featuredTitle}</h2>
-            <p>${featuredText}</p>
-          </div>
+            <div class="container-featured">
+                <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
+                <div class="append-text">
+                    <h2 class="bn-featured-title">${featuredTitle}</h2>
+                    <p>${featuredText}</p>
+                </div>
+            </div>
         </div>
     `);
 }
