@@ -4806,7 +4806,13 @@ form#formCalcularFrete {
 }
 
 .pagina-carrinho #corpo {
-   min-height: calc(100vh - 218px);
+   min-height: calc(100vh - 156px);
+   margin: 0;
+}
+
+.carrinho-checkout #corpo {
+   min-height: calc(100vh - 173.5px);
+   margin: 0;
 }
 
 .tabela-carrinho * {
@@ -4898,7 +4904,7 @@ form#formCalcularFrete {
 
 .caixa-info {
    border: 0;
-   background: var(--color-secondary);
+   box-shadow: none;
    border-radius: 4px;
 }
 
@@ -4926,7 +4932,7 @@ form#formCalcularFrete {
    display: flex;
    align-items: center;
    color: #fff;
-   margin: 0;
+   margin: 12px 0;
 }
 
 .carrinho-checkout .atendimento * {
