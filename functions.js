@@ -787,12 +787,14 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         if ($('#listagemProdutos > .vitrine-23499980+ul .listagem-linha .append-featured').length === 0) {
             $('#listagemProdutos > .vitrine-23499980+ul .listagem-linha').prepend(`
                 <div class="append-featured">
-                  <div class="featured-image">
-                    <img src="${featuredImg}" alt="">
-                  </div>
-                  <div class="featured-title">
-                    <h2>${featuredTitle}</h2>
-                    <span>${featuredText}</span>
+                  <div class="container-featured">
+                    <div class="featured-image">
+                        <img src="${featuredImg}" alt="">
+                    </div>
+                    <div class="featured-title">
+                        <h2>${featuredTitle}</h2>
+                        <span>${featuredText}</span>
+                    </div>
                   </div>
                 </div>
             `);
