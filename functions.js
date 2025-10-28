@@ -767,27 +767,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             $('img[usemap="#map-banner-' + banner.map + '"]').attr('src', banner.imagem);
         });
 
-        // Defina as variáveis para imagem, título e texto
-        var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gta-v-featured.png";
-        var featuredTitle = "GTA 6";
-        var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
-
-        // Só insere se ainda não existe o .append-featured
-        if ($('#listagemProdutos > .vitrine-23499980+ul .listagem-linha .append-featured').length === 0) {
-            $('#listagemProdutos > .vitrine-23499980+ul .listagem-linha').prepend(`
-                <div class="append-featured">
-                  <div class="container-featured">
-                    <div class="featured-image">
-                        <img src="${featuredImg}" alt="">
-                    </div>
-                    <div class="featured-title">
-                        <h2>${featuredTitle}</h2>
-                        <span>${featuredText}</span>
-                    </div>
-                  </div>
-                </div>
-            `);
-        }
 
         // Tenta mover .produto-detalhe após .konfidency-reviews-summary até conseguir
         (function retryMoveProdutoDetalhe(maxRetries) {
