@@ -961,9 +961,7 @@ var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
 var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pré-venda</span>' : '';
 
 // Só adicionar se ainda não existe para evitar duplicação
-var $vitrineUl = $('#listagemProdutos .vitrine-23387220 + ul');
-if ($vitrineUl.length > 0 && $vitrineUl.find('.append-featured').length === 0) {
-    $vitrineUl.after(`
+    $('#listagemProdutos > .vitrine-23387220+ul').after(`
         <a href="${featuredLink}" class="banner-featured append-featured">
             <div class="container-featured">
                 <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
@@ -974,7 +972,6 @@ if ($vitrineUl.length > 0 && $vitrineUl.find('.append-featured').length === 0) {
             </div>
         </a>
     `);
-}
 
 
 });
