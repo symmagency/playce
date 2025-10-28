@@ -900,36 +900,6 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
 
     $('.produto .principal > .acoes-produto .comprar .botao.principal').clone().text('Adicionar ao carrinho').addClass('add-cart-product botao-comprar-ajax').appendTo($('.produto .principal > .acoes-produto'));
 
-
-// Adiciona um banner de destaque dinâmico após .vitrine-23387220+ul em #listagemProdutos
-
-// Defina as variáveis de conteúdo
-var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gtavi.png";
-var featuredTitle = "GTA 6";
-var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
-var featuredLink = "https://upandolojaplayce.lojaintegrada.com.br/grand-theft-auto-vi-playstation-5"; // Link alterável para o banner de destaque
-
-// Toggle para bandeira de pré-venda
-var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
-
-var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pré-venda</span>' : '';
-
-// Só adicionar se ainda não existe para evitar duplicação
-if ($('#listagemProdutos > .vitrine-23387224 .append-featured').length === 0) {
-    $('.vitrine-23387224').before(`
-        <a href="${featuredLink}" class="banner-featured append-featured">
-            <div class="container-featured">
-                <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
-                <div class="append-text">
-                    <h2 class="bn-featured-title">${featuredTitle}${prevendaHtml}</h2>
-                    <p>${featuredText}</p>
-                </div>
-            </div>
-        </a>
-    `);
-}
-
-
 // Estrutura para múltiplas categorias, cada uma com seu próprio FAQ e título customizável
 var faqsPorCategoria = [
     {
@@ -1000,11 +970,31 @@ $(document).on('click', '.faq-pergunta', function() {
     }
 });
 
-// // Código do carrinho
-// $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').after(`<div class="order-resume"><h3>Resumo do pedido</h3><div class="append-controls"></div></div>`);
-// $('.pagina-carrinho:not(.carrinho-checkout) .append-controls').append($('.subtotal'));
-// $('.pagina-carrinho:not(.carrinho-checkout) .append-controls').append($('.total'));
-// $('.append-controls').after($('.finalizar-compra > form'));
-// $('.selo-ssl img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/selo-protegido.svg');
+// Defina as variáveis de conteúdo
+var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gtavi.png";
+var featuredTitle = "GTA 6";
+var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
+var featuredLink = "https://upandolojaplayce.lojaintegrada.com.br/grand-theft-auto-vi-playstation-5"; // Link alterável para o banner de destaque
+
+// Toggle para bandeira de pré-venda
+var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
+
+var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pré-venda</span>' : '';
+
+// Só adicionar se ainda não existe para evitar duplicação
+if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
+    $('#listagemProdutos > .vitrine-23387220+ul').after(`
+        <a href="${featuredLink}" class="banner-featured append-featured">
+            <div class="container-featured">
+                <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
+                <div class="append-text">
+                    <h2 class="bn-featured-title">${featuredTitle}${prevendaHtml}</h2>
+                    <p>${featuredText}</p>
+                </div>
+            </div>
+        </a>
+    `);
+}
+
 
 });
