@@ -1467,6 +1467,57 @@ i.icon-instagram:before {
    color: var(--color-black) !important;
 }
 
+.qty-control {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   position: relative;
+}
+
+input.qty-input {
+   margin: 0;
+   width: 100%;
+   text-align: center;
+   background: #fff!important;
+   color: #000!important;
+   border: 1px solid #d8d8d8!important;
+   height: 54px!important;
+}
+
+input.qty-input::-webkit-outer-spin-button,
+input.qty-input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+
+button.qty-btn.qty-plus {
+   width: 18px;
+   height: 18px;
+   background: var(--icon-plus-black) center no-repeat;
+   background-size: 100%;
+   color: transparent;
+   font-size: 0;
+   position: absolute;
+   right: 10px;
+}
+
+button.qty-btn.qty-minus {
+   width: 18px;
+   height: 18px;
+   background: var(--icon-minus-black) center no-repeat;
+   background-size: 100%;
+   color: transparent;
+   font-size: 0;
+   position: absolute;
+   left: 10px;
+}
+
+button.qty-btn.qty-minus:hover,
+button.qty-btn.qty-plus:hover{
+   background-color: #f1f1f1;
+   border-radius: 999px;
+}
+
 .produto div.principal .acoes-produto {
    display: flex;
    flex-direction: column;
