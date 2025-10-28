@@ -86,6 +86,18 @@ $('.pagina-inicial #barraNewsletter').before(`
     </div>
     `);
 
+$('.about-banner-btn').on('click', function() {
+    var $btn = $(this);
+    var $desc = $btn.closest('.about-banner-content').find('.about-banner-description');
+    if ($desc.hasClass('open')) {
+        $desc.removeClass('open');
+        $btn.html('Ver mais <span class="about-banner-btn-arrow">&#9660;</span>');
+    } else {
+        $desc.addClass('open');
+        $btn.html('Ver menos <span class="about-banner-btn-arrow">&#9650;</span>');
+    }
+});
+
 var $slider = $('#listagemProdutos ul .flex-viewport > ul');
 
 $slider.removeAttr('style');
