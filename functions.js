@@ -334,39 +334,45 @@ var bannerVideoHeight = 202;
 var bannerImgUrl = "https://cdn.awsli.com.br/2830/2830294/arquivos/banner-bg.png"; // URL da imagem do banner
 
 // Opções para ativar/desativar seções
-var mostrarGamePromo = false;      // true para mostrar, false para ocultar a seção "game-promo"
-var mostrarVideoFundo = false;     // true para mostrar, false para ocultar a seção "video-fundo"
-var mostrarImagemBanner = true;   // true para mostrar, false para ocultar a imagem do banner
+var mostrarGamePromo = false;       // true para mostrar, false para ocultar a seção "game-promo"
+var mostrarVideoFundo = false;      // true para mostrar, false para ocultar a seção "video-fundo"
+var mostrarImagemBanner = true;     // true para mostrar, false para ocultar a imagem do banner
+var mostrarBannerFundo = true;      // true para mostrar o banner de fundo, false para ocultar totalmente o .banner-fundo
 
-// Monta o HTML usando as variáveis acima
-var htmlBanner = `
-  <div class="banner-fundo">
-    ${mostrarImagemBanner ? `<div class="banner-img"><img src="${bannerImgUrl}" alt="${bannerTitulo}"></div>` : ''}
-    ${mostrarGamePromo ? `
-      <div class="game-promo">
-          <div class="game-title">${bannerTitulo}</div>
-          <div class="game-description">
-              ${bannerDescricao}
-          </div>
-          <div class="game-price-section">
-              <span class="game-price">${bannerPreco}</span>
-              <span class="discount-tag">${bannerDesconto}</span>
-          </div>
-          <a href="${bannerLinkBotao}" class="buy-now-btn">
-              ${bannerTextoBotao}
-          </a>
-      </div>
-    ` : ''}
-    ${mostrarVideoFundo ? `
-      <div class="video-fundo">
-        <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?rel=0?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&playlist=${videoId}" frameborder="0" allowfullscreen></iframe>
-      </div>
-    ` : ''}
-  </div>
-`;
-
-// Insere o HTML antes do seletor .secao-banners
-$('.pagina-inicial .secao-banners').before(htmlBanner);
+var htmlBanner = '';
+if (mostrarBannerFundo) {
+  // Monta o HTML do banner como antes
+  htmlBanner = `
+    <div class="banner-fundo">
+      ${mostrarImagemBanner ? `<div class="banner-img"><img src="${bannerImgUrl}" alt="${bannerTitulo}"></div>` : ''}
+      ${mostrarGamePromo ? `
+        <div class="game-promo">
+            <div class="game-title">${bannerTitulo}</div>
+            <div class="game-description">
+                ${bannerDescricao}
+            </div>
+            <div class="game-price-section">
+                <span class="game-price">${bannerPreco}</span>
+                <span class="discount-tag">${bannerDesconto}</span>
+            </div>
+            <a href="${bannerLinkBotao}" class="buy-now-btn">
+                ${bannerTextoBotao}
+            </a>
+        </div>
+      ` : ''}
+      ${mostrarVideoFundo ? `
+        <div class="video-fundo">
+          <iframe width="${bannerVideoWidth}" height="${bannerVideoHeight}" src="${bannerVideoUrl}?rel=0?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&playlist=${videoId}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      ` : ''}
+    </div>
+  `;
+  // Insere o HTML antes do seletor .secao-banners
+  $('.pagina-inicial .secao-banners').before(htmlBanner);
+} else {
+  // Se o banner de fundo não deve aparecer, adiciona a classe no-bg à .secao-banners
+  $('.pagina-inicial .secao-banners').addClass('no-bg');
+}
 
 // Variáveis para personalizar as informações da tarja de benefícios
 var benefit1Icon = "https://cdn.awsli.com.br/2830/2830294/arquivos/tarja-icon-mailcheck_one.svg";
