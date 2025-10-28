@@ -1192,6 +1192,10 @@ i.icon-instagram:before {
    padding-bottom: 20px;
 }
 
+.secao-banners.no-bg .conteiner {
+   padding-bottom: 0;
+}
+
 .banner-fundo .game-promo {
    position: relative;
    top: initial;
@@ -1207,7 +1211,7 @@ i.icon-instagram:before {
    max-width: 1180px;
    border-radius: var(--border-radius-md);
    justify-content: center;
-   margin: 0 auto;
+   margin: 20px auto 0;
 }
 
 .benefit-item {
