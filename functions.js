@@ -73,7 +73,8 @@ $('.pagina-inicial #barraNewsletter').before(`
         <div class="about-banner-description">
           <p>Uma empresa especializada em gift cards para videogames, fundada em 2020.</p>
           <p>
-            Nossa missão é proporcionar aos jogadores uma experiência de compra fácil e segura, com um catálogo variado de produtos. Estamos comprometidos em oferecer o melhor atendimento e suporte ao cliente. Junte-se a nós e comece a jogar!
+            A Playce é o ponto certo pra quem vive o mundo gamer e curte praticidade. Lá você encontra de tudo pra turbinar sua jogatina: gift cards, créditos, assinaturas e códigos digitais pra PlayStation, Xbox, Nintendo, Steam, e até apps tipo Netflix e Spotify. Tudo 100% online — comprou, recebeu o código na hora e já pode usar.
+            O site é rápido, fácil de navegar e sempre tem promoções e lançamentos atualizados. Se quiser aquele boost no game ou renovar a Plus/Game Pass sem dor de cabeça, a Playce resolve em poucos cliques. É a escolha ideal pra quem não quer esperar, só jogar.
           </p>
         </div>
         <button class="about-banner-btn" type="button">
