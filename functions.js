@@ -914,20 +914,31 @@ var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
 
 var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pré-venda</span>' : '';
 
-// Só adicionar se ainda não existe para evitar duplicação
-if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
-    $('#listagemProdutos > .vitrine-23387220+ul').after(`
-        <a href="${featuredLink}" class="banner-featured append-featured">
-            <div class="container-featured">
-                <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
-                <div class="append-text">
-                    <h2 class="bn-featured-title">${featuredTitle}${prevendaHtml}</h2>
-                    <p>${featuredText}</p>
+/**
+ * Função tenta adicionar o banner de destaque, retenta até conseguir.
+ * Quando conseguir, não tenta mais.
+ */
+(function tentarInserirFeaturedBanner(){
+    if ($('#listagemProdutos > .vitrine-23387220+ul').length 
+        && $('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
+        $('#listagemProdutos > .vitrine-23387220+ul').after(`
+            <a href="${featuredLink}" class="banner-featured append-featured">
+                <div class="container-featured">
+                    <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
+                    <div class="append-text">
+                        <h2 class="bn-featured-title">${featuredTitle}${prevendaHtml}</h2>
+                        <p>${featuredText}</p>
+                    </div>
                 </div>
-            </div>
-        </a>
-    `);
-}
+            </a>
+        `);
+        // Sucesso, não retenta mais
+    } else if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
+        // Se ainda não conseguiu adicionar, tente novamente em breve
+        setTimeout(tentarInserirFeaturedBanner, 300);
+    }
+})();
+
 
 
 // Estrutura para múltiplas categorias, cada uma com seu próprio FAQ e título customizável
