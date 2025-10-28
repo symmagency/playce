@@ -922,7 +922,7 @@ i.icon-instagram:before {
 .listagem .listagem-item .nome-produto {
    font-size: 14px;
    display: -webkit-box;
-   -webkit-line-clamp: 2;
+   -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
    overflow: hidden;
    text-overflow: ellipsis;
@@ -959,6 +959,12 @@ i.icon-instagram:before {
 
 .listagem .listagem-item .nome-produto, .listagem .listagem-item .preco-produto strong {
    color: var(--color-black);
+}
+
+.listagem .listagem-item .preco-produto strong {
+   font-weight: bold;
+   color: var(--color-primary);
+   font-size: 20px;
 }
 
 .konfidency.summary.kfy-align-center {
