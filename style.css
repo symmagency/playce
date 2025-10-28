@@ -96,7 +96,26 @@
          justify-content: center;
          background: var(--featured-home) left no-repeat;
          background-color: #6554a2;
-     }
+      }
+
+      .container-featured {
+         max-width: 1180px;
+         width: 100%;
+         display: flex  ;
+         justify-content: space-between;
+      }
+      
+      .append-text p {
+         font-size: 20px;
+         color: var(--color-white);
+         opacity: .7;
+         max-width: 280px;
+      }
+     
+      h2.bn-featured-title {
+         font-size: 40px;
+         color: var(--color-white);
+      }
 
 
                /* Alterar imagem e informações da vitrine em destaque */

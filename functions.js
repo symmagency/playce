@@ -839,7 +839,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
 // Adiciona um banner de destaque dinâmico após .vitrine-23387220+ul em #listagemProdutos
 
 // Defina as variáveis de conteúdo
-var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gta-v-featured.png";
+var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gtavi.png";
 var featuredTitle = "GTA 6";
 var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
 
