@@ -116,6 +116,9 @@
       h2.bn-featured-title {
          font-size: 40px;
          color: var(--color-white);
+         display: flex;
+         align-items: center;
+         gap: 12px;
       }
 
       .append-text {
@@ -132,6 +135,7 @@
          padding: 2px 8px;
          border-radius: 4px;
          color: var(--color-black);
+         line-height: 20px;
       }
 
 
