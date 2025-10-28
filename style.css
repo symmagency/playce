@@ -2507,7 +2507,7 @@ a {
 .listagem-item .acoes-produto {
    border: 0;
    background: var(--color-white);
-   padding: 24px 16px;
+   padding: 12px;
    display: flex;
    gap: 4px;
 }
