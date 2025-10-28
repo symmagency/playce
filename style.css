@@ -908,6 +908,10 @@ i.icon-instagram:before {
    border-radius: 8px 8px 0 0;
 }
 
+.pagina-produto .listagem .imagem-produto img {
+   border-radius: 8px;
+}
+
 .listagem .span4 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="3"] .imagem-produto {
    height: fit-content;
 }
