@@ -4954,19 +4954,19 @@ form#formCalcularFrete {
    padding: 4px 16px;
    text-shadow: none;
    font-weight: 600;
+   color: var(--color-white);
+}
+
+.carrinho-checkout a.btn.btn-small .icon-pencil {
+   color: var(--color-white);
 }
 
 .pagina-pedido-finalizado .caixa-dados > .row-fluid > .span6:first-child {
    padding: 24px;
-   background: var(--color-black);
-}
-
-.pagina-pedido-finalizado .caixa-dados > .row-fluid > .span6:first-child * {
-   color: var(--color-white);
 }
 
 .pagina-pedido-finalizado .pedido-finalizado .cabecalho-interno ul * {
-   color: var(--color-white);
+   color: var(--color-black);
 }
 
 .menu-user-logged .botao {
