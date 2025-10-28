@@ -153,6 +153,24 @@ var categorias = [
         alt: "Categoria steam",
         link: "/Steam",
         nome: "Steam"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-icon.png",
+        alt: "Categoria Netflix",
+        link: "/netflix",
+        nome: "Netflix"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-icon.png",
+        alt: "Categoria Spotify",
+        link: "/spotify",
+        nome: "Spotify"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-icon.png",
+        alt: "Categoria Gift Cards",
+        link: "/gift-cards",
+        nome: "Gift Cards"
     }
 ];
 
