@@ -3923,6 +3923,14 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
+   .secao-banners.no-bg .conteiner img {
+      border-radius: 0;
+  }
+  
+  .secao-banners.no-bg .conteiner {
+      padding: 0;
+  }
+
    .listagem .titulo-categoria strong, .categorias-section .titulo-categoria strong {
       font-size: 20px;
    }
