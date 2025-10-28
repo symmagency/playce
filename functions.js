@@ -829,10 +829,10 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         
         // HTML do novo input com botões
         const newInputHtml = `
-          <div class="qty-control" style="display: flex; align-items: center; gap: 8px; width: fit-content;">
-            <button type="button" class="qty-btn qty-minus" style="width: 32px; height: 32px; padding: 0; cursor: pointer;">−</button>
-            <input type="number" class="qty-input" value="${initialQty}" min="1" style="width: 60px; text-align: center;">
-            <button type="button" class="qty-btn qty-plus" style="width: 32px; height: 32px; padding: 0; cursor: pointer;">+</button>
+          <div class="qty-control">
+            <button type="button" class="qty-btn qty-minus">−</button>
+            <input type="number" class="qty-input" value="${initialQty}" min="1">
+            <button type="button" class="qty-btn qty-plus">+</button>
           </div>
         `;
         
