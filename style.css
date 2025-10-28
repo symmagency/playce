@@ -5421,6 +5421,8 @@ div#login-content {
 
 .abas-conteudo {
    padding: 32px;
+   box-shadow: none;
+   border-radius: 8px;
 }
 
 .caixa-dados {
@@ -5435,6 +5437,9 @@ div#login-content {
    flex-direction: row;
    justify-content: space-between;
    padding: 16px;
+   border: 1px solid #d8d8d8;
+   border-top: 0;
+   border-radius: 0 0 8px 8px;
 }
 
 .abas-conteudo .acao-editar .botao.principal {
@@ -5456,6 +5461,9 @@ div#login-content {
    padding: 8px 16px;
    font-size: 16px;
    box-sizing: border-box;
+   border: 1px solid #d8d8d8;
+   border-radius: 8px 8px 0 0;
+   margin: 0;
 }
 
 .caixa-dados {
@@ -5463,14 +5471,17 @@ div#login-content {
 }
 
 .abas-conteudo fieldset {
-   border: 1px solid #d8d8d8;
    border-radius: 8px;
+   margin-bottom: 16px;
 }
 
 .abas-conteudo .caixa-info {
    background: none;
-   padding: 16px 16px 0;
+   padding: 16px;
    margin: 0;
+   border: 1px solid #d8d8d8;
+   border-top: 0;
+   border-radius: 0;
 }
 
 .caixa-dados legend i {
