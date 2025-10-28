@@ -94,7 +94,7 @@
          display: flex     ;
          align-items: center;
          justify-content: center;
-         background: var(--featured-home) left no-repeat;
+         background: var(--featured-home) center no-repeat;
          background-color: #6554a2;
       }
 
@@ -104,7 +104,7 @@
          display: flex  ;
          justify-content: space-between;
       }
-      
+
       .append-text p {
          font-size: 20px;
          color: var(--color-white);
