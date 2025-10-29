@@ -5552,3 +5552,28 @@ input#id_numero_pedido {
 .pagina-pedido-listar .caixa-sombreada {
    box-shadow: none!important;
 }
+
+/* Página favoritos */
+
+.pagina-favorito-listar .abas-conteudo .caixa-info {
+   border: 0;
+}
+
+.pagina-favorito-listar .breadcrumbs {
+   margin: 24px 0 32px !important;
+}
+
+fieldset .span12 p {
+   padding: 20px;
+   border: 1px solid #d8d8d8;
+   border-radius: 0 0 8px 8px;
+   border-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+   
+   .pagina-pedido-listar .caixa-dados form .span7 {
+      align-items: flex-end;
+  }
+
+}
