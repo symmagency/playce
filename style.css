@@ -968,6 +968,10 @@ i.icon-instagram:before {
    height: fit-content;
 }
 
+.imagem-produto:not(:has(+ .badge-category-list)) .imagem-principal {
+   border-radius: 8px;
+ }
+
 .listagem .imagem-produto img {
    position: relative;
    width: 100%;
