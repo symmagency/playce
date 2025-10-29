@@ -994,15 +994,15 @@ var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pr
 // Só adicionar se ainda não existe para evitar duplicação
 if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
     $('#listagemProdutos > .vitrine-23387220+ul').after(`
-        <a href="${featuredLink}" class="banner-featured append-featured">
-            <div class="container-featured">
+        <div class="banner-featured append-featured">
+            <a href="${featuredLink}" class="container-featured">
                 <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
                 <div class="append-text">
                     <h2 class="bn-featured-title">${featuredTitle}${prevendaHtml}</h2>
                     <p>${featuredText}</p>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
     `);
 }
 
