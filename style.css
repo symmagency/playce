@@ -102,8 +102,10 @@
       .container-featured {
          max-width: 1180px;
          width: 100%;
-         display: flex  ;
+         display: flex;
          justify-content: space-between;
+         min-height: 610px;
+         align-items: center;
       }
 
       .append-text p {
