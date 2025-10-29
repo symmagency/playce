@@ -5570,10 +5570,30 @@ fieldset .span12 p {
    border-top: 0;
 }
 
+.pagina-pedido .abas-conteudo .row-fluid > .caixa-info {
+   border: 1px solid #d8d8d8;
+   border-radius: 8px;
+}
+
+hr {
+   border-color: transparent!important;
+}
+
+.caixa-dados .caixa-sombreada {
+   box-shadow: none;
+   border-radius: 8px;
+   border: 1px solid #d8d8d8;
+   overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
    
    .pagina-pedido-listar .caixa-dados form .span7 {
       align-items: flex-end;
   }
+
+  .abas-conteudo .acao-editar {
+      flex-direction: column;
+   }
 
 }
