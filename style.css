@@ -3806,8 +3806,8 @@ button.about-banner-btn {
    max-width: 108px;
 }
 
-.vitrine-23387218 + ul .span3 .listagem-item .nome-produto, .vitrine-23387218 + ul .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
-   min-height: fit-content;
+.vitrine-23387218 + ul .listagem-item .nome-produto, .vitrine-23387218 + ul .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
+   min-height: fit-content!important;
 }
 
 .vitrine-23387218 + ul .listagem-item .acoes-produto {
