@@ -3284,10 +3284,6 @@ a {
    border: 0;
 }
 
-.pagina-pedido-listar .breadcrumbs {
-   margin: 24px 0 32px !important;
-}
-
 .append-flags {
    display: flex;
    gap: 4px;
@@ -5525,6 +5521,10 @@ fieldset {}
 .pagina-pedido-listar #id_mes, .pagina-pedido-listar #id_ano {
    width: 80px;
    height: 36px;
+}
+
+.pagina-pedido-listar .breadcrumbs {
+   margin: 24px 0 32px !important;
 }
 
 .buscar-pedidos .botao {
