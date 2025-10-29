@@ -657,12 +657,22 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         tentarSubstituirMenuUserLogged();
 
         // Ajuste na página de produto
-        $('.produto .conteiner-imagem').append(`
-            <div class="produto-detalhe-info"></div>
-        `);
-        $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .info-principal-produto'));
-        $('.produto .produto-detalhe-info').append($('.produto-detalhe'));
-        $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .append-share-fav'));
+        if ($('.produto .conteiner-imagem .produto-detalhe-info').length === 0) {
+            $('.produto .conteiner-imagem').append(`
+                <div class="produto-detalhe-info"></div>
+            `);
+        }
+        
+        // Move elementos para produto-detalhe-info (somente se não estiverem lá)
+        if ($('.produto .produto-detalhe-info .info-principal-produto').length === 0) {
+            $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .info-principal-produto'));
+        }
+        if ($('.produto .produto-detalhe-info .produto-detalhe').length === 0) {
+            $('.produto .produto-detalhe-info').append($('.produto-detalhe'));
+        }
+        if ($('.produto .produto-detalhe-info .append-share-fav').length === 0) {
+            $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .append-share-fav'));
+        }
 
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('#buy-together-position1'));
         $('.produto>.row-fluid:nth-child(2) > div.span7').append($('.produto .row-fluid .span12 .abas-custom'));
@@ -670,27 +680,33 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         (function tentarInserirReviews() {
             var $aproveiteTambem = $('.pagina-produto .listagem.aproveite-tambem');
             var $reviews = $('.pagina-produto .konfidency-reviews-details.conteiner');
-            if ($aproveiteTambem.length && $reviews.length) {
+            // Verifica se os reviews já não estão antes do aproveiteTambem
+            if ($aproveiteTambem.length && $reviews.length && !$aproveiteTambem.prev('.konfidency-reviews-details').length) {
                 $aproveiteTambem.before($reviews);
-            } else {
+            } else if (!($aproveiteTambem.prev('.konfidency-reviews-details').length)) {
                 setTimeout(tentarInserirReviews, 250);
             }
         })();
 
-        $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
-        $('.pagina-produto .produto div.principal').after(`
-            <div id="principal-konfidency">
-                <img src="https://cdn.awsli.com.br/2830/2830294/arquivos/konfi.png" alt="Konfidency"/>
-                <div>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+        if ($('.pagina-produto .produto div.principal .gateways-rodape').length === 0) {
+            $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
+        }
+        
+        if ($('#principal-konfidency').length === 0) {
+            $('.pagina-produto .produto div.principal').after(`
+                <div id="principal-konfidency">
+                    <img src="https://cdn.awsli.com.br/2830/2830294/arquivos/konfi.png" alt="Konfidency"/>
+                    <div>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p><strong>Nota 5.0</strong> baseado em +1000 avaliações</p>
                 </div>
-                <p><strong>Nota 5.0</strong> baseado em +1000 avaliações</p>
-            </div>
-            `)
+                `);
+        }
 
     } else {
         //mobile 
@@ -786,11 +802,15 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             }
             tryMove();
         })(20);
-    }
+        
+        // Input de quantidade no carrinho (página de produto)
         // Encontra o input de quantidade
         const $qtyInput = $('input[name="qtde-carrinho"]');
         
-        if ($qtyInput.length === 0) return; // Sai se não encontrar o input
+        if ($qtyInput.length === 0) {
+            // Se não encontrar o input, pula para o código abaixo
+            console.log('Input de quantidade não encontrado');
+        } else {
         
         // Obtém o valor inicial
         const initialQty = parseInt($qtyInput.val()) || 1;
@@ -864,20 +884,31 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         
         // Atualiza o link na primeira carga
         updateBuyLink();
+        } // fecha o else do $qtyInput
+    } // fecha o else do mobile
 
-    $('.pagina-produto .produto div.principal').prepend(`
-        <div class="chave-digital"><img src="https://cdn.awsli.com.br/2775/2775575/arquivos/envelope-red.svg" alt="Código digital"/>Código digital</div>
-    `);
+    // Código que executa em ambos (desktop e mobile)
+    if ($('.pagina-produto .produto div.principal .chave-digital').length === 0) {
+        $('.pagina-produto .produto div.principal').prepend(`
+            <div class="chave-digital"><img src="https://cdn.awsli.com.br/2775/2775575/arquivos/envelope-red.svg" alt="Código digital"/>Código digital</div>
+        `);
+    }
 
-    $('.pagina-carrinho .finalizar-compra > .cabecalho-interno').after(`<div id="avisoEnvioCart"><span>Atenção! Todos os nossos envios são feitos por e-mail.</span></div>`);
+    if ($('#avisoEnvioCart').length === 0) {
+        $('.pagina-carrinho .finalizar-compra > .cabecalho-interno').after(`<div id="avisoEnvioCart"><span>Atenção! Todos os nossos envios são feitos por e-mail.</span></div>`);
+    }
 
-    $('.produto .produto-detalhe-info').append(`
-        <div class="produto-detalhe-alerta">
-           <span>* Todos os produtos do nosso site <strong>são códigos 100% originais</strong>, enviados por e-mail.</span>
-         </div>
-    `);
+    if ($('.produto .produto-detalhe-info .produto-detalhe-alerta').length === 0) {
+        $('.produto .produto-detalhe-info').append(`
+            <div class="produto-detalhe-alerta">
+               <span>* Todos os produtos do nosso site <strong>são códigos 100% originais</strong>, enviados por e-mail.</span>
+             </div>
+        `);
+    }
 
-    $('.produto .principal > .acoes-produto .comprar .botao.principal').clone().text('Adicionar ao carrinho').addClass('add-cart-product botao-comprar-ajax').appendTo($('.produto .principal > .acoes-produto'));
+    if ($('.produto .principal > .acoes-produto .add-cart-product').length === 0) {
+        $('.produto .principal > .acoes-produto .comprar .botao.principal').clone().text('Adicionar ao carrinho').addClass('add-cart-product botao-comprar-ajax').appendTo($('.produto .principal > .acoes-produto'));
+    }
 
 // Estrutura para múltiplas categorias, cada uma com seu próprio FAQ e título customizável
 var faqsPorCategoria = [
@@ -961,6 +992,7 @@ var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
 var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pré-venda</span>' : '';
 
 // Só adicionar se ainda não existe para evitar duplicação
+if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
     $('#listagemProdutos > .vitrine-23387220+ul').after(`
         <a href="${featuredLink}" class="banner-featured append-featured">
             <div class="container-featured">
@@ -972,6 +1004,7 @@ var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pr
             </div>
         </a>
     `);
+}
 
 
 });
