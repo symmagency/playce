@@ -1005,7 +1005,7 @@ i.icon-instagram:before {
 }
 
 .listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
-   min-height: 36px;
+   min-height: 54px;
 }
 
 .listagem .preco-produto .bandeira-promocao {
