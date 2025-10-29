@@ -3284,6 +3284,10 @@ a {
    border: 0;
 }
 
+.pagina-pedido-listar .breadcrumbs {
+   margin: 24px 0 32px !important;
+}
+
 .append-flags {
    display: flex;
    gap: 4px;
@@ -5486,4 +5490,65 @@ div#login-content {
 
 .caixa-dados legend i {
    display: none;
+}
+
+/* Página pedidos */
+
+.caixa-dados > .row-fluid > .span6:nth-child(2) {
+   display: none;
+}
+
+.caixa-dados > .row-fluid > .span6:first-child {
+   width: 100%;
+}
+
+fieldset {}
+
+.pagina-pedido-listar .abas-conteudo fieldset {
+   margin: 0;
+}
+
+.pagina-pedido-listar .caixa-dados h5.titulo {
+   margin: 0;
+   padding: 16px;
+   border: 1px solid #d8d8d8;
+   border-top: 0;
+   border-radius: 0 0 8px 8px;
+}
+
+.pagina-pedido-listar .caixa-dados form .span7 {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.pagina-pedido-listar #id_mes, .pagina-pedido-listar #id_ano {
+   width: 80px;
+   height: 36px;
+}
+
+.buscar-pedidos .botao {
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+   gap: 10px;
+   text-transform: capitalize;
+}
+
+.buscar-pedidos .botao i {
+   margin: 0;
+}
+
+.buscar-pedidos label {
+   margin: 0;
+}
+
+input#id_numero_pedido {
+   background: #fff!important;
+   color: #000!important;
+   border: 1px solid #d8d8d8!important;
+}
+
+.pagina-pedido-listar .caixa-sombreada {
+   box-shadow: none!important;
 }
