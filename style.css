@@ -5559,7 +5559,8 @@ input#id_numero_pedido {
    border: 0;
 }
 
-.pagina-favorito-listar .breadcrumbs {
+.pagina-favorito-listar .breadcrumbs,
+.pagina-pedido .breadcrumbs {
    margin: 24px 0 32px !important;
 }
 
