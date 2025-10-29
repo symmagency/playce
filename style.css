@@ -5587,6 +5587,49 @@ hr {
    overflow: hidden;
 }
 
+.pagina-cadastro .caixa-sombreada.borda-principal {
+   box-shadow: none;
+   border: 1px solid #d8d8d8;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+/* Página de cadastro */
+
+.pagina-cadastro .span3.offset9 {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.cadastro legend i {
+   display: none;
+}
+
+.cadastro legend {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.pagina-cadastro .form-horizontal .help-inline {
+   border: 0 !important;
+}
+
+.cadastro legend {
+   font-size: 20px;
+   font-weight: 600;
+   padding: 0 0 20px;
+   border: 0;
+}
+
+.cadastro .tipo-cadastro label input {
+   height: 14px !important;
+}
+
+.pagina-cadastro .form-horizontal select {
+   height: 40px;
+}
+
 @media screen and (max-width: 768px) {
    
    .pagina-pedido-listar .caixa-dados form .span7 {
@@ -5596,5 +5639,6 @@ hr {
   .abas-conteudo .acao-editar {
       flex-direction: column;
    }
+
 
 }
