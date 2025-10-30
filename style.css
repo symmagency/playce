@@ -4706,10 +4706,6 @@ floating-bar-item.search-bar {
    border: 0;
 }
 
-.pagina-busca #corpo > .conteiner {
-   padding-top: 40px;
-}
-
 
 .listagem .listagem-linha {
     border: 0;
@@ -5646,6 +5642,10 @@ hr {
 
 .pagina-cadastro .form-horizontal select {
    height: 40px;
+}
+
+.pagina-busca #corpo > .conteiner {
+   padding-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
