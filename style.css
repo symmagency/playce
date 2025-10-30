@@ -4706,6 +4706,10 @@ floating-bar-item.search-bar {
    border: 0;
 }
 
+.pagina-busca #corpo > .conteiner {
+   padding-top: 40px;
+}
+
 
 .listagem .listagem-linha {
     border: 0;
