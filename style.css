@@ -3696,7 +3696,7 @@ a {
    padding: 20px;
 }
 
-.pagina-categoria .listagem .listagem-item {
+.pagina-categoria .listagem .listagem-item, .pagina-busca .listagem .listagem-item {
    margin: 0!important;
 }
 
