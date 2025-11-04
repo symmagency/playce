@@ -5393,12 +5393,39 @@ div#login-content {
    display: none;
 }
 
+.conta-menu .menu-simples li a:hover {
+   background: #f1f1f1;
+   border-radius: 6px;
+}
+
+.conta-menu .menu-simples li a:hover i {
+   color: #000;
+}
+
+.caixa-dados ul li * {
+   font-size: 14px;
+}
+
 .pagina-conta .secao-principal {
    margin-top: 30px;
 }
 
 .pagina-conta .breadcrumbs {
    margin-top: 20px;
+}
+
+.pagina-conta .outros-enderecos a.pull-right {
+   background: var(--color-secondary);
+   padding: 8px 16px;
+   font-size: 14px;
+   color: #fff;
+   line-height: 20px;
+   border-radius: var(--border-radius-md);
+   box-shadow: var(--shadow-button);
+}
+
+.abas-conta li a:hover {
+   color: #000;
 }
 
 .abas-conta {
