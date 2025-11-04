@@ -5040,6 +5040,12 @@ form#formCalcularFrete {
    flex-direction: column;
    gap: 20px;
 }
+
+.pagina-carrinho .acao-editar {
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+
 .tabela-carrinho thead {
    background: #f1f1f1;
    border: 0;
@@ -5166,10 +5172,11 @@ form#formCalcularFrete {
 
 .pagina-carrinho .acao-editar > div {
    display: flex !important;
-   flex-direction: column-reverse;
+   flex-direction: row;
    justify-content: center;
    align-items: center;
    gap: 20px;
+   width: fit-content;
 }
 
 .carrinho-checkout .conteiner-principal #corpo .conteiner {
