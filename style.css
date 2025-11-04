@@ -5073,8 +5073,9 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho .produto-info * {
-   color: var(--color-black);
+   color: #000;
    font-size: 14px;
+   font-weight: 500;
 }
 
 .tabela-carrinho .atualizar-quantidade {
