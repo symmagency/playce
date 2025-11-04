@@ -3670,6 +3670,18 @@ a {
    margin: 0 auto;
 }
 
+.tabela-carrinho .quantidade input[type="text"] {
+   background: none !important;
+   border: 0 !important;
+   width: 60px;
+   color: var(--color-black) !important;
+   padding: 0 !important;
+}
+
+.tabela-carrinho .quantidade input[type="text"]:focus {
+   box-shadow: none;
+}
+
 .pagina-carrinho .caixa-destaque h1 {
    font-size: 22px;
    font-weight: 500;
