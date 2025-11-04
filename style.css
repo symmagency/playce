@@ -989,7 +989,7 @@ i.icon-instagram:before {
 }
 
 .listagem .listagem-item .nome-produto {
-   font-size: 14px;
+   font-size: 16px;
    display: -webkit-box;
    -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
