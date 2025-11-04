@@ -3670,6 +3670,12 @@ a {
    margin: 0 auto;
 }
 
+.meus-favoritos table .text-left * {
+   color: #000;
+   font-size: 14px;
+   font-weight: 500;
+}
+
 .tabela-carrinho .quantidade input[type="text"] {
    background: none !important;
    border: 0 !important;
