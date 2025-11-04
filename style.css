@@ -5246,6 +5246,10 @@ form#formCalcularFrete {
    background-size: 100%;
 }
 
+.menu-user-logged span.menu-user-name {
+   margin-left: 4px;
+}
+
 .menu-user-logged span.icon-chevron-down {
    height: 20px;
    margin-left: 4px;
