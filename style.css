@@ -3159,6 +3159,10 @@ a {
    margin: 0 10px;
 }
 
+.carrinho-interno ul {
+   max-height: 250px;
+}
+
 .carrinho-interno .preco-produto .preco-promocional {
    color: var(--color-black);
    font-weight: bold;
