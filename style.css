@@ -3143,7 +3143,7 @@ a {
 }
 
 .carrinho-interno li {
-   padding: 20px;
+   padding: 10px;
    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
@@ -3186,14 +3186,14 @@ a {
 
 .carrinho-interno>div>span>span {
    display: flex;
-   color: #fff;
+   color: --color-black;
    justify-content: space-between;
    text-transform: uppercase;
    font-size: 16px;
 }
 
 .carrinho-interno>div>span>span strong {
-   color: #fff;
+   color: var(--color-black);
    font-weight: 600;
 }
 
