@@ -5246,6 +5246,16 @@ form#formCalcularFrete {
    background-size: 100%;
 }
 
+.pagina-conta .cadastro .acao-editar .span5.offset7 {
+   display: flex;
+   gap: 24px;
+   align-items: center;
+}
+
+.cartao-salvo-vazio > br {
+   display: none;
+}
+
 .menu-user-logged span.menu-user-name {
    margin-left: 4px;
 }
