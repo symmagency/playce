@@ -803,89 +803,91 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             tryMove();
         })(20);
         
-        // Input de quantidade no carrinho (página de produto)
-        // Encontra o input de quantidade
-        const $qtyInput = $('input[name="qtde-carrinho"]');
         
-        if ($qtyInput.length === 0) {
-            // Se não encontrar o input, pula para o código abaixo
-            console.log('Input de quantidade não encontrado');
-        } else {
-        
-        // Obtém o valor inicial
-        const initialQty = parseInt($qtyInput.val()) || 1;
-        
-        // HTML do novo input com botões
-        const newInputHtml = `
-          <div class="qty-control">
-            <button type="button" class="qty-btn qty-minus">−</button>
-            <input type="number" class="qty-input" value="${initialQty}" min="1">
-            <button type="button" class="qty-btn qty-plus">+</button>
-          </div>
-        `;
-        
-        // Substitui o input antigo
-        $qtyInput.replaceWith(newInputHtml);
-        
-        // Referências dos novos elementos
-        const $newInput = $('.qty-input');
-        const $minusBtn = $('.qty-minus');
-        const $plusBtn = $('.qty-plus');
-        const $buyLink = $('a[href*="/adicionar"]');
-        
-        // Função para atualizar o link
-        function updateBuyLink() {
-          const qty = parseInt($newInput.val()) || 1;
-          
-          $buyLink.each(function() {
-            let href = $(this).attr('href');
-            
-            // Remove quantidade existente no final da URL
-            href = href.replace(/\/\d+$/, '');
-            
-            // Adiciona a nova quantidade se for diferente de 1
-            if (qty > 1) {
-              href += '/' + qty;
-            }
-            
-            $(this).attr('href', href);
-          });
-        }
-        
-        // Botão menos
-        $(document).on('click', '.qty-minus', function(e) {
-          e.preventDefault();
-          let currentQty = parseInt($newInput.val()) || 1;
-          if (currentQty > 1) {
-            $newInput.val(currentQty - 1);
-            updateBuyLink();
-          }
-        });
-        
-        // Botão mais
-        $(document).on('click', '.qty-plus', function(e) {
-          e.preventDefault();
-          let currentQty = parseInt($newInput.val()) || 1;
-          $newInput.val(currentQty + 1);
-          updateBuyLink();
-        });
-        
-        // Quando o usuário digita no input
-        $(document).on('change', '.qty-input', function() {
-          let qty = parseInt($(this).val());
-          
-          // Validação
-          if (isNaN(qty) || qty < 1) {
-            $(this).val(1);
-          }
-          
-          updateBuyLink();
-        });
-        
-        // Atualiza o link na primeira carga
-        updateBuyLink();
-        } // fecha o else do $qtyInput
     } // fecha o else do mobile
+
+// Input de quantidade no carrinho (página de produto)
+// Encontra o input de quantidade
+const $qtyInput = $('input[name="qtde-carrinho"]');
+
+if ($qtyInput.length === 0) {
+    // Se não encontrar o input, pula para o código abaixo
+    console.log('Input de quantidade não encontrado');
+} else {
+
+// Obtém o valor inicial
+const initialQty = parseInt($qtyInput.val()) || 1;
+
+// HTML do novo input com botões
+const newInputHtml = `
+    <div class="qty-control">
+    <button type="button" class="qty-btn qty-minus">−</button>
+    <input type="number" class="qty-input" value="${initialQty}" min="1">
+    <button type="button" class="qty-btn qty-plus">+</button>
+    </div>
+`;
+
+// Substitui o input antigo
+$qtyInput.replaceWith(newInputHtml);
+
+// Referências dos novos elementos
+const $newInput = $('.qty-input');
+const $minusBtn = $('.qty-minus');
+const $plusBtn = $('.qty-plus');
+const $buyLink = $('a[href*="/adicionar"]');
+
+// Função para atualizar o link
+function updateBuyLink() {
+    const qty = parseInt($newInput.val()) || 1;
+    
+    $buyLink.each(function() {
+    let href = $(this).attr('href');
+    
+    // Remove quantidade existente no final da URL
+    href = href.replace(/\/\d+$/, '');
+    
+    // Adiciona a nova quantidade se for diferente de 1
+    if (qty > 1) {
+        href += '/' + qty;
+    }
+    
+    $(this).attr('href', href);
+    });
+}
+
+// Botão menos
+$(document).on('click', '.qty-minus', function(e) {
+    e.preventDefault();
+    let currentQty = parseInt($newInput.val()) || 1;
+    if (currentQty > 1) {
+    $newInput.val(currentQty - 1);
+    updateBuyLink();
+    }
+});
+
+// Botão mais
+$(document).on('click', '.qty-plus', function(e) {
+    e.preventDefault();
+    let currentQty = parseInt($newInput.val()) || 1;
+    $newInput.val(currentQty + 1);
+    updateBuyLink();
+});
+
+// Quando o usuário digita no input
+$(document).on('change', '.qty-input', function() {
+    let qty = parseInt($(this).val());
+    
+    // Validação
+    if (isNaN(qty) || qty < 1) {
+    $(this).val(1);
+    }
+    
+    updateBuyLink();
+});
+
+// Atualiza o link na primeira carga
+updateBuyLink();
+} // fecha o else do $qtyInput
 
     // Código que executa em ambos (desktop e mobile)
     if ($('.pagina-produto .produto div.principal .chave-digital').length === 0) {
