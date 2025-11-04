@@ -67,7 +67,7 @@ $('.pagina-inicial #barraNewsletter').before(`
         <div class="about-banner-icon-title">
           <img src="https://cdn.awsli.com.br/2830/2830294/arquivos/controler.png" alt="Mascote Playce" class="about-banner-icon" />
           <div class="about-banner-title">
-            <strong>Somos a Playce!</strong>
+            <h2>Somos a Playce!</h2>
           </div>
         </div>
         <div class="about-banner-description">

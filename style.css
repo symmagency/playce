@@ -3736,10 +3736,10 @@ a {
     max-width: 1180px;
     margin: 60px auto;
     display: flex;
-    background: linear-gradient(270deg, rgba(233, 34, 42, 0) 63.09%, rgba(233, 34, 42, 0.2) 100%), linear-gradient(270deg, rgba(233, 34, 42, 0.2) 0%, rgba(233, 34, 42, 0) 50%), #FFFFFF;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 63.09%, rgba(0, 0, 0, 0.1) 100%), linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 50%), #FFFFFF;
     border-radius: 10px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-banner-content {
@@ -3762,7 +3762,7 @@ a {
     font-weight: 400;
 }
 
-.about-banner-title strong {
+.about-banner-title h2 {
     font-weight: 500;
 }
 
