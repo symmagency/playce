@@ -982,7 +982,7 @@ i.icon-instagram:before {
 }
 
 .listagem .info-produto {
-   padding: 12px 20px 20px;
+   padding: 10px;
    display: flex;
    flex-direction: column;
    gap: 4px;
@@ -1000,6 +1000,8 @@ i.icon-instagram:before {
 
 .listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
    min-height: 54px;
+   letter-spacing: -0.4px;
+   font-weight: 500;
 }
 
 .listagem .preco-produto .bandeira-promocao {
