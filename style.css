@@ -4907,6 +4907,7 @@ floating-bar-item.search-bar {
 .finalizar-compra .caixa-sombreada {
    box-shadow: none;
    display: flex;
+   flex-direction: column;
 }
 
 .order-resume {
