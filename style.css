@@ -4941,10 +4941,6 @@ form#formCalcularFrete {
    justify-content: center;
 }
 
-.acao-editar .span12 > a.botao {
-   display: none;
-}
-
 
 .acao-editar .botao.principal {
    width: 100%;
@@ -5020,14 +5016,20 @@ form#formCalcularFrete {
    align-items: center;
 }
 
-.acao-editar .span12:after {
+.pagina-carrinho .caixa-sombreada:after {
    content: "⚠ Aviso: Ao comprar, você declara ter conferido que este produto é compatível com sua plataforma. Revise antes de prosseguir!";
    margin-top: 20px;
    display: block;
-   font-size: 12px;
    text-align: left;
    color: var(--color-black);
    opacity: .7;
+   background: #fffbed;
+    border: 1px solid #e08f0d;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #e08f0d;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .acao-editar:before,
