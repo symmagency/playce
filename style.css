@@ -3122,7 +3122,7 @@ a {
 }
 
 .carrinho .carrinho-interno {
-   background: var(--color-secondary);
+   background: var(--color-white);
    padding: 0;
    border: 1px solid rgba(255,255,255,.1);
    border-radius: 10px;
@@ -3136,21 +3136,21 @@ a {
    width: 100%;
    font-size: 18px;
    font-weight: 500;
-   color: var(--color-white);
+   color: var(--color-black);
    padding: 20px;
    box-sizing: border-box;
-   border-bottom: 1px solid rgba(255,255,255,.1);
+   border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .carrinho-interno li {
    padding: 20px;
-   border-bottom: 1px solid rgba(255,255,255,.1);
+   border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
-.carrinho-interno .nome-produto {color: var(--color-white);}
+.carrinho-interno .nome-produto {color: var(--color-black);}
 
 .carrinho-interno .preco-produto .preco-promocional {
-   color: var(--color-white);
+   color: var(--color-black);
    font-weight: bold;
    font-size: 14px;
 }
