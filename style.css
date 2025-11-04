@@ -1400,7 +1400,7 @@ i.icon-instagram:before {
 }
 
 .menu.lateral .nivel-dois>li a {
-   opacity: .7;
+   opacity: 1;
 }
 
 .menu.lateral .nivel-dois>li.ativo a {
@@ -3261,7 +3261,7 @@ a {
 .breadcrumbs ul li a {
    align-items: center;
    display: flex;
-   color: rgba(0,0,0,.6);
+   color: rgba(0,0,0,1);
    font-weight: 500;
    padding: 0;
 }
