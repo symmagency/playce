@@ -5082,6 +5082,14 @@ form#formCalcularFrete {
 
 .tabela-carrinho .atualizar-quantidade {
    display: none;
+   font-size: 11px !important;
+   padding: 0 4px;
+   height: 20px !important;
+   border-radius: 4px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: 3px auto 0;
 }
 
 .tabela-carrinho .preco-produto .preco-promocional {
@@ -5129,6 +5137,36 @@ form#formCalcularFrete {
    display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+}
+
+
+.tabela-carrinho .quantidade a {
+   font-size: 12px;
+   border-radius: 999px;
+   width: 16px;
+   height: 16px;
+}
+
+.tabela-carrinho .quantidade a:hover {
+   color: #000;
+   background: #f1f1f1;
+}
+
+.tabela-carrinho .quantidade .icon-plus:before {
+   content: "";
+   background: var(--icon-plus-black);
+   width: 16px;
+   height: 16px;
+   background-size: 100%;
+}
+
+.tabela-carrinho .quantidade .icon-minus:before {
+   content: "";
+   background: var(--icon-minus-black);
+   width: 16px;
+   height: 16px;
+   background-size: 100%;
 }
 
 .cadastro legend,
