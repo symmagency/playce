@@ -739,7 +739,7 @@ i.icon-instagram:before {
    line-height: 40px;
    font-size: var(--font-size-sm);
    color: var(--color-white);
-   font-weight: 400;
+   font-weight: 500;
 }
 
 .menu.superior .nivel-um>li {
@@ -899,10 +899,10 @@ i.icon-instagram:before {
 #carrinho-mini thead {
    background: rgba(255,255,255,.1);
 }
-
+/* 
 .modal-comprar-ajax-status .fancybox-skin {
    padding: 0!important;
-}
+} */
 
 #comprar-ajax-status .buttons {
    display: flex;
@@ -934,6 +934,7 @@ i.icon-instagram:before {
 
 #carrinho-mini thead th {
    padding: 10px;
+   border: 0;
 }
 
 #carrinho-mini .tabela-carrinho tbody tr td {
@@ -1550,7 +1551,7 @@ button.qty-btn.qty-plus:hover{
    padding: 13px 16px;
    height: 54px !important;
    font-size: 16px !important;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .pagina-produto .produto div.principal * {
@@ -2119,7 +2120,7 @@ div#AdicionarFavoritoSucessoModal .modal-header {
    font-size: 24px;
    text-align: left;
    margin-bottom: 12px;
-   font-weight: 600;
+   font-weight: 400;
    color: var(--color-black);
 }
 
@@ -3446,8 +3447,8 @@ a {
    justify-content: center;
    gap: 4px;
    text-transform: uppercase;
-   font-size: 12px;
-   letter-spacing: .6px;
+   font-size: 13px;
+   letter-spacing: 1px;
    margin-bottom: 16px !important;
    border-radius: 4px;
 }
@@ -3841,7 +3842,11 @@ button.about-banner-btn {
 .vitrine-23387218 + ul .span3 .imagem-produto, .vitrine-23387218 + ul.produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
    height: fit-content;
    width: inherit;
-   max-width: 108px;
+   max-width: 98px;
+}
+
+.vitrine-23387218 + ul .preco-produto>div {
+   margin: 0;
 }
 
 .vitrine-23387218 + ul .listagem-item .nome-produto, .vitrine-23387218 + ul .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
