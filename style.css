@@ -598,6 +598,11 @@ i.icon-instagram:before {
    display: block;
 }
 
+.append-benefits span {
+   font-size: 14px;
+   font-weight: 400;
+}
+
 .barra-inicial .append-benefits > div {
    display: flex;
    gap: 8px;
@@ -4249,11 +4254,6 @@ button.about-banner-btn {
 
 .barra-inicial .append-benefits {
    justify-content: center;
-}
-
-.append-benefits span {
-   font-size: 14px;
-   font-weight: 400;
 }
 
 .append-benefits span {
