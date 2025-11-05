@@ -526,7 +526,7 @@ div#avisoEnvioCart {
 .canais-contato ul li.hidden-phone > a:after {
    content: "Precisa de ajuda?";
    font-size: 14px;
-   font-weight: 500;
+   font-weight: 400;
 }
 
 i.icon-facebook:before {
@@ -734,7 +734,7 @@ i.icon-instagram:before {
    line-height: 40px;
    font-size: var(--font-size-sm);
    color: var(--color-white);
-   font-weight: 600;
+   font-weight: 400;
 }
 
 .menu.superior .nivel-um>li {
@@ -4249,6 +4249,11 @@ button.about-banner-btn {
 
 .barra-inicial .append-benefits {
    justify-content: center;
+}
+
+.append-benefits span {
+   font-size: 14px;
+   font-weight: 400;
 }
 
 .append-benefits span {
