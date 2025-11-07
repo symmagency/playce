@@ -645,6 +645,10 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             // Verifica se o usuário está logado pelo atributo style vazio ou undefined
             if (($menuUserLogged.attr('style') === '' || $menuUserLogged.attr('style') === undefined) && $signUpHeader.length) {
                 $signUpHeader.replaceWith($menuUserLogged.show());
+                // Deixa apenas o primeiro nome no menu-user-name após a substituição
+                $('.menu-user-name').text(function(i, text) {
+                    return text.split(' ')[0];
+                });
             } else if (tentativasRestantes > 0) {
                 setTimeout(function() {
                     tentarSubstituirMenuUserLogged(tentativasRestantes - 1);
@@ -1005,8 +1009,6 @@ if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0)
     `);
 }
 
-$('.menu-user-name').text(function(i, text) {
-    return text.split(' ')[0];
-  });
+
 
 });
