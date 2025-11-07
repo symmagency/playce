@@ -5337,6 +5337,41 @@ form#formCalcularFrete {
    align-items: center;
 }
 
+.pagina-conta .acao-editar .span4.offset8 {
+   display: flex;
+   gap: 24px;
+   align-items: center;
+}
+
+.pagina-conta-endereco input#id_cep {
+   background: #fff !important;
+   border: 1px solid #d8d8d8 !important;
+   margin-right: 10px;
+}
+
+.pagina-conta-endereco select {
+   height: 40px;
+   padding: 0 12px;
+   appearance: none;
+}
+
+.caixa-sombreada.borda-principal {
+   border: 1px solid #d8d8d8;
+   border-radius: 8px;
+   box-shadow: none;
+}
+
+.pagina-conta-endereco .breadcrumbs {
+   margin-bottom: 32px !important;
+   margin-top: 32px !important;
+}
+
+.pagina-conta .cadastro .control-group input {
+   background: #fff !important;
+   border: 1px solid #d8d8d8 !important;
+   width: 100%;
+}
+
 .cartao-salvo-vazio > br {
    display: none;
 }
