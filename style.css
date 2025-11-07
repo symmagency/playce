@@ -5337,7 +5337,8 @@ form#formCalcularFrete {
    align-items: center;
 }
 
-.pagina-conta .acao-editar .span4.offset8 {
+.pagina-conta .acao-editar .span4.offset8,
+.pagina-conta-endereco .acao-editar .span4.offset8 {
    display: flex;
    gap: 24px;
    align-items: center;
