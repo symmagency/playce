@@ -1005,5 +1005,8 @@ if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0)
     `);
 }
 
+$('.menu-user-name').text(function(i, text) {
+    return text.split(' ')[0];
+  });
 
 });
