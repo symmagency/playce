@@ -5029,7 +5029,7 @@ form#formCalcularFrete {
    align-items: center;
 }
 
-.pagina-carrinho .caixa-sombreada:after {
+/* .pagina-carrinho .caixa-sombreada:after {
    content: "⚠ Aviso: Ao comprar, você declara ter conferido que este produto é compatível com sua plataforma. Revise antes de prosseguir!";
    margin-top: 20px;
    display: block;
@@ -5043,7 +5043,7 @@ form#formCalcularFrete {
     color: #e08f0d;
     margin-bottom: 20px;
     border-radius: 4px;
-}
+} */
 
 .acao-editar:before,
 .acao-editar:after {

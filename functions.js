@@ -894,7 +894,7 @@ updateBuyLink();
     }
 
     if ($('#avisoEnvioCart').length === 0) {
-        $('.pagina-carrinho .finalizar-compra > .cabecalho-interno').after(`<div id="avisoEnvioCart"><span>Atenção! Todos os nossos envios são feitos por e-mail.</span></div>`);
+        $('.pagina-carrinho .finalizar-compra > .cabecalho-interno').after(`<div id="avisoEnvioCart"><span>Todos os nossos envios são feitos por e-mail. ⚠ Importante: Verifique se está comprando o <strong>produto correto para sua plataforma</strong> antes de finalizar a compra.</span></div>`);
     }
 
     if ($('.produto .produto-detalhe-info .produto-detalhe-alerta').length === 0) {
