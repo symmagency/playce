@@ -912,6 +912,10 @@ i.icon-instagram:before {
    border-top: 1px solid rgba(255,255,255,.1);
 }
 
+#comprar-ajax-status .sucesso #carrinho-mini form {
+   position: relative;
+}
+
 #comprar-ajax-status .sucesso #carrinho-mini {
    margin: 0;
 }
@@ -1412,6 +1416,11 @@ i.icon-instagram:before {
 .filtro *, 
 .componente * {
    color: var(--color-black);
+}
+
+.filtro.lista ul li:hover label {
+   background: #f2f2f2;
+   color: #000;
 }
 
 .filtro, .componente {
@@ -2796,6 +2805,7 @@ a {
    color: var(--color-black) !important;
    border: 1px solid var(--border-color) !important;
    background: var(--color-white) !important;
+   font-size: 17px;
 }
 
 .quantidade-wrapper .input-quantidade::-webkit-outer-spin-button,
@@ -5348,6 +5358,7 @@ form#formCalcularFrete {
    background: #fff !important;
    border: 1px solid #d8d8d8 !important;
    margin-right: 10px;
+   color: #000 !important;
 }
 
 .pagina-conta-endereco select {
@@ -5371,6 +5382,7 @@ form#formCalcularFrete {
    background: #fff !important;
    border: 1px solid #d8d8d8 !important;
    width: 100%;
+   color: #000 !important;
 }
 
 .cartao-salvo-vazio > br {
