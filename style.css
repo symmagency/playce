@@ -5109,8 +5109,8 @@ form#formCalcularFrete {
 
 .tabela-carrinho .produto-info * {
    color: #000;
-   font-size: 14px;
-   font-weight: 500;
+   font-size: 16px;
+   font-weight: normal;
 }
 
 .tabela-carrinho .atualizar-quantidade {
