@@ -1242,6 +1242,10 @@ i.icon-instagram:before {
    font-weight: 500;
 }
 
+.benefit-item p strong {
+   font-weight: 500;
+}
+
 .benefit-item span {
    font-size: 14px;
    margin-bottom: 4px;
