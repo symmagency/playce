@@ -3296,6 +3296,11 @@ a {
 .breadcrumbs ul li * {
    font-size: 12px;
    color: var(--color-black);
+   font-weight: normal;
+}
+
+.breadcrumbs ul li strong {
+   padding: 0;
 }
 
 .breadcrumbs ul li:last-child a {
