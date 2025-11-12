@@ -773,7 +773,7 @@ i.icon-instagram:before {
 .menu.superior .nivel-dois * {
    color: #ffffff90;
    font-size: 14px;
-   font-weight: bold;
+   font-weight: 500;
 }
 
 .menu.superior .nivel-um>li:hover .nivel-dois:before {
@@ -1035,7 +1035,7 @@ i.icon-instagram:before {
 
 .listagem .listagem-item .preco-produto strong {
    font-size: 18px;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .listagem .listagem-item .nome-produto, .listagem .listagem-item .preco-produto strong {
@@ -1116,7 +1116,7 @@ i.icon-instagram:before {
    border-radius: var(--border-radius-md);
    line-height: 13px;
    font-size: 10px;
-   font-weight: 600;
+   font-weight: 500;
    display: block;
    width: fit-content;
 }
@@ -1176,7 +1176,7 @@ i.icon-instagram:before {
 
 .game-title {
    font-size: 18px;
-   font-weight: 600;
+   font-weight: 500;
    color: var(--color-white);
 }
 
@@ -1212,7 +1212,7 @@ i.icon-instagram:before {
    position: relative;
    top: initial;
    left: initial;
-   max-width: 600px;
+   max-width: 500px;
    transform: none;
 }
 
@@ -1473,6 +1473,7 @@ i.icon-instagram:before {
 
 #principal-konfidency p {
    margin: 0;
+   font-size: 14px;
 }
 
 .compre-junto__produto.compre-junto__produto--principal {
@@ -1768,7 +1769,7 @@ modal-review .actions button {
 
 .produto .principal .acoes-produto .preco-produto .preco-promocional.titulo {
    font-size: 32px;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .pagina-produto .produto div.principal .preco-produto > div {
@@ -2087,7 +2088,7 @@ modal-review .actions button {
 div#AdicionarFavoritoSucessoModal .modal-header {
    font-size: 18px;
    color: #fff;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .modal-footer {
@@ -2177,7 +2178,7 @@ div#AdicionarFavoritoSucessoModal .modal-header {
    margin-top: 10px;
    height: 54px !important;
    color: var(--color-black) !important;
-   font-weight: 600;
+   font-weight: 500;
    background: transparent;
    border: 1px solid var(--color-primary);
    box-shadow: none;
@@ -3334,7 +3335,7 @@ a {
    padding: 4px 8px;
    line-height: 12px;
    text-transform: uppercase;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .append-flags > span.bandeira-prevenda {
@@ -3798,7 +3799,7 @@ a {
 }
 
 .about-banner-description p:first-child {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .about-banner-description {
@@ -5321,7 +5322,7 @@ form#formCalcularFrete {
    border: 0;
    padding: 4px 16px;
    text-shadow: none;
-   font-weight: 600;
+   font-weight: 500;
    color: var(--color-white);
 }
 
@@ -5564,7 +5565,7 @@ div#login-content {
 .conta-menu .nome-usuario {
    padding: 0;
    font-size: 20px;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .conta-menu .nome-usuario i {
@@ -5623,7 +5624,7 @@ div#login-content {
 .abas-conta li a {
    border: 0;
    font-size: 16px;
-   font-weight: 600;
+   font-weight: 500;
    box-shadow: none;
    background: none;
 }
@@ -5828,7 +5829,7 @@ hr {
 
 .cadastro legend {
    font-size: 20px;
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .pagina-cadastro .form-horizontal .help-inline {
@@ -5837,7 +5838,7 @@ hr {
 
 .cadastro legend {
    font-size: 20px;
-   font-weight: 600;
+   font-weight: 500;
    padding: 0 0 20px;
    border: 0;
 }
