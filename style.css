@@ -5924,6 +5924,11 @@ hr {
    padding-top: 40px;
 }
 
+.carrinho-checkout #cabecalho > .conteiner {
+   max-width: 1180px;
+   padding: 0;
+}
+
 @media screen and (max-width: 768px) {
    
    .pagina-pedido-listar .caixa-dados form .span7 {
