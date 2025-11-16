@@ -33,9 +33,9 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
     <div class="info-section">
     <span class="titulo">Atendimento</span>
     <p>
-        Horário de atendimento: Todos os dias, das 09h às 22h <br>
-        E-mail: contato@playce.com.br <br>
-        WhatsApp: (61) 9 9684-1445 — Assistência virtual disponível 24h por dia, 7 dias por semana
+        <strong>Horário de atendimento</strong> <span>Todos os dias, das 09h às 22h</span>
+        <strong>Envie uma mensagem:</strong> <span>contato@playce.com.br <br> Playce - Games e Gift cards </span>
+        <strong>Estamos no WhatsApp:</strong> <span>(61) 9 9684-1445</span> 
     </p>
     </div>
     

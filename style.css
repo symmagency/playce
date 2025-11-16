@@ -835,6 +835,7 @@ i.icon-instagram:before {
    padding: 0 !important;
    max-width: 1180px;
    margin: 60px auto 0!important;
+   align-items: center;
 }
 
 .categorias-section .titulo-categoria {
@@ -1290,13 +1291,14 @@ i.icon-instagram:before {
 }
 
 .pagina-login .caixa-sombreada fieldset legend i {
-   display: none;
+   /* display: none; */
+   margin-right: 6px;
 }
 
 .pagina-login .caixa-sombreada fieldset legend {
    color: var(--color-black);
    padding-bottom: 32px;
-   font-size: 15px;
+   font-size: 18px;
    font-weight: normal;
    border: 0;
 }
@@ -1331,8 +1333,8 @@ i.icon-instagram:before {
 
 .pagina-login .caixa-sombreada fieldset .recuperar-senha {
    color: #000;
-   opacity: .5;
-   font-size: 12px;
+   opacity: 1;
+   font-size: 14px;
    display: flex;
    gap: 4px;
    align-items: center;
@@ -2009,7 +2011,7 @@ modal-review .actions button {
    width: fit-content;
    gap: 10px;
    align-items: center;
-   font-size: 0;
+   /* font-size: 0; */
    text-decoration: none;
 }
 
@@ -2124,11 +2126,11 @@ div#AdicionarFavoritoSucessoModal .modal-header {
    height: 20px;
 }
 
-.lista-favoritos:after {
+/* .lista-favoritos:after {
    content: "Favoritar";
    font-size: 16px;
    font-weight: 400;
-}
+} */
 
 .produto .nome-produto {
    line-height: 33px;
@@ -2680,6 +2682,7 @@ a {
    max-width: 1180px;
    margin: 0 auto!important;
    width: 100%;
+   padding-top: 6px;
 }
 
 .pagina-inicial ul.slick-initialized.slick-slider {
@@ -3191,7 +3194,7 @@ a {
 
 .carrinho-interno .preco-produto .preco-promocional {
    color: var(--color-black);
-   font-weight: 400;
+   font-weight: 500;
    font-size: 14px;
 }
 
@@ -3230,11 +3233,12 @@ a {
    justify-content: space-between;
    text-transform: uppercase;
    font-size: 16px;
+   margin-bottom: 6px;
 }
 
 .carrinho-interno>div>span>span strong {
    color: var(--color-black);
-   font-weight: 400;
+   font-weight: 500;
 }
 
 .carrinho-interno .carrinho-info i {
@@ -3384,9 +3388,9 @@ a {
 
 .conteudo .ordenar-listagem .input-append:first-child {
    box-shadow: var(--shadow-button);
-   background: var(--color-secondary);
+   background: #f1f1f1;
    font-size: 14px;
-   color: var(--color-white) !important;
+   color: #000 !important;
    line-height: 20px;
    padding: 8px 16px;
    width: fit-content;
@@ -3435,12 +3439,18 @@ a {
 .ordenar-listagem .dropdown-menu {
    right: -16px;
    left: auto;
-   background: var(--color-secondary);
+   background: var(--color-white);
    top: 30px;
 }
 
 .ordenar-listagem .dropdown-menu * {
-   color: #fff;
+   color: #000;
+}
+
+.dropdown-menu .icon-shopping-cart:before {
+   content: "\f07a";
+   width: auto;
+   height: auto;
 }
 
 .pagina-categoria .breadcrumbs ul li strong {
@@ -3465,13 +3475,13 @@ a {
 }
 
 .chave-digital {
-   padding: 4px 8px;
+   padding: 6px 8px;
    background: #F3F3F3;
    display: flex;
    justify-content: center;
    gap: 4px;
    text-transform: uppercase;
-   font-size: 13px;
+   font-size: 12px;
    letter-spacing: 1px;
    margin-bottom: 16px !important;
    border-radius: 4px;
@@ -3480,7 +3490,7 @@ a {
 .pagination ul > li a {
    display: flex;
    gap: 4px;
-   background: var(--color-secondary);
+   background: #f1f1f1;
    padding: 8px 16px;
    border-radius: var(--border-radius-md);
    box-shadow: var(--shadow-button);
@@ -3489,7 +3499,7 @@ a {
    box-sizing: border-box;
    align-items: center;
    font-size: 14px;
-   color: var(--color-white);
+   color: #000;
    transition: all .4s;
 }
 
@@ -3512,7 +3522,8 @@ a {
 }
 
 .pagination ul>.disabled>span, .pagination ul>.disabled>a, .pagination ul>.disabled>a:hover, .pagination ul>.disabled>a:focus {
-   background: var(--color-secondary);
+   background: #f1f1f1;
+   color: #000;
    opacity: .5;
 }
 
@@ -3523,7 +3534,7 @@ a {
 
 .pagination .icon-double-angle-right:before {
    content: "";
-   background: var(--icon-chev-right);
+   background: var(--icon-chev-right-black);
    width: 20px;
    height: 20px;
    background-size: 100%;
@@ -3531,7 +3542,7 @@ a {
 
 .pagination .icon-double-angle-left:before {
    content: "";
-   background: var(--icon-chev-left);
+   background: var(--icon-chev-left-black);
    width: 20px;
    height: 20px;
    background-size: 100%;
@@ -3712,7 +3723,7 @@ a {
 .meus-favoritos table .text-left * {
    color: #000;
    font-size: 14px;
-   font-weight: 500;
+   font-weight: 400;
 }
 
 .tabela-carrinho .quantidade input[type="text"] {
@@ -5021,7 +5032,8 @@ form#formCalcularFrete {
 
 .subtotal, .total {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-end;
+   gap: 10px;
 }
 
 .subtotal span, .total span {
@@ -5084,6 +5096,13 @@ form#formCalcularFrete {
    justify-content: space-between;
 }
 
+.pagina-carrinho.carrinho-checkout .acao-editar {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 0;
+}
+
 .tabela-carrinho thead {
    background: #f1f1f1;
    border: 0;
@@ -5096,6 +5115,7 @@ form#formCalcularFrete {
 .tabela-carrinho thead * {
    color: var(--color-black);
    font-weight: 500;
+   font-size: 14px;
 }
 
 .tabela-carrinho tbody tr {
@@ -5152,6 +5172,7 @@ form#formCalcularFrete {
    color: var(--color-black) !important;
    height: 30px !important;
    margin: 0;
+   font-size: 17px;
 }
 
 #comprar-ajax-status .sucesso #carrinho-mini .scroll {
@@ -5202,6 +5223,24 @@ form#formCalcularFrete {
    height: 16px;
    background-size: 100%;
 }
+
+/* Página institucional */
+
+.pagina-pagina .caixa-sombreada {
+   padding: 0;
+   box-shadow: none;
+}
+
+.pagina-pagina .breadcrumbs {
+   margin-top: 10px;
+}
+
+.pagina-pagina .caixa-sombreada p {
+   font-size: 14px;
+   color: #000;
+}
+
+/* Página cadastro */
 
 .cadastro legend,
 .cadastro .dados-acesso label,
@@ -5587,6 +5626,8 @@ div#login-content {
 
 .caixa-dados ul li * {
    font-size: 14px;
+   font-weight: normal;
+   color: #000;
 }
 
 .pagina-conta .secao-principal {
@@ -5722,10 +5763,23 @@ div#login-content {
    width: 100%;
 }
 
-fieldset {}
+.pagina-pedido-listar .text-center strong {
+   font-size: 16px;
+   color: #000;
+   font-weight: normal;
+}
 
 .pagina-pedido-listar .abas-conteudo fieldset {
    margin: 0;
+}
+
+.caixa-destaque p {
+   font-size: 14px;
+}
+
+.caixa-destaque h4 {
+   font-size: 18px;
+   font-weight: 500;
 }
 
 .pagina-pedido-listar .caixa-dados h5.titulo {
@@ -5786,6 +5840,13 @@ input#id_numero_pedido {
 .pagina-favorito-listar .breadcrumbs,
 .pagina-pedido .breadcrumbs {
    margin: 24px 0 32px !important;
+}
+
+.pagina-favorito-listar .caixa-info input.span7.text-center {
+   background: #fff !important;
+   color: #000 !important;
+   border: 1px solid #d8d8d8 !important;
+   box-shadow: none;
 }
 
 fieldset .span12 p {
