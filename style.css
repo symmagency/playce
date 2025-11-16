@@ -2453,6 +2453,12 @@ a {
    font-size: 14px;
    line-height: 20px;
    opacity: .7;
+   display: flex;
+   flex-direction: column;
+}
+
+#rodape .info-section p span {
+   margin-bottom: 14px;
 }
 
 #rodape .info-section:not(:last-child) {
