@@ -916,7 +916,7 @@ updateBuyLink();
 // Estrutura para múltiplas categorias, cada uma com seu próprio FAQ e título customizável
 var faqsPorCategoria = [
     {
-        id: '23387220', // Exemplo de ID de categoria
+        id: '2338722', // Exemplo de ID de categoria
         titulo: "PlayStation", // Título customizável para esta categoria
         faqs: [
             {
