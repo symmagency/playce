@@ -124,10 +124,10 @@ $slider.slick({
 // Categorias home
 var categorias = [
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-apple.png",
-        alt: "Categoria Apple",
-        link: "/apple",
-        nome: "Apple"
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-playstation.png",
+        alt: "Categoria PlayStation",
+        link: "/playstation",
+        nome: "PlayStation"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-xbox.png",
@@ -136,22 +136,16 @@ var categorias = [
         nome: "Xbox"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-playstation.png",
-        alt: "Categoria PlayStation",
-        link: "/playstation",
-        nome: "PlayStation"
-    },
-    {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-nintendo.png",
         alt: "Categoria Nintendo",
         link: "/nintendo",
         nome: "Nintendo"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-fortinite.png",
-        alt: "Categoria V-bucks",
-        link: "/v-bucks",
-        nome: "Fortnite"
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-apple.png",
+        alt: "Categoria Apple",
+        link: "/apple",
+        nome: "Apple"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-roblox.png",
@@ -159,11 +153,12 @@ var categorias = [
         link: "/xbox",
         nome: "Roblox"
     },
+
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-steam.png",
-        alt: "Categoria steam",
-        link: "/Steam",
-        nome: "Steam"
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-fortinite.png",
+        alt: "Categoria V-bucks",
+        link: "/v-bucks",
+        nome: "Fortnite"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-icon.png",
@@ -176,6 +171,12 @@ var categorias = [
         alt: "Categoria Spotify",
         link: "/spotify",
         nome: "Spotify"
+    },
+    {
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-steam.png",
+        alt: "Categoria steam",
+        link: "/Steam",
+        nome: "Steam"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-icon.png",
