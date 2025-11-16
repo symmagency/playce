@@ -2509,6 +2509,10 @@ a {
     align-items: center;
 }
 
+#rodape>div:last-child .conteiner {
+   padding: 0;
+}
+
 #rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
     text-align: left!important;
 }
