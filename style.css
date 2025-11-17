@@ -5596,8 +5596,16 @@ form#formCalcularFrete {
 
 div#login-content {
    background: var(--color-white);
-   border-radius: var(--border-radius-md);
+}
+
+div#login-content > .identificacao {
    border: 1px solid #d8d8d8;
+   margin: 0;
+   border-radius: var(--border-radius-md)
+}
+
+.resumo-compra .tabela-carrinho .padding-preco>div.total {
+   padding: 0;
 }
 
 @media screen and (max-width: 768px) {
