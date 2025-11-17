@@ -7,7 +7,7 @@
    --bg-store-color: #FFFFFF;
    --color-primary: #E9222A;
    --button-hover: #B0292F;
-   --color-secondary: #33373C; 
+   --color-secondary: #33373C;
    --color-success: #28a745;
    --color-danger: #dc3545;
    --color-warning: #ffc107;
@@ -62,7 +62,7 @@
    --font-size-sm: 14px;
    --font-size-lg: 20px;
    --font-weight-normal: 400;
-   --font-weight-bold: 700;
+   --font-weight-bold: 700; 
    --line-height-base: 24px;
 
    /* Bordas
@@ -261,9 +261,9 @@ h6,
 }
 
 .cabecalho-interno .titulo small {
-   font-size: 14px;
+   font-size: 15px;
    color: var(--color-black);
-   opacity: .7;
+   opacity: 1;
 }
 
 .cabecalho-interno .titulo {
@@ -3685,7 +3685,7 @@ a {
 }
 
 .conteudo.span9.no-results {
-   margin: 50px 0 0;
+   margin: 0;
    text-align: center;
    padding: 60px;
    background: #f1f1f1;
@@ -5177,7 +5177,7 @@ form#formCalcularFrete {
 }
 
 .pagina-carrinho #corpo {
-   min-height: calc(100vh - 156px);
+   min-height: calc(100vh - 140px);
    margin: 0;
 }
 
@@ -5828,6 +5828,16 @@ div#login-content {
 
 .pagina-pedido-listar .abas-conteudo fieldset {
    margin: 0;
+}
+
+.tabela-pedidos * {
+   font-size: 14px;
+   color: #000;
+   font-weight: 400;
+}
+
+.tabela-pedidos thead tr {
+    border: 0;
 }
 
 .caixa-destaque p {
