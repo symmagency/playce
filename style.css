@@ -2100,17 +2100,18 @@ div#AdicionarFavoritoSucessoModal .modal-header {
 .modal-footer {
    display: flex;
    justify-content: flex-end;
-   background: var(--color-secondary);
-   border-top: 1px solid rgba(255,255,255,.1);
+   background: #f1f1f1;
+   border-top: 1px solid rgba(0,0,0,.1);
    box-shadow: none;
 }
 
 .modal-body * {
-   color: #fff;
+   color: #000;
 }
 
 .modal {
-   background: var(--color-black);
+   background: var(--color-white);
+   z-index: 100000000;
 }
 
 .lista-favoritos .icon-plus::before {
