@@ -5203,13 +5203,15 @@ form#formCalcularFrete {
    max-height: fit-content;
    overflow: initial;
 }
-
 #carrinho-mini .tabela-carrinho tbody tr #usarCupom {
-   color: #000;
+   color: #000 !important;
    background: #fff !important;
    border: 1px solid #d8d8d8 !important;
    margin-right: 10px;
    height: 36px !important;
+   padding: 0 6px !important;
+   text-align: left !important;
+   width: 140px;
 }
 
 #carrinho-mini .tabela-carrinho tbody tr form label.control-label b {
