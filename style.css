@@ -3279,7 +3279,7 @@ a {
    height: 16px;
    display: block;
    background-size: 100%;
-   opacity: .6;
+   opacity: 1;
 }
 
 .breadcrumbs ul {
@@ -3322,6 +3322,9 @@ a {
 
 .breadcrumbs ul li strong {
    padding: 0;
+   font-size: 12px;
+   font-weight: 500;
+   color: #000;
 }
 
 .breadcrumbs ul li:last-child a {
@@ -3393,7 +3396,7 @@ a {
 .conteudo h1 {
    font-size: 22px;
    color: var(--color-black);
-   font-weight: 500;
+   font-weight: 400;
 }
 
 .conteudo .ordenar-listagem .input-append:first-child {
@@ -3719,6 +3722,17 @@ a {
 
 .conteudo.span9.no-results>.row-fluid .span6 ol {
    margin: 0 0 32px;
+}
+
+.conteudo.span9.no-results>.row-fluid .span6 ol li {
+   font-size: 14px;
+   color: #000;
+}
+
+.pagina-busca p b {
+   font-size: 16px;
+   font-weight: normal;
+   color: #000;
 }
 
 .pagina-carrinho .caixa-destaque h1:before {
@@ -5188,6 +5202,37 @@ form#formCalcularFrete {
 #comprar-ajax-status .sucesso #carrinho-mini .scroll {
    max-height: fit-content;
    overflow: initial;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr #usarCupom {
+   color: #000;
+   background: #fff !important;
+   border: 1px solid #d8d8d8 !important;
+   margin-right: 10px;
+   height: 36px !important;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr form label.control-label b {
+   font-weight: 400;
+   font-size: 14px;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr form label.control-label {
+   height: 36px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+#carrinho-mini .tabela-carrinho tbody tr form .btn {
+   background: #f1f1f1;
+   box-shadow: var(--shadow-button);
+   border-radius: var(--border-radius-md);
+   height: 35px;
+   color: #000000;
+   font-weight: 500;
 }
 
 .tabela-carrinho .quantidade {
