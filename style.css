@@ -3401,9 +3401,9 @@ a {
 
 .conteudo .ordenar-listagem .input-append:first-child {
    box-shadow: var(--shadow-button);
-   background: #f1f1f1;
+   background: var(--color-secondary);
    font-size: 14px;
-   color: #000 !important;
+   color: var(--color-white);
    line-height: 20px;
    padding: 8px 16px;
    width: fit-content;
@@ -5513,7 +5513,7 @@ form#formCalcularFrete {
    box-shadow: 0 0 30px rgba(0,0,0,.2);
    border: 0;
    left: auto;
-   right: 0;
+   right: -15px;
 }
 
 .dropdown-menu>li>a {
