@@ -3472,6 +3472,10 @@ a {
    padding: 0;
 }
 
+.pagina-categoria .banner-map-group {
+   margin: 0;
+}
+
 .produto .principal .acoes-produto .icon-shopping-cart:before {
    background: var(--icon-purchase);
    background-size: 100%;
