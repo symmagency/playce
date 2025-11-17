@@ -2083,7 +2083,7 @@ modal-review .actions button {
 }
 
 #AdicionarFavoritoSucessoModal .modal-body {
-   color: #fff;
+   color: #000;
    font-size: 14px;
 }
 
@@ -2093,7 +2093,7 @@ modal-review .actions button {
 
 div#AdicionarFavoritoSucessoModal .modal-header {
    font-size: 18px;
-   color: #fff;
+   color: #000;
    font-weight: 500;
 }
 
