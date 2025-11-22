@@ -5639,6 +5639,12 @@ div#login-content > .identificacao {
    justify-content: flex-start;
 }
 
+.caixa-dados .titulo {
+   font-size: 16px;
+   color: var(--color-black);
+   padding: 10px 0;
+}
+
 @media screen and (max-width: 768px) {
 
    .finalizar-compra .caixa-sombreada {
@@ -5682,6 +5688,11 @@ div#login-content > .identificacao {
    box-shadow: none;
    border: 1px solid #d8d8d8;
    border-radius: 8px;
+}
+
+.conta-menu .menu-simples > li:nth-child(2),
+.conta-menu .menu-simples > li:nth-child(6) {
+    display: none;
 }
 
 .conta-menu * {
