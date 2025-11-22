@@ -2397,7 +2397,7 @@ a {
     list-style: none;
     font-size: 14px;
     line-height: 30px;
-    opacity: .7;
+    opacity: 1;
 }
 
 .links-rodape {
@@ -2461,7 +2461,7 @@ a {
 #rodape .info-section p {
    font-size: 14px;
    line-height: 20px;
-   opacity: .7;
+   opacity: 1;
    display: flex;
    flex-direction: column;
 }
@@ -3191,7 +3191,7 @@ a {
 }
 
 .carrinho-interno li {
-   padding: 10px;
+   padding: 10px 20px 10px 10px;
    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
@@ -3248,7 +3248,7 @@ a {
 
 .carrinho-interno>div>span>span {
    display: flex;
-   color: --color-black;
+   color: var(--color-black);
    justify-content: space-between;
    text-transform: uppercase;
    font-size: 16px;
@@ -3318,7 +3318,7 @@ a {
 .breadcrumbs ul li a {
    align-items: center;
    display: flex;
-   color: rgba(0,0,0,1);
+   color: rgba(0,0,0,.7);
    font-weight: 400;
    padding: 0;
 }
@@ -3477,7 +3477,7 @@ a {
 
 .pagina-categoria .breadcrumbs ul li strong {
    color: var(--color-black);
-   font-weight: 400;
+   font-weight: 600;
    padding: 0;
 }
 
@@ -5554,6 +5554,10 @@ form#formCalcularFrete {
 .dropdown-menu>li>a {
    padding: 8px 24px;
    font-size: 14px;
+}
+
+.dropdown-menu>li:hover>a i {
+   color: #fff;
 }
 
 .tema-transparente .identificacao .identificacao-inner {
