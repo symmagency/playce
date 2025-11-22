@@ -352,7 +352,7 @@ input[type="text"]:focus {
 }
 
 /* Estilos do carrinho */
-.icon-shopping-cart:before {
+#cabecalho .icon-shopping-cart:before {
    content: "";
    background: var(--icon-cart);
    width: 20px;
