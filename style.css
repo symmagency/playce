@@ -3338,6 +3338,7 @@ a {
 
 .breadcrumbs ul li:last-child a {
    color: rgba(0,0,0,1);
+   font-weight: 600;
 }
 
 .breadcrumbs ul li:not(:last-child):after {
