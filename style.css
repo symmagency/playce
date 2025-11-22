@@ -448,6 +448,7 @@ div#avisoEnvioCart {
 .ui-autocomplete {
    border-radius: 8px;
    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+   position: fixed;
 }
 
 .ui-autocomplete .ui-menu-item .ui-corner-all {
@@ -491,9 +492,10 @@ div#avisoEnvioCart {
    height: 36px;
    background-color: var(--color-half-white);
    border-radius: var(--border-radius-md);
-   padding: 8px 16px;
+   padding: 8px 46px 8px 16px !important;
    border-color: var(--color-half-white);
    transition: all .3s;
+   text-overflow: ellipsis;
 }
 
 .icon-search:before {
@@ -1603,6 +1605,12 @@ button.qty-btn.qty-plus:hover{
 .pagina-produto .konfidency-reviews-details.conteiner .modal-review input {
    background: var(--color-white) !important;
    border: 1px solid #d8d8d8 !important;
+}
+
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review input, 
+.pagina-produto .konfidency-reviews-details.conteiner .modal-review textarea {
+   color: var(--color-black) !important;
+   font-family: "Roboto", sans-serif;
 }
 
 .pagina-produto .konfidency-reviews-details.conteiner .modal-review .actions button {
@@ -3519,6 +3527,8 @@ a {
    font-size: 14px;
    color: #000;
    transition: all .4s;
+   width: 36px;
+   justify-content: center;
 }
 
 .pagination ul>.active>a, .pagination ul>.active>span {
@@ -3530,6 +3540,7 @@ a {
 .ordenar-listagem .pagination ul {
    display: flex;
    gap: 8px;
+   box-shadow: none;
 }
 
 .ordenar-listagem .pagination {
@@ -3548,6 +3559,12 @@ a {
 
 .pagination ul>li>a:hover {
    background: var(--color-black);
+   color: var(--color-white);
+}
+
+.pagination li > a:hover .icon-double-angle-right:before {
+   background: var(--icon-chev-right);
+   background-size: 100%;
 }
 
 .pagination .icon-double-angle-right:before {
@@ -5723,6 +5740,10 @@ div#login-content > .identificacao {
    box-shadow: var(--shadow-button);
 }
 
+.caixa-dados.outros-enderecos {
+   display: none;
+}
+
 .abas-conta li a:hover {
    color: #000;
 }
@@ -5848,7 +5869,13 @@ div#login-content > .identificacao {
    margin: 0;
 }
 
-.tabela-pedidos * {
+.pagina-pedido-listar .caixa-dados .titulo {
+   padding: 16px 0;
+   font-size: 16px;
+   color: var(--color-black) !important;
+}
+
+.tabela-pedidos *:not(.text-error) {
    font-size: 14px;
    color: #000;
    font-weight: 400;
@@ -5945,6 +5972,33 @@ fieldset .span12 p {
 .pagina-pedido .abas-conteudo .row-fluid > .caixa-info {
    border: 1px solid #d8d8d8;
    border-radius: 8px;
+   display: none;
+}
+
+.pagina-pedido .caixa-dados h2.titulo {
+   font-size: 20px;
+   margin: 0 0 20px;
+}
+
+.pagina-pedido .abas-conteudo .row-fluid > .caixa-info {
+   display: none;
+}
+
+.caixa-dados hr {
+   display: none;
+}
+
+.pagina-pedido .row-fluid .span6 .caixa-info > li:last-child {
+   display: none;
+}
+
+.caixa-dados ul.caixa-info li {
+   font-size: 14px;
+   color: #000;
+}
+
+.pagina-pedido .tabela-carrinho * {
+   font-size: 14px;
 }
 
 hr {
