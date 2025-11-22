@@ -5066,9 +5066,9 @@ form#formCalcularFrete {
 }
 */
 
-.tabela-carrinho .bg-dark:not(:last-child) {
+/* .tabela-carrinho .bg-dark:not(:last-child) {
    display: none;
-}
+} */
  
 .append-controls {
    display: flex;
@@ -5632,7 +5632,11 @@ div#login-content > .identificacao {
 }
 
 .resumo-compra .tabela-carrinho .padding-preco>div.total {
-   padding: 0;
+   padding: 0 15%;
+}
+
+.resumo-compra .tabela-carrinho .padding-preco * {
+   justify-content: flex-start;
 }
 
 @media screen and (max-width: 768px) {
