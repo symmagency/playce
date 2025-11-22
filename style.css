@@ -974,7 +974,7 @@ i.icon-instagram:before {
 }
 
 .imagem-produto:not(:has(+ .badge-category-list)) .imagem-principal {
-   border-radius: 8px;
+   border-radius: 5px 0 0 5px;
  }
 
 .listagem .imagem-produto img {
@@ -3876,9 +3876,14 @@ button.about-banner-btn {
 }
 
 /* Vitrine destaque */
+
 .vitrine-23387218 + ul .slick-track:before,
 .vitrine-23387218 + ul .slick-track:after {
     display: none!important;
+}
+
+.vitrine-23387218 + ul .listagem-item .produto-sobrepor {
+   display: none!important;
 }
 
 .vitrine-23387218 + ul .slick-track {
