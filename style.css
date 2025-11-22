@@ -853,10 +853,9 @@ i.icon-instagram:before {
 .listagem-item .bandeiras-produto {
    top: 0;
    left: 0;
-   padding: 0;
    position: relative;
    display: flex;
-   padding: 20px 20px 0;
+   padding: 16px 0 0 10px;
 }
 
 .listagem-item .bandeira-prevenda,
@@ -976,7 +975,7 @@ i.icon-instagram:before {
 }
 
 .imagem-produto:not(:has(+ .badge-category-list)) .imagem-principal {
-   border-radius: 5px 0 0 5px;
+   border-radius: 5px;
  }
 
 .listagem .imagem-produto img {
@@ -2014,7 +2013,7 @@ modal-review .actions button {
 .lista-favoritos {
    background: none;
    font-size: 16px;
-   display: flex!important;
+   display: none!important;
    flex-direction: row-reverse;
    width: fit-content;
    gap: 10px;
@@ -2157,6 +2156,7 @@ div#AdicionarFavoritoSucessoModal .modal-header {
    display: flex;
    gap: 10px;
    align-items: center;
+   height: 36px;
 }
 
 .append-share-fav > a {
@@ -3972,11 +3972,11 @@ button.about-banner-btn {
     max-height: 128px;
 }
 
-.vitrine-23387218 + ul .imagem-produto img {
+.vitrine-23387218 + ul .imagem-produto img.imagem-principal {
     height: 100%;
     max-height: inherit;
     width: auto;
-    border-radius: 0;
+    border-radius: 5px 0 0 5px !important;
 }
 
 .vitrine-23387218 + ul .info-produto {
@@ -5467,6 +5467,14 @@ form#formCalcularFrete {
 
 .menu-user-logged .botao {
    height: 40px !important;
+}
+
+.menu-user-logged.btn-group:hover .dropdown-menu {
+   display: block;
+}
+
+.menu-user-logged.btn-group:hover .dropdown-menu > li:nth-child(3) {
+   display: none;
 }
 
 .menu-user-logged span.icon-chevron-down:before {
