@@ -1024,34 +1024,12 @@ $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
 
-$(function () {
-    // Só desktop
-    if ($(window).width() <= 768) return;
-  
-    var $menuOriginal = $('.menu.superior > .nivel-um').first();
-    if (!$menuOriginal.length) return;
-  
-    // Se já criamos o submenu antes, não faz nada
-    if ($menuOriginal.data('submenuCloneAdded')) return;
-    $menuOriginal.data('submenuCloneAdded', true);
-  
-    // Clona o menu e remove possíveis clones internos
-    var $menuClonado = $menuOriginal.clone(true, true);
-    $menuClonado.find('.submenu-clone').remove();
-  
-    // Usa <li> em vez de <div>, já que está dentro de um <ul>
-    var $novoItem = $(`
-      <li class="submenu-clone">
+$('.menu.superior .nivem-um').append(`
+    <li class="submenu-clone">
         <span>Categorias<i class="icon-chevron-down"></i></span>
-      </li>
-    `);
-  
-    // Coloca o menu clonado dentro do novo item
-    $novoItem.append($menuClonado);
-  
-    // Joga o item no topo do menu original
-    $menuOriginal.prepend($novoItem);
-  });
+    </li>
+`);
+$('.menu.superior > .nivel-um').clone().appendTo($('.menu.superior .submenu-clone'));
   
 
 
