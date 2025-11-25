@@ -1034,9 +1034,9 @@ $(function() {
   
     // Insere o item "Categorias"
     $menu.prepend(`
-      <li class="submenu-clone">
+      <div class="submenu-clone">
         <span>Categorias<i class="icon-chevron-down"></i></span>
-      </li>
+      </div>
     `);
   
     // Clona o menu original
