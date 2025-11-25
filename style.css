@@ -5236,7 +5236,7 @@ form#formCalcularFrete {
    max-height: fit-content;
    overflow: initial;
 }
-#carrinho-mini .tabela-carrinho tbody tr #usarCupom {
+.tabela-carrinho tbody tr #usarCupom {
    color: #000 !important;
    background: #fff !important;
    border: 1px solid #d8d8d8 !important;
@@ -5283,6 +5283,10 @@ form#formCalcularFrete {
    align-items: center;
    justify-content: center;
    position: relative;
+}
+
+.pagina-carrinho .tabela-carrinho .bg-dark form {
+   justify-content: flex-start;
 }
 
 
