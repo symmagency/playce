@@ -1024,7 +1024,7 @@ $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
 
-if(window.innerWidth > 768) {
+if ($(window).width() > 768) {
     var menuOriginal = $('.nivel-um');
     
     // Clona o menu inteiro
