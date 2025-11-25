@@ -1024,22 +1024,35 @@ $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
 
-if ($(window).width() > 768 && !$('.menu.superior .submenu-clone').length) {
-    var menuOriginal = $('.menu.superior > .nivel-um');
-
-    // Clona o menu inteiro e remove possíveis clones internos
-    var menuClonado = menuOriginal.clone(true, true);
-    menuClonado.find('.submenu-clone').remove();
-
-    // Cria o "li" do submenu (idealmente um <li>, não <div>)
-    var novoLi = $('<li class="submenu-clone"><span>Categorias<i class="icon-chevron-down"></i></span></li>');
-
-    // Insere o menu clonado dentro desse li
-    novoLi.append(menuClonado);
-
-    // Insere esse li dentro do menu original
-    menuOriginal.prepend(novoLi);
-}
+$(function () {
+    // Só desktop
+    if ($(window).width() <= 768) return;
+  
+    var $menuOriginal = $('.menu.superior > .nivel-um').first();
+    if (!$menuOriginal.length) return;
+  
+    // Se já criamos o submenu antes, não faz nada
+    if ($menuOriginal.data('submenuCloneAdded')) return;
+    $menuOriginal.data('submenuCloneAdded', true);
+  
+    // Clona o menu e remove possíveis clones internos
+    var $menuClonado = $menuOriginal.clone(true, true);
+    $menuClonado.find('.submenu-clone').remove();
+  
+    // Usa <li> em vez de <div>, já que está dentro de um <ul>
+    var $novoItem = $(`
+      <li class="submenu-clone">
+        <span>Categorias<i class="icon-chevron-down"></i></span>
+      </li>
+    `);
+  
+    // Coloca o menu clonado dentro do novo item
+    $novoItem.append($menuClonado);
+  
+    // Joga o item no topo do menu original
+    $menuOriginal.prepend($novoItem);
+  });
+  
 
 
 });
