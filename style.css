@@ -3385,6 +3385,7 @@ a {
 .conteudo .ordenar-listagem.topo .row-fluid {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .ordenar-listagem.topo {
@@ -5472,6 +5473,7 @@ form#formCalcularFrete {
 
 .menu-user-logged.btn-group:hover .dropdown-menu {
    display: block;
+   margin: 0;
 }
 
 .menu-user-logged.btn-group:hover .dropdown-menu > li:nth-child(3) {
