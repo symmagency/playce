@@ -1023,7 +1023,7 @@ const html = $(this).html();
 $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
-    $('.menu.superior .nivel-um').append(`
+    $('.menu.superior > .nivel-um').prepend(`
         <li class="submenu-clone">
             <span>Categorias<i class="icon-chevron-down"></i></span>
         </li>
