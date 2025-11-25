@@ -1823,12 +1823,12 @@ modal-review .actions button {
    border: 1px solid #20232620;
    padding: 0 0 20px;
    border-radius: 10px;
-   max-width: 205px;
+   max-width: 180px;
    z-index: 1;
 }
 
 .compre-junto__imagem img {
-   width: 100%;
+   /* width: 100%; */
    height: auto;
    border-radius: 10px 10px 0 0;
 }
@@ -1851,6 +1851,7 @@ modal-review .actions button {
    width: 36px;
    left: 10px;
    top: 10px;
+   display: none;
 }
 
 .compre-junto__selecionar input:checked::after {
@@ -1931,6 +1932,8 @@ modal-review .actions button {
 
 .compre-junto__nome a {
    color: var(--color-black);
+   font-weight: 400;
+   font-size: 16px;
 }
 
 .compre-junto__resumo {
@@ -1990,7 +1993,7 @@ modal-review .actions button {
    display: flex;
    align-items: center;
    justify-content: center;
-   left: -52px;
+   left: -80px;
    box-shadow: 1px 1px 11px rgba(0, 0, 0, .2);
 }
 
@@ -2006,8 +2009,8 @@ modal-review .actions button {
 }
 
 .compre-junto__preco--promocional, .compre-junto__preco--promocional:empty+.compre-junto__preco--regular {
-   font-size: 18px;
-   color: var(--color-black);
+   font-size: 20px;
+   color: var(--color-primary);
 }
 
 .lista-favoritos {
