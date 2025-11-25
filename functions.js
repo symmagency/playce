@@ -1023,13 +1023,33 @@ const html = $(this).html();
 $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
-    $('.menu.superior > .nivel-um').prepend(`
-        <li class="submenu-clone">
-            <span>Categorias<i class="icon-chevron-down"></i></span>
-        </li>
+$(function() {
+
+    if ($(window).width() <= 768) return;
+  
+    const $menu = $('.menu.superior > .nivel-um');
+  
+    // Se já existir, não faz nada
+    if ($menu.find('> .submenu-clone').length) return;
+  
+    // Insere o item "Categorias"
+    $menu.prepend(`
+      <li class="submenu-clone">
+        <span>Categorias<i class="icon-chevron-down"></i></span>
+      </li>
     `);
-    $('.menu.superior > .nivel-um').clone().appendTo($('.menu.superior > .nivel-um > .submenu-clone'));
+  
+    // Clona o menu original
+    const $menuClonado = $menu.clone();
+  
+    // Remove o submenu-clone de dentro do clone (pra evitar loop infinito)
+    $menuClonado.find('.submenu-clone').remove();
+  
+    // Joga dentro do submenu-clone
+    $menu.find('> .submenu-clone').append($menuClonado);
+  
+  });
+  
 
 
 });
- 
