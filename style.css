@@ -1510,6 +1510,31 @@ form.avise-me-form {
    padding: 0;
 }
 
+.avise-me .avise-input .avise-email, .avise-me .avise-input .avise-nome {
+   background: #fff!important;
+   border: 1px solid #d8d8d8!important;
+   box-shadow: none;
+   color: #000!important;
+   text-overflow: ellipsis;
+   margin: 0;
+   width: 100%;
+}
+
+.avise-me .avise-input .span7 .avise-icon {
+   display: none;
+}
+
+.avise-me .avise-input .controls {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.avise-me .avise-input .span7 {
+   margin: 0!important;
+   width: 100%;
+}
+
 .produto .principal .gateways-rodape {
    background: none;
    margin: 20px 0 0;
