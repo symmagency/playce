@@ -1023,4 +1023,21 @@ const html = $(this).html();
 $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
+
+if(window.innerWidth > 768) {
+    var menuOriginal = $('.nivel-um');
+    
+    // Clona o menu inteiro
+    var menuClonado = menuOriginal.clone(true, true);
+
+    // Cria um novo LI
+    var novoLi = $('<div class="submenu-clone"><span>Categorias<i class="icon-chevron-down"></i></span></div>');
+
+    // Insere o menu clonado dentro desse li
+    novoLi.append(menuClonado);
+
+    // Insere esse li dentro do menu original
+    menuOriginal.prepend(novoLi);
+}
+
 });
