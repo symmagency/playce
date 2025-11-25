@@ -1025,7 +1025,7 @@ $(this).html(html.replace('Frete:', 'Envio:'));
 
 
 if ($(window).width() > 768) {
-    var menuOriginal = $('.nivel-um');
+    var menuOriginal = $('.menu.superior > .nivel-um');
     
     // Clona o menu inteiro
     var menuClonado = menuOriginal.clone(true, true);
