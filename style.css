@@ -3782,6 +3782,10 @@ a {
    padding: 0 !important;
 }
 
+.tabela-carrinho .formas-envio {
+   display: none;
+}
+
 .tabela-carrinho .quantidade input[type="text"]:focus {
    box-shadow: none;
 }
@@ -5243,12 +5247,12 @@ form#formCalcularFrete {
    width: 140px;
 }
 
-#carrinho-mini .tabela-carrinho tbody tr form label.control-label b {
+ .tabela-carrinho tbody tr form label.control-label b {
    font-weight: 400;
    font-size: 14px;
 }
 
-#carrinho-mini .tabela-carrinho tbody tr form label.control-label {
+.tabela-carrinho tbody tr form label.control-label {
    height: 36px;
    margin: 0;
    padding: 0;
@@ -5257,7 +5261,7 @@ form#formCalcularFrete {
    align-items: center;
 }
 
-#carrinho-mini .tabela-carrinho tbody tr form .btn {
+.tabela-carrinho tbody tr form .btn {
    background: #f1f1f1;
    box-shadow: var(--shadow-button);
    border-radius: var(--border-radius-md);
