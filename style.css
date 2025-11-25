@@ -1492,6 +1492,24 @@ i.icon-instagram:before {
    max-width: 90px;
 }
 
+.pagina-produto .produto div.principal .avise-nome {
+   display: block;
+   width: 100%;
+   height: 300px;
+}
+
+form.avise-me-form {
+   margin: 0;
+}
+
+.produto .principal:has(.avise-me) .gateways-rodape {
+   display: none;
+}
+
+.produto div.principal:has(.avise-me) .acoes-produto {
+   padding: 0;
+}
+
 .produto .principal .gateways-rodape {
    background: none;
    margin: 20px 0 0;
