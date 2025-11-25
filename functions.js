@@ -1023,30 +1023,12 @@ const html = $(this).html();
 $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
-$(function () {
-
-    if ($(window).width() <= 768) return;
-  
-    // Evita duplicar se já existir
-    if ($('.menu.superior .submenu-clone').length) return;
-  
-    // Insere o LI
-    $('.menu.superior > .nivel-um').append(`
-      <li class="submenu-clone">
-          <span>Categorias<i class="icon-chevron-down"></i></span>
-      </li>
+    $('.menu.superior .nivel-um').append(`
+        <li class="submenu-clone">
+            <span>Categorias<i class="icon-chevron-down"></i></span>
+        </li>
     `);
-  
-    // Clona o menu principal
-    const menuClonado = $('.menu.superior > .nivel-um').first().clone();
-  
-    // Remove o próprio clone de dentro do clone (evita loop)
-    menuClonado.find('.submenu-clone').remove();
-  
-    // Insere o clone dentro do submenu
-    $('.menu.superior .submenu-clone').append(menuClonado);
-  
-  });
-  
+    $('.menu.superior > .nivel-um').clone().appendTo($('.menu.superior .submenu-clone'));
+
 
 });
