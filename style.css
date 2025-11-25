@@ -6122,6 +6122,8 @@ hr {
 
 /* MENU SUPERIOR */
 
+@media screen and (min-width: 768px) {
+
 /* Base do ícone */
 .menu.superior .nivel-um > li > a > strong::before {
 	content: '';
@@ -6384,4 +6386,6 @@ hr {
 .submenu-clone .nivel-um > li.categoria-id-23387218 {
 	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/gift.png);
 	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/gift.png);
+}
+
 }
