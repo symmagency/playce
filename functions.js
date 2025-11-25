@@ -1024,7 +1024,7 @@ $(this).html(html.replace('Frete:', 'Envio:'));
 });
 
 if ($(window).width() > 768) {
-    $('.menu.superior .nivem-um').append(`
+    $('.menu.superior .nivel-um').append(`
         <li class="submenu-clone">
             <span>Categorias<i class="icon-chevron-down"></i></span>
         </li>
