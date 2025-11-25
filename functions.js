@@ -1028,7 +1028,8 @@ $(this).html(html.replace('Frete:', 'Envio:'));
             <span>Categorias<i class="icon-chevron-down"></i></span>
         </li>
     `);
-    $('.menu.superior > .nivel-um').clone().appendTo($('.menu.superior > .submenu-clone'));
+    $('.menu.superior > .nivel-um').clone().appendTo($('.menu.superior > .nivel-um > .submenu-clone'));
 
 
 });
+ 
