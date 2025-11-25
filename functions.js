@@ -1010,6 +1010,17 @@ if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0)
     `);
 }
 
+// Caso 1: Frete dentro de span
+$('.tr-checkout-frete td.text-right span').each(function() {
+if ($(this).text().trim() === 'Frete:') {
+    $(this).text('Envio:');
+}
+});
 
+// Caso 2: Frete como texto direto dentro do td.subtotal
+$('td.subtotal').each(function() {
+const html = $(this).html();
+$(this).html(html.replace('Frete:', 'Envio:'));
+});
 
 });
