@@ -33,9 +33,9 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
     <div class="info-section">
     <span class="titulo">Atendimento</span>
     <p>
-        <strong>Horário de atendimento</strong> <span>Todos os dias, das 09h às 22h</span>
-        <strong>Envie uma mensagem:</strong> <span>contato@playce.com.br <br> Playce - Games e Gift cards </span>
-        <strong>Estamos no WhatsApp:</strong> <span>(61) 9 9684-1445</span> 
+        <div><img alt"Horário de atendimento" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-clock.svg"/><div><strong>Horário de atendimento</strong> <span>Todos os dias, das 09h às 22h</span></div></div>
+        <div><strong>Envie uma mensagem:</strong> <div><img alt"Envie uma mensagem" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-envelope.svg"/><div><span>contato@playce.com.br <br> Playce - Games e Gift cards </span></div></div></div>
+        <div><img alt"WhatsApp" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-whatsapp.svg"/><div><strong>Estamos no WhatsApp:</strong> <span>(61) 9 9684-1445</span></div></div>
     </p>
     </div>
     
