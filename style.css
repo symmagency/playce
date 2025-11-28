@@ -1502,6 +1502,26 @@ form.avise-me-form {
    margin: 0;
 }
 
+.listagem-item .produto-avise .avise-me-list {
+   background: #fff;
+}
+
+.listagem-item .produto-avise .avise-me-list .avise-me-list-descr {
+   color: #000;
+}
+
+.listagem-item .produto-avise .avise-me-list .avise-me-list-btn {
+   margin: 15px auto 0;
+}
+
+.listagem-item .bandeiras-produto .bandeira-indisponivel {
+   border: 0;
+   outline: none;
+   box-shadow: none;
+   border-radius: 4px;
+   background: #e9222b;
+}
+
 .produto .principal:has(.avise-me) .gateways-rodape {
    display: none;
 }
@@ -3629,6 +3649,11 @@ a {
    background: var(--icon-chev-left-black);
    width: 20px;
    height: 20px;
+   background-size: 100%;
+}
+
+.pagination li > a:hover .icon-double-angle-left:before {
+   background: var(--icon-chev-left);
    background-size: 100%;
 }
 
@@ -5833,6 +5858,13 @@ div#login-content > .identificacao {
    color: #000;
 }
 
+#id_email_recuperar_senha {
+   background: #fff !important;
+   border: 1px solid #d8d8d8 !important;
+   box-shadow: none;
+   color: #000 !important;
+}
+
 .abas-conta {
    display: flex;
    gap: 0;
@@ -6167,6 +6199,10 @@ hr {
 
 @media screen and (min-width: 768px) {
 
+   .menu.superior > .nivel-um>li:hover .nivel-dois {
+      box-shadow: 0 9999px 0px 9999px rgba(0, 0, 0, 0.3);
+  }
+
 /* Base do ícone */
 .menu.superior .nivel-um > li > a > strong::before {
 	content: '';
@@ -6175,7 +6211,7 @@ hr {
 	display: block;
 	background: no-repeat center;
 	background-image: var(--icon-normal);
-	image-rendering: pixelated;
+	/* image-rendering: pixelated; */
 }
 
 /* Ícone no hover */
