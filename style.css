@@ -2435,6 +2435,7 @@ a {
 
 #barraNewsletter .componente {
    padding: 0;
+   margin: 0;
 }
 
 #barraNewsletter.posicao-rodape .componente .interno:before {
@@ -2562,6 +2563,30 @@ a {
 
 #rodape .append-support {
    flex: 1;
+}
+
+.append-support .info-section > div {
+   margin-bottom: 12px;
+}
+
+.append-support .info-section > div:not(.info-section > div:nth-child(4)) {
+   display: flex;
+   gap: 8px;
+}
+
+.append-support .info-section > div:not(.info-section > div:nth-child(4)) > div {
+   display: flex;
+   flex-direction: column;
+}
+
+.append-support .info-section > div:nth-child(4) {
+   display: flex;
+   flex-direction: column;
+}
+
+.append-support .info-section > div:nth-child(4) > div {
+   display: flex;
+   gap: 8px;
 }
 
 #rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid {
