@@ -124,38 +124,38 @@ $slider.slick({
 // Categorias home
 var categorias = [
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-playstation.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c.svg",
         alt: "Categoria PlayStation",
         link: "/playstation",
         nome: "PlayStation"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-xbox.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c.svg",
         alt: "Categoria Xbox",
         link: "/google",
         nome: "Xbox"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-nintendo.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c.svg",
         alt: "Categoria Nintendo",
         link: "/nintendo",
         nome: "Nintendo"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-apple.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c.svg",
         alt: "Categoria Apple",
         link: "/apple",
         nome: "Apple"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-roblox.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c.svg",
         alt: "Categoria Roblox",
-        link: "/xbox",
+        link: "/roblox",
         nome: "Roblox"
     },
 
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-fortinite.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c.svg",
         alt: "Categoria V-bucks",
         link: "/v-bucks",
         nome: "Fortnite"
@@ -167,19 +167,19 @@ var categorias = [
         nome: "Netflix"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-icon.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg",
         alt: "Categoria Spotify",
         link: "/spotify",
         nome: "Spotify"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/icon-steam.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c.svg",
         alt: "Categoria steam",
         link: "/Steam",
         nome: "Steam"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-icon.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c.svg",
         alt: "Categoria Gift Cards",
         link: "/gift-cards",
         nome: "Gift Cards"
