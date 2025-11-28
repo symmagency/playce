@@ -845,7 +845,7 @@ i.icon-instagram:before {
 }
 
 .categorias-section li img {
-   filter: grayscale(1) contrast(4);
+   filter: grayscale(1);
    transition: all .3s;
 }
 
