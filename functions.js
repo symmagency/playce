@@ -1052,6 +1052,25 @@ $(function() {
 
   $('.pagina-categoria .ordenar-listagem.topo').append($('.coluna > .componente > .interno'));
   
+  $('.tabela-pedidos tbody tr').each(function () {
+
+    const $linha = $(this);
+
+    // Pega o texto de todos os <b> da linha
+    const textoStatus = $linha.find('b').text().toLowerCase().trim();
+
+    // Verifica se contém exatamente "pedido entregue"
+    if (textoStatus.includes('pedido entregue')) {
+
+      const $linkPedido = $linha.find('td:first-child > a');
+
+      // Evita duplicar o botão
+      if ($linkPedido.find('.btn-resgatar').length === 0) {
+        $linkPedido.append('<span class="btn-resgatar">Resgatar</span>');
+      }
+    }
+
+  });
 
 
 });

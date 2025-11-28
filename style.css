@@ -6052,6 +6052,15 @@ div#login-content > .identificacao {
     border: 0;
 }
 
+.tabela-pedidos .btn-resgatar {
+   background: var(--color-primary);
+   color: #fff;
+   border-radius: var(--border-radius-md);
+   padding: 2px 8px;
+   box-shadow: var(--shadow-button);
+   margin-left: 10px;
+}
+
 .caixa-destaque p {
    font-size: 14px;
 }
