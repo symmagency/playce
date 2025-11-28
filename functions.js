@@ -161,13 +161,13 @@ var categorias = [
         nome: "Fortnite"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-icon.png",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg",
         alt: "Categoria Netflix",
         link: "/netflix",
         nome: "Netflix"
     },
     {
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg",
+        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c.svg",
         alt: "Categoria Spotify",
         link: "/spotify",
         nome: "Spotify"
