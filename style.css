@@ -2042,6 +2042,16 @@ modal-review .actions button {
    font-weight: normal;
 }
 
+.compre-junto__titulo:after {
+   content: "Aproveite e leve mais por menos";
+   font-size: 16px;
+   font-weight: normal;
+   display: block;
+   margin: 0;
+   line-height: 20px;
+   opacity: .7;
+}
+
 .compre-junto__resumo:before {
    content: '=';
    position: absolute;
@@ -3456,6 +3466,15 @@ a {
 
 .ordenar-listagem.topo {
    border: 0;
+}
+
+.ordenar-listagem .interno h4.titulo.cor-secundaria {
+   display: none!important;
+}
+
+.pagina-categoria .ordenar-listagem p {
+   font-size: 14px;
+   color: #000;
 }
 
 .listagem .listagem-linha li {

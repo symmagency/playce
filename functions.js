@@ -1049,6 +1049,8 @@ $(function() {
     $menu.find('> .submenu-clone').append($menuClonado);
   
   });
+
+  $('.pagina-categoria .ordenar-listagem.topo').append($('.coluna > .componente > .interno'));
   
 
 
