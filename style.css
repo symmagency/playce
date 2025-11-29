@@ -849,7 +849,7 @@ i.icon-instagram:before {
    transition: all .3s;
 }
 
-.categorias-section li:hover img {
+.categorias-section li a:hover img {
    filter: none;
 }
 
@@ -3036,7 +3036,7 @@ a {
    max-width: fit-content;
 }
 
-.categorias-section li.slick-slide:hover a {
+.categorias-section li.slick-slide a:hover {
    font-weight: 600;
 }
 
