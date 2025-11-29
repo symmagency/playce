@@ -1992,7 +1992,7 @@ modal-review .actions button {
    display: flex;
    align-items: center;
    justify-content: center;
-   left: -16px;
+   left: -23.5%;
    box-shadow: 1px 1px 11px rgba(0,0,0,.2);
 }
 
@@ -2091,6 +2091,7 @@ modal-review .actions button {
 
 .compre-junto .slick-track {
    display: flex;
+   justify-content: space-between;
 }
 
 .compre-junto__titulo {
@@ -2098,7 +2099,7 @@ modal-review .actions button {
    font-weight: normal;
 }
 
-.compre-junto__titulo:after {
+.compre-junto__titulo .compre-junto__subtitulo {
    content: "Aproveite e leve mais por menos";
    font-size: 16px;
    font-weight: normal;
@@ -2122,7 +2123,7 @@ modal-review .actions button {
    display: flex;
    align-items: center;
    justify-content: center;
-   left: -80px;
+   left: -22%;
    box-shadow: 1px 1px 11px rgba(0, 0, 0, .2);
 }
 
@@ -2366,6 +2367,10 @@ div#AdicionarFavoritoSucessoModal .modal-header {
    background: linear-gradient(270deg, var(--color-white) 0,rgb(255, 255, 255,0) 100%)
 }
 
+.compre-junto .slick-track:before, .compre-junto .slick-track:after {
+   display: none;
+}
+
 /* Rodapé */
 
 .lista-redes ul li.visible-phone {
@@ -2581,6 +2586,15 @@ a {
 
 #rodape .append-support {
    flex: 1;
+   font-size: 14px;
+}
+
+.append-support strong {
+   margin-bottom: 4px;
+}
+
+.append-support .info-section > div {
+   margin-bottom: 18px;
 }
 
 .append-support .info-section > div {
