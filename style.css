@@ -3033,6 +3033,7 @@ a {
    color: #000;
    gap: 10px;
    transition: all .3s;
+   max-width: fit-content;
 }
 
 .categorias-section li.slick-slide:hover a {
@@ -3050,6 +3051,8 @@ a {
 .categorias-section .slick-slide {
    max-width: 177px;
    margin: 0 12px;
+   display: flex !important;
+   justify-content: center;
 }
 
 .slick-slide {
