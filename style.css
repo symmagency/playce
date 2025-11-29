@@ -4851,6 +4851,25 @@ h2.bn-featured-title {
    padding: 0 32px 24px;
 }
 
+.menu.superior > .nivel-um li .nivel-dois {
+   max-height: 368px;
+   overflow-y: scroll;
+}
+
+/* Scrollbar Chrome, Edge, Safari */
+.menu.superior > .nivel-um li .nivel-dois::-webkit-scrollbar {
+   width: 6px;
+ }
+ 
+ .menu.superior > .nivel-um li .nivel-dois::-webkit-scrollbar-track {
+   background: #d9d9d9;
+ }
+ 
+ .menu.superior > .nivel-um li .nivel-dois::-webkit-scrollbar-thumb {
+   background: var(--color-primary);
+   border-radius: 0px;
+ }
+
 .account-menu {
    display: flex;
    flex-direction: column;
