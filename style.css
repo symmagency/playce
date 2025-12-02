@@ -3064,6 +3064,7 @@ a {
    width: 32px;
    height: 32px;
    display: block;
+   opacity: .7;
 }
 
 .categorias-section .nome-categoria {
@@ -3083,6 +3084,7 @@ a {
 }
 .categorias-section .cat-playstation:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-xbox .nome-categoria:before {
@@ -3090,6 +3092,7 @@ a {
 }
 .categorias-section .cat-xbox:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-nintendo .nome-categoria:before {
@@ -3097,6 +3100,7 @@ a {
 }
 .categorias-section .cat-nintendo:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-apple .nome-categoria:before {
@@ -3104,6 +3108,7 @@ a {
 }
 .categorias-section .cat-apple:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-roblox .nome-categoria:before {
@@ -3111,6 +3116,7 @@ a {
 }
 .categorias-section .cat-roblox:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-fortnite .nome-categoria:before {
@@ -3118,6 +3124,7 @@ a {
 }
 .categorias-section .cat-fortnite:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-netflix .nome-categoria:before {
@@ -3125,6 +3132,7 @@ a {
 }
 .categorias-section .cat-netflix:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-spotify .nome-categoria:before {
@@ -3132,6 +3140,7 @@ a {
 }
 .categorias-section .cat-spotify:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-steam .nome-categoria:before {
@@ -3139,6 +3148,7 @@ a {
 }
 .categorias-section .cat-steam:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c.svg) center no-repeat;
+   opacity: 1;
 }
 
 .categorias-section .cat-gift-cards .nome-categoria:before {
@@ -3146,6 +3156,7 @@ a {
 }
 .categorias-section .cat-gift-cards:hover .nome-categoria:before {
    background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c.svg) center no-repeat;
+   opacity: 1;
 }
 
  /* Página de produto  */
