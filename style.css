@@ -3036,9 +3036,9 @@ a {
    max-width: fit-content;
 }
 
-.categorias-section li.slick-slide a:hover {
+/* .categorias-section li.slick-slide a:hover {
    font-weight: 600;
-}
+} */
 
 .categorias-section ul {
    margin: 0 !important;
