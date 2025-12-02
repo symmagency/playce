@@ -4122,6 +4122,11 @@ a {
    background: #f7f7f7;
 }
 
+
+.tabela-carrinho .cupom-valor .muted {
+   display: none;
+}
+
 .meus-favoritos table .text-left * {
    color: #000;
    font-size: 14px;
