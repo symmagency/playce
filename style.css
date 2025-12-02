@@ -4079,6 +4079,49 @@ a {
    margin: 0 auto;
 }
 
+.pagina-carrinho .remover-cupom::before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/trash-red.svg) center no-repeat;
+}
+
+.pagina-carrinho .remover-cupom::before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/trash-red.svg) center no-repeat;
+}
+
+.tabela-carrinho .cupom-sucesso .cupom-codigo {
+   border: 1px dashed #b2b2b2;
+   color: #289d26;
+   background: none;
+   font-weight: bold;
+   margin-left: 10px;
+}
+
+.pagina-carrinho .cupom-sucesso b {
+   font-size: 16px;
+   font-weight: normal;
+}
+
+.tabela-carrinho .cupom-valor #cupom_desconto {
+   color: #000;
+   display: flex;
+   flex-direction: row;
+}
+
+.tabela-carrinho .cupom-valor {
+   display: flex;
+   gap: 4px;
+   justify-content: flex-end;
+}
+
+.tabela-carrinho .possui-cupom {
+   background: #f7f7f7;
+}
+
 .meus-favoritos table .text-left * {
    color: #000;
    font-size: 14px;
