@@ -3059,6 +3059,95 @@ a {
    box-sizing: border-box;
  }
 
+ .categorias-section .nome-categoria:before {
+   content: "";
+   width: 32px;
+   height: 32px;
+   display: block;
+}
+
+.categorias-section .nome-categoria {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.categorias-section .nome-categoria:before {
+   transition: all .3s;
+}
+
+.categorias-section .cat-playstation .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-playstation:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-xbox .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-xbox:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-nintendo .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-nintendo:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-apple .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-apple:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-roblox .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-roblox:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-fortnite .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-fortnite:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-netflix .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-netflix:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-spotify .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-spotify:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-steam .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-steam:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c.svg) center no-repeat;
+}
+
+.categorias-section .cat-gift-cards .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c-b.svg) center no-repeat;
+}
+.categorias-section .cat-gift-cards:hover .nome-categoria:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c.svg) center no-repeat;
+}
+
  /* Página de produto  */
 
  .descricao-produto .tabela-infos td:last-child {
