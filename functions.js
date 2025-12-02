@@ -121,94 +121,64 @@ $slider.slick({
         ]
 });
 
-// Categorias home
+// Categorias home (sem imagens)
 var categorias = [
     {
         // PlayStation
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c-h.svg",
-        alt: "Categoria PlayStation",
         link: "/playstation",
         nome: "PlayStation",
         classe: "cat-playstation"
     },
     {
         // Xbox
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c-h.svg",
-        alt: "Categoria Xbox",
         link: "/google",
         nome: "Xbox",
         classe: "cat-xbox"
     },
     {
         // Nintendo
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c-h.svg",
-        alt: "Categoria Nintendo",
         link: "/nintendo",
         nome: "Nintendo",
         classe: "cat-nintendo"
     },
     {
         // Apple
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c-h.svg",
-        alt: "Categoria Apple",
         link: "/apple",
         nome: "Apple",
         classe: "cat-apple"
     },
     {
         // Roblox
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c-h.svg",
-        alt: "Categoria Roblox",
         link: "/roblox",
         nome: "Roblox",
         classe: "cat-roblox"
     },
     {
         // Fortnite (V-bucks)
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c-h.svg",
-        alt: "Categoria V-bucks",
         link: "/v-bucks",
         nome: "Fortnite",
         classe: "cat-fortnite"
     },
     {
         // Netflix
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c-h.svg",
-        alt: "Categoria Netflix",
         link: "/netflix",
         nome: "Netflix",
         classe: "cat-netflix"
     },
     {
         // Spotify
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c-h.svg",
-        alt: "Categoria Spotify",
         link: "/spotify",
         nome: "Spotify",
         classe: "cat-spotify"
     },
     {
         // Steam
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c-h.svg",
-        alt: "Categoria steam",
         link: "/Steam",
         nome: "Steam",
         classe: "cat-steam"
     },
     {
         // Gift Cards
-        img: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c.svg",
-        imgHover: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c-h.svg",
-        alt: "Categoria Gift Cards",
         link: "/gift-cards",
         nome: "Gift Cards",
         classe: "cat-gift-cards"
@@ -223,11 +193,6 @@ if ($('.pagina-inicial #corpo').length > 0) {
         categoriasHtml += 
             '<li>' +
                 '<a href="' + categoria.link + '" class="' + categoria.classe + '">' +
-                    '<img src="' + categoria.img + '" ' + 
-                        'data-img="' + categoria.img + '" ' +
-                        'data-img-hover="' + categoria.imgHover + '" ' +
-                        'alt="' + categoria.alt + 
-                        '" class="categoria-img" style="transition: opacity .3s;" />' +
                     '<span class="nome-categoria">' + categoria.nome + '</span>' +
                 '</a>' +
             '</li>';
@@ -237,27 +202,6 @@ if ($('.pagina-inicial #corpo').length > 0) {
     
     $('.pagina-inicial #corpo').before(categoriasHtml);
 }
-
-// Troca as imagens no hover com efeito suave de fade-out .3s
-$(document).on('mouseenter', '.categorias-section .categoria-img', function() {
-    var $img = $(this);
-    var hoverSrc = $img.attr('data-img-hover');
-    if (hoverSrc && $img.attr('src') !== hoverSrc) {
-        $img.stop(true, true).animate({opacity: 0}, 300, function() {
-            $img.attr('src', hoverSrc).animate({opacity: 1}, 300);
-        });
-    }
-});
-
-$(document).on('mouseleave', '.categorias-section .categoria-img', function() {
-    var $img = $(this);
-    var origSrc = $img.attr('data-img');
-    if (origSrc && $img.attr('src') !== origSrc) {
-        $img.stop(true, true).animate({opacity: 0}, 300, function() {
-            $img.attr('src', origSrc).animate({opacity: 1}, 300);
-        });
-    }
-});
 
 $('.categorias-section ul').slick({
     dots: false,
