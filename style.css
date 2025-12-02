@@ -1429,6 +1429,16 @@ i.icon-instagram:before {
    font-weight: 500;
 }
 
+.filtro.lista ul li.active label small {
+   color: #fff;
+}
+
+.filtro.lista ul li.active label {
+   padding: 0 16px;
+   border-radius: 6px;
+   margin-right: 10px;
+}
+
 .menu.lateral .nivel-dois>li.ativo:before {
    content: "";
    width: 5px;
