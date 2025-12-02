@@ -1421,16 +1421,12 @@ i.icon-instagram:before {
    position: relative;
 }
 
-.pagina-categoria .menu.lateral li.ativo:before {
+.menu.lateral .com-filho.borda-principal > a:before {
    content: "Categorias";
    font-size: 17.5px;
    margin-bottom: 16px;
    display: block;
    font-weight: 500;
-}
-
-.pagina-categoria .menu.lateral li.ativo > a {
-   display: none;
 }
 
 .menu.lateral .nivel-dois>li.ativo:before {
@@ -1441,7 +1437,7 @@ i.icon-instagram:before {
    display: block;
    position: absolute;
    left: -3px;
-   top: 17px;
+   top: 12px;
    border-radius: var(--border-radius-md);
 }
 
@@ -1451,6 +1447,11 @@ i.icon-instagram:before {
 
 .menu.lateral .nivel-dois>li.ativo a {
    opacity: 1;
+   font-weight: 500;
+}
+
+.menu.lateral .com-filho.borda-principal > a {
+   display: none;
 }
 
 .filtro *, 
