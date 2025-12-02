@@ -2096,7 +2096,7 @@ modal-review .actions button {
 
 .compre-junto__titulo {
    color: var(--color-black);
-   font-weight: normal;
+   font-weight: 500;
 }
 
 .compre-junto__titulo .compre-junto__subtitulo {

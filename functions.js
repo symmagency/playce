@@ -1055,7 +1055,6 @@ $(function() {
   });
 
   $('.pagina-categoria .ordenar-listagem.topo').append($('.coluna > .componente > .interno'));
-  $('.compre-junto__titulo').append(`<p class="compre-junto__subtitulo">Aproveite e leve mais por menos</p>`);
   
   $('.tabela-pedidos tbody tr').each(function () {
 
@@ -1077,5 +1076,6 @@ $(function() {
 
   });
 
+  $('.compre-junto__titulo').append(`<p class="compre-junto__subtitulo">Aproveite e leve mais por menos</p>`);
 
 });
