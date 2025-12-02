@@ -127,62 +127,71 @@ var categorias = [
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/playstation-c.svg",
         alt: "Categoria PlayStation",
         link: "/playstation",
-        nome: "PlayStation"
+        nome: "PlayStation",
+        classe: "cat-playstation"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/xbox-c.svg",
         alt: "Categoria Xbox",
         link: "/google",
-        nome: "Xbox"
+        nome: "Xbox",
+        classe: "cat-xbox"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/nintendo-c.svg",
         alt: "Categoria Nintendo",
         link: "/nintendo",
-        nome: "Nintendo"
+        nome: "Nintendo",
+        classe: "cat-nintendo"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/apple-c.svg",
         alt: "Categoria Apple",
         link: "/apple",
-        nome: "Apple"
+        nome: "Apple",
+        classe: "cat-apple"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/roblox-c.svg",
         alt: "Categoria Roblox",
         link: "/roblox",
-        nome: "Roblox"
+        nome: "Roblox",
+        classe: "cat-roblox"
     },
-
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/fortinite-c.svg",
         alt: "Categoria V-bucks",
         link: "/v-bucks",
-        nome: "Fortnite"
+        nome: "Fortnite",
+        classe: "cat-fortnite"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/netflix-c.svg",
         alt: "Categoria Netflix",
         link: "/netflix",
-        nome: "Netflix"
+        nome: "Netflix",
+        classe: "cat-netflix"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/spotify-c.svg",
         alt: "Categoria Spotify",
         link: "/spotify",
-        nome: "Spotify"
+        nome: "Spotify",
+        classe: "cat-spotify"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/steam-c.svg",
         alt: "Categoria steam",
         link: "/Steam",
-        nome: "Steam"
+        nome: "Steam",
+        classe: "cat-steam"
     },
     {
         img: "https://cdn.awsli.com.br/2830/2830294/arquivos/gift-c.svg",
         alt: "Categoria Gift Cards",
         link: "/gift-cards",
-        nome: "Gift Cards"
+        nome: "Gift Cards",
+        classe: "cat-gift-cards"
     }
 ];
 
