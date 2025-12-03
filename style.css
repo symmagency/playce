@@ -4127,7 +4127,8 @@ a {
 }
 
 
-.tabela-carrinho .cupom-valor .muted {
+.tabela-carrinho .cupom-valor .muted,
+.pagina-carrinho #cupomResultado .muted {
    display: none;
 }
 
