@@ -1076,6 +1076,15 @@ $(function() {
 
   });
 
-  $('.compre-junto__titulo').append(`<p class="compre-junto__subtitulo">Aproveite e leve mais por menos</p>`);
+  // Tenta até conseguir, depois que conseguir, para de tentar
+  (function tryAppendSubtitulo() {
+    if ($('.compre-junto__titulo .compre-junto__subtitulo').length) return; // já conseguiu, para de tentar
+    var $titulo = $('.compre-junto__titulo');
+    if ($titulo.length) {
+      $titulo.append(`<p class="compre-junto__subtitulo">Aproveite e leve mais por menos</p>`);
+      return; // conseguiu, para de tentar
+    }
+    setTimeout(tryAppendSubtitulo, 100); // tenta de novo daqui a pouco
+  })();
 
 });
