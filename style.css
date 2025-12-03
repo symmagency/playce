@@ -1438,7 +1438,7 @@ i.icon-instagram:before {
    border-radius: 6px;
    margin-right: 10px;
 }
-
+/* 
 .menu.lateral .nivel-dois>li.ativo:before {
    content: "";
    width: 5px;
@@ -1449,7 +1449,7 @@ i.icon-instagram:before {
    left: -3px;
    top: 12px;
    border-radius: var(--border-radius-md);
-}
+} */
 
 .menu.lateral .nivel-dois>li a {
    opacity: 1;
@@ -1458,7 +1458,11 @@ i.icon-instagram:before {
 .menu.lateral .nivel-dois>li.ativo a {
    opacity: 1;
    font-weight: 500;
-   padding-left: 10px!important;
+   padding: 0 16px !important;
+   border-radius: 6px;
+   margin-right: 10px;
+   background: var(--color-primary);
+   color: #fff;
 }
 
 .menu.lateral .com-filho.borda-principal > a {
