@@ -4842,6 +4842,11 @@ a.banner-featured.append-featured {
    flex-direction: column;
    padding: 40px;
    align-items: center;
+   min-height: 230px;
+}
+
+.banner-featured.append-featured {
+   align-items: flex-end;
 }
 
 img.bn-featured-image {
