@@ -4491,8 +4491,21 @@ button.about-banner-btn {
   }
 
   .listagem .info-produto {
-      padding: 0;
+      padding: 0 50px 0 10px!important;
    }
+
+   .menu.superior .nivel-um>li:hover {
+      background: transparent;
+  }
+  
+  .menu.superior .nivel-um>li:hover > a strong {
+      color: #fff!important;
+  }
+  
+  .menu.superior .nivel-um>li:hover .nivel-dois:before {
+      display: none;
+  }
+
    .benefit-item div {
       width: 100%;
    }
@@ -5257,6 +5270,10 @@ floating-bar-item.search-bar {
 .vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item {
    margin: 20px 0 0 !important;
    padding: 0;
+}
+
+.vitrine-23387218 + ul .listagem-linha li.slick-slide .listagem-item .konfidency-reviews-multi {
+   display: none;
 }
 
 .vitrine-23387218 + ul .listagem-item .nome-produto {
