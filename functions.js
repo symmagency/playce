@@ -747,33 +747,33 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
               <div class="hello-menu">
                 <i></i>Olá, visitante!
               </div>
-              <button class="myaccount">
+              <a href="./conta/index" class="myaccount">
                 Minha conta
-              </button>
-              <button class="myorders">
+              </a>
+              <a href="./conta/pedidos" class="myorders">
                 Meus pedidos
-              </button>
+              </a>
             </div>
         `);
 
         $('body').append(`
             <div class="floating-bar">
-              <a class="floating-bar-item" href="/contato">
+              <a class="floating-bar-item" href="./contato">
                 <span class="icon-contato"></span>
                 <span class="floating-bar-label">Contato</span>
               </a>
-              <a class="floating-bar-item" href="/conta/login">
+              <a class="floating-bar-item" href="./conta/login">
                 <span class="icon-conta"></span>
                 <span class="floating-bar-label">Conta</span>
               </a>
-              <a class="floating-bar-item" href="/conta/pedidos">
+              <a class="floating-bar-item" href="./conta/pedidos">
                 <span class="icon-pedidos"></span>
                 <span class="floating-bar-label">Pedidos</span>
               </a>
-              <a class="floating-bar-item" href="/favoritos">
+              <!--<a class="floating-bar-item" href="/favoritos">
                 <span class="icon-favoritos"></span>
                 <span class="floating-bar-label">Favoritos</span>
-              </a>
+              </a>-->
               <a class="floating-bar-item search-bar" href="#">
                 <span class="icon-buscar"></span>
                 <span class="floating-bar-label">Buscar</span>
