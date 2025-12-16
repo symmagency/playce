@@ -4538,7 +4538,7 @@ button.about-banner-btn {
   }
   
   .menu.superior .nivel-um>li:hover > a strong {
-      color: #fff!important;
+      color: #000!important;
   }
   
   .menu.superior .nivel-um>li:hover .nivel-dois:before {
