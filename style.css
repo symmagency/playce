@@ -5319,8 +5319,18 @@ floating-bar-item.search-bar {
    padding: 24px;
 }
 
-.pagina-conta .acao-editar .span4.offset8, .pagina-conta-endereco .acao-editar .span4.offset8 {
+.pagina-conta .acao-editar .span4.offset8, 
+.pagina-conta-endereco .acao-editar .span4.offset8,
+.pagina-conta .cadastro .acao-editar .span5.offset7 {
    flex-direction: column-reverse;
+}
+
+.form-horizontal.large-label .controls {
+   margin: 0;
+}
+
+.pagina-conta .help-inline {
+   padding: 0;
 }
 
 .cadastro .acao-editar > div a.botao {
