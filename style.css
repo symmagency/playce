@@ -4452,14 +4452,16 @@ button.about-banner-btn {
 }
 
 .listagem-item .bandeira-prevenda, .listagem-item .bandeira-cupom {
-   font-size: 9px!important;
+   font-size: 8px!important;
+   padding: 0 6px;
+   box-shadow: none;
 }
 
   .listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
    margin: 0;
 }
 
-.listagem .listagem-item .imagem-produto, .listagem .listagem-item .info-produto {
+.listagem .listagem-item .info-produto {
    padding: 10px 0 0 !important;
 }
 
@@ -5264,6 +5266,7 @@ floating-bar-item.search-bar {
    position: relative;
    padding: 0;
    margin-top: 20px;
+   bottom: 0!important;
 }
 
 .tabela-carrinho tbody tr {
@@ -6249,7 +6252,7 @@ div#login-content > .identificacao {
       padding: 16px;
   }
 
-  .conteiner-principal .conteiner {
+  body.conteiner-principal .conteiner {
    padding: 16px;
 }
 
