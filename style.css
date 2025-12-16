@@ -6115,6 +6115,15 @@ div#login-content > .identificacao {
       margin-top: 20px;
    }
 
+   .pagina-produto .konfidency-reviews-details.conteiner {
+      padding: 24px;
+   }
+
+   .pagina-produto .konfidency-reviews-details.conteiner h2 {
+      text-align: left;
+      margin-bottom: 20px;
+  }
+
    .requisitos-produto, .append-descricao, .konfidency-reviews-details {
       padding: 24px;
   }
