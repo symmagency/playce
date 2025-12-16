@@ -5352,7 +5352,8 @@ floating-bar-item.search-bar {
 }
 
 .abas-conta {
-   width: 100%;
+   width: 100% !important;
+   box-sizing: border-box;
 }
 
 .abas-conta li {
@@ -6160,7 +6161,8 @@ div#login-content > .identificacao {
 
 @media screen and (max-width: 768px) {
 
-   .pagina-conta #corpo .conteiner {
+   .pagina-conta #corpo .conteiner,
+   .pagina-pedido-listar #corpo .conteiner {
       padding: 16px;
   }
 
