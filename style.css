@@ -5294,7 +5294,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
    justify-content: center;
 }
 
-.pagina-carrinho .table {
+.carrinho-checkout.pagina-carrinho .table {
    border: 1px solid #d8d8d8;
    box-shadow: none;
    border-radius: 6px;
