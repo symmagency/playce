@@ -5294,6 +5294,31 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
    justify-content: center;
 }
 
+.pagina-carrinho .table {
+   border: 1px solid #d8d8d8;
+   box-shadow: none;
+   border-radius: 6px;
+}
+
+.pagina-carrinho.carrinho-checkout .sign-up-header {
+   display: none;
+}
+
+.pagina-carrinho.carrinho-checkout #cabecalho {
+   height: 60px;
+   align-items: center;
+   display: flex;
+}
+
+.carrinho-checkout .conteiner-principal #corpo .conteiner {
+   padding: 16px;
+}
+
+.finalizar-compra .caixa-sombreada, .resumo-compra.caixa-sombreada {
+   padding: 0;
+   border: 0;
+}
+
 .tabela-carrinho .form-horizontal .controls .input-append {
    width: 100%;
    display: flex!important;
