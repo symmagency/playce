@@ -5312,7 +5312,7 @@ floating-bar-item.search-bar {
 }
 
 #corpo .conteiner > div.breadcrumbs {
-   margin-bottom: 32px;
+   margin-bottom: 16px;
 }
 
 .vitrine-23387218 + ul .slick-track {
@@ -6110,6 +6110,14 @@ div#login-content > .identificacao {
 }
 
 @media screen and (max-width: 768px) {
+
+   .pagina-conta #corpo .conteiner {
+      padding: 16px;
+  }
+
+  .abas-conteudo {
+   padding: 24px;
+}
 
    .compre-junto__resumo {
       margin-top: 20px;
