@@ -5328,6 +5328,20 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .tabela-carrinho tbody tr #usarCupom {
+   width: 100%!important;
+}
+
+#comprar-ajax-status .buttons {
+   flex-direction: column-reverse;
+   gap: 12px;
+   padding: 0;
+}
+
+#comprar-ajax-status .sucesso .buttons .botao.principal {
+   width: 100%;
+}
+
+#comprar-ajax-status .sucesso .buttons .continuar-comprando {
    width: 100%;
 }
 
