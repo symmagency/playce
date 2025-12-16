@@ -5315,8 +5315,8 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .finalizar-compra .caixa-sombreada, .resumo-compra.caixa-sombreada {
-   padding: 0;
-   border: 0;
+   padding: 0!important;
+   border: 0!important;
 }
 
 .tabela-carrinho .form-horizontal .controls .input-append {
