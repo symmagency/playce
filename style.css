@@ -5252,10 +5252,68 @@ floating-bar-item.search-bar {
 
 .pagina-categoria .listagem .listagem-linha>ul,
 .pagina-busca .listagem .listagem-linha>ul {
-   margin: 0;
+   margin: 0 0 12px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 12px;
+}
+
+.listagem-item .acoes-produto.hidden-phone {
+   display: block!important;
+   opacity: 1;
+   position: relative;
+   padding: 0;
+   margin-top: 20px;
+}
+
+.tabela-carrinho tbody tr {
+   margin: 0;
+}
+
+input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
+   height: 36px !important;
+   line-height: 10px !important;
+   border-radius: 6px;
+}
+
+.tabela-carrinho tbody tr {
+   margin: 0;
+}
+
+.tabela-carrinho .control-group {
+   flex: 1;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.tabela-carrinho .control-group .control-label {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.tabela-carrinho .form-horizontal .controls .input-append {
+   width: 100%;
+   display: flex!important;
+}
+
+.tabela-carrinho tbody tr #usarCupom {
+   width: 100%;
+}
+
+.pagina-carrinho .acao-editar > div {
+   flex-direction: column-reverse;
+   width: 100%;
+}
+
+.pagina-carrinho .acao-editar {
+   flex-direction: column;
+}
+
+.pagina-carrinho .acao-editar > div a.botao {
+   display: none;
 }
 
 .pagina-categoria .row-fluid:before, 
@@ -6165,6 +6223,14 @@ div#login-content > .identificacao {
    .pagina-pedido-listar #corpo .conteiner {
       padding: 16px;
   }
+
+  .conteiner-principal .conteiner {
+   padding: 16px;
+}
+
+.pagina-categoria .secao-banners {
+   display: none;
+}
 
   .abas-conteudo {
    padding: 24px!important;
