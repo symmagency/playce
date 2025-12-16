@@ -4430,6 +4430,26 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
+   .chave-digital {
+      align-items: center;
+      padding: 8px 0!important;
+  }
+  
+  .produto-video {
+      padding: 24px;
+      max-width: 100%;
+      box-sizing: border-box;
+      border-radius: 8px;
+      border: 1px solid #20232620;
+      background: #fff;
+      opacity: 1;
+      box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+  }
+
+   body {
+      padding-bottom: 58px;
+  }
+
    .secao-banners.no-bg .conteiner img {
       border-radius: 0;
   }
@@ -4825,7 +4845,11 @@ ul.slick-dots li {
 }
 
 .listagem .listagem-item {
-   margin: 24px 12px!important;
+   margin: 24px 8px!important;
+}
+
+.konfidency.summary.kfy-align-center {
+   display: flex;
 }
 
 /* Ajuste banners da vitrine para celular */
@@ -5006,11 +5030,12 @@ h2.bn-featured-title {
    position: fixed;
    left: 0;
    top: 0;
-   background: var(--color-white);
+   background: #fff;
    border: 0;
-   height: 100%;
+   height: calc(100vh - 58px);
    overflow-y: scroll;
    padding: 0;
+   z-index: 1000000000000000;
 }
 
 .menu.superior .nivel-um {
