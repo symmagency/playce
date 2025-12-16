@@ -5351,6 +5351,15 @@ floating-bar-item.search-bar {
    display: none!important;
 }
 
+.abas-conta {
+   width: 100%;
+}
+
+.abas-conta li {
+   width: 100%;
+   text-align: center;
+}
+
 .cadastro .acao-editar > div a.botao {
    width: 100%;
 }
