@@ -4459,6 +4459,10 @@ button.about-banner-btn {
    margin: 0;
 }
 
+.listagem .listagem-item .imagem-produto, .listagem .listagem-item .info-produto {
+   padding: 10px 0 0 !important;
+}
+
    body {
       padding-bottom: 58px;
   }
@@ -5052,14 +5056,16 @@ h2.bn-featured-title {
 }
 
 .menu.superior .nivel-um {
-   display: block!important;
+   display: block !important;
    position: fixed;
    left: -100%;
-   top: 0;
+   top: 0!Important;
    z-index: 1000;
    transition: all .5s;
-   margin: 0!important;
-   padding: 10px;
+   margin: 0 !important;
+   padding: 0;
+   height: calc(100vh - 58px);
+   background: #fff;
 }
 
 .menu.superior .nivel-dois {
@@ -6104,6 +6110,14 @@ div#login-content > .identificacao {
 }
 
 @media screen and (max-width: 768px) {
+
+   .compre-junto__resumo {
+      margin-top: 20px;
+   }
+
+   .requisitos-produto, .append-descricao, .konfidency-reviews-details {
+      padding: 24px;
+  }
 
    .carrinho > a {
       padding: 8px 16px;
