@@ -5333,6 +5333,24 @@ floating-bar-item.search-bar {
    padding: 0;
 }
 
+#rodape .span12.visible-phone {
+   display: none !important;
+}
+
+.pagina-conta .secao-principal.row-fluid.sem-coluna > .coluna {
+   display: block;
+}
+
+.pagina-conta .secao-principal.row-fluid.sem-coluna {
+   display: flex;
+   flex-direction: column-reverse;
+   gap: 20px;
+}
+
+.pagina-conta .secao-principal.row-fluid.sem-coluna:before, .pagina-conta .secao-principal.row-fluid.sem-coluna:after {
+   display: none!important;
+}
+
 .cadastro .acao-editar > div a.botao {
    width: 100%;
 }
