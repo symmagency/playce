@@ -5364,7 +5364,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .pagina-carrinho .acao-editar > div {
-   width: 100%;
+   width: 100%!important;
 }
 
 .pagina-carrinho .acao-editar > div a.botao {
