@@ -6165,7 +6165,11 @@ div#login-content > .identificacao {
   }
 
   .abas-conteudo {
-   padding: 24px;
+   padding: 24px!important;
+}
+
+.abas-conteudo fieldset {
+   margin: 0!important;
 }
 
    .compre-junto__resumo {
