@@ -6124,6 +6124,16 @@ div#login-content > .identificacao {
       margin-bottom: 20px;
   }
 
+  .produto .conteiner-imagem > div {
+   border: 0;
+   padding: 0;
+   margin-bottom: 20px;
+}
+
+.share-menu {
+   top: 70px;
+}
+
    .requisitos-produto, .append-descricao, .konfidency-reviews-details {
       padding: 24px;
   }
