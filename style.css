@@ -5006,7 +5006,7 @@ h2.bn-featured-title {
    position: fixed;
    left: 0;
    top: 0;
-   background: var(--color-black);
+   background: var(--color-white);
    border: 0;
    height: 100%;
    overflow-y: scroll;
@@ -5047,11 +5047,14 @@ h2.bn-featured-title {
 
 .account-menu .myaccount, 
 .account-menu .myorders {
-   background: var(--color-secondary);
+   background: #f1f1f1;
    padding: 8px 16px;
    border-radius: var(--border-radius-md);
    box-shadow: var(--shadow-button);
-   color: var(--color-white);
+   color: var(--color-black);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .hello-menu i {
@@ -5063,10 +5066,18 @@ h2.bn-featured-title {
 
 .hello-menu {
    font-size: 16px;
-   color: var(--color-white);
+   color: var(--color-black);
    display: flex;
    gap: 10px;
    align-items: center;
+}
+
+.menu.superior .nivel-dois li a, .menu.lateral .nivel-dois li a {
+   color: var(--color-black);
+}
+
+.menu.superior .nivel-um .titulo, .menu.lateral .nivel-um .titulo {
+   color: var(--color-black);
 }
 
 .menu.superior .nivel-um+.close-menu {
@@ -6055,6 +6066,10 @@ div#login-content > .identificacao {
 }
 
 @media screen and (max-width: 768px) {
+
+   .carrinho > a {
+      padding: 8px 16px;
+   }
 
    .finalizar-compra .caixa-sombreada {
       flex-direction: column;

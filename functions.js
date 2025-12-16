@@ -750,7 +750,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
               <a href="./conta/index" class="myaccount">
                 Minha conta
               </a>
-              <a href="./conta/pedidos" class="myorders">
+              <a href=".conta/pedido/listar" class="myorders">
                 Meus pedidos
               </a>
             </div>
@@ -766,7 +766,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
                 <span class="icon-conta"></span>
                 <span class="floating-bar-label">Conta</span>
               </a>
-              <a class="floating-bar-item" href="./conta/pedidos">
+              <a class="floating-bar-item" href=".conta/pedido/listar">
                 <span class="icon-pedidos"></span>
                 <span class="floating-bar-label">Pedidos</span>
               </a>
