@@ -5176,6 +5176,10 @@ h2.bn-featured-title {
    display: none!important;
 }
 
+body.carrinho-checkout {
+   padding-bottom: 0;
+}
+
 .floating-bar .floating-bar-item {
    width: 100%;
    display: flex;
@@ -5356,7 +5360,11 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .pagina-carrinho .acao-editar {
-   flex-direction: column;
+   flex-direction: column!important;
+}
+
+.pagina-carrinho .acao-editar > div {
+   width: 100%;
 }
 
 .pagina-carrinho .acao-editar > div a.botao {
