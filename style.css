@@ -5172,6 +5172,10 @@ h2.bn-featured-title {
    overflow: hidden;
 }
 
+.pagina-carrinho.carrinho-checkout .floating-bar {
+   display: none!important;
+}
+
 .floating-bar .floating-bar-item {
    width: 100%;
    display: flex;
