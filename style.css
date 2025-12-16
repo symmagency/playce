@@ -4446,6 +4446,19 @@ button.about-banner-btn {
       box-shadow: 0 0 50px rgba(0, 0, 0, .15);
   }
 
+
+  .listagem-item .bandeiras-produto {
+   padding: 10px 0 0 0;
+}
+
+.listagem-item .bandeira-prevenda, .listagem-item .bandeira-cupom {
+   font-size: 9px!important;
+}
+
+  .listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
+   margin: 0;
+}
+
    body {
       padding-bottom: 58px;
   }
