@@ -4532,7 +4532,7 @@ button.about-banner-btn {
    }
 
    .secao-banners .conteiner {
-      padding: 0 16px 16px;
+      padding: 16px;
   }
 
   .vitrine-23387218 + ul .listagem .info-produto {
@@ -4562,6 +4562,7 @@ button.about-banner-btn {
   .banner-fundo {
       padding: 0 10px;
       text-align: center;
+      display: none;
    }
 
    .banner-fundo .game-promo {
