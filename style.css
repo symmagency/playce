@@ -4448,7 +4448,8 @@ button.about-banner-btn {
 
 
   .listagem-item .bandeiras-produto {
-   padding: 10px 0 0 0;
+      padding: 10px 0 0 0;
+      display: none !important;
 }
 
 .listagem-item .bandeira-prevenda, .listagem-item .bandeira-cupom {
@@ -4459,6 +4460,7 @@ button.about-banner-btn {
 
   .listagem .span3 .listagem-item .nome-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .listagem-item .nome-produto {
    margin: 0;
+   min-height: 57px;
 }
 
 .listagem .listagem-item .info-produto {
@@ -4511,19 +4513,22 @@ button.about-banner-btn {
 
   .benefits-row {
       background: none;
-      flex-direction: column;
+      flex-direction: row;
       padding: 16px;
       gap: 16px;
       margin: 0;
+      justify-content: flex-start;
+      overflow-x: scroll;
    }
 
    .benefit-item {
-      width: 100%;
+      width: 360px;
       box-sizing: border-box;
-      border: 0!important;
+      border: 0 !important;
       background: #f1f1f1;
       padding: 10px 16px;
       border-radius: 6px;
+      flex: none;
    }
 
    .secao-banners .conteiner {
@@ -4605,6 +4610,7 @@ button.about-banner-btn {
 
 .listagem .preco-produto .bandeira-promocao {
    font-size: 11px;
+   display: none;
 }
 
   #listagemProdutos > .vitrine-23499980+ul li.slick-slide {
