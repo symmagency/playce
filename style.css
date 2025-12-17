@@ -6285,6 +6285,10 @@ div#login-content > .identificacao {
       padding: 16px;
   }
 
+  vitrine-23387218 + ul .imagem-produto img.imagem-principal {
+   width: fit-content;
+}
+
   body.conteiner-principal .conteiner {
    padding: 16px;
 }
