@@ -5298,6 +5298,13 @@ h2.bn-featured-title {
    font-weight: 500;
 }
 
+.pagina-pedido .tabela-carrinho * {
+   font-size: 14px;
+   border: 0;
+   padding: 4px;
+   text-align: center;
+}
+
 .resumo-compra .tabela-carrinho .produto-info {
    white-space: normal;
    text-align: center;

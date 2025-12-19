@@ -760,7 +760,7 @@ $(document).on('click', '.btn-mais', function() {
 
         $('body').append(`
             <div class="floating-bar">
-              <a class="floating-bar-item" href="../contato">
+              <a class="floating-bar-item contact-float" style="cursor: pointer;">
                 <span class="icon-contato"></span>
                 <span class="floating-bar-label">Contato</span>
               </a>
