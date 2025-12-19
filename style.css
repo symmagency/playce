@@ -4434,6 +4434,17 @@ button.about-banner-btn {
       align-items: center;
       padding: 8px 0!important;
   }
+
+  .modal-store-reviews[data-v-0e40cfb5] {
+   width: 100%;
+   max-width: 1000px;
+   border-radius: 12px;
+   border: 0;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+   z-index: 10000000;
+   top: 50%;
+   transform: translateY(-50%);
+}
   
   .produto-video {
       padding: 24px;
