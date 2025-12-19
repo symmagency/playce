@@ -4448,7 +4448,7 @@ button.about-banner-btn {
    }
    
    .support-float.centered .info-section {
-       background: var(--color-black);
+       background: #fff;
        padding: 24px;
        color: #fff;
        border-radius: 10px;
@@ -4461,7 +4461,7 @@ button.about-banner-btn {
       content: '';
       width: 40px;
       height: 40px;
-      background: var(--icon-x);
+      background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/x-black.svg);
       display: block;
       background-size: 100%;
    }
@@ -4473,6 +4473,10 @@ button.about-banner-btn {
        width: 100%;
        margin: 0 20px;
    }
+
+   .append-content-sup * {
+      color: #000;
+  }
    
    .close-support {
        position: absolute;
