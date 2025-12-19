@@ -5256,6 +5256,12 @@ h2.bn-featured-title {
    overflow: hidden;
 }
 
+.alert {
+   font-size: 16px;
+   margin-bottom: 20px !important;
+   display: block;
+}
+
 .pagina-carrinho.carrinho-checkout .floating-bar {
    display: none!important;
 }
