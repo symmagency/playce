@@ -737,7 +737,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
         $('#cabecalho .span3 > .logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
-        $('.menu.superior').append('<button class="close-menu">X</button>');
+        $('.menu.superior').append('<div class="fecha-menu"><button class="close-menu">X</button></div>');
         $('.close-menu').click(function(){
            $('.menu.superior .nivel-um').removeClass('active');
         });
@@ -829,6 +829,15 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             }
             tryMove();
         })(20);
+
+    // Quando clicar no <i> dentro do menu de categorias, alterna a classe "open" no <ul> irmão correspondente de forma individual
+    $('.menu.superior .nivel-um .icon-chevron-down').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $li = $(this).closest('li');
+        var $ul = $li.children('ul.nivel-dois');
+        $ul.toggleClass('open');
+    });
         
         
     } // fecha o else do mobile
