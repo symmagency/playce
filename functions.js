@@ -830,24 +830,73 @@ $(document).on('click', '.btn-mais', function() {
             tryMove();
         })(20);
 
-    // Quando clicar no <i> dentro do menu de categorias, alterna a classe "open" no <ul> irmão correspondente de forma individual
-    $('.menu.superior .nivel-um .icon-chevron-down').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var $li = $(this).closest('li');
-        var $ul = $li.children('ul.nivel-dois');
-        $ul.toggleClass('open');
-    });
+        // Quando clicar no <i> dentro do menu de categorias, alterna a classe "open" no <ul> irmão correspondente de forma individual
+        $('.menu.superior .nivel-um .icon-chevron-down').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var $li = $(this).closest('li');
+            var $ul = $li.children('ul.nivel-dois');
+            $ul.toggleClass('open');
+        });
 
-    $('.benefits-row').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
+        $('.benefits-row').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+        
+        $('body').append(`
+            <div class="support-float centered">
+              <div class="append-content-sup">
+                <div class="close-support"><i></i></div>
+        
+                <div class="info-section">
+                  <span class="titulo">Atendimento</span>
+        
+                  <div class="atendimento-float">
+                    <img alt="Horário de atendimento" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-clock.svg"/>
+                    <div>
+                      <strong>Horário de atendimento</strong>
+                      <span>Todos os dias, das 09h às 22h</span>
+                    </div>
+                  </div>
+        
+                  <div class="mensagem-float">
+                    <strong>Envie uma mensagem:</strong>
+                    <div>
+                      <img alt="Envie uma mensagem" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-envelope.svg"/>
+                      <div>
+                        <a href="mailto:contato@playce.com.br">contato@playce.com.br</a>
+                        <span> Playce - Games e Gift cards </span>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="whats-float">
+                    <img alt="WhatsApp" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-whatsapp.svg"/>
+                    <div>
+                      <strong>Estamos no WhatsApp:</strong>
+                      <a href="https://wa.me/5561996841445" target="_blank">(61) 9 9684-1445</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `);
+        
+          // Abrir / fechar no X
+          $('.close-support').on('click', function () {
+            $('.support-float.centered').toggleClass('open');
+          });
+        
+          // Abrir pelo botão flutuante
+          $('.floating-bar .floating-bar-item:first-child').on('click', function () {
+            $('.support-float.centered').toggleClass('open');
+          });
         
         
     } // fecha o else do mobile

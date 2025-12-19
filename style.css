@@ -4430,6 +4430,109 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
+   .support-float.centered {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 10000000000000;
+      display: none;
+   }
+   
+   .support-float.centered.open {
+      display: flex;
+   }
+   
+   .support-float.centered .info-section {
+       background: var(--color-black);
+       padding: 24px;
+       color: #fff;
+       border-radius: 10px;
+       width: 100%;
+       margin: 0;
+       box-sizing: border-box;
+   }
+   
+   .support-float.centered .close-support i:before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background: var(--icon-x);
+      display: block;
+      background-size: 100%;
+   }
+   
+   .append-content-sup {
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       width: 100%;
+       margin: 0 20px;
+   }
+   
+   .close-support {
+       position: absolute;
+       right: 10px;
+       top: 10px;
+   }
+   
+   
+   .atendimento-float {
+       display: flex;
+       gap: 10px;
+   }
+   
+   .atendimento-float > div {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .mensagem-float > div {
+       display: flex;
+       gap: 10px;
+   }
+   
+   .mensagem-float > div div {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .mensagem-float {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .whats-float {
+       display: flex;
+       gap: 10px;
+   }
+   
+   .whats-float > div {
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .support-float .info-section > div {
+       margin-bottom: 20px;
+   }
+   
+   
+   .info-section span.titulo {
+       font-size: 20px;
+       font-weight: 600;
+       margin-bottom: 32px;
+       display: block;
+   }
+   
+   .mensagem-float > div {
+       display: flex;
+       gap: 10px;
+   }
+
    .chave-digital {
       align-items: center;
       padding: 8px 0!important;
