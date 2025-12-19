@@ -6936,6 +6936,11 @@ hr {
    .menu.superior > .nivel-um li .nivel-dois {
       max-height: 368px;
       overflow-y: scroll;
+      height: fit-content;
+      background: #fff;
+      padding: 16px 24px;
+      border: 0;
+      box-sizing: border-box;
    }
    
    /* Scrollbar Chrome, Edge, Safari */
