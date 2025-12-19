@@ -5557,6 +5557,7 @@ floating-bar-item.search-bar {
 
 .quantidade-wrapper {
    max-width: 50px;
+   display: none;
 }
 
 .quantidade-wrapper .input-quantidade {
