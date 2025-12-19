@@ -5569,7 +5569,8 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 #corpo .conteiner > div.breadcrumbs {
-   margin-bottom: 16px;
+   margin-bottom: 16px !important;
+   margin-top: 0 !important;
 }
 
 .pagina-conta .caixa-sombreada.borda-principal {
