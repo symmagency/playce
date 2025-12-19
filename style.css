@@ -4884,6 +4884,7 @@ ul.slick-dots li {
 
 .listagem .listagem-item {
    margin: 24px 8px!important;
+   padding: 8px;
 }
 
 .konfidency.summary.kfy-align-center {
@@ -5371,12 +5372,43 @@ floating-bar-item.search-bar {
 }
 
 .listagem-item .acoes-produto.hidden-phone {
-   display: block!important;
+   display: flex!important;
    opacity: 1;
    position: relative;
    padding: 0;
    margin-top: 20px;
    bottom: 0!important;
+}
+
+.quantidade-wrapper .btn-quantidade.btn-mais {
+   width: 14px;
+   height: 14px;
+   right: 4px;
+}
+
+.quantidade-wrapper .btn-quantidade.btn-menos {
+   width: 14px;
+   height: 14px;
+   left: 4px;
+}
+
+.quantidade-wrapper {
+   max-width: 50px;
+}
+
+.quantidade-wrapper .input-quantidade {
+   width: 100%;
+   font-size: 14px;
+}
+
+.listagem-item .acoes-produto .botao-comprar i {
+   display: none;
+}
+
+.listagem-item .acoes-produto .botao-comprar {
+   align-items: center;
+   justify-content: center;
+   gap: 0;
 }
 
 .tabela-carrinho tbody tr {
