@@ -868,7 +868,7 @@ $(document).on('click', '.btn-mais', function() {
                   <div class="mensagem-float">
                     <strong>Envie uma mensagem:</strong>
                     <div>
-                      <img alt="https://cdn.awsli.com.br/2830/2830294/arquivos/float-mail.svg"/>
+                      <img alt="Envie uma mensagem" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-mail.svg"/>
                       <div>
                         <a href="mailto:contato@playce.com.br">contato@playce.com.br</a>
                         <span> Playce - Games e Gift cards </span>
@@ -877,7 +877,7 @@ $(document).on('click', '.btn-mais', function() {
                   </div>
         
                   <div class="whats-float">
-                    <img alt="WhatsApp" src="hhttps://cdn.awsli.com.br/2830/2830294/arquivos/float-whats.svg"/>
+                    <img alt="WhatsApp" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-whats.svg"/>
                     <div>
                       <strong>Estamos no WhatsApp:</strong>
                       <a href="https://wa.me/5561996841445" target="_blank">(61) 9 9684-1445</a>
