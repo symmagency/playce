@@ -5092,6 +5092,25 @@ h2.bn-featured-title {
    padding: 0 32px 24px;
 }
 
+.menu.superior .nivel-dois {
+   border: 0;
+   padding: 0;
+   max-height: 0;
+   overflow: hidden;
+   transition: all .3s;
+   opacity: 0;
+   padding: 0 16px;
+   background: #f1f1f1;
+   box-sizing: border-box;
+   border-radius: 6px;
+}
+
+.menu.superior .nivel-dois.open {
+   max-height: 100%;
+   opacity: 1;
+   padding: 16px;
+}
+
 .account-menu {
    display: flex;
    flex-direction: column;
@@ -6954,26 +6973,6 @@ hr {
 .menu.superior > .nivel-um {
 	display: flex;
 	align-items: center;
-}
-
-.menu.superior .nivel-dois {
-   background: none;
-   border: 0;
-   padding: 0;
-   max-height: 0;
-   overflow: hidden;
-   transition: all .3s;
-   opacity: 0;
-   padding: 0 16px;
-   background: #f1f1f1;
-   box-sizing: border-box;
-   border-radius: 6px;
-}
-
-.menu.superior .nivel-dois.open {
-   max-height: 100%;
-   opacity: 1;
-   padding: 16px;
 }
 
 .submenu-clone .nivel-dois {
