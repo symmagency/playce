@@ -5445,6 +5445,17 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
    border-radius: 6px;
 }
 
+.tabela-carrinho .produto-info > a {
+   width: 100%;
+   text-align: center;
+   display: block;
+}
+
+.pagina-carrinho .table {
+   box-shadow: none;
+   border: 1px solid #d8d8d8;
+}
+
 .pagina-carrinho.carrinho-checkout .sign-up-header {
    display: none;
 }
