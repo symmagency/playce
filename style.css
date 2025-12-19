@@ -5662,7 +5662,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .pagina-carrinho .acao-editar > div {
-   flex-direction: column-reverse;
+   flex-direction: column-reverse!important;
    width: 100%;
 }
 
