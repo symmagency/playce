@@ -535,6 +535,19 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $(this).removeAttr('data-target data-toggle');
     });
 
+// Input de quantidade antes do botão de comprar
+$('.listagem-item .botao-comprar').each(function() {
+    // Evita duplicar o input se já existir
+    if($(this).prev('.quantidade-wrapper').length === 0) {
+        var quantidadeHtml = '<div class="quantidade-wrapper">' +
+            '<button type="button" class="btn-quantidade btn-menos" >-</button>' +
+            '<input type="number" min="1" value="1" class="input-quantidade" />' +
+            '<button type="button" class="btn-quantidade btn-mais">+</button>' +
+            '</div>';
+        $(quantidadeHtml).insertBefore($(this));
+    }
+});
+
     if ($(window).width() > 768) {
         // desktop
         // Antes de adicionar, verifica se já existe para evitar duplicação
@@ -615,18 +628,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
             }
         }
 
-        // Input de quantidade antes do botão de comprar
-        $('.listagem-item .botao-comprar').each(function() {
-            // Evita duplicar o input se já existir
-            if($(this).prev('.quantidade-wrapper').length === 0) {
-                var quantidadeHtml = '<div class="quantidade-wrapper">' +
-                    '<button type="button" class="btn-quantidade btn-menos" >-</button>' +
-                    '<input type="number" min="1" value="1" class="input-quantidade" />' +
-                    '<button type="button" class="btn-quantidade btn-mais">+</button>' +
-                    '</div>';
-                $(quantidadeHtml).insertBefore($(this));
-            }
-        });
+        
 
         // Após inserir os inputs, force o slick a recalcular
         $('.slick-initialized').slick('setPosition');
