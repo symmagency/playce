@@ -738,7 +738,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));
         $('#cabecalho .span3 > .logo').after($('.conteudo-topo .inferior .hidden-phone .carrinho'));
         $('.menu.superior').append('<div class="fecha-menu"><button class="close-menu">X</button></div>');
-        $('.close-menu').click(function(){
+        $('.fecha-menu').click(function(){
            $('.menu.superior .nivel-um').removeClass('active');
         });
         

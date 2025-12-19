@@ -5182,19 +5182,28 @@ h2.bn-featured-title {
    font-size: 16px;
 }
 
-.menu.superior .nivel-um+.close-menu {
+.menu.superior .nivel-um+.fecha-menu {
    display: none;
 }
 
-.menu.superior .nivel-um.active+.close-menu {
+.menu.superior .nivel-um.active+.fecha-menu {
    display: block;
 }
 
+.fecha-menu {
+   height: calc(100vh - 58px);
+   position: absolute;
+   right: 0;
+   top: -40px;
+   display: block;
+   width: 100%;
+   z-index: 1000;
+   background: rgba(0, 0, 0, .7);
+}
+
 .close-menu {
-   background: var(--color-secondary);
    padding: 8px 16px;
    border-radius: var(--border-radius-md);
-   box-shadow: var(--shadow-button), 0px 0px 0px 1000px rgba(0,0,0,.4);
    color: var(--color-white);
    font-size: 0;
    line-height: 0;
@@ -5202,12 +5211,13 @@ h2.bn-featured-title {
    right: 20px;
    top: 30px;
    z-index: 10;
+   background: none;
 }
 
 .close-menu:after {
    content: "";
-   width: 20px;
-   height: 20px;
+   width: 40px;
+   height: 40px;
    background: var(--icon-x);
    display: block;
    background-size: 100%;
