@@ -4480,7 +4480,7 @@ button.about-banner-btn {
   }
 
    .listagem .titulo-categoria strong, .categorias-section .titulo-categoria strong {
-      font-size: 20px;
+      font-size: 26px;
    }
 
    .about-banner-icon-title {
@@ -4822,10 +4822,10 @@ ul.slick-dots {
 }
 
 .listagem a.titulo-categoria:after {
-   color: var(--color-black);
+   /* color: var(--color-black);
    background: #f1f1f1;
    background-image: var(--icon-chev-right-black);
-   background-repeat: no-repeat;
+   background-repeat: no-repeat; */
    background-position: 102px 52%;
    background-size: auto 40%;
 }

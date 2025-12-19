@@ -770,7 +770,7 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
               </a>
               <a class="floating-bar-item" href="../conta/pedido/listar">
                 <span class="icon-pedidos"></span>
-                <span class="floating-bar-label">Pedidos</span>
+                <span class="floating-bar-label">Meus códigos</span>
               </a>
               <!--<a class="floating-bar-item" href="../favoritos">
                 <span class="icon-favoritos"></span>
