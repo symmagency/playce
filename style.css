@@ -5095,8 +5095,8 @@ h2.bn-featured-title {
 .account-menu {
    display: flex;
    flex-direction: column;
-   gap: 20px;
-   padding: 32px;
+   gap: 0px;
+   padding: 0px;
 }
 
 .account-menu .myaccount, 
@@ -5112,18 +5112,54 @@ h2.bn-featured-title {
 }
 
 .hello-menu i {
-   width: 32px;
-   height: 32px;
+   width: 24px;
+   height: 24px;
    display: block;
-   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/icon-visit.svg) center no-repeat;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/user-menu.svg) center no-repeat;
+}
+
+.hello-menu a span {
+   font-weight: normal;
+}
+
+.hello-menu a {
+   font-size: 14px;
+   color: #000;
+   font-weight: 500;
+}
+
+.account-menu .items-menu {
+   padding: 16px 32px;
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+   border-bottom: 1px solid #E5E5E5;
+}
+
+.account-menu .myorders:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/pedidos-menu.svg) center no-repeat;
+   margin-right: 8px;
+}
+
+.account-menu .myaccount:before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/user-menu.svg) center no-repeat;
+   margin-right: 8px;
 }
 
 .hello-menu {
    font-size: 16px;
    color: var(--color-black);
    display: flex;
-   gap: 10px;
+   gap: 8px;
    align-items: center;
+   padding: 16px 32px;
+   border-bottom: 1px solid #E5E5E5;
 }
 
 .menu.superior .nivel-dois li a, .menu.lateral .nivel-dois li a {
