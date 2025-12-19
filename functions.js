@@ -745,14 +745,16 @@ if ($h1Busca.length && $h1Busca.text().toLowerCase().indexOf('não encontrou nen
         $('.menu.superior .nivel-um').prepend(`
             <div class="account-menu">
               <div class="hello-menu">
-                <i></i>Olá, visitante!
+                <i></i><span>Olá, visitante!<a href="../conta/login">Entrar <span>ou</span> Cadastrar</a></span>
               </div>
-              <a href="../conta/index" class="myaccount">
-                Minha conta
-              </a>
-              <a href="../conta/pedido/listar" class="myorders">
-                Meus pedidos
-              </a>
+              <div class="items-menu">
+                <a href="../conta/index" class="myaccount">
+                    Minha conta
+                </a>
+                <a href="../conta/pedido/listar" class="myorders">
+                    Meus pedidos
+                </a>
+              </div>
             </div>
         `);
 
