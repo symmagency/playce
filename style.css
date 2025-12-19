@@ -5109,6 +5109,19 @@ h2.bn-featured-title {
    justify-content: flex-start;
 }
 
+.menu.superior .nivel-um>li > a i {
+   z-index: 10000;
+   color: #000;
+   position: absolute;
+   right: 24px;
+   top: 0;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
 .hello-menu i {
    width: 24px;
    height: 24px;
@@ -6931,19 +6944,6 @@ hr {
 .menu.superior > .nivel-um {
 	display: flex;
 	align-items: center;
-}
-
-.menu.superior .nivel-um>li > a i {
-   z-index: 10000;
-   color: #000;
-   position: absolute;
-   right: 24px;
-   top: 0;
-   width: 40px;
-   height: 40px;
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
 }
 
 .menu.superior .nivel-dois {
