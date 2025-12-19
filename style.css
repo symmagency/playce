@@ -4455,6 +4455,7 @@ button.about-banner-btn {
       background: #fff;
       opacity: 1;
       box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+      display: none;
   }
 
 
@@ -4540,6 +4541,7 @@ button.about-banner-btn {
       padding: 10px 16px;
       border-radius: 6px;
       flex: none;
+      display: flex !important;
    }
 
    .secao-banners .conteiner {
@@ -4923,6 +4925,7 @@ a.banner-featured.append-featured {
 
 .banner-featured.append-featured {
    align-items: flex-end;
+   margin-top: 10px;
 }
 
 img.bn-featured-image {
@@ -5271,7 +5274,53 @@ h2.bn-featured-title {
 .alert {
    font-size: 16px;
    margin-bottom: 20px !important;
-   display: block;
+}
+
+.resumo-compra .tabela-carrinho tr {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.resumo-compra .tabela-carrinho td.conteiner-preco {
+   display: flex;
+   width: fit-content;
+   max-width: fit-content;
+   text-align: center;
+   padding: 0;
+}
+
+.resumo-compra .tabela-carrinho td.conteiner-preco * {
+   text-align: center;
+   padding: 0;
+   color: var(--color-primary);
+   font-weight: 500;
+}
+
+.resumo-compra .tabela-carrinho .produto-info {
+   white-space: normal;
+   text-align: center;
+}
+
+.resumo-compra .tabela-carrinho .padding-preco {
+   width: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.resumo-compra .tabela-carrinho .padding-preco>div {
+   padding: 0;
+}
+
+.resumo-compra .tabela-carrinho .padding-preco> .frete-preco strong {}
+
+.campos-pedido .caixa-sombreada input[type="radio"] {
+   width: 16px!important;
+   height: 16px!important;
 }
 
 .pagina-carrinho.carrinho-checkout .floating-bar {
@@ -5512,7 +5561,20 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .pagina-carrinho .acao-editar > div a.botao {
-   display: none;
+   width: 100%;
+   margin: 0;
+   color: #000 !important;
+   background: #f1f1f1;
+}
+
+#comprar-ajax-status .sucesso .head {
+   line-height: 24px;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.pagina-carrinho .acao-editar > div {
+   flex-direction: column-reverse;
 }
 
 .pagina-categoria .row-fluid:before, 
@@ -5558,6 +5620,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 
 .banner-map-group {
    padding: 0 16px;
+   margin: 10px auto 0;
 }
 
 .conteudo .ordenar-listagem.topo .row-fluid .span6, .conteudo .ordenar-listagem.topo .row-fluid .span6 > div {
@@ -5648,7 +5711,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 }
 
 .vitrine-23387218 + ul .listagem-item .acoes-produto {
-   display: block!important;
+   display: none!important;
 }
 
 .vitrine-23387218 + ul .listagem-item .acoes-produto .botao-comprar:after {
@@ -6424,6 +6487,16 @@ div#login-content > .identificacao {
       padding: 16px;
   }
 
+  .tabela-carrinho .preco-produto .preco-promocional {
+   color: var(--color-primary);
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.tabela-carrinho .excluir a {
+   font-size: 18px;
+}
+
   .vitrine-23387218 + ul .listagem-item .info-produto {
    padding: 0 50px 0 16px !important;
 }
@@ -6484,11 +6557,24 @@ div#login-content > .identificacao {
   }
   
   .tabela-carrinho .quantidade a {
-      font-size: 14px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+   font-size: 14px;
+   width: 32px;
+   height: 32px;
+   line-height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   }
+
+  .tabela-carrinho .quantidade {
+   padding: 0;
+   display: flex;
+   align-items: center;
+}
+
+.tabela-carrinho .quantidade input[type="text"] {
+   box-shadow: none;
+}
   
   .order-resume {
       margin: 0;

@@ -838,6 +838,16 @@ $(document).on('click', '.btn-mais', function() {
         var $ul = $li.children('ul.nivel-dois');
         $ul.toggleClass('open');
     });
+
+    $('.benefits-row').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
         
         
     } // fecha o else do mobile
