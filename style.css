@@ -4445,8 +4445,8 @@ button.about-banner-btn {
    display: none;
 }
 
-.carrinho-checkout .identificacao .control-group {
-  flex-direction: column;
+.carrinho-checkout .identificacao .login-data > .control-group {
+   flex-direction: column;
 }
 
 /* Código Mobile */
