@@ -4426,6 +4426,29 @@ button.about-banner-btn {
    display: none;
 }
 
+.identificacao .senha-box {
+   order: 2;
+   width: 100%;
+}
+
+.identificacao .control-group .botao.principal {
+   order: 3;
+   width: 100%!important;
+   max-width: 100%;
+}
+
+.identificacao .control-group a {
+   order: 3;
+}
+
+.identificacao .form-horizontal .control-group:before, .identificacao  .form-horizontal .control-group:after {
+   display: none;
+}
+
+.carrinho-checkout .identificacao .control-group {
+  flex-direction: column;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -5932,6 +5955,13 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 .pagina-conta .secao-principal.row-fluid.sem-coluna > .coluna {
    display: block;
 } */
+
+
+
+input#id_politica_privacidade {
+   width: 16px !important;
+   height: 16px !important;
+}
 
 .pagina-conta .secao-principal.row-fluid.sem-coluna {
    display: flex;

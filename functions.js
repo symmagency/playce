@@ -748,10 +748,10 @@ $(document).on('click', '.btn-mais', function() {
                 <i></i><span>Olá, visitante!<a href="../conta/login">Entrar <span>ou</span> Cadastrar</a></span>
               </div>
               <div class="items-menu">
-                <a href="conta/index" class="myaccount">
+                <a href="/conta/login" onclick="window.location.href='/conta/login'; return false;" class="myaccount">
                     Minha conta
                 </a>
-                <a href="conta/pedido/listar" class="myorders">
+                <a href="/conta/pedido/listar" onclick="window.location.href='/conta/pedido/listar'; return false;" class="myorders">
                     Meus pedidos
                 </a>
               </div>
