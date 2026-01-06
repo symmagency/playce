@@ -5480,6 +5480,10 @@ body.carrinho-checkout {
    flex-direction: column;
 }
 
+.carrinho-checkout .floating-bar .floating-bar-item.search-bar {
+   display: none;
+}
+
 .floating-bar .floating-bar-item:last-child {
    border: 0;
 }
