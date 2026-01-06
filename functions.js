@@ -764,11 +764,11 @@ $(document).on('click', '.btn-mais', function() {
                 <span class="icon-contato"></span>
                 <span class="floating-bar-label">Contato</span>
               </a>
-              <a class="floating-bar-item" href="/conta/login">
+              <a class="floating-bar-item" href="/conta/login" onclick="window.location.href='/conta/login'; return false;">
                 <span class="icon-conta"></span>
                 <span class="floating-bar-label">Conta</span>
               </a>
-              <a class="floating-bar-item" href="/conta/pedido/listar">
+              <a class="floating-bar-item" href="/conta/pedido/listar" onclick="window.location.href='/conta/pedido/listar'; return false;">
                 <span class="icon-pedidos"></span>
                 <span class="floating-bar-label">Meus códigos</span>
               </a>
