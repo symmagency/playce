@@ -5928,10 +5928,10 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 #rodape .span12.visible-phone {
    display: none !important;
 }
-
+/* 
 .pagina-conta .secao-principal.row-fluid.sem-coluna > .coluna {
    display: block;
-}
+} */
 
 .pagina-conta .secao-principal.row-fluid.sem-coluna {
    display: flex;
