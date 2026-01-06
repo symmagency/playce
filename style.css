@@ -4430,6 +4430,15 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
+   .pagina-carrinho .table .bg-dark td {
+      text-align: center;
+      padding: 0px;
+  }
+
+  .total {
+   justify-content: center;
+}
+
    .support-float.centered {
       position: fixed;
       top: 0;
@@ -5708,6 +5717,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
    margin: 0;
    color: #000 !important;
    background: #f1f1f1;
+   height: 54px!important;
 }
 
 #comprar-ajax-status .sucesso .head {
@@ -5718,6 +5728,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 
 .pagina-carrinho .acao-editar > div {
    flex-direction: column-reverse;
+   gap: 10px!important;
 }
 
 .pagina-categoria .row-fluid:before, 
