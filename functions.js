@@ -918,6 +918,9 @@ $(document).on('click', '.btn-mais', function() {
         
         $('.append-filter-cat .filter-container').append($('.filtro-coluna'));
         $('.filter-container').prepend($('.ordenar-listagem .dropdown-menu'));
+
+        $('.hello-menu').after($('.btn-group.menu-user-logged'));
+        $('.menu-user-logged').append($('a.menu-user-logout'));
         
         
     } // fecha o else do mobile
