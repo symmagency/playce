@@ -4430,12 +4430,6 @@ button.about-banner-btn {
 
 @media screen and (max-width: 768px) {
 
-
-
-  .total {
-   justify-content: center;
-}
-
    .support-float.centered {
       position: fixed;
       top: 0;
@@ -6031,6 +6025,10 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 .pagina-carrinho .table .bg-dark td {
    text-align: center;
    padding: 0px;
+}
+
+.total {
+   justify-content: center!important;
 }
 
 }
