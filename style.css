@@ -5390,6 +5390,25 @@ h2.bn-featured-title {
    justify-content: center;
 }
 
+.formas .accordion-heading .radio-conteiner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.resumo-compra .tabela-carrinho tr.tr-checkout-frete > td:first-child {
+   padding: 0;
+   display: none;
+}
+
+.resumo-compra .tabela-carrinho tr.tr-checkout-total {
+   padding-top: 0;
+}
+
+.resumo-compra .tabela-carrinho tr.tr-checkout-frete {
+   padding-bottom: 0;
+}
+
 .resumo-compra .tabela-carrinho td.conteiner-preco {
    display: flex;
    width: fit-content;
@@ -5435,6 +5454,12 @@ h2.bn-featured-title {
 .campos-pedido .caixa-sombreada input[type="radio"] {
    width: 16px!important;
    height: 16px!important;
+}
+
+.formas .accordion-heading .radio-conteiner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .pagina-carrinho.carrinho-checkout .floating-bar {
