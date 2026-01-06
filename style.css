@@ -6061,6 +6061,11 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
  display: none;
 }
 
+#form-buscar #auto-complete:focus + button.icon-search:before {
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/floating-search.svg) center no-repeat;
+   background-size: 100%;
+}
+
 }
 
 /* Ajustes somente no desktop */
