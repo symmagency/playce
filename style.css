@@ -5394,6 +5394,9 @@ h2.bn-featured-title {
    display: flex;
    justify-content: center;
    align-items: center;
+   max-width: 36px;
+   width: 36px;
+   box-sizing: border-box;
 }
 
 .resumo-compra .tabela-carrinho tr.tr-checkout-frete > td:first-child {
@@ -5462,9 +5465,9 @@ h2.bn-featured-title {
    align-items: center;
 }
 
-.pagina-carrinho.carrinho-checkout .floating-bar {
+/* .pagina-carrinho.carrinho-checkout .floating-bar {
    display: none!important;
-}
+} */
 
 body.carrinho-checkout {
    padding-bottom: 0;
@@ -5756,7 +5759,131 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 
 .conteudo .ordenar-listagem.topo .row-fluid {
    width: 100%;
+   display: none;
 }
+
+/* Inicia filter categoria mobile */
+
+.cat-filter {
+	gap: 8px;
+}
+
+.cat-filter i:before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/icon-filter.svg) center no-repeat;
+	background-size: 100%;
+	display: block;
+}
+
+.cat-filter i {
+	margin: 0;
+}
+
+.append-filter-cat {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000000000000;
+    height: 100dvh;
+    width: 100%;
+    display: flex!important;
+    left: -120%;
+    transition: all .4s;
+}
+.append-filter-cat.open {
+	left: 0;
+}
+
+.append-filter-cat .filter-container {
+    width: calc(100% - 100px);
+    display: flex!important;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 0 32px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.append-filter-cat .close-filter {
+	width: 100px;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.append-filter-cat .close-filter:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: var(--icon-x);
+    display: block;
+    background-size: 100%;
+}
+
+.filtro-coluna {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro:first-child {
+    border: 0;
+}
+
+.append-filter-cat .filter-container::-webkit-scrollbar {
+   width: 6px;
+ }
+ 
+ .append-filter-cat .filter-container::-webkit-scrollbar-track {
+   background: #d9d9d9;
+ }
+ 
+ .append-filter-cat .filter-container::-webkit-scrollbar-thumb {
+   background: var(--color-secondary);
+   border-radius: 0px;
+ }
+ 
+ .filter-container ul.dropdown-menu.pull-right {
+    display: block;
+    position: relative;
+    opacity: 1;
+    top: auto;
+    border: 0;
+    box-shadow: none;
+    padding: 0!important;
+}
+
+.filter-container ul.dropdown-menu.pull-right:before {
+    content: "Ordenar por";
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    
+}
+
+.filter-container ul.dropdown-menu.pull-right li a {
+    padding: 6px 0;
+    background: none !important;
+    color: #000 !important;
+}
+
+.filter-container ul.dropdown-menu.pull-right li a i {
+	display: none!important;
+}
+
+
+.filtro.lista ul li label {
+    font-size: 14px;
+}
+
+/* Termina filter categoria mobile */
 
 .banner-map-group {
    padding: 0 16px;
@@ -5769,6 +5896,9 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 
 .conteudo h1 {
    margin: 24px 0 24px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 #corpo .conteiner > div.breadcrumbs {

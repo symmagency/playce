@@ -897,6 +897,27 @@ $(document).on('click', '.btn-mais', function() {
           $('.floating-bar .floating-bar-item:first-child').on('click', function () {
             $('.support-float.centered').toggleClass('open');
           });
+
+          $('.pagina-categoria .conteudo.span9 > .titulo').append(`
+            <button class="cat-filter botao">Filtrar<i></i></button>
+        `);
+        
+        $('.pagina-categoria').append(`
+        <div class="append-filter-cat"><div class="filter-container"></div><div class="close-filter"></div></div>
+        `);
+        
+        // Evento para abrir o filtro
+        $(document).on('click', '.cat-filter', function() {
+            $('.append-filter-cat').addClass('open');
+        });
+        
+        // Evento para fechar o filtro
+        $(document).on('click', '.append-filter-cat .close-filter', function() {
+            $('.append-filter-cat').removeClass('open');
+        });
+        
+        $('.append-filter-cat .filter-container').append($('.filtro-coluna'));
+        $('.filter-container').prepend($('.ordenar-listagem .dropdown-menu'));
         
         
     } // fecha o else do mobile
