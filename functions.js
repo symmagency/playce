@@ -764,15 +764,15 @@ $(document).on('click', '.btn-mais', function() {
                 <span class="icon-contato"></span>
                 <span class="floating-bar-label">Contato</span>
               </a>
-              <a class="floating-bar-item" href="conta/login">
+              <a class="floating-bar-item" href="/conta/login">
                 <span class="icon-conta"></span>
                 <span class="floating-bar-label">Conta</span>
               </a>
-              <a class="floating-bar-item" href="conta/pedido/listar">
+              <a class="floating-bar-item" href="/conta/pedido/listar">
                 <span class="icon-pedidos"></span>
                 <span class="floating-bar-label">Meus códigos</span>
               </a>
-              <!--<a class="floating-bar-item" href="../favoritos">
+              <!--<a class="floating-bar-item" href="/favoritos">
                 <span class="icon-favoritos"></span>
                 <span class="floating-bar-label">Favoritos</span>
               </a>-->
