@@ -5392,8 +5392,9 @@ h2.bn-featured-title {
 
 .formas .accordion-heading .radio-conteiner {
    display: flex;
-   justify-content: center;
-   align-items: center;
+   justify-content: center!important;
+   align-items: center!important;
+   text-align: center;
    max-width: 36px;
    width: 36px;
    box-sizing: border-box;
@@ -5457,12 +5458,6 @@ h2.bn-featured-title {
 .campos-pedido .caixa-sombreada input[type="radio"] {
    width: 16px!important;
    height: 16px!important;
-}
-
-.formas .accordion-heading .radio-conteiner {
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
 /* .pagina-carrinho.carrinho-checkout .floating-bar {
