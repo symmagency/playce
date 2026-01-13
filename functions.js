@@ -81,19 +81,27 @@ $('.barra-inicial .conteiner > .row-fluid').prepend(`
 $(function () {
     var $container = $('#listagemProdutos');
   
-    // seleciona o título "mais vendido"
     var $titulo = $container.find('.vitrine-mas-vendido');
-  
-    // pega a UL que vem logo depois dele
     var $ul = $titulo.next('ul');
   
-    // move ambos para depois da última UL do container
-    var $ultimaUl = $container.find('ul.produtos-carrossel').last();
+    if (!$titulo.length || !$ul.length) return;
   
-    $titulo.add($ul).insertAfter($ultimaUl);
+    // clona
+    var $cloneTitulo = $titulo.clone(true, true)
+      .addClass('mais-vendidos-destaque');
+  
+    var $cloneUl = $ul.clone(true, true)
+      .addClass('mais-vendidos-destaque');
+  
+    // insere no final
+    $container
+      .find('ul.produtos-carrossel')
+      .last()
+      .after($cloneTitulo, $cloneUl);
   });
-
   
+
+
 $('.pagina-inicial #barraNewsletter').before(`
     <div class="about-banner">
       <div class="about-banner-content">
