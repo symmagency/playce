@@ -352,7 +352,7 @@ var bannerVideoUrl = "https://www.youtube.com/embed/ENf1yjCMpZo";
 var videoId = "ENf1yjCMpZo";
 var bannerVideoWidth = 360;
 var bannerVideoHeight = 202;
-var bannerImgUrl = "https://cdn.awsli.com.br/2830/2830294/arquivos/banner-bg.png"; // URL da imagem do banner
+var bannerImgUrl = "https://cdn.awsli.com.br/2830/2830294/arquivos/bg-banner-envio-minutos.png"; // URL da imagem do banner
 
 // Opções para ativar/desativar seções
 var mostrarGamePromo = false;       // true para mostrar, false para ocultar a seção "game-promo"
