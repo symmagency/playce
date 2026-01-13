@@ -5461,21 +5461,7 @@ h2.bn-featured-title {
    float: none;
 }
 
-.formas .accordion-heading {
-    display: flex;
-}
 
-.formas .accordion-heading .forma-conteiner {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex: 1;
-}
-
-.formas .accordion-heading .forma-conteiner img {
-    margin: 0;
-}
 
 .resumo-compra .tabela-carrinho tr.tr-checkout-frete > td:first-child {
    padding: 0;
@@ -7677,10 +7663,10 @@ hr {
 }
 
 /* PlayStation */
-.submenu-clone .nivel-um > li.categoria-id-23387220 > a > strong:before {
+/* .submenu-clone .nivel-um > li.categoria-id-23387220 > a > strong:before {
 	background: url(https://symmagency.github.io/playce/assets/menu-icons/playstation.png)
 		center no-repeat;
-}
+} */
 .submenu-clone .nivel-um > li.categoria-id-23387220 {
 	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/playstation.png);
 	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/playstation.png);
@@ -7772,7 +7758,7 @@ a.whatsapp-float-btn:before {
 
 @media screen and (min-width: 1350px) and (max-width: 1440px) {
 	
-	.menu.superior .nivel-um > li > a > strong::before {
+	.menu.superior > .nivel-um > li > a > strong::before {
 		display: none;
 	}
 	

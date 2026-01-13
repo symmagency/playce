@@ -51,7 +51,7 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
             <div>
                 <strong>Estamos no WhatsApp:</strong>
                 <span>
-                    <a href="https://wa.me/5561996841445" target="_blank" rel="noopener noreferrer">(61) 9 9684-1445</a>
+                    <a href="https://wa.me/556199627041?text=Ol%C3%A1!%20Preciso%20de%20suporte.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer">(61) 9962-7041</a>
                 </span>
             </div>
         </div>
