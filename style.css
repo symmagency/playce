@@ -260,6 +260,14 @@ h6,
    background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+
+   .pagina-inicial {
+      background: none;
+  }
+
+}
+
 .cabecalho-interno .titulo small {
    font-size: 15px;
    color: var(--color-black);
