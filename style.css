@@ -2937,6 +2937,7 @@ a {
 
 .listagem-linha > .flex-viewport {
    overflow: initial !important;
+   max-height: fit-content;
 }
 
 #listagemProdutos .slick-list.draggable {
@@ -4467,6 +4468,12 @@ button.about-banner-btn {
    flex-direction: column;
 }
 
+input[type="password"] {
+    background: #fff !important;
+    border: 1px solid #d8d8d8 !important;
+    color: #000 !important;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -4799,6 +4806,10 @@ button.about-banner-btn {
   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 p {
       text-align: center;
    }
+
+   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 > img {
+    max-width: 100px;
+}
 
    .assinatura-rodape a.symm {
       width: auto;
