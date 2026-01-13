@@ -4479,6 +4479,10 @@ input[type="password"] {
     color: #000 !important;
 }
 
+   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 > img {
+    max-width: 100px;
+}
+
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
@@ -4812,9 +4816,7 @@ input[type="password"] {
       text-align: center;
    }
 
-   #rodape>div:last-child .conteiner .row-fluid > .span9.span12 > img {
-    max-width: 100px;
-}
+
 
    .assinatura-rodape a.symm {
       width: auto;
@@ -7737,4 +7739,35 @@ a.whatsapp-float-btn:before {
 	a.whatsapp-float-btn {
 		bottom: 80px;
 	}
+}
+
+
+/* Ajuste responsivo do header */
+
+@media screen and (min-width: 1440px) and (max-width: 1650px) {
+	
+	.menu.superior .nivel-um>li {
+    padding: 14px 8px;
+}
+	
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1440px) {
+	
+	.menu.superior .nivel-um > li > a > strong::before {
+		display: none;
+	}
+	
+	.menu.superior .nivel-um>li {
+    padding: 14px 8px;
+}
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+	
+	.menu.superior > .nivel-um > li {
+		display: none;
+	}
+	
 }
