@@ -1,0 +1,593 @@
+<script>
+// Configuração inicial - Grand Store Black Gold
+var avisoConfig = ''; // Nao mexer
+var v = 2;
+
+////// Configurações gerais
+var logoDesktop = 200;
+var logoMobile = 40;
+var desejos = false;
+var desejosIcone = 'desejosIcone1';
+var desejosTxt = 'Desejos';
+var desejosAdd = 'Adicionar aos desejos';
+var rastreioRapido = false;
+var topoFlutuante = true;
+var infoDestaque = true;
+var infoDestaqueIcone = 'iconePix';
+var infoDestaqueTxt = 'Pagamento no pix';
+var infoDestaqueTxt2 = 'Todos os códigos são enviados por e-mail';
+var infoDestaqueLink = '';
+var marcasSingular = 'Marca';
+var marcasPlural = 'Marcas';
+var marcasCarrosselTxt = 'Escolha pela marca';
+var marcasCarrosselAuto = false;
+var notificacao = false;
+var notificacaoD = 2;
+
+////// Atendimento
+var suporte = 3;
+var suporteLado = 2;
+var suporteAltura = 20;
+var suporteDistancia = 20;
+
+var wpTxt = 'Estamos no whatsapp';
+var wp1 = '61 9962-7041';
+var wp1i = 'Envio e Suporte';
+var wp1d = '';
+var wp1m = 'Olá! Preciso de suporte. Pode me ajudar?';
+var wp1a = '';
+var wp2 = '';
+var wp2i = '';
+var wp2d = '';
+var wp2m = '';
+var wp2a = '';
+var wp3 = '';
+var wp3i = '';
+var wp3d = '';
+var wp3m = '';
+var wp3a = '';
+var telTxt = '';
+var tel1 = '';
+var tel1i = '';
+var tel2 = '';
+var tel2i = '';
+var tel3 = '';
+var tel3i = '';
+var mailTxt = 'Envie uma mensagem';
+var mailN = 13;
+var mail1 = 'contato@playce.com.br';
+var mail1i = 'Playce - Games & Gift Cards -';
+var mail2 = '';
+var mail2i = '';
+var mail3 = '';
+var mail3i = '';
+
+
+
+
+
+
+
+var h1 = 'Todos os Dias';
+var h2 = '';
+var h3 = 'das 9h às 22h';
+
+////// Carrinho/checkout
+var carrinhoIcone = 'carrinhoIcone2';
+var ccL = 1;
+var ccE = true;
+var ccS = true;
+var alertaF = true;
+
+var alertaTxt = 'Envio Digital';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var sCart = false;
+var cCart = false;
+var cCartT = 3;
+var cCartQ = 300;
+var cCartC = '';
+var cCartB = '';
+var dPx = false;
+var dPN = '';
+var dPxE = 1;
+var dPP = '';
+var dPT = 1;
+var dPV = 1;
+var dP1q = 5;
+var dP1d = 10;
+var dP1c = '';
+var dP2q = 10;
+var dP2d = 15;
+var dP2c = '';
+var dP3q = 15;
+var dP3d = 20;
+var dP3c = '';
+
+
+
+
+
+var ebPx = false;
+var ebPP = '';
+var ebPV = 4;
+
+////// Menu Superior
+var categorias = 8; 
+var menuModelo = 2;
+var menuAbertura = 4;
+
+var produtosMenu = true;
+
+var todasCategorias = false;
+var todasCategoriasTxt = 'Todas as categorias';
+
+var iconesCategorias = false;
+var iconesCategoriasTamanho = 29;
+var iconeCategoria1 = '';
+var iconeCategoria2 = '';
+var iconeCategoria3 = '';
+var iconeCategoria4 = '';
+var iconeCategoria5 = '';
+var iconeCategoria6 = '';
+var iconeCategoria7 = '';
+var iconeCategoria8 = '';
+var iconeCategoria9 = '';
+var iconeCategoria10 = '';
+
+var paginaMenu1 = '';
+var paginaMenu1Link = '';
+var paginaMenu2 = '';
+var paginaMenu2Link = '';
+var paginaMenu3 = '';
+var paginaMenu3Link = '';
+
+////// Ofertas
+
+
+
+
+
+
+
+
+
+
+////// Banners
+var fullFundo = '';
+var tarjaAvancado = true;
+var tarja1Icone = 'icone24';
+var tarja1Txt = 'Envio realizado';
+var tarja1Sub = 'por e-mail';
+var tarja1Link = '';
+var tarja2Icone = 'iconePix';
+var tarja2Txt = 'Pagamento no pix';
+var tarja2Sub = 'Segurança no envio';
+var tarja2Link = '';
+var tarja3Icone = 'iconeSeguranca';
+var tarja3Txt = 'Experiência';
+var tarja3Sub = 'Segura e simples';
+var tarja3Link = '';
+var tarja4Icone = 'iconeCartao';
+var tarja4Txt = '';
+var tarja4Sub = '';
+var tarja4Link = '';
+var escolhaTxt = 'Escolha por categoria';
+var escolhaImg = 8;
+
+////// Listagem
+var fixarImagem = true;
+var varL = false;
+var prodTxt = 2;
+var fixarAdicionar = false;
+var adicionar = 'Adicionar';
+var produtosCarrossel = true;
+var produtosCarrosselAuto = false;
+var produtosLinhaDesktop = 4;
+var produtosLinhaMobile = 2;
+var precoC = false;
+var precoP = false;
+var precoA = false;
+var comprarWhatsapp = false;
+var comprarWhatsappT = 'Comprar pelo whatsapp';
+var comprarWhatsappM = 'Gostaria de esclarecer alguma dúvida sobre nossos produtos? Estou à disposição!';
+var comprarWhatsappV = false;
+var comprarWhatsappC = false;
+var bP = true;
+var bPCEP = true;
+var bPFrete = false;
+var bPp1 = '';
+var bPt1 = '';
+var bPd1 = '';
+var bPp2 = '';
+var bPt2 = '';
+var bPd2 = '';
+var bPp3 = '';
+var bPt3 = '';
+var bPd3 = '';
+var tituloLancamentos = 'Lançamentos';
+var tituloVendidos = 'Mais vendidos';
+var tituloDestaques = 'Destaques';
+
+////// Video
+var videoDestaque = false;
+var videoTxt = '';
+var videoLink = '';
+var videoProduto = false;
+var videoProdutoTxt = 'Produtos no vídeo';
+var videoProdutoAuto = true;
+
+////// Depoimentos
+var depoimentos = false;
+var depoimentosAuto = false;
+var depoimentosTxt = 'Quem já comprou e recomenda';
+
+var dep1Avatar = '';
+var dep1Msg = 'O produto chegou perfeitamente.';
+var dep1Nome = 'Pedro Henrique - São Paulo/SP';
+var dep1Link = '';
+var dep2Avatar = '';
+var dep2Msg = 'Rápido, eficiente e gentil! Gostei';
+var dep2Nome = 'Matheus Ferreira - São Paulo/SP';
+var dep2Link = '';
+var dep3Avatar = '';
+var dep3Msg = 'Ótimo entrega no prazo correto eu super recomendo';
+var dep3Nome = 'Rodrigo - Brasília/DF';
+var dep3Link = '';
+var dep4Avatar = '';
+var dep4Msg = 'Simpático, educado e atencioso';
+var dep4Nome = 'Roberto Santos - Salvador/BA';
+var dep4Link = '';
+var dep5Avatar = '';
+var dep5Msg = 'Super confiável! código chegou rápido!';
+var dep5Nome = 'Gabriel Marcelo - Rio de Janeiro/RJ';
+var dep5Link = '';
+
+////// Blog
+var blog = true;
+var blogData = false;
+var blogResumo = true;
+var blogComentarios = false;
+var blogCompartilhar = false;
+var blogFeed = false;
+var blogFeedTxt = 'Últimas postagens';
+var blogAutor = false;
+var autor1Avatar = '';
+var autor1 = '';
+var autor1Bio = '';
+var autor2Avatar = '';
+var autor2 = '';
+var autor2Bio = '';
+var autor3Avatar = '';
+var autor3 = '';
+var autor3Bio = '';
+
+////// Newsletter
+var cupomNewsletter = '';
+var imgNewsletter = '';
+
+////// Redes Sociais
+var instaF = false;
+var instaTxt = 'Gostou? Segue a gente';
+var instaT = '';
+var facebookBox = false;
+
+////// Rodape
+var rodapeLogo = 'https://cdn.awsli.com.br/2391/2391623/arquivos/Logo-site---gift.png';
+var rodapeEndereco = '';
+
+var rodapeSocial = 'Redes sociais';
+var rodapeSobre = 'Sobre nós';
+var rodapePaginas = 'Institucional';
+var rodapePagamento = 'Formas de pagamento';
+var rodapeSelos = 'Selos de segurança';
+
+
+
+
+
+
+
+////// Pagina do produto
+var imagemProduto = 400;
+var compartilhamento = false;
+var resumoFlutuante = true;
+var calculadoraFrete = false;
+var codigoTxt = 'Cód';
+var disponibilidadeTxt = '';
+var descricaoTxt = 'Descrição';
+var relacionadosTxt = 'Aproveite e compre também';
+var variacaoCor = false;
+var variacaoTxt = 'Primeiro você deve escolher uma opção.';
+var descricaoCurta = false;
+var pagamentoCompacto = true;
+var pagamentoTxt = 'mais formas de pagamento';
+
+
+
+
+
+
+var personalizador = false;
+var peB = 'Personalize';
+var peBT = 'Personalizar';
+var peU = '';
+var pe1T = 1;
+var pe1P = '';
+var pe1Txt = '';
+var pe1F = '';
+var pe1O = 1;
+var pe1L = 10;
+var pe1Obg = false;
+var pe1Aux = '';
+var pe1V1 = '';
+var pe1V2 = '';
+var pe1V3 = '';
+var pe2T = 2;
+var pe2P = '';
+var pe2Txt = '';
+var pe2F = '';
+var pe2O = 3;
+var pe2L = 2;
+var pe2Obg = false;
+var pe2Aux = '';
+var pe2V1 = '';
+var pe2V2 = '';
+var pe2V3 = '';
+var tabelaMedidas = false;
+var tabelaMedidasProduto = true;
+var tabelaNome = '';
+var tabelaImg1 = '';
+var tabelaPalavra1 = '';
+var tabelaImg2 = '';
+var tabelaPalavra2 = '';
+var tabelaImg3 = '';
+var tabelaPalavra3 = '';
+var validade = false;
+var validadeTxt = 'Validade:';
+var validadeA = 'Perto do vencimento';
+var validadeD = 30;
+var prevenda = false;
+var prevendaTxt = 'Pré-Venda';
+var prevendaTxt2 = 'Lançamento:';
+var prevendaTxt3 = '';
+var prevendaC = true;
+var calc = false;
+var calcPalavra = '';
+var calcObj = '';
+var calcTxt = '';
+var calcATxt = '';
+var calcA = 1.5;
+var calcLTxt = '';
+var calcL = 0.53;
+var calcDuvida = '';
+var lEx = false;
+
+var cModelo = 2;
+var cFundoEscuro = false;
+
+
+
+
+var instaR = false;
+var bx = false;
+var avD = true;
+var avT = 1;
+var avIc = 'ic1';
+var avTxt = 'à vista';
+var avDesc = 5;
+var fale = false;
+var faleTxt = 'Enviar mensagem';
+var varN = false;
+var varC = 0;
+var instaM = 1;
+var miniT = 1;
+var instaQ = 1;
+var ofs = false;
+var ofsTxt = 'Ofertas';
+var ofsSub = 'Por tempo limitado';
+var ofsIc = 'ofsIc1';
+var ofsID = '';
+var ofsM = 1;
+var ofsL = 0;
+var ofsP = 0;
+var ofsE = 0;
+var ofsT = 0;
+var ofsD = '03/02/2025';
+var mCsT = 2;
+var descT = false;
+var bxM = false;
+var mR = false;
+var obS = true;
+
+var agT = false;
+var agTP = '';
+var agTH = '03,07';
+var agTN = '6,0';
+var agT1 = 8;
+var agT2 = 18;
+var agTD = '03/02/2025';
+var bM = true;
+var bMM = '02,04,05,06,07';
+var fEv = false;
+var fEvTxt = 'Formas de envio';
+var fEvM = '01,02,03';
+var fEvP = '';
+var evX = false;
+var evXP = '';
+var evXD = '1,2,3';
+var evX1 = 8;
+var evX2 = 18;
+var evXA = 3;
+var pimgM = 1;
+var pimgT = 108;
+var desc = 1;
+var instaV = 0;
+var rFt = '';
+var cartT = 2;
+var cartF = 0;
+var cartV = '499.99';
+var cartS = 0;
+var supM = 1;
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700" rel="stylesheet">
+
+<style>
+.vitrine-ofertas {order:10}
+
+/*Cores*/
+:root {
+--csOfsT:#ffffff;
+--csOfs:#000000;
+--cOfsP2T:#ffffff;
+--cOfsP2:#000000;
+--cOfsPT:#ffffff;
+--cOfsP:#000000;
+--cOfsVT:#ffffff;
+--cOfsV:#000000;
+--cOfsMS:#000000;
+--cOfsMT:#c7c7c7;
+--cOfsM:#000000;
+--csCorPrincipal:#181818;
+--csBotoes:#30a77e;
+--csSuporte:#27bf64;
+--csSuporteIcone:#ffffff;
+--csInfoDestaque:#f1f1f1;
+--csInfoDestaqueTxt:#565656;
+--csCab:#ffffff;
+--csCabTxt:#201f1f;
+--csBusca:#f6f6f6;
+--csBuscaTxt:#808080;
+--csCarrinhoqtd:#30a77e;
+--csCarrinhoqtdn:#ffffff;
+--csMenu:#201f1f;
+--csMenuTxt:#ffffff;
+--csTodasCategorias:#ffffff;
+
+
+--csBandeiraDesconto:#ee8403;
+--csBp1:#ee8403;
+--csBp2:#4a93d4;
+--csBp3:#6aa84f;
+
+--cFundo:#f8f8f8;
+--cBotoes:#e9222a;
+--cBotoesTxt:#ffffff;
+--cTitulos:#1a1a1a;
+--cAlerta:#e9222a;
+--cdP:#e9222a;
+--cSuporte:#e9222a;
+--cSuporteIcone:#ffffff;
+--cBarra:#ffffff;
+--cBarraTxt:#606060;
+--cInfoDestaque:#282828;
+--cInfoDestaqueIcone:#e9222a;
+--cInfoDestaqueTxt:#ffffff;
+--cCab:#1a1a1a;
+--cCabIcones:#e9222a;
+--cCabTxt:#ffffff;
+--cBusca:#282828;
+--cBuscaTxt:#e9e9e9;
+--cCarrinhoqtd:#e9222a;
+--cCarrinhoqtdn:#ffffff;
+--cMenu:#ffffff;
+--cMenuTxt:#1a1a1a;
+--cTodasCategoriasIcone:#e9222a;
+--cTodasCategoriasTxt:#1a1a1a;
+
+
+
+
+
+--cBannerF:#1a1a1a;
+--cBannerN:#ffffff;
+--cBannerP:#d6d6d6;
+--cBannerB:#e9222a;
+--cBannerBTxt:#ffffff;
+--cTarja:#ffffff;
+--cTarjaIcone:#e9222a;
+--cTarjaTxt:#1a1a1a;
+--cTarjaSub:#1a1a1a;
+--cPreco:#e9222a;
+--cPix:#f3f6f4;
+--cPixIcone:#e9222a;
+--cPixTxt:#1a1a1a;
+--cBotaoWP:#ffffff;
+--cBotaoWPTxt:#e9222a;
+--cBotaoWPBorda:#e9222a;
+--cBandeiraDesconto:#1a1a1a;
+--cBandeiraDescontoTxt:#ffffff;
+--cBandeiraFrete:#199a64;
+--cBandeiraFreteTxt:#ffffff;
+--cBp1:#2930a1;
+--cBp1Txt:#ffffff;
+--cBp2:#c12c2c;
+--cBp2Txt:#ffffff;
+--cBp3:#653239;
+--cBp3Txt:#ffffff;
+--cVMarcas:#f3f3f3;
+--cVMarcasTxt:#1a1a1a;
+--cVVideo:#f3f3f3;
+--cVVideoTxt:#1a1a1a;
+--cVBlog:#f8f8f8;
+--cVBlogTxt:#1a1a1a;
+--cVBlogD:#e9222a;
+--cVDepoimentos:#f3f3f3;
+--cVDepoimentosTxt:#1a1a1a;
+--cNewsletter:#ffffff;
+--cNewsletterTxt:#201f1f;
+--cNewsletterCaixa:#f6f6f6;
+--cNewsletterCaixaTxt:#323232;
+--cRodape:#ffffff;
+--cRodapeTxt:#201f1f;
+--cRodapeRedes:#f3f3f3;
+--cRodapeRedesTxt:#424242;
+--cRodapeInferior:#ffffff;
+--cRodapeInferiorTxt:#201f1f;
+--cLancamento:#e9222a;
+--cDesc:#f3f3f3;
+--cDescTxt:#1a1a1a;
+}
+
+.vitrine-produtos {order:5}
+.vitrine-instagram {order:5}
+.vitrine-destaque {order:4}
+.vitrine-mas-vendido {order:2}
+.vitrine-lancamento {order:3}
+.vitrine-marcas {order:1}
+.vitrine-video {order:6}
+.vitrine-depoimentos {order:9}
+.vitrine-blog {order:8}
+
+.produto-descricao {order:2}
+.produto-comentarios {order:3}
+.produto-aproveite {order:4}
+.produto-comprejunto {order:1}
+
+.pagina-categoria .banner.vitrine {order:1}
+.pagina-categoria #listagemProdutos {order:3}
+.categoria-descricao {order:2}
+.categoria-newsletter {order:4}
+
+/* Fonte da loja*/
+body, input, select, .titulo, button, textarea, .pagina-pagina .caixa-sombreada p {font-family:Roboto};
+    
+</style>

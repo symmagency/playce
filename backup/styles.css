@@ -1,0 +1,101 @@
+.obs-checkout p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.obs-checkout {
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina-produto .obs-produto {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    margin: 10px 0px;
+    border-radius: 5px ;
+    align-items: center;
+    line-height: 20px;
+    text-transform:uppercase;
+}
+
+.pagina-produto .obs-produto p {
+    margin: 5px;
+    font-size: 15px;
+    padding: 3px;
+    
+}
+
+.banners-full .slick-arrow.slick-prev{
+    left:15px !important;
+}
+
+
+.banners-full .slick-arrow.slick-next{
+    left: auto !important;
+}
+
+strong.info-titulo {
+    font-size: 90px;
+    color: #e30909;
+    font-family: Roboto;
+}
+
+p.sub-titulo {
+    font-size: 22px;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+    line-height: 27px;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.info-banner{
+    background: transparent;
+    color: #fff;
+    top: 117px;
+    font-size: 40px;
+    text-align: center;
+    left: 59% !important;
+}
+
+.descricao-background {
+    color: #ffffff;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao-background  strong.titulo-fundo {
+    font-size: 50px;
+    color: #fff;
+}
+
+.descricao-background  p.sub-fundo {
+    font-size: 25px;
+    color: #fff;
+}
+
+
+.pagina-carrinho .total+.valores-descontos .descontos:first-child {
+    font-size: 18px
+}
+
+.pagina-carrinho strong.cor-principal.titulo.font-15 {
+    font-size: 18px;
+    margin-bottom: 2px;
+    display: inline-block;
+    color: #e9222a;
+    font-weight: bold;
+}
+
+.pagina-carrinho .total+.valores-descontos .descontos.avista span strong {
+    color: #e9222a;
+    display: inline-block;
+}

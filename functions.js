@@ -1105,7 +1105,7 @@ $(document).on('click', '.faq-pergunta', function() {
 var featuredImg = "https://cdn.awsli.com.br/2830/2830294/arquivos/gtavi.png";
 var featuredTitle = "GTA 6";
 var featuredText = "Será o oitavo título principal da franquia Grand Theft Auto, sendo o sucessor de GTA V.";
-var featuredLink = "https://upandolojaplayce.lojaintegrada.com.br/grand-theft-auto-vi-playstation-5"; // Link alterável para o banner de destaque
+var featuredLink = "#"; // Link alterável para o banner de destaque
 
 // Toggle para bandeira de pré-venda
 var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
@@ -1113,8 +1113,8 @@ var mostrarBandeiraPrevenda = true; // Defina como false para remover a bandeira
 var prevendaHtml = mostrarBandeiraPrevenda ? '<span class="bandeira-prevenda">Pré-venda</span>' : '';
 
 // Só adicionar se ainda não existe para evitar duplicação
-if ($('#listagemProdutos > .vitrine-23387220+ul .append-featured').length === 0) {
-    $('#listagemProdutos > .vitrine-23387220+ul').after(`
+if ($('#listagemProdutos > .vitrine-17314880+ul .append-featured').length === 0) {
+    $('#listagemProdutos > .vitrine-17314880+ul').after(`
         <div class="banner-featured append-featured">
             <a href="${featuredLink}" class="container-featured">
                 <img src="${featuredImg}" alt="${featuredTitle}" class="bn-featured-image">
