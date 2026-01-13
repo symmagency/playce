@@ -77,6 +77,23 @@ $('.barra-inicial .conteiner > .row-fluid').prepend(`
        </div>
      </div>
 `);
+
+$(function () {
+    var $container = $('#listagemProdutos');
+  
+    // seleciona o título "mais vendido"
+    var $titulo = $container.find('.vitrine-mas-vendido');
+  
+    // pega a UL que vem logo depois dele
+    var $ul = $titulo.next('ul');
+  
+    // move ambos para depois da última UL do container
+    var $ultimaUl = $container.find('ul.produtos-carrossel').last();
+  
+    $titulo.add($ul).insertAfter($ultimaUl);
+  });
+
+  
 $('.pagina-inicial #barraNewsletter').before(`
     <div class="about-banner">
       <div class="about-banner-content">
