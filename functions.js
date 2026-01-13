@@ -907,7 +907,7 @@ $(document).on('click', '.btn-mais', function() {
                     <img alt="WhatsApp" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-whats.svg"/>
                     <div>
                       <strong>Estamos no WhatsApp:</strong>
-                      <a href="https://wa.me/5561996841445" target="_blank">(61) 9 9684-1445</a>
+                      <a href="https://wa.me/556199627041?text=Ol%C3%A1!%20Preciso%20de%20suporte.%20Pode%20me%20ajudar%3F" target="_blank">(61) 9962-7041</a>
                     </div>
                   </div>
                 </div>
