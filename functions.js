@@ -99,6 +99,8 @@ $(function () {
       .last()
       .after($cloneTitulo, $cloneUl);
   });
+
+  $('body').append(`<a href="https://wa.me/556199627041?text=Ol%C3%A1!%20Preciso%20de%20suporte.%20Pode%20me%20ajudar%3F" target="_blank" class="whatsapp-float-btn" title="Fale conosco no WhatsApp">`);
   
 
 

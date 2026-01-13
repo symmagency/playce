@@ -2907,6 +2907,7 @@ a {
 
 .pagina-inicial ul.slick-initialized.slick-slider {
    width: 100% !important;
+   margin: 0;
 }
 
 .listagem ul.flex-direction-nav {
@@ -7703,4 +7704,37 @@ hr {
       display: none!important;
    }
 
+}
+
+
+/* Botão WhatsApp */
+
+a.whatsapp-float-btn {
+	background: #109f52;
+	display: block;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 100000;
+	border-radius: 999px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a.whatsapp-float-btn:before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/footer-whatsapp.svg)
+		center no-repeat;
+	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	a.whatsapp-float-btn {
+		bottom: 80px;
+	}
 }
