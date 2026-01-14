@@ -2536,7 +2536,7 @@ a {
 #rodape .institucional > .conteiner > .row-fluid {
    display: flex;
    flex-direction: row-reverse;
-   gap: 120px;
+   gap: 50px;
 }
 
 #rodape .institucional > .conteiner > .row-fluid > .span9 {
@@ -2616,6 +2616,7 @@ a {
 #rodape .append-support {
    flex: 1;
    font-size: 14px;
+   margin-left: 50px;
 }
 
 .append-support strong {
@@ -7664,32 +7665,32 @@ hr {
 
 /* PlayStation */
 
-.submenu-clone .nivel-um > li.categoria-id-23387220 > a > strong::before {
+.submenu-clone .nivel-um > li.categoria-id-17314880 > a > strong::before {
    background-image: url(https://symmagency.github.io/playce/assets/menu-icons/playstation.png)!important;
 }
 
 /* PC */
-.submenu-clone .nivel-um > li.categoria-id-23387264 > a > strong::before {
+.submenu-clone .nivel-um > li.categoria-id-20367842 > a > strong::before {
    background-image: url(https://symmagency.github.io/playce/assets/menu-icons/desktop.png)!important;
 }
 
 /* XBOX */
-.submenu-clone .nivel-um > li.categoria-id-23387224 > a > strong::before{
+.submenu-clone .nivel-um > li.categoria-id-17314882 > a > strong::before{
    background-image: url(https://symmagency.github.io/playce/assets/menu-icons/xbox.png)!important;
 }
 
 /* Nintendo */
-.submenu-clone .nivel-um > li.categoria-id-23507360 > a > strong::before{
+.submenu-clone .nivel-um > li.categoria-id-17316132 > a > strong::before{
    background-image: url(https://symmagency.github.io/playce/assets/menu-icons/nintendo.png)!important;
 }
 
 /* Jogos */
-.submenu-clone .nivel-um > li.categoria-id-23387230 > a > strong::before {
+.submenu-clone .nivel-um > li.categoria-id-20367849 > a > strong::before {
    background-image: url(https://symmagency.github.io/playce/assets/menu-icons/gamepad.png)!important;
 }
 
 /* Gift cards */
-.submenu-clone .nivel-um > li.categoria-id-23387218 > a > strong::before{
+.submenu-clone .nivel-um > li.categoria-id-18566102 > a > strong::before{
    background-image: url(https://symmagency.github.io/playce/assets/menu-icons/gift.png)!important;
 }
 
