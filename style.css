@@ -593,6 +593,7 @@ i.icon-instagram:before {
 
 .barra-inicial .canais-contato {
    flex: 1;
+   position: relative;
 }
 
 .barra-inicial .append-benefits {
@@ -1735,6 +1736,10 @@ button.qty-btn.qty-plus:hover{
    background: none;
 }
 
+.modal-body.borda-principal {
+   border: 0;
+}
+
 .pagina-produto .konfidency-reviews-details.conteiner .modal-review {
    background: var(--color-white);
    border: 0;
@@ -2658,6 +2663,10 @@ a {
 
 #rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid .span4 {
    flex: 1;
+}
+
+.span4.sobre-loja-rodape {
+   display: none;
 }
 
 #rodape .info-section p {
@@ -3777,6 +3786,10 @@ a {
    font-size: 19px;
 }
 
+.pagina-categoria .secao-principal {
+   margin-top: 40px;
+}
+
 .coluna>div, #corpo .conteiner>div {
    margin-bottom: 4px;
 }
@@ -4500,6 +4513,11 @@ input[type="password"] {
       z-index: 10000000000000;
       display: none;
    }
+
+   .pagina-produto .produto div.principal .starsV2 .star {
+      width: 20px!important;
+      height: 20px!important;
+   }
    
    .support-float.centered.open {
       display: flex;
@@ -4707,6 +4725,7 @@ input[type="password"] {
       border-radius: 6px;
       flex: none;
       display: flex !important;
+      height: 78px !important;
    }
 
    .secao-banners .conteiner {
@@ -4927,6 +4946,20 @@ input[type="password"] {
    width: 100%;
    justify-content: center;
    bottom: 10px;
+   bottom: -50px;
+}
+
+#rodape .append-support {
+   margin-left: 0;
+}
+
+.logo a img {
+    max-width: 100px;
+}
+
+.banner.cheio .flexslider {
+   overflow: visible;
+   margin-bottom: 40px;
 }
 
 #rodape .institucional > .conteiner > .row-fluid {
@@ -6081,6 +6114,7 @@ input#id_politica_privacidade {
 
 .about-banner-content {
    left: 0px;
+   margin: 10px 0 20px;
 }
 
 .about-banner-image {
@@ -7208,6 +7242,11 @@ div#login-content > .identificacao {
    font-weight: 400;
 }
 
+.tabela-pedidos .text-success {
+   color: #15a046 !important;
+   font-weight: 500;
+}
+
 .tabela-pedidos thead tr {
     border: 0;
 }
@@ -7713,8 +7752,8 @@ a.whatsapp-float-btn {
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	z-index: 100000;
 	border-radius: 999px;
 	display: flex;
@@ -7766,4 +7805,134 @@ a.whatsapp-float-btn:before {
 		display: none;
 	}
 	
+}
+
+/* Ajusta layout do resgate de código */
+
+.pagina-pedido .cn-redeem-code::before {
+	content: 'Clique no botão ao lado para receber o código';
+	width: fit-content;
+	height: 40px;
+	float: left;
+	position: relative;
+	background-color: transparent;
+	background: url(https://cdn.awsli.com.br/2391/2391623/arquivos/code.svg) left
+		center no-repeat;
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+	font-size: 16px;
+	text-align: left;
+}
+
+.pagina-pedido .cn-redeem-code {
+	background: none;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #d8d8d8;
+	margin-bottom: 20px;
+	cursor: default;
+}
+
+.cn-redeem-code a {
+	position: relative;
+	background: #e9222b;
+	width: fit-content;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	border-radius: 6px;
+	height: 36px;
+}
+
+@media screen and (max-width: 768px) {
+	.pagina-pedido .cn-redeem-code {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.cn-redeem-code a {
+		height: 44px;
+	}
+}
+
+
+/* Atendimento superior */
+
+
+.append-content-sup {
+   display: none;
+   opacity: 1;
+   z-index: 999999999;
+   position: absolute;
+   background: #fff;
+   right: 0;
+   padding: 20px;
+   border-radius: 6px;
+}
+
+.canais-contato ul li.hidden-phone:hover .append-content-sup {
+   display: block;
+}
+
+.info-section {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.append-content-sup * {
+   color: #000!important;
+   line-height: 100%;
+   font-size: 14px;
+}
+
+.atendimento-float {
+   display: flex;
+   gap: 10px;
+}
+
+.atendimento-float > div {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.append-content-sup .titulo {
+   font-size: 18px;
+   display: block;
+}
+
+.info-section {}
+
+.mensagem-float > div {
+   display: flex;
+   gap: 10px;
+}
+
+.mensagem-float > div > div {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.mensagem-float {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.whats-float {
+   display: flex;
+   gap: 10px;
+}
+
+.whats-float > div {
+   flex-direction: column;
+   display: flex;
+   gap: 4px;
 }
