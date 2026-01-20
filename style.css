@@ -5128,6 +5128,8 @@ a.banner-featured.append-featured {
 .banner-featured.append-featured {
    align-items: flex-end;
    margin-top: 10px;
+   background: var(--featured-home-mobile) center no-repeat;
+   min-height: 700px;
 }
 
 img.bn-featured-image {
