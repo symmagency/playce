@@ -335,6 +335,8 @@ function moverBannersParaVitrinesPorOrdem(numerosBanner, idsVitrine) {
     var idVitrine = idsVitrine[i];
     // Seleciona o <a> pelo índice (usando 1-based do array de configuração)
     var $bannerSelecionado = $bannersTarja.eq(numeroBanner - 1);
+    // Adiciona a classe tarja-moved
+    $bannerSelecionado.addClass('tarja-moved');
     // Monta o seletor da vitrine pelo ID
     var seletorVitrine = '.vitrine-' + idVitrine;
     // Move o <a> antes da vitrine desejada, se ambos existirem

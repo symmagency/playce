@@ -7987,3 +7987,20 @@ a.whatsapp-float-btn:before {
   }
 
 }
+
+/* Nova tarja */
+
+a.tarja-moved {
+   margin: 0 auto;
+   width: fit-content;
+   display: block;
+   text-align: center;
+   padding: 0 40px;
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+   a.tarja-moved {
+      padding: 0 16px;
+   }
+}
