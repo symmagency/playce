@@ -5575,6 +5575,14 @@ h2.bn-featured-title {
    height: 16px!important;
 }
 
+.formas .accordion-heading {
+   display: flex;
+}
+
+.formas .accordion-heading .forma-conteiner {
+   margin: 0;
+}
+
 
 .formas .accordion-heading .radio-conteiner {
    max-width: 36px!important;
