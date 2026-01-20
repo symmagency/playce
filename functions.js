@@ -904,9 +904,25 @@ $(document).on('click', '.btn-mais', function() {
         ];
 
         bannersMapeados.forEach(function(banner) {
+            // Para desktop: altera diretamente o src do <img>
             $('img[usemap="#map-banner-' + banner.map + '"]').attr('src', banner.imagem);
-        });
 
+            // Para mobile: altera o srcset do <source> correto dentro de <picture>
+            // Seleciona o <source> que tem o mesmo usemap no <img> irmão, e com media "(max-width:767px)"
+            $('img[usemap="#map-banner-' + banner.map + '"]').each(function() {
+                var $img = $(this);
+                var $picture = $img.closest('picture');
+                if ($picture.length) {
+                    // Só altera o <source> de mobile
+                    $picture.find('source[media*="max-width"]').each(function() {
+                        // Troca o srcset para a imagem mobile, se definida
+                        // Se você quiser, pode mapear uma propriedade "imagemMobile" no objeto e usar aqui, senão usa a mesma imagem
+                        // Exemplo: srcset = banner.imagemMobile || banner.imagem;
+                        $(this).attr('srcset', banner.imagem);
+                    });
+                }
+            });
+        });
 
         // Tenta mover .produto-detalhe após .konfidency-reviews-summary até conseguir
         (function retryMoveProdutoDetalhe(maxRetries) {
