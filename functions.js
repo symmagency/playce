@@ -171,61 +171,61 @@ $slider.slick({
 var categorias = [
     {
         // PlayStation
-        link: "/playstation",
+        link: "/playstation-store-gift-card",
         nome: "PlayStation",
         classe: "cat-playstation"
     },
     {
         // Xbox
-        link: "/google",
+        link: "/gift-card-xbox",
         nome: "Xbox",
         classe: "cat-xbox"
     },
     {
         // Nintendo
-        link: "/nintendo",
+        link: "/nintendo-gift-card",
         nome: "Nintendo",
         classe: "cat-nintendo"
     },
     {
         // Apple
-        link: "/apple",
+        link: "/gift-card-app-store-brasil",
         nome: "Apple",
         classe: "cat-apple"
     },
     {
         // Roblox
-        link: "/roblox",
+        link: "/roblox-gift-card-robux",
         nome: "Roblox",
         classe: "cat-roblox"
     },
     {
         // Fortnite (V-bucks)
-        link: "/v-bucks",
+        link: "/buscar?q=fortinite",
         nome: "Fortnite",
         classe: "cat-fortnite"
     },
     {
         // Netflix
-        link: "/netflix",
+        link: "/cartao-pre-pago-netflix-assinatura-facil-e-flexivel",
         nome: "Netflix",
         classe: "cat-netflix"
     },
     {
         // Spotify
-        link: "/spotify",
+        link: "/assinatura-spotify-premium",
         nome: "Spotify",
         classe: "cat-spotify"
     },
     {
         // Steam
-        link: "/Steam",
+        link: "/steam-gift-card",
         nome: "Steam",
         classe: "cat-steam"
     },
     {
         // Gift Cards
-        link: "/gift-cards",
+        link: "/gift-card",
         nome: "Gift Cards",
         classe: "cat-gift-cards"
     }

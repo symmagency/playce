@@ -8062,5 +8062,9 @@ a.tarja-moved {
    a.tarja-moved {
        padding: 0;
    }
+
+   .categorias-section {
+      padding: 0 40px;
+   }
       
    }
