@@ -8004,3 +8004,53 @@ a.tarja-moved {
       padding: 0 16px;
    }
 }
+
+/* Ajusta responsivo */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+   #corpo {
+      padding: 0 40px;
+   }
+   
+   .banner-featured.append-featured {
+       margin: 50px -40px 0;
+   }
+   
+   .benefits-row {
+       margin: 0 40px;
+   }
+   
+   .secao-banners .conteiner {
+       padding: 0 40px 20px;
+   }
+   
+   .banner-fundo {
+       margin: 0 40px;
+   }
+   
+   #cabecalho > .conteiner {
+       padding: 0 40px;
+   }
+   
+   #rodape .institucional {
+       padding: 20px 40px;
+   }
+   
+   #barraNewsletter.posicao-rodape .componente .interno {
+       padding: 0 40px;
+   }
+   
+   #rodape .pagamento-selos .conteiner {
+       padding: 20px 40px;
+   }
+   
+   #rodape>div:last-child {
+       padding: 16px 40px;
+   }
+   
+   a.tarja-moved {
+       padding: 0;
+   }
+      
+   }
