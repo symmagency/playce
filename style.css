@@ -6719,6 +6719,13 @@ form#formCalcularFrete {
 .menu-user-logged.btn-group:hover .dropdown-menu {
    display: block;
    margin: 0;
+   padding: 5px 0;
+   border: 0;
+}
+
+.open>.dropdown-menu {
+   right: auto;
+   left: 0;
 }
 
 .menu-user-logged.btn-group:hover .dropdown-menu > li:nth-child(3) {
@@ -6797,6 +6804,7 @@ form#formCalcularFrete {
    border: 0;
    left: auto;
    right: -15px;
+   display: none;
 }
 
 .dropdown-menu>li>a {
