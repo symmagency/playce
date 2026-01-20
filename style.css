@@ -7996,7 +7996,7 @@ a.whatsapp-float-btn:before {
   }
   
   .carrinho-checkout #cabecalho .span6.offset3 {
-      display: flex;
+      display: flex!important;
       margin: 0;
       justify-content: flex-end;
   }
@@ -8077,7 +8077,10 @@ a.tarja-moved {
    #rodape .institucional .lista-redes > ul {
       flex-wrap: wrap;
    }
-  
+
+   #cabecalho {
+      padding: 0 40px;
+  }  
   
 }
 
