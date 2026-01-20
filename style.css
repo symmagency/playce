@@ -8068,3 +8068,22 @@ a.tarja-moved {
    }
       
    }
+
+
+   /* Texto checkout entrega  */
+@media screen and (max-width: 768px) {
+
+   #formularioCheckout .span4:nth-child(2) fieldset > legend.titulo.cor-secundaria:after {
+      content: "Receba por Email - Digite o CEP para seguir";
+      font-size: 15px;
+  }
+  
+  #formularioCheckout .span4:nth-child(2) fieldset > legend.titulo.cor-secundaria {
+      font-size: 0;
+  }
+  
+  #formularioCheckout .span4:nth-child(2) fieldset > legend.titulo.cor-secundaria i {
+      font-size: 15px;
+  }
+  
+}
