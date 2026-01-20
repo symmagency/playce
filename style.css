@@ -7913,6 +7913,9 @@ a.whatsapp-float-btn:before {
    right: 114px;
    padding: 20px;
    border-radius: 6px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+   width: 240px;
+   border: 1px solid #e5e5e5;
 }
 
 .canais-contato ul li.hidden-phone:hover .append-content-sup {
@@ -7988,6 +7991,7 @@ a.whatsapp-float-btn:before {
       box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
       width: 240px;
       border: 1px solid #e5e5e5;
+      right: 0;
   }
 
   .append-content-sup:before {
