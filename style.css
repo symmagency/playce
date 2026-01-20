@@ -7883,6 +7883,7 @@ a.whatsapp-float-btn:before {
 
 /* Atendimento superior */
 
+@media screen and (min-width: 768px) {
 
 .append-content-sup {
    display: none;
@@ -7897,6 +7898,8 @@ a.whatsapp-float-btn:before {
 
 .canais-contato ul li.hidden-phone:hover .append-content-sup {
    display: block;
+}
+
 }
 
 .info-section {
