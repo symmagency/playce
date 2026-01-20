@@ -597,7 +597,7 @@ $(document).on('click', '.btn-mais', function() {
         if ($('.conteudo-topo .sign-up-header').length === 0) {
             $('.conteudo-topo .inferior .busca-mobile').after(`
                 <div class="sign-up-header">
-                    <a href="../conta/login?next=/conta/index">
+                    <a href="https://www.playce.com.br/conta/login">
                         <span>Entrar</span>
                         <i class="user"></i>
                     </a>
@@ -870,7 +870,7 @@ $(document).on('click', '.btn-mais', function() {
         if ($('#cabecalho .sign-up-header').length === 0) {
             $('#cabecalho .span3 > .logo').after(`
                 <div class="sign-up-header">
-                    <a href="../conta/login?next=/conta/index">
+                    <a href="https://www.playce.com.br/conta/login">
                         <i class="user"></i>
                     </a>
                 </div>    

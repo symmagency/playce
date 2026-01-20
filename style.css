@@ -7930,8 +7930,6 @@ a.whatsapp-float-btn:before {
    display: block;
 }
 
-.info-section {}
-
 .mensagem-float > div {
    display: flex;
    gap: 10px;
@@ -8069,8 +8067,13 @@ a.tarja-moved {
    .categorias-section {
       padding: 0 40px;
    }
-      
+
+   #rodape .institucional .lista-redes > ul {
+      flex-wrap: wrap;
    }
+  
+  
+}
 
 
    /* Texto checkout entrega  */
@@ -8089,4 +8092,12 @@ a.tarja-moved {
       font-size: 15px;
   }
 
+}
+
+div#formasEnvio {
+   height: max-content !important;
+}
+
+#rodape .info-section {
+   gap: 4px;
 }
