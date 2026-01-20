@@ -7910,7 +7910,7 @@ a.whatsapp-float-btn:before {
    z-index: 999999999;
    position: absolute;
    background: #fff;
-   right: 0;
+   right: 114px;
    padding: 20px;
    border-radius: 6px;
 }
@@ -7945,8 +7945,9 @@ a.whatsapp-float-btn:before {
 }
 
 .append-content-sup .titulo {
-   font-size: 18px;
+   font-size: 16px;
    display: block;
+   font-weight: 500;
 }
 
 .mensagem-float > div {
@@ -7983,10 +7984,21 @@ a.whatsapp-float-btn:before {
 
    .atd-top-checkout:hover .append-content-sup {
       display: block;
-      top: 100%;
-      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+      top: 84%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
       width: 240px;
+      border: 1px solid #e5e5e5;
   }
+
+  .append-content-sup:before {
+   content: "";
+   position: absolute;
+   top: -8px;
+   right: 40px;
+   border-left: 8px solid transparent;
+   border-right: 8px solid transparent;
+   border-bottom: 8px solid #fff;
+}
   
   .atd-top-checkout {
       width: fit-content;
