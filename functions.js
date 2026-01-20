@@ -794,6 +794,42 @@ $(document).on('click', '.btn-mais', function() {
             </div>
         `);
 
+        $('.carrinho-checkout .atendimento').replaceWith(`
+            <div class="atd-top-checkout"><i></i>Precisa de ajuda?
+            <div class="append-content-sup">
+                            <div class="info-section">
+                                <span class="titulo">Atendimento</span>
+                    
+                                <div class="atendimento-float">
+                                <img alt="Horário de atendimento" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-clock.svg"/>
+                                <div>
+                                    <strong>Horário de atendimento</strong>
+                                    <span>Todos os dias, das 09h às 22h</span>
+                                </div>
+                                </div>
+                    
+                                <div class="mensagem-float">
+                                <strong>Envie uma mensagem:</strong>
+                                <div>
+                                    <img alt="Envie uma mensagem" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-mail.svg"/>
+                                    <div>
+                                    <a href="mailto:contato@playce.com.br">contato@playce.com.br</a>
+                                    <span> Playce - Games e Gift cards </span>
+                                    </div>
+                                </div>
+                                </div>
+                    
+                                <div class="whats-float">
+                                <img alt="WhatsApp" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-whats.svg"/>
+                                <div>
+                                    <strong>Estamos no WhatsApp:</strong>
+                                    <a href="https://wa.me/556199627041?text=Ol%C3%A1!%20Preciso%20de%20suporte.%20Pode%20me%20ajudar%3F" target="_blank">(61) 9962-7041</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+            `);
+
     } else {
         //mobile 
         $('#cabecalho .span3 > .logo').before($('.conteudo-topo .busca-mobile .atalho-menu'));

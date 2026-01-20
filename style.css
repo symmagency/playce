@@ -7948,3 +7948,42 @@ a.whatsapp-float-btn:before {
    display: flex;
    gap: 4px;
 }
+
+/* Atendimento carrinho */
+
+@media screen and (min-width: 768px) {
+
+   .atd-top-checkout:hover .append-content-sup {
+      display: block;
+      top: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,.1);
+      width: 240px;
+  }
+  
+  .atd-top-checkout {
+      width: fit-content;
+      height: 70px;
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+      color: #fff;
+      font-size: 14px;
+      gap: 10px;
+      position: relative;
+  }
+  
+  .atd-top-checkout i:before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: var(--icon-chat);
+      display: block;
+  }
+  
+  .carrinho-checkout #cabecalho .span6.offset3 {
+      display: flex;
+      margin: 0;
+      justify-content: flex-end;
+  }
+
+}
