@@ -5495,7 +5495,7 @@ h2.bn-featured-title {
    justify-content: center;
 }
 
-.formas .accordion-heading .radio-conteiner {
+/* .formas .accordion-heading .radio-conteiner {
    display: flex;
    justify-content: center !important;
    align-items: center !important;
@@ -5505,7 +5505,7 @@ h2.bn-featured-title {
    height: 38px !important;
    box-sizing: border-box;
    float: none;
-}
+} */
 
 
 
@@ -8085,5 +8085,5 @@ a.tarja-moved {
   #formularioCheckout .span4:nth-child(2) fieldset > legend.titulo.cor-secundaria i {
       font-size: 15px;
   }
-  
+
 }
