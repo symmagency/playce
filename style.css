@@ -4069,11 +4069,12 @@ a {
 
 .conteudo.span9.no-results h1:before {
    content: "";
-   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/search-empty.png) center no-repeat;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/controller.png) center no-repeat;
    display: block;
    width: 80px;
    height: 80px;
    margin: 0 auto;
+   background-size: 88%;
 }
 
 .conteudo.span9.no-results>.row-fluid {
@@ -4111,6 +4112,7 @@ a {
    width: 80px;
    height: 80px;
    margin: 0 auto;
+   background-size: 100%;
 }
 
 .pagina-carrinho .remover-cupom::before {
@@ -4204,6 +4206,7 @@ a {
    width: 80px;
    height: 80px;
    margin: 0 auto;
+   background-size: 95%;
 }
 
 .pagina-categoria .secao-banners .conteiner {
@@ -4248,6 +4251,11 @@ a {
     font-size: 24px;
     color: var(--color-black);
     font-weight: 400;
+}
+
+.about-banner-icon-title > img {
+   max-width: 60px;
+   margin-right: 10px;
 }
 
 .about-banner-title h2 {
