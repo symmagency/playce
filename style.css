@@ -5575,6 +5575,11 @@ h2.bn-featured-title {
    height: 16px!important;
 }
 
+
+.formas .accordion-heading .radio-conteiner {
+   max-width: 36px!important;
+}
+
 /* .pagina-carrinho.carrinho-checkout .floating-bar {
    display: none!important;
 } */
