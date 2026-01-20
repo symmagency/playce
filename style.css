@@ -4106,7 +4106,7 @@ a {
 
 .pagina-carrinho .caixa-destaque h1:before {
    content: "";
-   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/cart-icon.png) center no-repeat;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/cart.png) center no-repeat;
    display: block;
    width: 80px;
    height: 80px;
@@ -4199,7 +4199,7 @@ a {
 
 .pagina-categoria .caixa-destaque h1:before {
    content: "";
-   background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/cat-box.png) center no-repeat;
+   background: url(https://cdn.awsli.com.br/2830/2830294/arquivos/box.png) center no-repeat;
    display: block;
    width: 80px;
    height: 80px;
@@ -7997,11 +7997,13 @@ a.tarja-moved {
    text-align: center;
    padding: 0 40px;
    box-sizing: border-box;
+   margin-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
    a.tarja-moved {
       padding: 0 16px;
+      margin-top: 20px;
    }
 }
 
