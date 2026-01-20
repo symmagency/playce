@@ -319,33 +319,53 @@ tagsProdutos.forEach(function(produto) {
     }
 });
 
-// Move os <a> em ordem de .banner.tarja conforme numerosBanner
+// Para cada imagem que usa um map
+$('img[usemap]').each(function() {
+    var $img = $(this);
+    var usemap = $img.attr('usemap'); // Ex: "#map-banner-4081482"
+    if (!usemap) return;
+
+    // Remove o "#" para buscar pelo atributo name
+    var mapName = usemap.replace('#', '');
+    var $map = $('map[name="' + mapName + '"]');
+
+    // Se encontrou o map correspondente
+    if ($map.length) {
+        // Cria uma nova div
+        var $newDiv = $('<div class="banner-map-group"></div>');
+
+        // Move o <img> e o <map> para dentro da nova div
+        // Também move o <a> pai do <img> se existir
+        var $imgParent = $img.parent('a').length ? $img.parent('a') : $img;
+        $imgParent.before($newDiv); // Insere a nova div antes do <img> ou <a>
+        $newDiv.append($imgParent);
+        $newDiv.append($map);
+    }
+});
 
 // Defina os arrays conforme necessário
 var numerosBanner = [1, 2]; // Exemplo: [1, 2] para o primeiro e segundo banner, etc.
 var idsVitrine = ['17316132', '18566102']; // Exemplo: ['23507360', '23507361']
 
-// Seleciona todos os <a> banners na ordem dentro do .banner.tarja
-var $bannersTarja = $('.banner.tarja > a');
+// Seleciona todos os banners ANTES de mover
+var banners = $('.banner-map-group').toArray();
 
-// Função para mover vários banners (<a>) para várias vitrines por ordem
-function moverBannersParaVitrinesPorOrdem(numerosBanner, idsVitrine) {
+// Função para mover vários banners para várias vitrines
+function moverBannersParaVitrines(numerosBanner, idsVitrine) {
   for (var i = 0; i < numerosBanner.length; i++) {
     var numeroBanner = numerosBanner[i];
     var idVitrine = idsVitrine[i];
-    // Seleciona o <a> pelo índice (usando 1-based do array de configuração)
-    var $bannerSelecionado = $bannersTarja.eq(numeroBanner - 1);
+    // Seleciona o banner pelo índice (começando do 1 para o usuário)
+    var bannerSelecionado = $(banners[numeroBanner - 1]);
     // Monta o seletor da vitrine pelo ID
     var seletorVitrine = '.vitrine-' + idVitrine;
-    // Move o <a> antes da vitrine desejada, se ambos existirem
-    if ($bannerSelecionado.length && $(seletorVitrine).length) {
-      $(seletorVitrine).before($bannerSelecionado);
-    }
+    // Move o banner antes da vitrine desejada
+    $(seletorVitrine).before(bannerSelecionado);
   }
 }
 
 // Chame a função
-moverBannersParaVitrinesPorOrdem(numerosBanner, idsVitrine);
+moverBannersParaVitrines(numerosBanner, idsVitrine);
 
 
 // Defina as variáveis para personalizar o banner
