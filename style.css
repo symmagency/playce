@@ -2555,6 +2555,7 @@ a {
 
 #rodape .institucional > .conteiner > .row-fluid > .span3 {
    margin: 0;
+   width: 37%;
 }
 
 #rodape .institucional {
@@ -2683,7 +2684,7 @@ a {
 }
 
 #rodape .info-section:not(:last-child) {
-   margin-bottom: 32px;
+   margin-bottom: 12px;
 }
 
 #rodape .pagamento-selos {
@@ -2708,6 +2709,7 @@ a {
 
 #rodape .span4.selos {
    margin: 0;
+   width: 100%;
 }
 
 .selos>ul {
@@ -2742,6 +2744,10 @@ a {
 
 #rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
     text-align: left!important;
+}
+
+#rodape>div:last-child .conteiner .row-fluid > .span9.span12 p {
+   max-width: 500px;
 }
 
 #rodape>div:last-child .conteiner .row-fluid > .span9.span12 {
@@ -8099,4 +8105,23 @@ div#formasEnvio {
 
 #rodape .info-section {
    gap: 4px;
+}
+
+
+.pagina-pedido-listar .pagination > ul {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   box-shadow: none;
+   width: 100%;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.pagina-pedido-listar .pagination > ul li {
+   margin: 0;
+}
+
+.pagina-pedido-listar .pagination {
+   width: 100%;
 }
