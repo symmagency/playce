@@ -1004,10 +1004,16 @@ $(document).on('click', '.btn-mais', function() {
         $('.hello-menu').after($('.btn-group.menu-user-logged'));
         $('.menu-user-logged').append($('a.menu-user-logout'));
 
-        // Move o div#avisoEnvio para depois de .dados-cadastro, se ambos existirem na página
-        if ($('#avisoEnvio').length && $('.dados-cadastro').length) {
-            $('#avisoEnvio').insertAfter('.dados-cadastro');
-        }
+        // Retente até conseguir mover o div#avisoEnvio para depois de .dados-cadastro
+        (function tryMoveAvisoEnvio(retries) {
+            if ($('#avisoEnvio').length && $('.dados-cadastro').length) {
+                $('#avisoEnvio').insertAfter('.dados-cadastro');
+            } else if (retries > 0) {
+                setTimeout(function() {
+                    tryMoveAvisoEnvio(retries - 1);
+                }, 100);
+            }
+        })(10); // Tenta até 10 vezes, com intervalo de 100ms
         
         
     } // fecha o else do mobile
