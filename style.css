@@ -7391,7 +7391,7 @@ fieldset .span12 p {
 
 .pagina-pedido .caixa-dados h2.titulo {
    font-size: 20px;
-   margin: 0 0 20px;
+   margin: 0px;
 }
 
 .pagina-pedido .abas-conteudo .row-fluid > .caixa-info {
@@ -8156,4 +8156,10 @@ div#formasEnvio {
 
 .pagina-pedido-listar .pagination {
    width: 100%;
+}
+
+/* Ajusta resgate */
+
+.pagina-pedido .caixa-dados > .caixa-dados h4.titulo {
+   display: none;
 }
