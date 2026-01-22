@@ -81,7 +81,7 @@
    --news-char: url('https://cdn.awsli.com.br/2830/2830294/arquivos/news-char.png');
    --featured-home: url('https://cdn.awsli.com.br/2830/2830294/arquivos/vitrine.png');
    --featured-home-mobile: url('https://cdn.awsli.com.br/2830/2830294/arquivos/vitrine-mobile.png');
-   --bg-home: url('https://symmagency.github.io/playce/banners/oficial/bg-fundo-ofc.png');
+   --bg-home: url('https://yiazmat1994.github.io/playce/banners/oficial/bg-fundo-ofc.png');
 
 
 }
@@ -7542,38 +7542,38 @@ hr {
 
 /* PlayStation */
 .menu.superior > .nivel-um > li.categoria-id-17314880 {
-	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/playstation-white.png);
-	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/playstation.png);
+	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/playstation-white.png);
+	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/playstation.png);
 }
 
 /* PC */
 .menu.superior > .nivel-um > li.categoria-id-20367842 {
-	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/desktop-white.png);
-	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/desktop.png);
+	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/desktop-white.png);
+	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/desktop.png);
 }
 
 /* XBOX */
 .menu.superior > .nivel-um > li.categoria-id-17314882 {
-	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/xbox-white.png);
-	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/xbox.png);
+	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/xbox-white.png);
+	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/xbox.png);
 }
 
 /* Nintendo */
 .menu.superior > .nivel-um > li.categoria-id-17316132 {
-	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/nintendo-white.png);
-	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/nintendo.png);
+	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/nintendo-white.png);
+	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/nintendo.png);
 }
 
 /* Jogos */
 .menu.superior > .nivel-um > li.categoria-id-18566102 {
-	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/gamepad-white.png);
-	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/gamepad.png);
+	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gamepad-white.png);
+	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gamepad.png);
 }
 
 /* Gift cards */
 .menu.superior > .nivel-um > li.categoria-id-20367849 {
-	--icon-normal: url(https://symmagency.github.io/playce/assets/menu-icons/gift--white.png);
-	--icon-hover: url(https://symmagency.github.io/playce/assets/menu-icons/gift.png);
+	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gift--white.png);
+	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gift.png);
 }
 
 .menu.superior .nivel-um > li > a > strong {
@@ -7645,7 +7645,7 @@ hr {
 	content: '';
 	width: 24px;
 	height: 24px;
-	background: url(https://symmagency.github.io/playce/assets/menu-icons/menu-hamb-white.svg)
+	background: url(https://yiazmat1994.github.io/playce/assets/menu-icons/menu-hamb-white.svg)
 		center no-repeat;
 	display: block;
 }
@@ -7654,7 +7654,7 @@ hr {
 	content: '';
 	width: 24px;
 	height: 24px;
-	background: url(https://symmagency.github.io/playce/assets/menu-icons/menu-hamb.svg)
+	background: url(https://yiazmat1994.github.io/playce/assets/menu-icons/menu-hamb.svg)
 		center no-repeat;
 	display: block;
 }
@@ -7744,32 +7744,32 @@ hr {
 /* PlayStation */
 
 .submenu-clone .nivel-um > li.categoria-id-17314880 > a > strong::before {
-   background-image: url(https://symmagency.github.io/playce/assets/menu-icons/playstation.png)!important;
+   background-image: url(https://yiazmat1994.github.io/playce/assets/menu-icons/playstation.png)!important;
 }
 
 /* PC */
 .submenu-clone .nivel-um > li.categoria-id-20367842 > a > strong::before {
-   background-image: url(https://symmagency.github.io/playce/assets/menu-icons/desktop.png)!important;
+   background-image: url(https://yiazmat1994.github.io/playce/assets/menu-icons/desktop.png)!important;
 }
 
 /* XBOX */
 .submenu-clone .nivel-um > li.categoria-id-17314882 > a > strong::before{
-   background-image: url(https://symmagency.github.io/playce/assets/menu-icons/xbox.png)!important;
+   background-image: url(https://yiazmat1994.github.io/playce/assets/menu-icons/xbox.png)!important;
 }
 
 /* Nintendo */
 .submenu-clone .nivel-um > li.categoria-id-17316132 > a > strong::before{
-   background-image: url(https://symmagency.github.io/playce/assets/menu-icons/nintendo.png)!important;
+   background-image: url(https://yiazmat1994.github.io/playce/assets/menu-icons/nintendo.png)!important;
 }
 
 /* Jogos */
 .submenu-clone .nivel-um > li.categoria-id-20367849 > a > strong::before {
-   background-image: url(https://symmagency.github.io/playce/assets/menu-icons/gamepad.png)!important;
+   background-image: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gamepad.png)!important;
 }
 
 /* Gift cards */
 .submenu-clone .nivel-um > li.categoria-id-18566102 > a > strong::before{
-   background-image: url(https://symmagency.github.io/playce/assets/menu-icons/gift.png)!important;
+   background-image: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gift.png)!important;
 }
 
 }
